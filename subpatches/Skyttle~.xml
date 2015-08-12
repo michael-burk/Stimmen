@@ -1,0 +1,495 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Desktop\Stimmen\subpatches\Skyttle.v4p" systemname="Skyttle" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\Skyttle.v4p" scrollx="0" scrolly="0">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1695" top="8715" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1695" top="8715" width="1740" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="curl.exe">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Executable">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11910" top="8715" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11910" top="8715" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Execute">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3525" top="1560" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3525" top="1560" width="8070" height="2820">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="|curl -X POST -k --include &quot;https://sentinelprojects-skyttle20.p.mashape.com/&quot; \&cr;&lf;  -H &quot;X-Mashape-Key: PboVgKjbcNmshNdtFzD5beHJMa0Xp1muExCjsnlV8yNlr93In2&quot; \&cr;&lf;  -H &quot;Content-Type: application/x-www-form-urlencoded&quot; \&cr;&lf;  -H &quot;Accept: application/json&quot; \&cr;&lf;  -d &quot;annotate=0&quot; \&cr;&lf;  -d &quot;keywords=1&quot; \&cr;&lf;  -d &quot;lang=en&quot; \&cr;&lf;  -d &quot;sentiment=1&quot; \&cr;&lf;  -d &quot;text=|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Arguments">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1500" top="14610" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="14610" width="21420" height="60720">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="21" encoded="0" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|curl: (60) SSL certificate problem: unable to get local issuer certificate&cr;&lf;|,|More details here: http://curl.haxx.se/docs/sslcerts.html&cr;&lf;|,|&cr;&lf;|,|curl performs SSL certificate verification by default, using a &quot;bundle&quot;&cr;&lf;|,| of Certificate Authority (CA) public keys (CA certs). If the default&cr;&lf;|,| bundle file isn&apos;t adequate, you can specify an alternate file&cr;&lf;|,| using the --cacert option.&cr;&lf;|,|If this HTTPS server uses a certificate signed by a CA represented in&cr;&lf;|,| the bundle, the certificate verification probably failed due to a&cr;&lf;|,| problem with the certificate (it might be expired, or the name might&cr;&lf;|,| not match the domain name in the URL).&cr;&lf;|,|If you&apos;d like to turn off curl&apos;s verification of the certificate, use&cr;&lf;|,| the -k (or --insecure) option.&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Output">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="7740" top="8715" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7740" top="8715" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Block until finished|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5685" top="8715" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5685" top="8715" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Show Window|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="9840" top="8715" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9840" top="8715" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Kill">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6690" top="10365" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6690" top="10365" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ExitCode">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="6">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="12315" top="10050" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12315" top="10050" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="IsRunning">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1515" top="7800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Do Rescan" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Folder" slicecount="1" values="WindowsSystem">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="1515" top="9360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RegExpr (String)" nodename="RegExpr (String)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="10170" top="11175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="(^Reply\sfrom.*)">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive Match" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Match 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="10185" top="11655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="9450" top="12090" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="9465" top="12630" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9465" top="12630" width="2730" height="450">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Progress">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="11940" top="11100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="12615" top="12615" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12615" top="12615" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Completed">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="12615" top="11985" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1515" top="10425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="3555" top="6060" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|We have visited this restaurant a few times in the past, and the meals have been ok, but this time we were deeply disappointed.|">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="&quot;">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="12570" top="1500" width="10725" height="3840">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12570" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|ist das offensichtlich in den letzten Jahren eben spezifische lokale Faktoren injection Einfluss darauf gewonnen haben da ist das da vielleicht differenzen in einzelnen fächer stärker zu tragen kommen oder eben doch auch Einflüsse der Institution selber eine rolle spielen im positiven und vielleicht auch manchmal auch in den negativen also negativ in dem sinne brauche ich jetzt zwar keine ganz konkreten belege hat aber was mich aus denkbar wäre das ist möglicherweise an verschiedenen Institution Anreize gips um umgehende möglichst gut abschneiden zu lassen wobei man dazu sagen muss grundsätzlich ist das mit Sicherheit kein empfehlenswerte Vorgehen weil es für die Reputation Institution sowas ziemlich schnell zum bumerang|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="11" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="11" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="21" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="21" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="12570" y="5685">
+   </LINKPOINT>
+   <LINKPOINT x="3780" y="5685">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Count" dstnodeid="14" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Match 1" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Down Edge" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Reset" linkstyle="VHV">
+   <LINKPOINT x="11920" y="9515">
+   </LINKPOINT>
+   <LINKPOINT x="13250" y="9520">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="2010" top="0" width="23190" height="15150">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="3" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="15420" top="8325" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15420" top="8325" width="8460" height="2430">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|curl -k -v --data &quot;grant_type=password&amp;username=burk&amp;password=jimpanse87&amp;client_id=my_client&quot; &quot;https://services.open.xerox.com/api/Auth/OAuth2&quot;|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="33" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="1" encoded="0" pintype="Input" visible="1" values="|curl -v -X  POST -k  &quot;https://services.open.xerox.com/bus/op/fst-nlp-tools/PartOfSpeechTaggingString&quot; \&cr;&lf;  -H &quot;Authorization: Bearer http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name=Burk&amp;Issuer=https://open.xerox.com&amp;Audience=https://open.xerox.com&amp;ExpiresOn=1439223852&amp;HMACSHA256=Qrm%2fUhwPbGhjUpZOEEnZZYGZqwKXI9vkBLlhJuNP9jY%3d&quot; \&cr;&lf;  -H &quot;Content-Type: application/json; charset=utf-8&quot; \&cr;&lf;  -H &quot;Content-Length: 38&quot; \&cr;&lf;  -d &quot;{&quot;inputtext&quot;:&quot;test&quot;,&quot;language&quot;:&quot;english&quot;}&quot; \ &cr;&lf; |">
+   </PIN>
+   <BOUNDS type="Node" left="14520" top="5685" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14520" top="5685" width="23340" height="2265">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" pintype="Configuration" values="Arguments">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="36" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="1" encoded="0" pintype="Input" visible="0" values="|curl -v -X  POST -k &quot;https://services.open.xerox.com/bus/op/fst-nlp-tools/PartOfSpeechTaggingString&quot; \&cr;&lf;  -H &quot;Authorization: OAuth &quot;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name=Burk&amp;Issuer=https://open.xerox.com&amp;Audience=https://open.xerox.com&amp;ExpiresOn=1439220337&amp;HMACSHA256=SKpSRFNgELoU15gk2XDuE9XAM9dpQvtXtGg96symKLQ%3d&quot;&quot; \&cr;&lf;  -H &quot;Content-Type: application/json; charset=utf-8&quot; \&cr;&lf;  -H &quot;Content-Length: 28&quot; \&cr;&lf;  -d &quot;{&quot;inputtext&quot;:&quot;This is a test&quot;,&quot;language&quot;:&quot;english&quot;}&quot; \ &cr;&lf; |">
+   </PIN>
+   <BOUNDS type="Node" left="25455" top="9525" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="25455" top="9525" width="23340" height="2265">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" pintype="Configuration" values="Arguments">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="1500" top="9810" width="10485" height="270">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="37" dstpinname="File">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Show Window">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Block until finished">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Kill">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="ExitCode" dstnodeid="8" dstpinname="Y Input Value" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Result" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="IsRunning" dstnodeid="16" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="IsRunning" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Result" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   </PATCH>

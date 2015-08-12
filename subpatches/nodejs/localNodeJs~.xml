@@ -1,0 +1,301 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Desktop\Stimmen\subpatches\nodejs\localNodeJs.v4p" systemname="localNodeJs" filename="D:\workspace\_research\nodejsPrototype\subpatches\localNodeJs.v4p" scrollx="0" scrolly="2700">
+   <BOUNDS type="Window" left="5220" top="735" width="17490" height="11655">
+   </BOUNDS>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="1125" top="510" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1125" top="510" width="930" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|start nodejs|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="2805" top="510" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2805" top="510" width="900" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|stop nodejs|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="4440" top="510" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4440" top="510" width="1860" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="server\server.js">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|path to script|">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <NODE systemname="IP (Network)" nodename="IP (Network)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="4185" top="1965" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="IP" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4875" top="4140" width="4065" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4875" top="4140" width="4065" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|^ check here if the correct IP (your pc) is sent to node|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="5130" top="2550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="0.0.0.0">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="4590" top="2910" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Inverse Output" dstnodeid="10" dstpinname="Select" linkstyle="VHV">
+   <LINKPOINT x="5520" y="2850">
+   </LINKPOINT>
+   <LINKPOINT x="5130" y="2850">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="IP" dstnodeid="10" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="4875" y="2573">
+   </LINKPOINT>
+   <LINKPOINT x="4620" y="2573">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="IP" dstnodeid="11" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="4935" y="2385">
+   </LINKPOINT>
+   <LINKPOINT x="5130" y="2385">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4605" top="3810" width="1410" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4605" top="3810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="8" systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden">
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="4590" top="3345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="First Slice" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="9" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2460" top="6465" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Show Window" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Block until finished" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Kill" visible="1">
+   </PIN>
+   <PIN pinname="Execute" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1">
+   </PIN>
+   <PIN pinname="File" visible="1" slicecount="1" values="C:\Windows\system32\cmd.exe">
+   </PIN>
+   <PIN pinname="Working Directory" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="PID" visible="1">
+   </PIN>
+   <PIN pinname="Kill Children" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Kill" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2835" y="3608">
+   </LINKPOINT>
+   <LINKPOINT x="3300" y="3608">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Execute" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="1170" y="3608">
+   </LINKPOINT>
+   <LINKPOINT x="3465" y="3608">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3585" top="5250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" values="|/C node|">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="5" dstpinname="Input 3" linkstyle="VHV">
+   <LINKPOINT x="4640" y="4433">
+   </LINKPOINT>
+   <LINKPOINT x="3910" y="4433">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="6" dstpinname="Commandline Arguments" linkstyle="VHV">
+   <LINKPOINT x="3480" y="5993">
+   </LINKPOINT>
+   <LINKPOINT x="2925" y="5993">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Quote (String)" nodename="Quote (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3750" top="4755" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="4" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4455" y="2753">
+   </LINKPOINT>
+   <LINKPOINT x="3780" y="2753">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="3760" y="5138">
+   </LINKPOINT>
+   <LINKPOINT x="3800" y="5138">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2445" top="7815" width="15150" height="7545">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2445" top="7815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Result">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Result" dstnodeid="3" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3240" top="6915" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="6915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="IsRunning">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="IsRunning" dstnodeid="2" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3960" top="7005" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3960" top="7005" width="1590" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; node.js is running|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2625" top="5250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="0" dstpinname="Filename" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4440" y="3000">
+   </LINKPOINT>
+   <LINKPOINT x="2655" y="3000">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Path" dstnodeid="6" dstpinname="Working Directory" linkstyle="VHV">
+   <LINKPOINT x="2600" y="5993">
+   </LINKPOINT>
+   <LINKPOINT x="2695" y="5993">
+   </LINKPOINT>
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>

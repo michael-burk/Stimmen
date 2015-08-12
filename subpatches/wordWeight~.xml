@@ -1,0 +1,451 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Desktop\Stimmen\subpatches\wordWeight.v4p" systemname="wordWeight" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\wordWeight.v4p" scrollx="30" scrolly="645">
+   <BOUNDS type="Window" left="-15435" top="1005" width="15945" height="15525">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE id="0" systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4125" top="2055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|asiatische Kunst in Berlin in unserer Kultur heute Sommerreifen humboldtforum dass in vier Jahren seine Türen öffnen soll im stadtschloss in Berlin Authentizität so ganz leicht geht einem das wort gar nicht über die Lippen dabei ist es seit geraumer Zeit in aller Munde echt und glaubwürdig verlässlich und unverstellt von mir selbst sein soll aber auch die chefin soll natürlich der Partner sein ganz bei sich und 100|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="1" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3300" top="9975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="0.08">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3300" top="9975">
+   </BOUNDS>
+   </NODE>
+   <NODE id="2" systemname="Count (String)" nodename="Count (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="6195" top="3855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="6120" top="6270" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="10" values="|Munde echt|,|stadtschloss in Berlin|,|Türen öffnen|,|glaubwürdig verlässlich|,|asiatische Kunst|,Lippen,Kultur,humboldtforum,geraumer,unverstellt">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="4" systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="5475" top="8370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="12" values="Unruhen,aufziehen,Stabilität,schweren,Wirtschaftskrise,Dollar,und,ermöglicht,überleben,liegt,Eigenversorgung,15">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden">
+   <BOUNDS type="Node" left="5460" top="9045" width="1440" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="5700" top="7530" width="585" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="8" values="etliche,Marineschiffe,kreuzung,Flüchtlingen,in,Seenot,präsenz,größere">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="Select (String)" nodename="Select (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4965" top="9975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="12" values="Unruhen,aufziehen,Stabilität,schweren,Wirtschaftskrise,Dollar,und,ermöglicht,überleben,liegt,Eigenversorgung,15">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Former Slice" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="8" systemname="Change (String)" nodename="Change (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="6855" top="8550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|Munde echtstadtschloss in BerlinTüren öffnenglaubwürdig verlässlichasiatische KunstLippenKulturhumboldtforumgeraumerunverstellt|">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="9" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9885" top="5505" width="1500" height="420">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9885" top="5505" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Relevance - Input|">
+   </PIN>
+   </NODE>
+   <NODE id="10" systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3495" top="11730" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="21" values="0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909,0.943909">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="11" systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden">
+   <BOUNDS type="Node" left="6840" top="8085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="8" values="|jetzige premierminister|,|Zivilisten in Hiroshima|,|gesetzt die bombe|,|tierisch längst|,|Krieg beendet|,nachweislich,tut,Legende">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="12" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7275" top="2310" width="3030" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7275" top="2310" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Keyword">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="13" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4125" top="14970" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4125" top="14970" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="result">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="14" systemname="DeleteSlice (Spreads)" nodename="DeleteSlice (Spreads)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="3285" top="11010" width="2235" height="270">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1" slicecount="13" values="5,40,75,103,138,199,222,234,269,305,314,352,401">
+   </PIN>
+   <PIN pinname="Spread" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="1.04">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="15" systemname="DeleteSlice (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="DeleteSlice (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4125" top="12135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="16" systemname="Cons (String)" nodename="Cons (String)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="4140" top="13350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" pintype="Input">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" pintype="Input">
+   </PIN>
+   <BOUNDS type="Box" left="-19980" top="-11250" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Output Bin Size" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="5" values="republikaner,Neue,Zürcher,Zeitung,RAM">
+   </PIN>
+   </NODE>
+   <NODE id="17" systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0.56">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="3285" top="12510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="-19980" top="-10950" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Output Bin Size" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="18" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1665" top="3585" width="1500" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1665" top="3585" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Entity">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="19" systemname="Cons (String)" nodename="Cons (String)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="5700" top="6990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="Sizilien">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="20" systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Count" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Node" left="1590" top="8100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="High" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="21" systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden">
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="1680" top="4065" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="10" values="|Munde echt|,|stadtschloss in Berlin|,|Türen öffnen|,|glaubwürdig verlässlich|,|asiatische Kunst|,Lippen,Kultur,humboldtforum,geraumer,unverstellt">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="22" systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" pintype="Input" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Select" visible="1" pintype="Input" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Node" left="1500" top="8865" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="-19980" top="-11250" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Former Slice" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Count" dstnodeid="22" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="20" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="21" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Former Slice" dstnodeid="14" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="17" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="17" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="17" dstpinname="Input 3">
+   </LINK>
+   <NODE id="23" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="3285" top="13950" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3285" top="13950" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Count" dstnodeid="1" dstpinname="Select" linkstyle="Bezier">
+   <LINKPOINT x="6195" y="7050">
+   </LINKPOINT>
+   <LINKPOINT x="3810" y="7050">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="10" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="9815" y="8810">
+   </LINKPOINT>
+   <LINKPOINT x="3625" y="8815">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="13" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="15" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Former Slice" dstnodeid="15" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="16" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="7290" y="7935">
+   </LINKPOINT>
+   <LINKPOINT x="4395" y="7935">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="24" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Output 1|">
+   </PIN>
+   <BOUNDS type="Box" left="4125" top="14010" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4125" top="14010" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="24" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="7" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="5705" y="8943">
+   </LINKPOINT>
+   <LINKPOINT x="5005" y="8833">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="7" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="4" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="4210" y="5258">
+   </LINKPOINT>
+   <LINKPOINT x="5435" y="5408">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="4" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="3" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="7290" y="4403">
+   </LINKPOINT>
+   <LINKPOINT x="6150" y="4403">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Count" dstnodeid="6" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="19" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="19" dstpinname="Input 2" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="4230" y="3075">
+   </LINKPOINT>
+   <LINKPOINT x="6135" y="3075">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="11" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="7290" y="5303">
+   </LINKPOINT>
+   <LINKPOINT x="6870" y="5303">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="16" dstpinname="Input 3">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4140" top="1395" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4140" top="1395" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|asiatische Kunst in Berlin in unserer Kultur heute Sommerreifen humboldtforum dass in vier Jahren seine Türen öffnen soll im stadtschloss in Berlin Authentizität so ganz leicht geht einem das wort gar nicht über die Lippen dabei ist es seit geraumer Zeit in aller Munde echt und glaubwürdig verlässlich und unverstellt von mir selbst sein soll aber auch die chefin soll natürlich der Partner sein ganz bei sich und 100|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="OnChange" dstnodeid="5" dstpinname="Set">
+   </LINK>
+   </PATCH>
