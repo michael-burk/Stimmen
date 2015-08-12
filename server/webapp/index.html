@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>STIMMEN</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<!-- CSS
+  ================================================== -->
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/skeleton/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/skeleton/layout.css">
+	<link href="stylesheets/jqUI-theme/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+	<link href="stylesheets/minicolors/jquery.minicolors.css" rel="stylesheet">
+	<link href="stylesheets/core.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+  <!-- Javascript
+  ================================================== -->
+	<script language="javascript" type="text/javascript" src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/vendor/jquery.minicolors.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/vendor/socket.io.js"></script>
+	<script language="javascript" type="text/javascript" src="js/core.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+<div class="one-third column">	
+
+			<h5>Result</h5>
+			<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
+			</div>
+
+			
+			
+</div>
+
+
+<script type="text/javascript">
+	
+
+	var recognizer = new webkitSpeechRecognition();
+	recognizer.lang = "de";
+	recognizer.continuous = true;
+	recognizer.interimResults = true;
+	recognizer.onresult = function(event) {
+	    if (event.results.length > 0) {
+	        var result = event.results[event.results.length-1];
+	        if(result.isFinal) {
+	            console.log(result[0].transcript);
+	           //console.log(event);
+
+	        	var valuearray = new Array();
+				valuearray.push(result[0].transcript);
+				sendMessage("result", valuearray);
+
+				$("#resultHolder").append( result[0].transcript);
+				//console.log(valuearray);
+
+
+	        }
+	    }  
+	};
+
+
+
+
+
+</script>
+
+
+
+	
+</body>
+</html>
