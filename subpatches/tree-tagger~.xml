@@ -610,7 +610,11 @@
    </LINK>
    <LINK srcnodeid="56" srcpinname="Output" dstnodeid="47" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Set">
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="12345" y="11033">
+   </LINKPOINT>
+   <LINKPOINT x="7170" y="11033">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="40" dstpinname="Input">
    </LINK>

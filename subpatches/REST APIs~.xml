@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="45" scrolly="20985">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="16545">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2985" top="13335" width="0" height="0">
    </BOUNDS>
@@ -18,6 +18,8 @@
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Executable">
    </PIN>
    <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
@@ -60,6 +62,8 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -107,6 +111,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Block until finished|">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="6975" top="13335" width="0" height="0">
@@ -128,6 +134,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
@@ -151,21 +159,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="7980" top="14985" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7980" top="14985" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ExitCode">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="6">
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
@@ -204,54 +198,6 @@
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Input 2" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="RegExpr (String)" nodename="RegExpr (String)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="11460" top="15795" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="(^Reply\sfrom.*)">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Case Sensitive Match" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Match 1" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="11475" top="16275" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="10740" top="16710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   <PIN pinname="Input" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="10755" top="17250" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10755" top="17250" width="2730" height="450">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Progress">
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="16">
@@ -340,12 +286,6 @@
    <LINKPOINT x="470" y="7535">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="13" srcpinname="Count" dstnodeid="14" dstpinname="Count">
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Match 1" dstnodeid="13" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Down Edge" dstnodeid="18" dstpinname="Input">
@@ -371,6 +311,8 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
    <NODE id="33" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input String" slicecount="1" encoded="0" pintype="Input" visible="1" values="|curl -v -X  POST -k  &quot;https://services.open.xerox.com/bus/op/fst-nlp-tools/PartOfSpeechTaggingString&quot; \&cr;&lf;  -H &quot;Authorization: Bearer http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name=Burk&amp;Issuer=https://open.xerox.com&amp;Audience=https://open.xerox.com&amp;ExpiresOn=1439223852&amp;HMACSHA256=Qrm%2fUhwPbGhjUpZOEEnZZYGZqwKXI9vkBLlhJuNP9jY%3d&quot; \&cr;&lf;  -H &quot;Content-Type: application/json; charset=utf-8&quot; \&cr;&lf;  -H &quot;Content-Length: 38&quot; \&cr;&lf;  -d &quot;{&quot;inputtext&quot;:&quot;test&quot;,&quot;language&quot;:&quot;english&quot;}&quot; \ &cr;&lf; |">
@@ -395,7 +337,7 @@
    </BOUNDS>
    <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="False">
    </PIN>
    <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
    </PIN>
@@ -440,10 +382,6 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Execute">
    </LINK>
-   <LINK srcnodeid="37" srcpinname="ExitCode" dstnodeid="8" dstpinname="Y Input Value" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="37" srcpinname="Result" dstnodeid="12" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="37" srcpinname="IsRunning" dstnodeid="16" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="37" srcpinname="IsRunning" dstnodeid="9" dstpinname="Y Input Value">
@@ -467,6 +405,8 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="String">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
    <NODE systemname="JsonParser (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonParser (JSON)" componentmode="Hidden" id="40">
    <BOUNDS type="Node" left="2805" top="22635" width="100" height="100">
@@ -479,7 +419,7 @@
    <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="2805" top="23190" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="key" slicecount="1" values="||">
+   <PIN pinname="key" slicecount="1" values="type">
    </PIN>
    <PIN pinname="path" slicecount="1" values="response.entities">
    </PIN>
@@ -497,9 +437,9 @@
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="40" dstpinname="JSON">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2790" top="24135" width="8970" height="26595">
+   <BOUNDS type="Box" left="2235" top="24285" width="9180" height="31545">
    </BOUNDS>
-   <BOUNDS type="Node" left="2790" top="24135" width="0" height="0">
+   <BOUNDS type="Node" left="2235" top="24285" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -507,9 +447,13 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="1">
+   <PIN pinname="Rows" slicecount="1" values="20">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="12" values="|{&cr;&lf;  &quot;id&quot;: 0,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Person&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    2,&cr;&lf;    3&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Александре II&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/people/person&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Александре II&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 15,&cr;&lf;  &quot;endingPos&quot;: 28&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 1,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    109&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Россия&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Россия&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 744,&cr;&lf;  &quot;endingPos&quot;: 750&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 2,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    114,&cr;&lf;    115&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 787,&cr;&lf;  &quot;endingPos&quot;: 804&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 3,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    132&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Болгария&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Болгария&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 914,&cr;&lf;  &quot;endingPos&quot;: 922&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 4,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    134&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Сербия&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Сербия&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 924,&cr;&lf;  &quot;endingPos&quot;: 930&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 5,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    136&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Черногория&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Черногория&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 932,&cr;&lf;  &quot;endingPos&quot;: 942&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 6,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    140,&cr;&lf;    141&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 969,&cr;&lf;  &quot;endingPos&quot;: 986&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 7,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Person&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    152,&cr;&lf;    153&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Александр III&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/people/person&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Александр III&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1041,&cr;&lf;  &quot;endingPos&quot;: 1054&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 8,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Person&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    237,&cr;&lf;    238&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Александра III&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/people/person&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Александра III&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1668,&cr;&lf;  &quot;endingPos&quot;: 1682&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 9,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    248&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Гааге&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Гааге&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1756,&cr;&lf;  &quot;endingPos&quot;: 1761&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 10,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    253&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Великобританией&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Великобританией&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1776,&cr;&lf;  &quot;endingPos&quot;: 1791&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 11,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    258&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Францией&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Францией&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1801,&cr;&lf;  &quot;endingPos&quot;: 1809&cr;&lf;}|">
+   <PIN pinname="Input String" visible="1" slicecount="3" values="|&quot;response&quot;: {&cr;&lf;  &quot;language&quot;: &quot;ger&quot;,&cr;&lf;  &quot;languageIsReliable&quot;: true,&cr;&lf;  &quot;entities&quot;: [&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 0,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        7&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/projects/project_participant&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/exhibitions/exhibition_subject&quot;,&cr;&lf;        &quot;/travel/travel_destination&quot;,&cr;&lf;        &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;        &quot;/location/region&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/visual_art/art_subject&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;        &quot;/location/administrative_division&quot;,&cr;&lf;        &quot;/location/dated_location&quot;,&cr;&lf;        &quot;/food/beer_country_region&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/religion/religious_leadership_jurisdiction&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/film/film_location&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 9.11652,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Ukraine&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/07t21&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.229087,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;startingPos&quot;: 46,&cr;&lf;      &quot;endingPos&quot;: 53,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q212&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 1,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        15&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Staat&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/media_common/quotation_subject&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 1.18815,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Staat&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Staat&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/06_02&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.293095,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;State (polity)&quot;,&cr;&lf;      &quot;startingPos&quot;: 116,&cr;&lf;      &quot;endingPos&quot;: 121,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q7275&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 2,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        24&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Sowjetunion&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/spaceflight/space_program_sponsor&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/film/film_subject&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/location/dated_location&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 10.4064,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Sowjetunion&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Sowjetunion&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/05vz3zq&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.244497,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Soviet Union&quot;,&cr;&lf;      &quot;startingPos&quot;: 157,&cr;&lf;      &quot;endingPos&quot;: 168,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q15180&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 3,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        55&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/projects/project_participant&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/exhibitions/exhibition_subject&quot;,&cr;&lf;        &quot;/travel/travel_destination&quot;,&cr;&lf;        &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;        &quot;/location/region&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/visual_art/art_subject&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;        &quot;/location/administrative_division&quot;,&cr;&lf;        &quot;/location/dated_location&quot;,&cr;&lf;        &quot;/food/beer_country_region&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/religion/religious_leadership_jurisdiction&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/film/film_location&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 9.11652,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Ukraine&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/07t21&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.229087,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;startingPos&quot;: 363,&cr;&lf;      &quot;endingPos&quot;: 370,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q212&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 4,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        63&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Perestroika&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/time/event&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 6.74263,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Perestroika&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;perestroika&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/060nw&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.250926,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Perestroika&quot;,&cr;&lf;      &quot;startingPos&quot;: 403,&cr;&lf;      &quot;endingPos&quot;: 414,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q167634&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 5,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        66&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Streik&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/film/film_subject&quot;,&cr;&lf;        &quot;/visual_art/art_subject&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 2.04586,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Streik&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;streik&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/0149p3&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.232989,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Strike action&quot;,&cr;&lf;      &quot;startingPos&quot;: 428,&cr;&lf;      &quot;endingPos&quot;: 434,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q49776&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 6,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        66,&cr;&lf;        67,&cr;&lf;        68&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Bergarbeiterstreik von 1889&quot;,&cr;&lf;      &quot;confidenceScore&quot;: 1.13811,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Bergarbeiterstreik_von_1889&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;streik von Bergarbeitern&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.0319231,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;      &quot;startingPos&quot;: 428,&cr;&lf;      &quot;endingPos&quot;: 452,&cr;&lf;      &quot;wikidataId&quot;: &quot;&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 7,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        80&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Bergmann&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/fictional_universe/character_occupation&quot;,&cr;&lf;        &quot;/people/profession&quot;,&cr;&lf;        &quot;/book/book_subject&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 1.1102,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Bergmann&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Bergarbeiter&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/04n7j9g&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.114939,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Miner&quot;,&cr;&lf;      &quot;startingPos&quot;: 525,&cr;&lf;      &quot;endingPos&quot;: 537,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q820037&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 8,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        84&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Russland&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/meteorology/cyclone_affected_area&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;,&cr;&lf;        &quot;/location/administrative_division&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/symbols/coat_of_arms_bearer&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/tv/tv_location&quot;,&cr;&lf;        &quot;/food/beer_country_region&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/travel/travel_destination&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/media_common/netflix_genre&quot;,&cr;&lf;        &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/location/dated_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 7.56047,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Russland&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Russland&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/06bnz&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.332313,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Russia&quot;,&cr;&lf;      &quot;startingPos&quot;: 551,&cr;&lf;      &quot;endingPos&quot;: 559,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q159&quot;&cr;&lf;    }&cr;&lf;  ]&cr;&lf;}|,|&quot;time&quot;: 2.85844|,|&quot;ok&quot;: true|">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="50">
@@ -533,7 +477,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10035" top="4425" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Osmanisches Reich|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Die Überlieferungen über die Anfangszeit des Osmanischen Reiches sind spärlich, wohl, weil es sich um ein kleines unter relativ vielen Beyliks (Fürstentümer) handelte. Diese Fürstentümer waren nach der Zerschlagung des Sultanats der ebenfalls turkstämmigen Rum-Seldschuken in Kleinasien entstanden. Viele wertvolle Bücher und Texte über diese Anfangszeit sind jedoch bei der Zerstörung von Bursa durch Timurlenk 1402 verloren gegangen. Der Namensgeber Osman I. war zu Anfang des 14. Jahrhunderts der Herrscher über einen nomadischen Stamm oder eine Gruppe von Ghāzīs, der bei Söğüt im nordwestlichen Anatolien seinen Sitz hatte, und wird u. a. von Ibn Battuta als „Turkmene“ bezeichnet. Der Überlieferung nach entstammte er dem oghusischen Clan der Kayı aus dem Stamm der Bozok. Turkmene war zur damaligen Zeit ein Synonym für Oghuse.&cr;&lf;&cr;&lf;Ab 1299 machte Osman seinen Beylik zunehmend unabhängig vom Reich der Rum-Seldschuken. Dieses Jahr wird daher traditionell als das Gründungsjahr des Osmanischen Reiches angesehen. Am 27. Juli 1302 führten die Osmanen ihre erste Schlacht gegen eine byzantinische Armee (Schlacht von Bapheus/Schlacht von Koyunhisar), die für die Osmanen mit einem Sieg endete. Dem byzantinischen Gelehrten Georgios Pachymeres nach war es dieser Sieg über eine byzantinische Armee, der Osman Ruhm in weiten Teilen Anatoliens einbrachte. So wird der 27. Juli 1302 als Tag der Dynastiegründung angesehen.[6]|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -543,36 +487,12 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="50" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="37" srcpinname="Result" dstnodeid="19" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="17760" top="18825" width="6900" height="4575">
-   </BOUNDS>
-   <BOUNDS type="Node" left="17760" top="18825" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="107" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,| 49  107k   49 54854  100   261  42821    203  0:00:02  0:00:01  0:00:01 42821&cr;&lf;|,|100  107k  100  107k  100   261  76593    181  0:00:01  0:00:01 --:--:-- 76593&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: offensichtlich&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: den&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: letzten&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Jahren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: eben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: spezifische&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: lokale&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Faktoren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: injection&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Einfluss&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: darauf&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: gewonnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: haben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: vielleicht&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: differenzen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: einzelnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: fächer&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="17790" top="18045" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="90" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,| 49  107k   49 54854  100   261  42821    203  0:00:02  0:00:01  0:00:01 42821&cr;&lf;|,|100  107k  100  107k  100   261  76593    181  0:00:01  0:00:01 --:--:-- 76593&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: offensichtlich&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: den&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: letzten&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Jahren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: eben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: spezifische&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: lokale&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Faktoren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: injection&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Einfluss&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: darauf&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: gewonnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: haben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="37" srcpinname="Error" dstnodeid="52" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="51" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="37" dstpinname="Commandline Arguments">
    </LINK>
@@ -602,20 +522,10 @@
    </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="50" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="JsonParser (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonParser (JSON)" componentmode="Hidden" id="57">
-   <BOUNDS type="Node" left="12855" top="23610" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="JSON" visible="1" slicecount="1" values="|{&quot;status&quot;:&quot;OK&quot;,&quot;usage&quot;:&quot;By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html&quot;,&quot;url&quot;:&quot;&quot;,&quot;language&quot;:&quot;german&quot;,&quot;entities&quot;:[{&quot;type&quot;:&quot;Country&quot;,&quot;relevance&quot;:&quot;0.165&quot;,&quot;count&quot;:&quot;1&quot;,&quot;text&quot;:&quot;Russland&quot;}]}|">
-   </PIN>
-   <PIN pinname="Output json" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="57" dstpinname="JSON">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="59" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="13020" top="25245" width="8970" height="26595">
+   <BOUNDS type="Box" left="13080" top="24435" width="5850" height="6900">
    </BOUNDS>
-   <BOUNDS type="Node" left="13020" top="25245" width="0" height="0">
+   <BOUNDS type="Node" left="13080" top="24435" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -625,29 +535,9 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="39" values="response.entities[0],response.entities[0].id,response.entities[0].type,response.entities[0].type[0],response.entities[0].type[1],response.entities[0].type[2],response.entities[0].type[3],response.entities[0].type[4],response.entities[0].matchingTokens,response.entities[0].matchingTokens[0],response.entities[0].entityId,response.entities[0].freebaseTypes,response.entities[0].freebaseTypes[0],response.entities[0].freebaseTypes[1],response.entities[0].freebaseTypes[2],response.entities[0].freebaseTypes[3],response.entities[0].freebaseTypes[4],response.entities[0].freebaseTypes[5],response.entities[0].freebaseTypes[6],response.entities[0].freebaseTypes[7],response.entities[0].freebaseTypes[8],response.entities[0].freebaseTypes[9],response.entities[0].freebaseTypes[10],response.entities[0].freebaseTypes[11],response.entities[0].freebaseTypes[12],response.entities[0].freebaseTypes[13],response.entities[0].freebaseTypes[14],response.entities[0].freebaseTypes[15],response.entities[0].freebaseTypes[16],response.entities[0].freebaseTypes[17],response.entities[0].confidenceScore,response.entities[0].wikiLink,response.entities[0].matchedText,response.entities[0].freebaseId,response.entities[0].relevanceScore,response.entities[0].entityEnglishId,response.entities[0].startingPos,response.entities[0].endingPos,response.entities[0].wikidataId">
+   <PIN pinname="Input String" visible="1" slicecount="9" values="|{&cr;&lf;  &quot;id&quot;: 0,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Wikidata:Q532&quot;,&cr;&lf;    &quot;Place&quot;,&cr;&lf;    &quot;PopulatedPlace&quot;,&cr;&lf;    &quot;Country&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    7&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Ukraine&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/projects/project_participant&quot;,&cr;&lf;    &quot;/organization/organization_founder&quot;,&cr;&lf;    &quot;/exhibitions/exhibition_subject&quot;,&cr;&lf;    &quot;/travel/travel_destination&quot;,&cr;&lf;    &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;    &quot;/location/region&quot;,&cr;&lf;    &quot;/organization/organization_scope&quot;,&cr;&lf;    &quot;/visual_art/art_subject&quot;,&cr;&lf;    &quot;/military/military_combatant&quot;,&cr;&lf;    &quot;/location/location&quot;,&cr;&lf;    &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;    &quot;/location/administrative_division&quot;,&cr;&lf;    &quot;/location/dated_location&quot;,&cr;&lf;    &quot;/food/beer_country_region&quot;,&cr;&lf;    &quot;/book/book_subject&quot;,&cr;&lf;    &quot;/location/statistical_region&quot;,&cr;&lf;    &quot;/sports/sport_country&quot;,&cr;&lf;    &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;    &quot;/religion/religious_leadership_jurisdiction&quot;,&cr;&lf;    &quot;/biology/breed_origin&quot;,&cr;&lf;    &quot;/location/country&quot;,&cr;&lf;    &quot;/film/film_location&quot;,&cr;&lf;    &quot;/organization/organization_member&quot;,&cr;&lf;    &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;    &quot;/symbols/flag_referent&quot;,&cr;&lf;    &quot;/sports/sports_team_location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 9.11652,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Ukraine&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Ukraine&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/07t21&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.229087,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Ukraine&quot;,&cr;&lf;  &quot;startingPos&quot;: 46,&cr;&lf;  &quot;endingPos&quot;: 53,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q212&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 1,&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    15&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Staat&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/book/book_subject&quot;,&cr;&lf;    &quot;/media_common/quotation_subject&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 1.18815,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Staat&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Staat&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/06_02&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.293095,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;State (polity)&quot;,&cr;&lf;  &quot;startingPos&quot;: 116,&cr;&lf;  &quot;endingPos&quot;: 121,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q7275&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 2,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Wikidata:Q532&quot;,&cr;&lf;    &quot;Place&quot;,&cr;&lf;    &quot;PopulatedPlace&quot;,&cr;&lf;    &quot;Country&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    24&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Sowjetunion&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;,&cr;&lf;    &quot;/biology/breed_origin&quot;,&cr;&lf;    &quot;/location/statistical_region&quot;,&cr;&lf;    &quot;/spaceflight/space_program_sponsor&quot;,&cr;&lf;    &quot;/organization/organization_member&quot;,&cr;&lf;    &quot;/organization/organization_founder&quot;,&cr;&lf;    &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;    &quot;/film/film_subject&quot;,&cr;&lf;    &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;    &quot;/book/book_subject&quot;,&cr;&lf;    &quot;/military/military_combatant&quot;,&cr;&lf;    &quot;/organization/organization_scope&quot;,&cr;&lf;    &quot;/symbols/flag_referent&quot;,&cr;&lf;    &quot;/sports/sport_country&quot;,&cr;&lf;    &quot;/location/country&quot;,&cr;&lf;    &quot;/location/dated_location&quot;,&cr;&lf;    &quot;/sports/sports_team_location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 10.4064,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Sowjetunion&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Sowjetunion&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/05vz3zq&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.244497,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Soviet Union&quot;,&cr;&lf;  &quot;startingPos&quot;: 157,&cr;&lf;  &quot;endingPos&quot;: 168,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q15180&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 3,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Wikidata:Q532&quot;,&cr;&lf;    &quot;Place&quot;,&cr;&lf;    &quot;PopulatedPlace&quot;,&cr;&lf;    &quot;Country&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    55&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Ukraine&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/projects/project_participant&quot;,&cr;&lf;    &quot;/organization/organization_founder&quot;,&cr;&lf;    &quot;/exhibitions/exhibition_subject&quot;,&cr;&lf;    &quot;/travel/travel_destination&quot;,&cr;&lf;    &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;    &quot;/location/region&quot;,&cr;&lf;    &quot;/organization/organization_scope&quot;,&cr;&lf;    &quot;/visual_art/art_subject&quot;,&cr;&lf;    &quot;/military/military_combatant&quot;,&cr;&lf;    &quot;/location/location&quot;,&cr;&lf;    &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;    &quot;/location/administrative_division&quot;,&cr;&lf;    &quot;/location/dated_location&quot;,&cr;&lf;    &quot;/food/beer_country_region&quot;,&cr;&lf;    &quot;/book/book_subject&quot;,&cr;&lf;    &quot;/location/statistical_region&quot;,&cr;&lf;    &quot;/sports/sport_country&quot;,&cr;&lf;    &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;    &quot;/religion/religious_leadership_jurisdiction&quot;,&cr;&lf;    &quot;/biology/breed_origin&quot;,&cr;&lf;    &quot;/location/country&quot;,&cr;&lf;    &quot;/film/film_location&quot;,&cr;&lf;    &quot;/organization/organization_member&quot;,&cr;&lf;    &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;    &quot;/symbols/flag_referent&quot;,&cr;&lf;    &quot;/sports/sports_team_location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 9.11652,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Ukraine&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Ukraine&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/07t21&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.229087,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Ukraine&quot;,&cr;&lf;  &quot;startingPos&quot;: 363,&cr;&lf;  &quot;endingPos&quot;: 370,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q212&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 4,&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    63&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Perestroika&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/book/book_subject&quot;,&cr;&lf;    &quot;/time/event&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 6.74263,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Perestroika&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;perestroika&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/060nw&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.250926,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Perestroika&quot;,&cr;&lf;  &quot;startingPos&quot;: 403,&cr;&lf;  &quot;endingPos&quot;: 414,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q167634&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 5,&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    66&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Streik&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/film/film_subject&quot;,&cr;&lf;    &quot;/visual_art/art_subject&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 2.04586,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Streik&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;streik&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/0149p3&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.232989,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Strike action&quot;,&cr;&lf;  &quot;startingPos&quot;: 428,&cr;&lf;  &quot;endingPos&quot;: 434,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q49776&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 6,&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    66,&cr;&lf;    67,&cr;&lf;    68&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Bergarbeiterstreik von 1889&quot;,&cr;&lf;  &quot;confidenceScore&quot;: 1.13811,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Bergarbeiterstreik_von_1889&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;streik von Bergarbeitern&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.0319231,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 428,&cr;&lf;  &quot;endingPos&quot;: 452,&cr;&lf;  &quot;wikidataId&quot;: &quot;&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 7,&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    80&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Bergmann&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/fictional_universe/character_occupation&quot;,&cr;&lf;    &quot;/people/profession&quot;,&cr;&lf;    &quot;/book/book_subject&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 1.1102,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Bergmann&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Bergarbeiter&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/04n7j9g&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.114939,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Miner&quot;,&cr;&lf;  &quot;startingPos&quot;: 525,&cr;&lf;  &quot;endingPos&quot;: 537,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q820037&quot;&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 8,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Wikidata:Q532&quot;,&cr;&lf;    &quot;Place&quot;,&cr;&lf;    &quot;PopulatedPlace&quot;,&cr;&lf;    &quot;Country&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    84&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Russland&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/statistical_region&quot;,&cr;&lf;    &quot;/meteorology/cyclone_affected_area&quot;,&cr;&lf;    &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;    &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;    &quot;/book/book_subject&quot;,&cr;&lf;    &quot;/organization/organization_founder&quot;,&cr;&lf;    &quot;/sports/sports_team_location&quot;,&cr;&lf;    &quot;/location/administrative_division&quot;,&cr;&lf;    &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;    &quot;/symbols/coat_of_arms_bearer&quot;,&cr;&lf;    &quot;/military/military_combatant&quot;,&cr;&lf;    &quot;/tv/tv_location&quot;,&cr;&lf;    &quot;/food/beer_country_region&quot;,&cr;&lf;    &quot;/organization/organization_member&quot;,&cr;&lf;    &quot;/travel/travel_destination&quot;,&cr;&lf;    &quot;/biology/breed_origin&quot;,&cr;&lf;    &quot;/media_common/netflix_genre&quot;,&cr;&lf;    &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;    &quot;/symbols/flag_referent&quot;,&cr;&lf;    &quot;/location/location&quot;,&cr;&lf;    &quot;/location/country&quot;,&cr;&lf;    &quot;/sports/sport_country&quot;,&cr;&lf;    &quot;/organization/organization_scope&quot;,&cr;&lf;    &quot;/location/dated_location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 7.56047,&cr;&lf;  &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Russland&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Russland&quot;,&cr;&lf;  &quot;freebaseId&quot;: &quot;/m/06bnz&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0.332313,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;Russia&quot;,&cr;&lf;  &quot;startingPos&quot;: 551,&cr;&lf;  &quot;endingPos&quot;: 559,&cr;&lf;  &quot;wikidataId&quot;: &quot;Q159&quot;&cr;&lf;}|">
    </PIN>
    </NODE>
-   <NODE systemname="SelectToken (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="SelectToken (JSON)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="13035" top="24735" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="JObject" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Recursive" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Parse" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Path" slicecount="1" values="response.entities">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="path" slicecount="1" values="response.entities">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="58" dstpinname="JObject">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="59" dstpinname="Input String">
-   </LINK>
    <NODE systemname="EncodeUTF8 (String)" filename="plugins\StringEncodeUTF8\StringEncodeUTF8.csproj" nodename="EncodeUTF8 (String)" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="2805" top="18645" width="100" height="100">
    </BOUNDS>
@@ -685,17 +575,73 @@
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="3" dstpinname="Input String">
    </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="2790" top="23655" width="100" height="100">
+   <BOUNDS type="Node" left="13080" top="24015" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="9" values="|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|,,|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|,|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|,,,,,|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="6">
+   <PIN pinname="Index" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="67" dstpinname="Input">
+   <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="1830" top="23190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="key" slicecount="1" values="entityId">
+   </PIN>
+   <PIN pinname="path" slicecount="1" values="response.entities">
+   </PIN>
+   <BOUNDS type="Box" left="1830" top="23190">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Object" visible="1">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Jobject" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="68" dstpinname="Jobject">
    </LINK>
-   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
+   <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="2235" top="23745" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="69" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="69" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="13095" top="23595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="key" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="path" slicecount="1" values="response.entities">
+   </PIN>
+   <BOUNDS type="Box" left="13095" top="23595">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Object" visible="1">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="70" dstpinname="Jobject">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="67" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="59" dstpinname="Input String">
    </LINK>
    </PATCH>
