@@ -403,7 +403,7 @@
    </PIN>
    <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Block until finished" slicecount="1" values="1">
+   <PIN pinname="Block until finished" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Result" visible="1">
    </PIN>
@@ -737,7 +737,7 @@
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="64">
    <BOUNDS type="Node" left="8055" top="10440" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="setappvolume">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="|setappvolume |">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" values="||" visible="1">
    </PIN>

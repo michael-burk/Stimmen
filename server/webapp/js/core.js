@@ -5,8 +5,6 @@
 */
 var socket;
 
-//var socket = io.connect('https://localhost:8002/',{secure: true});
-
 $(document).ready(function() {
 		socket = io.connect();
 		initUserInterface();

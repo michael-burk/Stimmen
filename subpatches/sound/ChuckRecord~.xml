@@ -397,7 +397,7 @@
    </BOUNDS>
    <PIN pinname="File" slicecount="1" values="nircmd.exe">
    </PIN>
-   <PIN pinname="Commandline Arguments" slicecount="1" values="|setappvolume C:\Users\Michael\Desktop\Stimmen\subpatches\sound\chuck.exe 0|">
+   <PIN pinname="Commandline Arguments" slicecount="1" values="|setappvolume C:\Users\Michael\Desktop\Stimmen\subpatches\sound\chuck.exe 0|" visible="1">
    </PIN>
    <PIN pinname="Show Window" visible="1">
    </PIN>
@@ -737,17 +737,19 @@
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="64">
    <BOUNDS type="Node" left="8055" top="10440" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="C:\Users\Michael\Desktop\Stimmen\subpatches\sound\">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="setappvolume">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="|chuck.exe 0|">
+   <PIN pinname="Input 2" slicecount="1" values="||" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="2">
+   <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="|chuck.exe 0|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="64" dstpinname="Input 1">
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="64" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="23" dstpinname="Commandline Arguments">
    </LINK>
    </PATCH>

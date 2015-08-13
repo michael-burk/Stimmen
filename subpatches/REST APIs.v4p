@@ -1,0 +1,691 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="19365">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2985" top="13335" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2985" top="13335" width="1740" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="curl.exe">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Executable">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="13200" top="13335" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13200" top="13335" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Execute">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2580" top="2865" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2580" top="2865" width="2745" height="720">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="|curl -X POST -k --include &quot;https://sentinelprojects-skyttle20.p.mashape.com/&quot; \&cr;&lf;  -H &quot;X-Mashape-Key: PboVgKjbcNmshNdtFzD5beHJMa0Xp1muExCjsnlV8yNlr93In2&quot; \&cr;&lf;  -H &quot;Content-Type: application/x-www-form-urlencoded&quot; \&cr;&lf;  -H &quot;Accept: application/json&quot; \&cr;&lf;  -d &quot;annotate=0&quot; \&cr;&lf;  -d &quot;keywords=1&quot; \&cr;&lf;  -d &quot;lang=en&quot; \&cr;&lf;  -d &quot;sentiment=1&quot; \&cr;&lf;  -d &quot;text=|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Arguments">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2790" top="19230" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2790" top="19230" width="9375" height="2625">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" encoded="0" values="|{&quot;response&quot;:{&quot;language&quot;:&quot;rus&quot;,&quot;languageIsReliable&quot;:true,&quot;entities&quot;:[{&quot;id&quot;:0,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[3],&quot;entityId&quot;:&quot;Россия&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Россия&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:18,&quot;endingPos&quot;:24},{&quot;id&quot;:1,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[8,9,10],&quot;entityId&quot;:&quot;Великим княжеством Литовским&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Великим княжеством Литовским&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:48,&quot;endingPos&quot;:76},{&quot;id&quot;:2,&quot;type&quot;:[&quot;Company&quot;],&quot;matchingTokens&quot;:[28],&quot;entityId&quot;:&quot;Терека&quot;,&quot;freebaseTypes&quot;:[&quot;/organization/organization&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Терека&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:173,&quot;endingPos&quot;:179},{&quot;id&quot;:3,&quot;type&quot;:[&quot;Company&quot;],&quot;matchingTokens&quot;:[58,59,60],&quot;entityId&quot;:&quot;Терское казачье войско&quot;,&quot;freebaseTypes&quot;:[&quot;/organization/organization&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Терское казачье войско&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:332,&quot;endingPos&quot;:354},{&quot;id&quot;:4,&quot;type&quot;:[&quot;Person&quot;],&quot;matchingTokens&quot;:[66],&quot;entityId&quot;:&quot;Ермака&quot;,&quot;freebaseTypes&quot;:[&quot;/people/person&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Ермака&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:383,&quot;endingPos&quot;:389},{&quot;id&quot;:5,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[72],&quot;entityId&quot;:&quot;Сибири&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Сибири&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:421,&quot;endingPos&quot;:427},{&quot;id&quot;:6,&quot;type&quot;:[&quot;Person&quot;],&quot;matchingTokens&quot;:[75],&quot;entityId&quot;:&quot;Ермака&quot;,&quot;freebaseTypes&quot;:[&quot;/people/person&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Ермака&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:436,&quot;endingPos&quot;:442},{&quot;id&quot;:7,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[81],&quot;entityId&quot;:&quot;Сибирь&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Сибирь&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:472,&quot;endingPos&quot;:478},{&quot;id&quot;:8,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[85,86],&quot;entityId&quot;:&quot;Россией Казанского&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Россией Казанского&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:500,&quot;endingPos&quot;:518},{&quot;id&quot;:9,&quot;type&quot;:[&quot;Person&quot;],&quot;matchingTokens&quot;:[169,170,171],&quot;entityId&quot;:&quot;Девлет I Герай&quot;,&quot;freebaseTypes&quot;:[&quot;/people/person&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Девлет I Герай&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1039,&quot;endingPos&quot;:1053},{&quot;id&quot;:10,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[176],&quot;entityId&quot;:&quot;Москву&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Москву&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1078,&quot;endingPos&quot;:1084},{&quot;id&quot;:11,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[205],&quot;entityId&quot;:&quot;Москвы&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Москвы&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1234,&quot;endingPos&quot;:1240},{&quot;id&quot;:12,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[229],&quot;entityId&quot;:&quot;Крыма&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Крыма&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1400,&quot;endingPos&quot;:1405},{&quot;id&quot;:13,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[270],&quot;entityId&quot;:&quot;Полтавой&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Полтавой&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1653,&quot;endingPos&quot;:1661},{&quot;id&quot;:14,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[288],&quot;entityId&quot;:&quot;Воронеж&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Воронеж&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1768,&quot;endingPos&quot;:1775},{&quot;id&quot;:15,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[292],&quot;entityId&quot;:&quot;Ельце&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;Ельце&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1788,&quot;endingPos&quot;:1793},{&quot;id&quot;:16,&quot;type&quot;:[&quot;Place&quot;],&quot;matchingTokens&quot;:[298,299],&quot;entityId&quot;:&quot;русского государства&quot;,&quot;freebaseTypes&quot;:[&quot;/location/location&quot;],&quot;confidenceScore&quot;:0.5,&quot;wikiLink&quot;:&quot;&quot;,&quot;matchedText&quot;:&quot;русского государства&quot;,&quot;relevanceScore&quot;:0,&quot;entityEnglishId&quot;:&quot;&quot;,&quot;startingPos&quot;:1832,&quot;endingPos&quot;:1852}]},&quot;time&quot;:0.111082,&quot;ok&quot;:true}&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Output">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="9030" top="13335" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9030" top="13335" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Block until finished|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6975" top="13335" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6975" top="13335" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Show Window|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11130" top="13335" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11130" top="13335" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Kill">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="7980" top="14985" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7980" top="14985" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ExitCode">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="6">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="13605" top="14670" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13605" top="14670" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="IsRunning">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2805" top="12420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Do Rescan" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Folder" slicecount="1" values="WindowsSystem">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="2805" top="13980" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RegExpr (String)" nodename="RegExpr (String)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="11460" top="15795" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="(^Reply\sfrom.*)">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive Match" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Match 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="11475" top="16275" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="10740" top="16710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="10755" top="17250" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10755" top="17250" width="2730" height="450">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Progress">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="13230" top="15720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Down Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="13905" top="17235" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13905" top="17235" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Completed">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="13905" top="16605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="2805" top="15045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="90" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,| 49  107k   49 54854  100   261  42821    203  0:00:02  0:00:01  0:00:01 42821&cr;&lf;|,|100  107k  100  107k  100   261  76593    181  0:00:01  0:00:01 --:--:-- 76593&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: offensichtlich&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: den&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: letzten&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Jahren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: eben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: spezifische&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: lokale&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Faktoren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: injection&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Einfluss&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: darauf&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: gewonnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: haben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="2610" top="7365" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|We have visited this restaurant a few times in the past, and the meals have been ok, but this time we were deeply disappointed.|">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="&quot;">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3810" top="4440" width="1110" height="1200">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3810" top="4440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|ist das offensichtlich in den letzten Jahren eben spezifische lokale Faktoren injection Einfluss darauf gewonnen haben da ist das da vielleicht differenzen in einzelnen fächer stärker zu tragen kommen oder eben doch auch Einflüsse der Institution selber eine rolle spielen im positiven und vielleicht auch manchmal auch in den negativen also negativ in dem sinne brauche ich jetzt zwar keine ganz konkreten belege hat aber was mich aus denkbar wäre das ist möglicherweise an verschiedenen Institution Anreize gips um umgehende möglichst gut abschneiden zu lassen wobei man dazu sagen muss grundsätzlich ist das mit Sicherheit kein empfehlenswerte Vorgehen weil es für die Reputation Institution sowas ziemlich schnell zum bumerang|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="11" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="11" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="21" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="21" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="6415" y="8080">
+   </LINKPOINT>
+   <LINKPOINT x="470" y="7535">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Count" dstnodeid="14" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Match 1" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Down Edge" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Reset" linkstyle="VHV">
+   <LINKPOINT x="13210" y="14135">
+   </LINKPOINT>
+   <LINKPOINT x="14540" y="14140">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="-26730" top="1695" width="23475" height="15180">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="25365" top="8745" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="25365" top="8745" width="8460" height="2430">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|curl -k -v --data &quot;grant_type=password&amp;username=burk&amp;password=jimpanse87&amp;client_id=my_client&quot; &quot;https://services.open.xerox.com/api/Auth/OAuth2&quot;|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="33" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="1" encoded="0" pintype="Input" visible="1" values="|curl -v -X  POST -k  &quot;https://services.open.xerox.com/bus/op/fst-nlp-tools/PartOfSpeechTaggingString&quot; \&cr;&lf;  -H &quot;Authorization: Bearer http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name=Burk&amp;Issuer=https://open.xerox.com&amp;Audience=https://open.xerox.com&amp;ExpiresOn=1439223852&amp;HMACSHA256=Qrm%2fUhwPbGhjUpZOEEnZZYGZqwKXI9vkBLlhJuNP9jY%3d&quot; \&cr;&lf;  -H &quot;Content-Type: application/json; charset=utf-8&quot; \&cr;&lf;  -H &quot;Content-Length: 38&quot; \&cr;&lf;  -d &quot;{&quot;inputtext&quot;:&quot;test&quot;,&quot;language&quot;:&quot;english&quot;}&quot; \ &cr;&lf; |">
+   </PIN>
+   <BOUNDS type="Node" left="25290" top="5970" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="25290" top="5970" width="23340" height="2265">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" pintype="Configuration" values="Xerox">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="String">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\ShellExecute.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="2790" top="14430" width="10485" height="270">
+   </BOUNDS>
+   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="|curl -X POST -k \&cr;&lf;&tab;-d &quot;apiKey=7a655444b5803aa4071725df22ce00bb377581a29fa87bf728d39fa2&quot; \&cr;&lf;&tab;-d &quot;extractors=entities,entailments&quot; \&cr;&lf;&tab;-d &quot;text=Dies ist ein sehr schönes Haus in Moskau.&quot;  \&cr;&lf;&tab;https://api.textrazor.com/|">
+   </PIN>
+   <PIN pinname="Error" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="37" dstpinname="File">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Show Window">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Block until finished">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Kill">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="ExitCode" dstnodeid="8" dstpinname="Y Input Value" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Result" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="IsRunning" dstnodeid="16" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="IsRunning" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="38" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5850" top="2580" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5850" top="2580" width="14580" height="1665">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="|curl -X POST -k \&cr;&lf;&tab;-d &quot;apiKey=7a655444b5803aa4071725df22ce00bb377581a29fa87bf728d39fa2&quot; \&cr;&lf;&tab;-d &quot;extractors=entities,entailments&quot; \&cr;&lf;&tab;-d &quot;text=|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Arguments">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   </NODE>
+   <NODE systemname="JsonParser (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonParser (JSON)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="2805" top="22635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JSON" visible="1" slicecount="1" values="|{&quot;status&quot;:&quot;OK&quot;,&quot;usage&quot;:&quot;By accessing AlchemyAPI or using information generated by AlchemyAPI, you are agreeing to be bound by the AlchemyAPI Terms of Use: http://www.alchemyapi.com/company/terms.html&quot;,&quot;url&quot;:&quot;&quot;,&quot;language&quot;:&quot;german&quot;,&quot;entities&quot;:[{&quot;type&quot;:&quot;Country&quot;,&quot;relevance&quot;:&quot;0.165&quot;,&quot;count&quot;:&quot;1&quot;,&quot;text&quot;:&quot;Russland&quot;}]}|">
+   </PIN>
+   <PIN pinname="Output json" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="2805" top="23190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="key" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="path" slicecount="1" values="response.entities">
+   </PIN>
+   <BOUNDS type="Box" left="2805" top="23190">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Object" visible="1">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="39" dstpinname="Jobject">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="40" dstpinname="JSON">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2790" top="24135" width="8970" height="26595">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2790" top="24135" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="12" values="|{&cr;&lf;  &quot;id&quot;: 0,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Person&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    2,&cr;&lf;    3&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Александре II&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/people/person&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Александре II&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 15,&cr;&lf;  &quot;endingPos&quot;: 28&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 1,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    109&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Россия&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Россия&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 744,&cr;&lf;  &quot;endingPos&quot;: 750&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 2,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    114,&cr;&lf;    115&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 787,&cr;&lf;  &quot;endingPos&quot;: 804&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 3,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    132&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Болгария&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Болгария&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 914,&cr;&lf;  &quot;endingPos&quot;: 922&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 4,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    134&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Сербия&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Сербия&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 924,&cr;&lf;  &quot;endingPos&quot;: 930&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 5,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    136&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Черногория&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Черногория&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 932,&cr;&lf;  &quot;endingPos&quot;: 942&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 6,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    140,&cr;&lf;    141&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Османской империи&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 969,&cr;&lf;  &quot;endingPos&quot;: 986&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 7,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Person&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    152,&cr;&lf;    153&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Александр III&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/people/person&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Александр III&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1041,&cr;&lf;  &quot;endingPos&quot;: 1054&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 8,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Person&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    237,&cr;&lf;    238&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Александра III&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/people/person&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Александра III&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1668,&cr;&lf;  &quot;endingPos&quot;: 1682&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 9,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    248&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Гааге&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Гааге&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1756,&cr;&lf;  &quot;endingPos&quot;: 1761&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 10,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    253&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Великобританией&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Великобританией&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1776,&cr;&lf;  &quot;endingPos&quot;: 1791&cr;&lf;}|,|{&cr;&lf;  &quot;id&quot;: 11,&cr;&lf;  &quot;type&quot;: [&cr;&lf;    &quot;Place&quot;&cr;&lf;  ],&cr;&lf;  &quot;matchingTokens&quot;: [&cr;&lf;    258&cr;&lf;  ],&cr;&lf;  &quot;entityId&quot;: &quot;Францией&quot;,&cr;&lf;  &quot;freebaseTypes&quot;: [&cr;&lf;    &quot;/location/location&quot;&cr;&lf;  ],&cr;&lf;  &quot;confidenceScore&quot;: 0.5,&cr;&lf;  &quot;wikiLink&quot;: &quot;&quot;,&cr;&lf;  &quot;matchedText&quot;: &quot;Францией&quot;,&cr;&lf;  &quot;relevanceScore&quot;: 0,&cr;&lf;  &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;  &quot;startingPos&quot;: 1801,&cr;&lf;  &quot;endingPos&quot;: 1809&cr;&lf;}|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="5715" top="9300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|Dies ist ein sehr schönes Haus in Moskau.|">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="|&quot;  \&cr;&lf;&tab;|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" slicecount="1" values="https://api.textrazor.com/">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="49" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10035" top="4425" width="10725" height="3840">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10035" top="4425" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Osmanisches Reich|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="50" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Result" dstnodeid="19" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="17760" top="18825" width="6900" height="4575">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17760" top="18825" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="107" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,| 49  107k   49 54854  100   261  42821    203  0:00:02  0:00:01  0:00:01 42821&cr;&lf;|,|100  107k  100  107k  100   261  76593    181  0:00:01  0:00:01 --:--:-- 76593&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: offensichtlich&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: den&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: letzten&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Jahren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: eben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: spezifische&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: lokale&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Faktoren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: injection&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Einfluss&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: darauf&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: gewonnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: haben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: vielleicht&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: differenzen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: einzelnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: fächer&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="17790" top="18045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="90" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,| 49  107k   49 54854  100   261  42821    203  0:00:02  0:00:01  0:00:01 42821&cr;&lf;|,|100  107k  100  107k  100   261  76593    181  0:00:01  0:00:01 --:--:-- 76593&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|curl: (6) Could not resolve host: \&cr;&lf;|,|&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: offensichtlich&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: in&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: den&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: letzten&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Jahren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: eben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: spezifische&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: lokale&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Faktoren&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: injection&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: Einfluss&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: darauf&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: gewonnen&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: haben&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: ist&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: das&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: da&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Error" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="51" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="37" dstpinname="Commandline Arguments">
+   </LINK>
+   <NODE systemname="AsRaw (String)" nodename="AsRaw (String)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="8475" top="9420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Encoding" slicecount="1" values="utf-8">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output String" dstnodeid="54" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="8475" top="9930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="|System Default|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="55" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="50" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="59" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13020" top="25245" width="8970" height="26595">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13020" top="25245" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="39" values="response.entities[0],response.entities[0].id,response.entities[0].type,response.entities[0].type[0],response.entities[0].type[1],response.entities[0].type[2],response.entities[0].type[3],response.entities[0].type[4],response.entities[0].matchingTokens,response.entities[0].matchingTokens[0],response.entities[0].entityId,response.entities[0].freebaseTypes,response.entities[0].freebaseTypes[0],response.entities[0].freebaseTypes[1],response.entities[0].freebaseTypes[2],response.entities[0].freebaseTypes[3],response.entities[0].freebaseTypes[4],response.entities[0].freebaseTypes[5],response.entities[0].freebaseTypes[6],response.entities[0].freebaseTypes[7],response.entities[0].freebaseTypes[8],response.entities[0].freebaseTypes[9],response.entities[0].freebaseTypes[10],response.entities[0].freebaseTypes[11],response.entities[0].freebaseTypes[12],response.entities[0].freebaseTypes[13],response.entities[0].freebaseTypes[14],response.entities[0].freebaseTypes[15],response.entities[0].freebaseTypes[16],response.entities[0].freebaseTypes[17],response.entities[0].confidenceScore,response.entities[0].wikiLink,response.entities[0].matchedText,response.entities[0].freebaseId,response.entities[0].relevanceScore,response.entities[0].entityEnglishId,response.entities[0].startingPos,response.entities[0].endingPos,response.entities[0].wikidataId">
+   </PIN>
+   </NODE>
+   <NODE systemname="SelectToken (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="SelectToken (JSON)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="13035" top="24735" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JObject" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Recursive" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Path" slicecount="1" values="response.entities">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="path" slicecount="1" values="response.entities">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="58" dstpinname="JObject">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="59" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="EncodeUTF8 (String)" filename="plugins\StringEncodeUTF8\StringEncodeUTF8.csproj" nodename="EncodeUTF8 (String)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="2805" top="18645" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Ξ“Ξ•ΞΞ•Ξ£Ξ™Ξ£">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsRaw (String)" filename="" nodename="AsRaw (String)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="2790" top="17550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="21" values="|  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&cr;&lf;|,|                                 Dload  Upload   Total   Spent    Left  Speed&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0curl: (6) Could not resolve host: curl&cr;&lf;|,|&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&cr;&lf;|,|curl: (60) SSL certificate problem: unable to get local issuer certificate&cr;&lf;|,|More details here: http://curl.haxx.se/docs/sslcerts.html&cr;&lf;|,|&cr;&lf;|,|curl performs SSL certificate verification by default, using a &quot;bundle&quot;&cr;&lf;|,| of Certificate Authority (CA) public keys (CA certs). If the default&cr;&lf;|,| bundle file isn&apos;t adequate, you can specify an alternate file&cr;&lf;|,| using the --cacert option.&cr;&lf;|,|If this HTTPS server uses a certificate signed by a CA represented in&cr;&lf;|,| the bundle, the certificate verification probably failed due to a&cr;&lf;|,| problem with the certificate (it might be expired, or the name might&cr;&lf;|,| not match the domain name in the URL).&cr;&lf;|,|If you&apos;d like to turn off curl&apos;s verification of the certificate, use&cr;&lf;|,| the -k (or --insecure) option.&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="utf-8">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="2805" top="18015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" values="utf-8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="64" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="66" dstpinname="Input" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="65" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="3" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="2790" top="23655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="6">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="67" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
+   </LINK>
+   </PATCH>
