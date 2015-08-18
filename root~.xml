@@ -1323,5 +1323,7 @@
    <NODE systemname="mySQL" filename="subpatches\mySQL.v4p" nodename="subpatches\mySQL.v4p" componentmode="Hidden" id="794">
    <BOUNDS type="Node" left="7290" top="18195" width="100" height="100">
    </BOUNDS>
+   <BOUNDS type="Window" left="-25455" top="0" width="25230" height="17400">
+   </BOUNDS>
    </NODE>
    </PATCH>
