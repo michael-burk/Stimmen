@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18180">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="330" scrolly="2220">
+   <BOUNDS type="Window" left="-28905" top="0" width="28905" height="18060">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -855,7 +855,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15090" top="18315" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|idDictionary, PartOfSpeech, Previous, Next, Answer_idAnswer, Answer_Sound_idSound, Word_idWord|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|idDictionaryEntry, PartOfSpeech|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="*">
    </PIN>
@@ -1217,7 +1217,7 @@
    </PIN>
    <PIN pinname="Minimum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0" visible="1">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="Unlimited">
    </PIN>
@@ -1281,9 +1281,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="insertWord" filename="mySQL\insertWord.v4p" nodename="mySQL\insertWord.v4p" componentmode="Hidden" id="155" stayontop="1">
-   <BOUNDS type="Node" left="13290" top="10251" width="0" height="0">
+   <BOUNDS type="Node" left="13290" top="10245" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10433" top="5834" width="5715" height="8835">
+   <BOUNDS type="Box" left="13290" top="10245" width="5715" height="8835">
    </BOUNDS>
    <BOUNDS type="Window" left="-17835" top="2085" width="15360" height="14580">
    </BOUNDS>
@@ -1417,9 +1417,9 @@
    <LINK srcnodeid="147" srcpinname="Status" dstnodeid="176" dstpinname="Input String">
    </LINK>
    <NODE systemname="insertNeighbour" filename="mySQL\insertNeighbour.v4p" nodename="mySQL\insertNeighbour.v4p" componentmode="Hidden" id="196" stayontop="0">
-   <BOUNDS type="Node" left="17574" top="11734" width="0" height="0">
+   <BOUNDS type="Node" left="16110" top="10245" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="10959" top="5759" width="13230" height="11950">
+   <BOUNDS type="Box" left="16110" top="10245" width="13230" height="11950">
    </BOUNDS>
    <BOUNDS type="Window" left="-21195" top="2370" width="20295" height="14490">
    </BOUNDS>
@@ -1437,9 +1437,9 @@
    <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="196" dstpinname="Antwort">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="217" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="17580" top="12150" width="795" height="240">
+   <BOUNDS type="Box" left="16110" top="10770" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="17580" top="12150" width="0" height="0">
+   <BOUNDS type="Node" left="16110" top="10770" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1457,9 +1457,9 @@
    <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="196" dstpinname="Connection">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="218" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="18855" top="10845" width="480" height="480">
+   <BOUNDS type="Box" left="17385" top="9525" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="18855" top="10845" width="0" height="0">
+   <BOUNDS type="Node" left="17385" top="9525" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1479,9 +1479,9 @@
    <LINK srcnodeid="218" srcpinname="Y Output Value" dstnodeid="196" dstpinname="SendQuery">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="219" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="16995" top="9825" width="1410" height="270">
+   <BOUNDS type="Node" left="15975" top="8745" width="1410" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="16995" top="9825" width="1410" height="270">
+   <BOUNDS type="Box" left="15975" top="8745" width="1410" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Reduce to lemma?|">
    </PIN>

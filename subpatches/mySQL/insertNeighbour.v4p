@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="1920">
    <BOUNDS type="Window" left="-21195" top="2370" width="20295" height="14490">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2115" top="13255" width="4620" height="1170">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|Neighbour (idNeighbour, Previous, Next) VALUES|" visible="1">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Neighbour (idNeighbour, Previous, Next) VALUES|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -121,7 +121,7 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="b" visible="1">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="b">
    </PIN>
    </NODE>
    <NODE id="11" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
@@ -131,7 +131,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5685" top="8820" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="a" visible="1">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="a">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
@@ -551,7 +551,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="-1" visible="1">
+   <PIN pinname="Input" slicecount="1" visible="1" values="-1">
    </PIN>
    <PIN pinname="Bin Size" slicecount="1" values="1">
    </PIN>
