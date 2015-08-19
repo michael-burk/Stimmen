@@ -159,7 +159,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>

@@ -135,9 +135,9 @@
    <NODE id="7" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="SendQuery">
    </PIN>
-   <BOUNDS type="Box" left="2400" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="10335" top="410" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2400" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="10335" top="410" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="SendQuery">

@@ -13,7 +13,7 @@
    </PIN>
    <PIN pinname="Tables" slicecount="1" visible="1" values="||">
    </PIN>
-   <PIN pinname="SendQuery" slicecount="1" values="0">
+   <PIN pinname="SendQuery" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Field Names" slicecount="1" values="idWord">
    </PIN>
@@ -65,6 +65,8 @@
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="True">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2310" top="6930" width="0" height="0">
@@ -113,8 +115,6 @@
    <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="0" dstpinname="Connection">
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="0" dstpinname="Fields">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="SendQuery">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
    <BOUNDS type="Node" left="8760" top="6045" width="1935" height="270">
@@ -231,5 +231,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="OnData" dstnodeid="31" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="SendQuery">
    </LINK>
    </PATCH>
