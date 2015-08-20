@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\root.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="4065" scrolly="7425">
-   <BOUNDS type="Window" left="-28905" top="0" width="28905" height="18060">
-=======
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Documents\GitHub\Stimmen\root.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="1100" scrolly="3600">
-   <BOUNDS type="Window" left="4910" top="1360" width="17820" height="12250">
->>>>>>> origin/dev_nlp
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\root.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="4455" scrolly="10680">
+   <BOUNDS type="Window" left="-20340" top="2580" width="17820" height="12255">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
    <BOUNDS type="Node" left="13605" top="1590" width="100" height="100">
@@ -174,7 +168,7 @@
    </LINK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="509" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6855" top="6990" width="480" height="480">
@@ -459,9 +453,9 @@
    </PIN>
    </NODE>
    <NODE systemname="tree-tagger" filename="subpatches\tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="Hidden" id="672" stayontop="1">
-   <BOUNDS type="Node" left="16391" top="15901" width="0" height="0">
+   <BOUNDS type="Node" left="16406" top="15871" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="9284" top="10996" width="14215" height="9810">
+   <BOUNDS type="Box" left="9299" top="10966" width="14215" height="9810">
    </BOUNDS>
    <BOUNDS type="Window" left="-27675" top="2730" width="23415" height="14910">
    </BOUNDS>
@@ -499,9 +493,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="672" srcpinname="Tokens" dstnodeid="674" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="16460" y="16640">
+   <LINKPOINT x="16470" y="16620">
    </LINKPOINT>
-   <LINKPOINT x="23035" y="16525">
+   <LINKPOINT x="23040" y="16515">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="675" systemname="IOBox (String)">
@@ -525,9 +519,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="672" srcpinname="Grammar" dstnodeid="675" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="16940" y="16640">
+   <LINKPOINT x="16950" y="16620">
    </LINKPOINT>
-   <LINKPOINT x="25690" y="16525">
+   <LINKPOINT x="25695" y="16515">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="676" systemname="IOBox (Value Advanced)">
@@ -915,7 +909,7 @@
    <NODE systemname="dataInputHandler" filename="subpatches\connection\dataInputHandler.v4p" nodename="dataInputHandler" componentmode="Hidden" id="196" stayontop="1">
    <BOUNDS type="Node" left="6840" top="8055" width="1740" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1400" top="1110" width="22080" height="13440">
+   <BOUNDS type="Window" left="-31395" top="1635" width="22080" height="13440">
    </BOUNDS>
    <PIN pinname="Session Id" visible="1">
    </PIN>
@@ -1317,9 +1311,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="501" srcpinname="result" dstnodeid="672" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="10870" y="14605">
+   <LINKPOINT x="10875" y="14595">
    </LINKPOINT>
-   <LINKPOINT x="16400" y="14615">
+   <LINKPOINT x="16410" y="14595">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="708" srcpinname="Former Slice" dstnodeid="672" dstpinname="0: DE, 1: EN, 2: RU">
@@ -1329,35 +1323,7 @@
    <NODE systemname="mySQL" filename="subpatches\mySQL.v4p" nodename="subpatches\mySQL.v4p" componentmode="Hidden" id="794">
    <BOUNDS type="Node" left="6090" top="17445" width="4935" height="270">
    </BOUNDS>
-<<<<<<< HEAD
-   <BOUNDS type="Window" left="-28905" top="0" width="28905" height="18060">
-=======
    <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18180">
->>>>>>> origin/dev_nlp
    </BOUNDS>
-   <PIN pinname="Status" visible="1">
-   </PIN>
-   <PIN pinname="Is Connected" visible="1">
-   </PIN>
-   <PIN pinname="Connection" visible="1">
-   </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="796" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6075" top="17910" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6075" top="17910" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Is Connected|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="794" srcpinname="Is Connected" dstnodeid="796" dstpinname="Y Input Value">
-   </LINK>
    </PATCH>
