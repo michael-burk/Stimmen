@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="7410" scrolly="11530">
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="5740" scrolly="10400">
    <BOUNDS type="Window" left="670" top="350" width="23410" height="14910">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
