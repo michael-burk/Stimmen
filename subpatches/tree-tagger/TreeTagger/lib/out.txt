@@ -1,1 +1,5 @@
-NN
+DT	this
+VBZ	be
+DT	a
+JJ	nice
+NNS	house
