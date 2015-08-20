@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="2460" scrolly="5310">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="2790" scrolly="4740">
    <BOUNDS type="Window" left="-28905" top="0" width="28905" height="18060">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -449,22 +449,6 @@
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="35" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Is Connected" dstnodeid="46" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="34" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7365" top="7305" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7365" top="7305" width="1815" height="240">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="58" srcpinname="Status" dstnodeid="34" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
    <BOUNDS type="Box" left="4905" top="14715" width="1245" height="345">
