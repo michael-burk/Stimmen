@@ -1,6 +1,1 @@
-du
-kannst
-gehen
-du
-konntest
-gehen
+text
