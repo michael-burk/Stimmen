@@ -1,5 +1,15 @@
 DT	this
 VBZ	be
 DT	a
+NN	house
+PP	you
+VBP	be
+JJ	such
+DT	a
 JJ	nice
-NNS	house
+NN	girl
+CC	and
+PP	I
+VBP	be
+VVG	laugh
+NN	lot
