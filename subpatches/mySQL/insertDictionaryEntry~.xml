@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="510" scrolly="2085">
    <BOUNDS type="Window" left="-13485" top="4050" width="12240" height="10635">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -25,9 +25,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2160" top="6420" width="8040" height="615">
+   <BOUNDS type="Box" left="2160" top="6450" width="8235" height="885">
    </BOUNDS>
-   <BOUNDS type="Node" left="2160" top="6420" width="0" height="0">
+   <BOUNDS type="Node" left="2160" top="6450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
