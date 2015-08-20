@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="5740" scrolly="10400">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="2715" scrolly="4620">
    <BOUNDS type="Window" left="670" top="350" width="23410" height="14910">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
@@ -168,7 +168,7 @@
    </LINK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="509" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6855" top="6990" width="480" height="480">
@@ -452,7 +452,7 @@
    <PIN pinname="Input" visible="1" slicecount="1" values="|abstammung morando meine der Garantie möchte für die territoriale Integrität der Ukraine die USA england und russland haben sich bemüht zu fahren wir schaffen wir es die weite verbreitung von Nuklearwaffen zu und bin dann mit dem Zusammenbruch der Sowjetunion plötzlich nicht nur eine macht nämlich Russland nuclear macht einen auf die Ukraine Belarus Kasachstan wann du kleine nichte und dann hat man der Ukraine das angebot gemacht wir garantieren euch eure territoriale Integrität gegen die Ablieferung und den Verzicht auf Nuklearwaffen und den Beitritt zu nichts weiter Verwaltungsgebäude und heute stellen wir fest eine der Signatur|">
    </PIN>
    </NODE>
-   <NODE systemname="tree-tagger" filename="subpatches\tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="InAWindow" id="672" stayontop="1">
+   <NODE systemname="tree-tagger" filename="subpatches\tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="Hidden" id="672" stayontop="1">
    <BOUNDS type="Node" left="16391" top="15901" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="9284" top="10996" width="14215" height="9810">
@@ -463,9 +463,9 @@
    </PIN>
    <PIN pinname="Execute" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Tokens" visible="1">
+   <PIN pinname="Tokens" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Grammar" visible="1">
+   <PIN pinname="Grammar" visible="1" slicecount="119" values="|VAFIN&tab;haben|,|PRF&tab;sich|,|ART&tab;die|,|ADJA&tab;griechisch|,|NN&tab;Regierung|,|APPR&tab;mit|,|ART&tab;die|,|NN&tab;EU|,|NN&tab;Institution|,|KON&tab;und|,|ART&tab;die|,|ADJA&tab;international|,|NN&tab;Währungsfonds|,|APPR&tab;auf|,|ART&tab;eine|,|ADJA&tab;neu|,|NN&tab;&lt;unknown&gt;|,|NN&tab;Hilfsprogramm|,|VVPP&tab;einigen|,|PAV&tab;demnach|,|VMFIN&tab;sollen|,|NE&tab;Griechenland|,|CARD&tab;86|,|NN&tab;Milliarde|,|NN&tab;Euro|,|ART&tab;eine|,|ADJA&tab;neu|,|NN&tab;Hit|,|ADJD&tab;&lt;unknown&gt;|,|VVINF&tab;bekommen|,|VMFIN&tab;müssen|,|KON&tab;aber|,|APPRART&tab;in|,|NN&tab;Gegenzug|,|APPR&tab;für|,|ART&tab;die|,|ADJA&tab;kommend|,|CARD&tab;drei|,|NN&tab;Jahr|,|ADJA&tab;neu|,|NN&tab;Sparmaßnahme|,|VVFIN&tab;durchsetzen|,|PIAT&tab;alle|,|ADJA&tab;&lt;unknown&gt;|,|VVFIN&tab;warten|,|ADJD&tab;gespannt|,|APPR&tab;auf|,|PPER&tab;sie|,|ADV&tab;ja|,|ADJD&tab;grausam|,|NN&tab;Neuigkeit|,|PIAT&tab;welche|,|NN&tab;Sparmaßnahme|,|ART&tab;die|,|APPRART&tab;in|,|NN&tab;Einzelne|,|PPOSAT&tab;sein|,|ADV&tab;aber|,|NN&tab;Finanzminister|,|NE&tab;&lt;unknown&gt;|,|NE&tab;Carlos|,|VAFIN&tab;haben|,|PRF&tab;sich|,|ADV&tab;heute|,|ADV&tab;vormittag|,|ADV&tab;erst|,|ADV&tab;einmal|,|APPR&tab;mit|,|ADJA&tab;&lt;unknown&gt;|,|NN&tab;&lt;unknown&gt;|,|ADV&tab;noch|,|VAFIN&tab;sein|,|ART&tab;die|,|NN&tab;&lt;unknown&gt;|,|ADV&tab;quasi|,|ADJD&tab;geheim|,|NN&tab;Lotus|,|VAFIN&tab;haben|,|ADV&tab;heute|,|ADJD&tab;früh|,|ADV&tab;auch|,|ADV&tab;nur|,|ADJD&tab;bedingt|,|ADJD&tab;bestätigt|,|PDS&tab;die|,|VAFIN&tab;sein|,|ART&tab;eine|,|NN&tab;Einigung|,|VVFIN&tab;geben|,|ART&tab;die|,|VVFIN&tab;warten|,|ART&tab;die|,|NN&tab;Journalist|,|VVFIN&tab;sagen|,|PPER&tab;er|,|APPRART&tab;bei|,|VVFIN&tab;vorbeigehen|,|ADV&tab;ja|,|PPER&tab;es|,|VVFIN&tab;geben|,|ADV&tab;noch|,|ART&tab;eine|,|CARD&tab;zwei|,|ADJA&tab;klein|,|NN&tab;Frage|,|ADV&tab;aber|,|PPER&tab;wir|,|VAFIN&tab;sein|,|ADJD&tab;praktisch|,|APPR&tab;durch|,|ADV&tab;so|,|NE&tab;&lt;unknown&gt;|,|ART&tab;die|,|NN&tab;Einigung|,|VVFIN&tab;fliegen|,|ADV&tab;also|,|APPR&tab;auf|,|ART&tab;die|,|NN&tab;Tisch|">
    </PIN>
    <PIN pinname="Completed" visible="1">
    </PIN>
