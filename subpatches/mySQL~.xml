@@ -1097,6 +1097,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Status">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
    </NODE>
    <LINK srcnodeid="196" srcpinname="Status" dstnodeid="217" dstpinname="Input String" linkstyle="Bezier">
    <LINKPOINT x="20835" y="12653">
@@ -1228,6 +1230,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Status">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <LINK srcnodeid="254" srcpinname="Status" dstnodeid="257" dstpinname="Input String">
