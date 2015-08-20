@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="1800">
-   <BOUNDS type="Window" left="-17835" top="2085" width="15360" height="14580">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="120" scrolly="0">
+   <BOUNDS type="Window" left="-10260" top="1350" width="15300" height="14580">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -135,9 +135,9 @@
    <NODE id="8" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Word">
    </PIN>
-   <BOUNDS type="Box" left="2955" top="695" width="750" height="240">
+   <BOUNDS type="Box" left="4335" top="410" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2955" top="695" width="750" height="240">
+   <BOUNDS type="Node" left="4335" top="410" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -145,9 +145,9 @@
    <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="5" dstpinname="Input">
    </LINK>
    <NODE systemname="selectWord" filename="mySQL\selectWord.v4p" nodename="mySQL\selectWord.v4p" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2355" top="2265" width="1305" height="270">
+   <BOUNDS type="Node" left="3690" top="2040" width="1305" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="0" width="9940" height="8235">
+   <BOUNDS type="Box" left="1335" top="0" width="9940" height="8235">
    </BOUNDS>
    <BOUNDS type="Window" left="-16815" top="5370" width="12225" height="10515">
    </BOUNDS>
@@ -165,9 +165,9 @@
    <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="9" dstpinname="Connection">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3585" top="1290" width="480" height="480">
+   <BOUNDS type="Box" left="4920" top="1065" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3585" top="1290" width="0" height="0">
+   <BOUNDS type="Node" left="4920" top="1065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -203,13 +203,13 @@
    </BOUNDS>
    <PIN pinname="Input String" visible="1" slicecount="1" values="a">
    </PIN>
-   <PIN pinname="Add Words" slicecount="1" values="0" visible="1">
+   <PIN pinname="Add Words" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Words" visible="1">
    </PIN>
    <PIN pinname="Count per Word" visible="1">
    </PIN>
-   <PIN pinname="Reset" slicecount="1" values="0">
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="31">
@@ -229,9 +229,9 @@
    <LINK srcnodeid="31" srcpinname="Output" dstnodeid="30" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3735" top="4995" width="480" height="480">
+   <BOUNDS type="Box" left="3720" top="4845" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3735" top="4995" width="0" height="0">
+   <BOUNDS type="Node" left="3720" top="4845" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -255,7 +255,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="1">
+   <PIN pinname="Input 2" slicecount="1" values="1" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -300,8 +300,6 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="3" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="OnData" dstnodeid="32" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="idWord" dstnodeid="18" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="18" dstpinname="Input 2">
@@ -317,15 +315,15 @@
    <LINK srcnodeid="41" srcpinname="Output 1" dstnodeid="0" dstpinname="SendQuery">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="3765" y="9698">
+   <LINKPOINT x="3755" y="9598">
    </LINKPOINT>
-   <LINKPOINT x="4170" y="9698">
+   <LINKPOINT x="4165" y="9648">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="42" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3825" top="2265" width="4260" height="270">
+   <BOUNDS type="Node" left="5160" top="2040" width="4260" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3825" top="2265" width="4845" height="240">
+   <BOUNDS type="Box" left="5160" top="2040" width="4845" height="240">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Select Words in Database to check if they are already there|">
    </PIN>
@@ -336,22 +334,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="43" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4050" top="8160" width="4260" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4050" top="8160" width="4845" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Unique Words|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="44" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4170" top="15045" width="795" height="240">
+   <BOUNDS type="Box" left="4170" top="15045" width="4080" height="1035">
    </BOUNDS>
    <BOUNDS type="Node" left="4170" top="15045" width="0" height="0">
    </BOUNDS>
@@ -365,5 +349,63 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Status" dstnodeid="44" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="3720" top="4020" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="OnData" dstnodeid="54" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Up Edge" dstnodeid="32" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="R (Value)" id="55" systemname="R (Value)">
+   <BOUNDS type="Node" left="3345" top="5550" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="DeleteDatabase!">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Input Value" dstnodeid="30" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="WordCount (String)" nodename="WordCount (String)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="5745" top="5985" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="Merkel">
+   </PIN>
+   <PIN pinname="Add Words" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Words" visible="1">
+   </PIN>
+   <PIN pinname="Count per Word" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="5745" top="5355" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="60" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Output" dstnodeid="58" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Count per Word" dstnodeid="38" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Add Words">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Input Value" dstnodeid="58" dstpinname="Reset">
    </LINK>
    </PATCH>
