@@ -63,9 +63,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2490" top="3940" width="5970" height="915">
+   <BOUNDS type="Box" left="2505" top="4060" width="5970" height="915">
    </BOUNDS>
-   <BOUNDS type="Node" left="2490" top="3940" width="0" height="0">
+   <BOUNDS type="Node" left="2505" top="4060" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|0,&quot;a&quot;,&quot;b&quot;|">
    </PIN>
@@ -227,14 +227,6 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <NODE systemname="mySQL-1" filename="..\mySQL-1.v4p" nodename="mySQL-1.v4p" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="3465" top="4567" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="mySQL-2" filename="..\mySQL-2.v4p" nodename="mySQL-2.v4p" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="3465" top="4567" width="100" height="100">
-   </BOUNDS>
    </NODE>
    <NODE id="16" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Connection">
