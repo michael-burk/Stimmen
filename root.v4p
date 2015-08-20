@@ -1,6 +1,6 @@
-﻿<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\root.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="4455" scrolly="10680">
-   <BOUNDS type="Window" left="-23625" top="1665" width="17820" height="12255">
+   <BOUNDS type="Window" left="-20340" top="2580" width="17820" height="12255">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
    <BOUNDS type="Node" left="13605" top="1590" width="100" height="100">
@@ -1323,37 +1323,7 @@
    <NODE systemname="mySQL" filename="subpatches\mySQL.v4p" nodename="subpatches\mySQL.v4p" componentmode="Hidden" id="794">
    <BOUNDS type="Node" left="6090" top="17445" width="4935" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="-28905" top="0" width="28905" height="18060">
-   </BOUNDS>
-   <PIN pinname="Status" visible="1">
-   </PIN>
-   <PIN pinname="Is Connected" visible="1">
-   </PIN>
-   <PIN pinname="Connection" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="796" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6075" top="17910" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6075" top="17910" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Is Connected|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="794" srcpinname="Is Connected" dstnodeid="796" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="797">
-   <BOUNDS type="Node" left="17775" top="11025" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="17775" top="11025" width="795" height="240">
+   <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18180">
    </BOUNDS>
    </NODE>
    </PATCH>
