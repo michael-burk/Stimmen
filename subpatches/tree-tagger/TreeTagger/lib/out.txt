@@ -1,7 +1,1 @@
-ART	die
-ADJA	klein
-NN	Übel
-KON	und
-ART	die
-ADJA	klein
-NN	Hund
+NN	Becher

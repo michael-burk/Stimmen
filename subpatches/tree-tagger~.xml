@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\tree-tagger.v4p" scrollx="16570" scrolly="48120">
-   <BOUNDS type="Window" left="9400" top="0" width="16200" height="15440">
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\tree-tagger.v4p" scrollx="13940" scrolly="52660" bgcolor="14935011">
+   <BOUNDS type="Window" left="9380" top="0" width="16220" height="15440">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -587,11 +587,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="55" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5670" top="10700" width="3010" height="1030">
+   <BOUNDS type="Box" left="5650" top="10490" width="3010" height="1030">
    </BOUNDS>
-   <BOUNDS type="Node" left="5670" top="10700" width="0" height="0">
+   <BOUNDS type="Node" left="5650" top="10490" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|the man who ate my shoe|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|the most beautiful|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -1411,7 +1411,7 @@
    </PIN>
    </NODE>
    <NODE id="155" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="50" visible="1" pintype="Input" values="|Noun, singular or mass|,|Noun, plural|,|Proper noun, singular|,|Proper noun, plural|,,Adjective,|Adjective, comparative |,|Adjective, superlative|,Adverb,|Adverb, comparative|,|Adverb, superlative|,,|Verb, base form|,|Verb, past tense|,|Verb, gerund or present participle|,|Verb, past participle|,|Verb, present tense, non-3rd person singular present|,|Verb, present tense, 3rd person singular present|,|Modal verb|,,|Article, Determiner|,|Personal pronoun|,|Possessive ending|,|Possessive pronoun|,|Possessive wh-pronoun|,Predeterminer,,|Cardinal number|,,Wh-adverb,Wh-determiner,Wh-pronoun,,|Coordinating conjunction|,|Preposition, Subordinating conjunction |,|Preposition &quot;to&quot;|,,Particle,|Existential there|,|List item marker|,Symbol,|Interjection, Exclamation|,|Foreign word|,,,,,,,">
+   <PIN pinname="Input String" slicecount="50" visible="1" pintype="Input" values="|Noun, singular or mass|,|Noun, plural|,|Proper noun, singular|,|Proper noun, plural|,,Adjective,|Adjective, comparative |,|Adjective, superlative|,Adverb,|Adverb, comparative|,|Adverb, superlative|,,|Verb, base form|,|Verb, past tense|,|Verb, gerund or present participle|,|Verb, past participle|,|Verb, present tense, non-3rd person singular present|,|Verb, present tense, 3rd person singular present|,|Modal verb|,,|Article, Determiner|,|Personal pronoun|,|Possessive ending|,|Possessive pronoun|,|Wh-pronoun, possessive|,Predeterminer,,|Cardinal number|,,Wh-adverb,Wh-determiner,Wh-pronoun,,|Coordinating conjunction|,|Preposition, Subordinating conjunction |,|Preposition &quot;to&quot;|,,Particle,|Existential there|,|List item marker|,Symbol,|Interjection, Exclamation|,|Foreign word|,,,,,,,">
    </PIN>
    <BOUNDS type="Box" left="6990" top="43460" width="4230" height="14020">
    </BOUNDS>
@@ -1491,7 +1491,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="162" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12760" top="43460" width="4870" height="13830">
+   <BOUNDS type="Box" left="12760" top="43460" width="4900" height="13920">
    </BOUNDS>
    <BOUNDS type="Node" left="12760" top="43460" width="0" height="0">
    </BOUNDS>
@@ -1509,7 +1509,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="50" encoded="1" values="|Noun, singular or mass|,|Noun, plural|,|Proper noun, singular, more specific (actual names)&cr;&lf;|,|Proper noun, plural, , more specific (actual names)&cr;&lf;|,,|Adjectives, not comp meaning, but with -er (like further details), Adjectives, comp without -er (like superior), Adjective, super without -est (like first, last, unsurpassed)|,|Adjectives, comp with -er (and more / less)|,|Adjective, super with -est (as well as worst, also most and least)|,|Adverb, most words with -ly, degree words (quite, too, very), posthead modifiers (enough, indeed), neg markers (not, n&apos;t &amp; never), Adverb, with -er but without comp meaning (like later)|,|Adverb, comp -er|,|Adverb, super|,,|imperatives, infnitives and subjunctives (Imperative: Do it; Infinitive: You should do it, to do it; Subjunctive: We suggested that he do it)|,|Verb, past tense, includes the conditional form of the verb to be (I were...)|,|Verb, gerung or present participle|,|Verb, past participle|,|Verb, present tense, other than 3rd person singular|,|Verb, present tense, 3rd person singular|,|all verbs that don&apos;t take an -s ending in the third person singular present: can, could, (dare), may, might, must, ought, shal l, should, will, would|,,|articles (a(n), every, no, the), indefnite determiners (another, any, some, each, either, neither, that, these, this, those), instances of all and both (as in all roads or both times), such (such a good time)|,|personal pronouns (I, me, you, he, him, etc.), reflexive pronouns einding in -self or -selves, nominal pronouns (mine, yours, his, hers, ours, theirs)|,|possessive ending on nouns ending in &apos;s or &apos; is split of by the tagging algorithm and tagged as if it were a separate word (John/NP &apos;s/POS idea)|,|adjectival possessive forms my, your, his, her, its, one&apos;s, our and their|,|This category includes the wh-word whose|,|all, both, half, many, nary, quite, rather, such|,,|Cardinal number|,,|includes how, where, why, etc; when in a temporal sense; in the sense of &quot;if&quot; it is an IN|,|includes which, as well as that when it is used as a relative pronoun|,|what, who, whom|,,|Coordinating conjunction (and, but, nor, or, yet), mathematical operators (plus, minus, less, times), over (=&quot;divided by&quot;), for (=&quot;because&quot;)|,|no distinction between prepositions and subordinating conjunctions|,|the preposition to has its ow special tag whether it is a preposition or an infnitival marker|,,|Particle (along, away, back, by, down, forward, in, off, on, out, over, round, under, up)|,|Existential there is the unstressed there that triggers inversion of the inflected verb and the logical subject of a sentence|,|This category includes letters and numerals when they are used to identify items in a list|,|mathematical, scientific and technical symbols or expressions, names of chemicals, units of measurements|,|my (as in My, what a gorgeous day), oh, please, see (as in See, it&apos;s like this), uh, well and yes, among others|,|like bête noire and persona non grata|,,,,,,,">
+   <PIN pinname="Input String" visible="1" slicecount="50" encoded="1" values="|Noun, singular or mass|,|Noun, plural|,|Proper noun, singular, more specific (actual names)&cr;&lf;|,|Proper noun, plural, , more specific (actual names)&cr;&lf;|,,|Adjectives, not comp meaning, but with -er (like further details), Adjectives, comp without -er (like superior), Adjective, super without -est (like first, last, unsurpassed)|,|Adjectives, comp with -er (and more / less)|,|Adjective, super with -est (as well as worst, also most and least)|,|Adverb, most words with -ly, degree words (quite, too, very), posthead modifiers (enough, indeed), neg markers (not, n&apos;t &amp; never), Adverb, with -er but without comp meaning (like later)|,|Adverb, comp -er|,|Adverb, super|,,|imperatives, infnitives and subjunctives (Imperative: Do it; Infinitive: You should do it, to do it; Subjunctive: We suggested that he do it)|,|Verb, past tense, includes the conditional form of the verb to be (I were...)|,|Verb, gerung or present participle|,|Verb, past participle|,|Verb, present tense, other than 3rd person singular|,|Verb, present tense, 3rd person singular|,|all verbs that don&apos;t take an -s ending in the third person singular present: can, could, (dare), may, might, must, ought, shal l, should, will, would|,,|articles (a(n), every, no, the), indefnite determiners (another, any, some, each, either, neither, that, these, this, those), instances of all and both (as in all roads or both times), such (such a good time)|,|personal pronouns (I, me, you, he, him, etc.), reflexive pronouns einding in -self or -selves, nominal pronouns (mine, yours, his, hers, ours, theirs)|,|possessive ending on nouns ending in &apos;s or &apos; is split of by the tagging algorithm and tagged as if it were a separate word (John/NP &apos;s/POS idea)|,|adjectival possessive forms my, your, his, her, its, one&apos;s, our and their|,whose,|all, both, half, many, nary, quite, rather, such|,,|Cardinal number|,,|how, where, why, when|,|which, what, as well as that when it is used as a relative pronoun|,|who, what, whom|,,|Coordinating conjunction (and, but, nor, or, yet), mathematical operators (plus, minus, less, times), over (=&quot;divided by&quot;), for (=&quot;because&quot;)|,|no distinction between prepositions and subordinating conjunctions|,|the preposition to has its ow special tag whether it is a preposition or an infnitival marker|,,|Particle (along, away, back, by, down, forward, in, off, on, out, over, round, under, up)|,|Existential there is the unstressed there that triggers inversion of the inflected verb and the logical subject of a sentence|,|This category includes letters and numerals when they are used to identify items in a list|,|mathematical, scientific and technical symbols or expressions, names of chemicals, units of measurements|,|my (as in My, what a gorgeous day), oh, please, see (as in See, it&apos;s like this), uh, well and yes, among others|,|like bête noire and persona non grata|,,,,,,,">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
@@ -1585,9 +1585,9 @@
    </PIN>
    </NODE>
    <NODE id="165" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="50" visible="1" pintype="Input" values="|normales Nomen|,,Eigennamen,,,|attributives Adjektiv|,,,|adverbiales Adjektiv|,,,,|Verb, base form|,|Verb, past tense|,|Verb, gerund or present participle|,|Verb, past participle|,|Verb, present tense, non-3rd person singular present|,|Verb, present tense, 3rd person singular present|,,|bestimmter oder unbestimmter Artikel|,|substituierendes Demonstrativpronomen|,|attribuierendes Demonstrativpronomen|,Personalpronomen,|substituierendes Possessivpronomen|,|attribuierendes Possessivpronomen|,|substituierendes Indefinitpronomen|,|attribuierendes Indefinitpronomen ohne Determiner|,|attribuierendes Indefinitpronomen mit Determiner|,Kardinalzahl,Wh-adverb,|unterordnende Konjunktion mit &quot;zu&quot; und Infinitiv|,|unterordnende Konjunktion|,|nebenordnende Konjunktion|,Vergleichspartikel,|Präposition, links|,|Präposition mit Artikel|,Postposition,|Zirkumposition rechts|,,|List item marker|,Symbol,Interjektion,|Fremdsprachliches Material|,,Adverb,,,|Relativpronomen, substituierend|,|Relativpronomen, attribuierend|,">
+   <PIN pinname="Input String" slicecount="80" visible="1" pintype="Input" values="|normales Nomen|,,Eigennamen,,,|attributives Adjektiv|,,,|adverbiales Adjektiv|,Pronominaladverb,Negationspartikel,,|Verb, base form|,|Verb, past tense|,|Verb, gerund or present participle|,|Verb, past participle|,|Verb, present tense, non-3rd person singular present|,|Verb, present tense, 3rd person singular present|,,|bestimmter oder unbestimmter Artikel|,|substituierendes Demonstrativpronomen|,|attribuierendes Demonstrativpronomen|,|Personalpronomen, irreflexiv|,|substituierendes Possessivpronomen|,|attribuierendes Possessivpronomen|,|substituierendes Indefinitpronomen|,|attribuierendes Indefinitpronomen ohne Determiner|,|attribuierendes Indefinitpronomen mit Determiner|,Kardinalzahl,Wh-adverb,|unterordnende Konjunktion mit &quot;zu&quot; und Infinitiv|,|unterordnende Konjunktion|,|nebenordnende Konjunktion|,Vergleichspartikel,|Präposition, links|,|Präposition mit Artikel|,Postposition,|Zirkumposition rechts|,,|List item marker|,Symbol,Interjektion,|Fremdsprachliches Material|,,Adverb,,,|Relativpronomen, substituierend|,|Relativpronomen, attribuierend|,|Personalpronomen, reflexiv|,,|Interrogativpronomen, substituierend|,|Interrogativpronomen, attribuierend|,|Interrogativ- / Relativpronomen, adverbial|,,|&quot;zu&quot; vor Infinitiv|,,|abgetrennter Verbzusatz|,Antwortpartikel,|Partikel bei Adjektiv oder Adverb|,Kompositions-Erstglied,,|Verb, finite|,|Verb, Imperativ|,|Verb, Infinitiv|,|Verb, Infinitiv mit &quot;zu&quot;|,|Verb, Patrizip Perfekt|,|Verb, finit, aux|,|Verb, Imperativ, aux|,|Verb, Infinitiv, aux|,|Verb, Partizip Perfekt, aux|,|Verb, finit, modal|,|Verb, Infinitiv, modal|,|Verb, Partizip Perfekt, modal|,,|Nichtwort, Sonerzeichen|,,Komma,|Satzbeende Interpunktion|,|sonstige Satzzeichen|">
    </PIN>
-   <BOUNDS type="Box" left="17790" top="43420" width="5510" height="13920">
+   <BOUNDS type="Box" left="17790" top="43420" width="5500" height="22810">
    </BOUNDS>
    <BOUNDS type="Node" left="17790" top="43420" width="0" height="0">
    </BOUNDS>
@@ -1599,7 +1599,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="50">
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="80">
    </PIN>
    <PIN pinname="Size" slicecount="1" pintype="Configuration" values="12">
    </PIN>
@@ -1635,9 +1635,183 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="164" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="23450" top="43420" width="1980" height="13870">
+   <BOUNDS type="Box" left="23450" top="43420" width="2140" height="22850">
    </BOUNDS>
    <BOUNDS type="Node" left="23450" top="43420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="80">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="80" values="NN,,NE,,,ADJA,,,ADJD,PAV,PTKNEG,,VB,VBD,VBG,VBN,VBP,VBZ,,ART,PDS,PDAT,PPER,PPOSS,PPOSAT,PIS,PIAT,PIDAT,CARD,WRB,KOUI,KOUS,KON,KOKOM,APPR,APPRART,APPO,APZR,,LS,SYM,ITJ,FM,,ADV,,,PRELS,PRELAT,PRF,,PWS,PWAT,PWAV,,PTKZU,,PTKVZ,PTKANT,PTKA,TRUNC,,VVFIN,VVIMP,VVINF,VVIZU,VVPP,VAFIN,VAIMP,VAINF,VAPP,VMFIN,VMINF,VMPP,,XY,,|$,|,$.,$(">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="4670" top="60790" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="177" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="60450" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="60450" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|personalpronomen: wer? who? I, you, he... me, you, him,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="178" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="61040" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="61040" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|possessivpronomen: wessen? whose? my, your, his,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="179" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9550" top="60450" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9550" top="60450" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Verb|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="180" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9550" top="61040" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9550" top="61040" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Nomen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="181" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="62230" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="62230" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|relativpronomen: who?, which?, whose?|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="182" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="62790" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="62790" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|reflexivpronomen: -self, -selves|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="183" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="61620" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="61620" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|possessivbegleiter: wessen? whose? mine, yours, his, hers, theirs,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="184" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9550" top="61620" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9550" top="61620" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Nomen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="186" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="63600" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="63600" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|substituierend = pronoun&cr;&lf;replaces noun phrase (wer, was, who)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="185" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6650" top="64160" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6650" top="64160" width="2810" height="640">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|attribuierend = determiner&cr;&lf;modifies noun phrase (wessen Hut, whose, which)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="187" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5330" top="43480" width="1260" height="13730">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5330" top="43480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1653,7 +1827,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="50" values="NN,,NE,,,ADJA,,,ADJD,,,,VB,VBD,VBG,VBN,VBP,VBZ,,ART,PDS,PDAT,PPER,PPOSS,PPOSAT,PIS,PIAT,PIDAT,CARD,WRB,KOUI,KOUS,KON,KOKOM,APPR,APPRART,APPO,APZR,,LS,SYM,ITJ,FM,,ADV,,,PRELS,PRELAT,">
+   <PIN pinname="Input String" visible="1" slicecount="50" values="NN,NNS,NP,NPS,,JJ,JJR,JJS,RB,RBR,RBS,,VV,VBD,VBG,VBN,VVP,VVZ,MD,,DT,PP,POS,PP$,WP$,PDT,,CD,,WRB,WDT,WP,,CC,IN,TO,,RP,EX,LS,SYM,UH,FW,,,,,,,">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
@@ -1664,34 +1838,54 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="175" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="25670" top="43410" width="4960" height="13840">
+   <NODE id="175" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="80" visible="1" encoded="1" pintype="Input" values="VGlzY2gsIEhlcnIsIChkYXMpIFJlaXNlbg==,,SGFucywgSGFtYnVyZywgSFNW,,,YXR0cmlidXRpdmVzIEFkamVrdGl2,,,YWR2ZXJiaWFsZXMgb2RlciBwcuRkaWthdGl2ZXMgQWRqZWt0aXY=,ZGFm/HIsIGRhYmVpLCBkZXN3ZWdlbiwgdHJvdHpkZW0=,bmljaHQ=,,|imperativesinfnitivesandsubjunctivesImperativeDoitInfinitiveYoushoulddoittod&cr;&lf;oitSubjunctiveWesuggestedthathedois=|,VerbpasttenseincludestheconditionalformoftheverbtobeIwer,Verbgerungorpresentparticipl,VerbpastparticiplQ==,Verbpresenttenseotherthan3rdpersonsingulag==,Verbpresenttense3rdpersonsingula,,ZGVyLCBkaWUsIGRhcywgZWluLCBlaW5l,ZGllc2VyLCBqZW5lcg==,amVuZXIgKE1lbnNjaCk=,aWNoLCBlciwgaWhtIG1pY2gsIGRpcg==,bWVpbnMsIGRlaW5lcg==,bWVpbiAoQnVjaCksIGRlaW5lIChNdXR0ZXIp,a2VpbmVyLCB2aWVsZSwgbWFuLCBuaWVtYW5k,a2VpbiAoTWVuc2NoKSwgaXJnZW5kZWluIChHbGFzKQ==,KGVpbikgd2VuaWcgKFdhc3NlciksIChkaWUpIGJlaWRlbiAoQnL8ZGVyKQ==,endlaSAoTeRubmVyKSwgKGltIEphaHJlKSAxOTk0,includeshowwherewhyetcwheninatemporalsenseinthesenseofifitisanIN,dW0gKHp1IGxlYmVuKSwgYW5zdGF0dCAoenUgZnJhZ2VuKQ==,d2VpbCwgZGFzcywgZGFtaXQsIHdlbm4sIG9i,dW5kLCBvZGVyLCBhYmVy,YWxzLCB3aWU=,aW4sIG9obmU=,aW0sIHp1ciwgYW0=,KGlobSkgenVmb2xnZSwgKGRlciBTYWNoZSkgd2VnZW4=,KHZvbiBqZXR6dCkgYW4g,,Thiscategoryincludeslettersandnumeralswhentheyareusedtoidentifyitemsinaliss=,|mathematicalscientificandtechnicalsymbolsorexpressionsnamesofchemicalsunitso&cr;&lf;fmeasurement|,bWhtLCBhY2gsIHRqYQ==,ZnJlbWRzcHJhY2hsaWNoZSBX9nJ0ZXIgLyBBdXNkcvxja2UgKEEgYmlnIGZpc2gp,,c2Nob24sIGJhbGQsIGRvY2g=,,,KGRlciBIdW5kLCkgZGVy,KGRlciBNYW5uLCkgZGVzc2VuIChIdW5kKQ==,c2ljaCwgZWluYW5kZXIsIGRpY2gsIG1pcg==,,d2VyLCB3YXM=,d2VsY2hlIChGYXJiZSksIHdlc3NlbiAoSHV0KQ==,d2FydW0sIHdvLCB3YW5uLCB3b3L8YmVyLCB3b2JlaQ==,,enUgKGdlaGVuKQ==,,KGVyIGtvbW10KSBhbiwgKGVyIGbkaHJ0KSByYWQ=,amEsIG5laW4sIGRhbmtlLCBiaXR0ZQ==,YW0gKHNjaPZuc3RlbiksIHp1IChzY2huZWxsKQ==,QW4tICh1bmQgQWJyZWlzZSk=,,KGR1KSBnZWhzdCwgKHdpcikga29tbWVuIChhbik=,a29tbQ==,Z2VoZW4=,YW56dWtvbW1lbiwgbG9zenVsYXNzZW4=,Z2VnYW5nZW4sIGFuZ2Vrb21tZW4=,KGR1KSBiaXN0LCAod2lyKSB3ZXJkZW4=,c2VpIChydWhpZyk=,d2VyZGVuLCB3ZWlu,Z2V3ZXNlbg==,ZPxyZmVu,d29sbGVu,KGVyIGhhdCkgZ2Vrb25udA==,,RDJYVzM=,,LA==,LiA/ICEgOyA6,LSAoICkg">
+   </PIN>
+   <BOUNDS type="Box" left="25670" top="43410" width="5820" height="22910">
    </BOUNDS>
    <BOUNDS type="Node" left="25670" top="43410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="80">
    </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
    </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
    </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="50">
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="8">
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="8">
    </PIN>
-   <PIN pinname="Output String" visible="1">
+   <PIN pinname="Output String" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="50" encoded="1" values="VGlzY2gsIEhlcnIsIChkYXMpIFJlaXNlbg==,,SGFucywgSGFtYnVyZywgSFNW,,,YXR0cmlidXRpdmVzIEFkamVrdGl2,,,YWR2ZXJiaWFsZXMgb2RlciBwcuRkaWthdGl2ZXMgQWRqZWt0aXY=,,,,|imperativesinfnitivesandsubjunctivesImperativeDoitInfinitiveYoushoulddoittod&cr;&lf;oitSubjunctiveWesuggestedthathedois=|,VerbpasttenseincludestheconditionalformoftheverbtobeIwer,Verbgerungorpresentparticipl,VerbpastparticiplQ==,Verbpresenttenseotherthan3rdpersonsingulag==,Verbpresenttense3rdpersonsingula,,ZGVyLCBkaWUsIGRhcywgZWluLCBlaW5l,ZGllc2VyLCBqZW5lcg==,amVuZXIgKE1lbnNjaCk=,aWNoLCBlciwgaWhtIG1pY2gsIGRpcg==,bWVpbnMsIGRlaW5lcg==,bWVpbiAoQnVjaCksIGRlaW5lIChNdXR0ZXIp,a2VpbmVyLCB2aWVsZSwgbWFuLCBuaWVtYW5k,a2VpbiAoTWVuc2NoKSwgaXJnZW5kZWluIChHbGFzKQ==,KGVpbikgd2VuaWcgKFdhc3NlciksIChkaWUpIGJlaWRlbiAoQnL8ZGVyKQ==,endlaSAoTeRubmVyKSwgKGltIEphaHJlKSAxOTk0,includeshowwherewhyetcwheninatemporalsenseinthesenseofifitisanIN,dW0gKHp1IGxlYmVuKSwgYW5zdGF0dCAoenUgZnJhZ2VuKQ==,d2VpbCwgZGFzcywgZGFtaXQsIHdlbm4sIG9i,dW5kLCBvZGVyLCBhYmVy,YWxzLCB3aWU=,aW4sIG9obmU=,aW0sIHp1ciwgYW0=,KGlobSkgenVmb2xnZSwgKGRlciBTYWNoZSkgd2VnZW4=,KHZvbiBqZXR6dCkgYW4g,,Thiscategoryincludeslettersandnumeralswhentheyareusedtoidentifyitemsinaliss=,|mathematicalscientificandtechnicalsymbolsorexpressionsnamesofchemicalsunitso&cr;&lf;fmeasurement|,bWhtLCBhY2gsIHRqYQ==,ZnJlbWRzcHJhY2hsaWNoZSBX9nJ0ZXIgLyBBdXNkcvxja2UgKEEgYmlnIGZpc2gp,,c2Nob24sIGJhbGQsIGRvY2g=,,,KGRlciBIdW5kLCkgZGVy,KGRlciBNYW5uLCkgZGVzc2VuIChIdW5kKQ==,">
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
    </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" pintype="Configuration" values="0">
    </PIN>
-   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
    </PIN>
-   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
    </PATCH>
