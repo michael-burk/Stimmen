@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="4905">
    <BOUNDS type="Window" left="-15660" top="1740" width="14100" height="14580">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -409,5 +409,37 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1305" top="15675" width="2535" height="2895">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1305" top="15675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Statement" dstnodeid="62" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4920" top="7785" width="705" height="1080">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4920" top="7785" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="64" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertSound.v4p" systemname="insertSound" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertSound.v4p">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertSound.v4p" systemname="insertSound" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertSound.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="-15135" top="7890" width="13245" height="7725">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -69,7 +69,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3510" top="3075" width="2160" height="525">
+   <BOUNDS type="Box" left="3510" top="3075" width="6435" height="675">
    </BOUNDS>
    <BOUNDS type="Node" left="3510" top="3075" width="0" height="0">
    </BOUNDS>
@@ -167,17 +167,17 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Input 3">
    </LINK>
    <NODE id="10" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Envelope">
    </PIN>
-   <BOUNDS type="Box" left="7590" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="7815" top="500" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7590" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="7815" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="5" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4170" top="6570" width="795" height="240">
+   <BOUNDS type="Box" left="4170" top="6570" width="5820" height="1800">
    </BOUNDS>
    <BOUNDS type="Node" left="4170" top="6570" width="0" height="0">
    </BOUNDS>

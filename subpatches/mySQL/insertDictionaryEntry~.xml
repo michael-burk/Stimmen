@@ -287,7 +287,7 @@
    <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="5" dstpinname="Input 2">
    </LINK>
    <NODE id="19" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input String|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="WordID">
    </PIN>
    <BOUNDS type="Box" left="7335" top="425" width="750" height="240">
    </BOUNDS>
