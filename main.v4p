@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="7500">
    <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18060">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
@@ -916,18 +916,20 @@
    <LINKPOINT x="5655" y="5228">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="readDir" filename="subpatches\readDir.v4p" nodename="subpatches\readDir.v4p" componentmode="Hidden" id="792" stayontop="1">
+   <NODE systemname="readDir" filename="subpatches\readDir.v4p" nodename="subpatches\readDir.v4p" componentmode="Hidden" id="792" stayontop="0">
    <BOUNDS type="Node" left="6285" top="6045" width="1710" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="6285" top="6045" width="23223" height="12090">
    </BOUNDS>
-   <BOUNDS type="Window" left="-19890" top="2295" width="17055" height="12090">
+   <BOUNDS type="Window" left="-19890" top="2295" width="19575" height="12090">
    </BOUNDS>
    <PIN pinname="favs" visible="1">
    </PIN>
    <PIN pinname="Check" visible="1">
    </PIN>
    <PIN pinname="OnChange" visible="1">
+   </PIN>
+   <PIN pinname="actives" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="793">
@@ -1055,9 +1057,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="802" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6315" top="4995" width="480" height="480">
+   <BOUNDS type="Box" left="6285" top="4920" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6315" top="4995" width="0" height="0">
+   <BOUNDS type="Node" left="6285" top="4920" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1103,6 +1105,10 @@
    </PIN>
    <PIN pinname="Update Favs" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Actives" visible="1">
+   </PIN>
+   <PIN pinname="Update Active" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="794" srcpinname="Output" dstnodeid="801" dstpinname="Input String">
    </LINK>
@@ -1132,12 +1138,28 @@
    <LINKPOINT x="10770" y="18023">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="792" srcpinname="favs" dstnodeid="794" dstpinname="Favs">
+   <LINK srcnodeid="792" srcpinname="favs" dstnodeid="794" dstpinname="Favs" linkstyle="Bezier">
+   <LINKPOINT x="7410" y="11933">
+   </LINKPOINT>
+   <LINKPOINT x="7515" y="11933">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="OnChange" dstnodeid="794" dstpinname="Update Favs" linkstyle="Bezier">
    <LINKPOINT x="6315" y="11925">
    </LINKPOINT>
    <LINKPOINT x="7890" y="11925">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="792" srcpinname="actives" dstnodeid="794" dstpinname="Actives" linkstyle="Bezier">
+   <LINKPOINT x="7965" y="11933">
+   </LINKPOINT>
+   <LINKPOINT x="8205" y="11933">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="792" srcpinname="OnChange" dstnodeid="794" dstpinname="Update Active" linkstyle="Bezier">
+   <LINKPOINT x="6315" y="11933">
+   </LINKPOINT>
+   <LINKPOINT x="8490" y="11933">
    </LINKPOINT>
    </LINK>
    </PATCH>

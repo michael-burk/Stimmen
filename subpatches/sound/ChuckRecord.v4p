@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="360" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="7875" scrolly="2685">
    <BOUNDS height="12810" left="-23160" top="1365" type="Window" width="20580">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
@@ -747,7 +747,7 @@
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="23" dstpinname="Commandline Arguments">
    </LINK>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="13950" top="13425" width="100" height="100">
+   <BOUNDS type="Node" left="17880" top="11745" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Do Rescan" slicecount="1" values="0">
    </PIN>
@@ -757,7 +757,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="13965" top="13875" width="100" height="100">
+   <BOUNDS type="Node" left="17895" top="12195" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -769,7 +769,7 @@
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="67" dstpinname="Input 1">
    </LINK>
    <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\WindowsExec.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="13950" top="14325" width="3315" height="270">
+   <BOUNDS type="Node" left="17880" top="12645" width="3315" height="270">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -803,7 +803,7 @@
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="66" dstpinname="File">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="17220" top="13800" width="100" height="100">
+   <BOUNDS type="Node" left="21150" top="12120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -815,7 +815,7 @@
    <LINK srcnodeid="70" srcpinname="Up Edge" dstnodeid="66" dstpinname="Execute">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="71">
-   <BOUNDS type="Node" left="14595" top="13875" width="100" height="100">
+   <BOUNDS type="Node" left="18525" top="12195" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -855,5 +855,87 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="74" srcpinname="Up Edge" dstnodeid="73" dstpinname="Set">
+   </LINK>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="22290" top="11760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Do Rescan" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Folder" slicecount="1" values="WindowsSystem">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="22305" top="12210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="cmd.exe">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="79" srcpinname="Output" dstnodeid="78" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\WindowsExec.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="22290" top="12660" width="3315" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Arguments" visible="1" encoded="0">
+   </PIN>
+   <PIN pinname="Block until finished" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Executable file" visible="1">
+   </PIN>
+   <PIN pinname="Error" visible="1">
+   </PIN>
+   <PIN pinname="IsRunning" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Kill" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ExitCode" visible="1">
+   </PIN>
+   <PIN pinname="PID" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="|/c mkdir C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_8_21|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="77" dstpinname="File">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="25560" top="12135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Completed" dstnodeid="76" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Up Edge" dstnodeid="77" dstpinname="Execute">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="22935" top="12210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="\inactive">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="75" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="75" srcpinname="Output" dstnodeid="77" dstpinname="Commandline Arguments">
    </LINK>
    </PATCH>

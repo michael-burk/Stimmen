@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="0" scrolly="3510">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="7875" scrolly="2685">
    <BOUNDS height="12810" left="-23160" top="1365" type="Window" width="20580">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
@@ -217,7 +217,7 @@
    <LINK dstnodeid="7" dstpinname="Input 2" srcnodeid="6" srcpinname="Output String">
    </LINK>
    <NODE id="5" nodename="TimeToString (String)">
-   <BOUNDS height="0" left="13545" top="3999" type="Node" width="0">
+   <BOUNDS height="0" left="13560" top="3684" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Time" visible="1">
    </PIN>
@@ -237,9 +237,9 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="5" dstpinname="Time" srcnodeid="4" srcpinname="Current Time" linkstyle="Bezier">
-   <LINKPOINT x="15330" y="3645">
+   <LINKPOINT x="15335" y="3540">
    </LINKPOINT>
-   <LINKPOINT x="13605" y="3645">
+   <LINKPOINT x="13615" y="3435">
    </LINKPOINT>
    </LINK>
    <NODE id="3" nodename="Add (String)">
@@ -255,7 +255,7 @@
    </PIN>
    <PIN pinname="Input 3" slicecount="1" visible="1" values="\">
    </PIN>
-   <PIN pinname="Input 4" slicecount="1" visible="1" values="||">
+   <PIN pinname="Input 4" slicecount="1" visible="1" values="2015.08.21-16.49.38">
    </PIN>
    <PIN pinname="Input 5" slicecount="1" values=".wav">
    </PIN>
@@ -443,11 +443,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Output String|">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="Recordings\2015.08.05-14.44.22.wav">
+   <PIN pinname="Input String" visible="1" slicecount="1" values="2015.08.21-16.49.37">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="String" dstnodeid="28" dstpinname="Input String">
-   </LINK>
    <LINK srcnodeid="26" srcpinname="Output 1" dstnodeid="23" dstpinname="Do Execute">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Up Edge" dstnodeid="2" dstpinname="Do Execute">
@@ -676,12 +674,6 @@
    <LINKPOINT x="11220" y="5685">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="5" srcpinname="String" dstnodeid="3" dstpinname="Input 4" linkstyle="VHV">
-   <LINKPOINT x="13545" y="4360">
-   </LINKPOINT>
-   <LINKPOINT x="11550" y="4310">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Up Edge" dstnodeid="48" dstpinname="Y Input Value" linkstyle="Bezier">
    <LINKPOINT x="6060" y="11130">
    </LINKPOINT>
@@ -711,9 +703,9 @@
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1965" top="11835" width="795" height="240">
+   <BOUNDS type="Box" left="1935" top="11655" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1965" top="11835" width="0" height="0">
+   <BOUNDS type="Node" left="1935" top="11655" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -727,7 +719,7 @@
    <LINK srcnodeid="23" srcpinname="Result" dstnodeid="63" dstpinname="Input String">
    </LINK>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="8220" top="9660" width="100" height="100">
+   <BOUNDS type="Node" left="2325" top="8895" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Do Rescan" slicecount="1" values="0">
    </PIN>
@@ -737,7 +729,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="8055" top="10440" width="100" height="100">
+   <BOUNDS type="Node" left="2160" top="9675" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="|setappvolume |">
    </PIN>
@@ -755,7 +747,7 @@
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="23" dstpinname="Commandline Arguments">
    </LINK>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="13950" top="13425" width="100" height="100">
+   <BOUNDS type="Node" left="17880" top="11745" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Do Rescan" slicecount="1" values="0">
    </PIN>
@@ -765,7 +757,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="13965" top="13875" width="100" height="100">
+   <BOUNDS type="Node" left="17895" top="12195" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -777,7 +769,7 @@
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="67" dstpinname="Input 1">
    </LINK>
    <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\WindowsExec.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="13950" top="14325" width="3315" height="270">
+   <BOUNDS type="Node" left="17880" top="12645" width="3315" height="270">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -811,7 +803,7 @@
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="66" dstpinname="File">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="17220" top="13800" width="100" height="100">
+   <BOUNDS type="Node" left="21150" top="12120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -823,7 +815,7 @@
    <LINK srcnodeid="70" srcpinname="Up Edge" dstnodeid="66" dstpinname="Execute">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="71">
-   <BOUNDS type="Node" left="14595" top="13875" width="100" height="100">
+   <BOUNDS type="Node" left="18525" top="12195" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -835,5 +827,115 @@
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="71" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="66" dstpinname="Commandline Arguments">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="13560" top="4245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="String" dstnodeid="73" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="28" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="3" dstpinname="Input 4">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="74">
+   <BOUNDS type="Node" left="13305" top="2430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Up Edge" dstnodeid="73" dstpinname="Set">
+   </LINK>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="22290" top="11760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Do Rescan" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Folder" slicecount="1" values="WindowsSystem">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="22305" top="12210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="cmd.exe">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="79" srcpinname="Output" dstnodeid="78" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="ShellExecute (Windows Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\WindowsExec.dll" nodename="ShellExecute (Windows Advanced)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="22290" top="12660" width="3315" height="270">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Arguments" visible="1" encoded="0">
+   </PIN>
+   <PIN pinname="Block until finished" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Executable file" visible="1">
+   </PIN>
+   <PIN pinname="Error" visible="1">
+   </PIN>
+   <PIN pinname="IsRunning" visible="1">
+   </PIN>
+   <PIN pinname="Show Window" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Kill" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ExitCode" visible="1">
+   </PIN>
+   <PIN pinname="PID" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <PIN pinname="File" visible="1">
+   </PIN>
+   <PIN pinname="Commandline Arguments" visible="1" slicecount="1" values="|/c mkdir C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_8_21|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="77" dstpinname="File">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="25560" top="12135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Completed" dstnodeid="76" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Up Edge" dstnodeid="77" dstpinname="Execute">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="22935" top="12210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="\fav">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="75" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="75" srcpinname="Output" dstnodeid="77" dstpinname="Commandline Arguments">
    </LINK>
    </PATCH>
