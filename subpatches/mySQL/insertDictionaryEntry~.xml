@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="510" scrolly="2085">
-   <BOUNDS type="Window" left="-13485" top="4050" width="12240" height="10635">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-18390" top="4755" width="12240" height="10635">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -25,7 +25,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2160" top="6450" width="8235" height="885">
+   <BOUNDS type="Box" left="2160" top="6450" width="9060" height="855">
    </BOUNDS>
    <BOUNDS type="Node" left="2160" top="6450" width="0" height="0">
    </BOUNDS>
@@ -63,9 +63,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2490" top="3940" width="5970" height="915">
+   <BOUNDS type="Box" left="2505" top="4060" width="5970" height="915">
    </BOUNDS>
-   <BOUNDS type="Node" left="2490" top="3940" width="0" height="0">
+   <BOUNDS type="Node" left="2505" top="4060" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|0,&quot;a&quot;,&quot;b&quot;|">
    </PIN>
@@ -97,19 +97,19 @@
    </PIN>
    <PIN pinname="Intersperse" slicecount="1" values="Comma">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="5">
+   <PIN pinname="Input Count" slicecount="1" values="6">
    </PIN>
    <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Input 4" visible="1" slicecount="3" values="1,2,3">
+   <PIN pinname="Input 4" visible="1" slicecount="4" values="&quot;I&quot;,&quot;like&quot;,&quot;a&quot;,&quot;girl&quot;">
    </PIN>
-   <PIN pinname="Input 5" visible="1" slicecount="1" values="text">
+   <PIN pinname="Input 5" visible="1" slicecount="4" values="4,5,6,7">
    </PIN>
-   <PIN pinname="Input 6" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input 6" visible="1" slicecount="1" values="text">
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="6600" top="2295" width="100" height="100">
+   <BOUNDS type="Node" left="7185" top="2220" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
@@ -123,7 +123,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="3855" top="2295" width="100" height="100">
+   <BOUNDS type="Node" left="3675" top="2400" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
@@ -139,9 +139,9 @@
    <NODE id="7" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Box" left="6750" top="1500" width="690" height="270">
+   <BOUNDS type="Box" left="7335" top="1425" width="690" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="6750" top="1500" width="750" height="240">
+   <BOUNDS type="Node" left="7335" top="1425" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -181,7 +181,7 @@
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="2175" top="5610" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" slicecount="1" values="|DictionaryEntry (idDictionaryEntry, PartOfSpeech, Answer_idAnswer, Word_idWord, Neighbour_idNeighbour) VALUES&cr;&lf;|">
+   <PIN pinname="Input 1" slicecount="1" values="|DictionaryEntry (idDictionaryEntry, PartOfSpeech, Answer_idAnswer, Neighbour_idNeighbour, Word_idWord, Lemma) VALUES&cr;&lf;|" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -195,9 +195,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4020" top="1500" width="795" height="240">
+   <BOUNDS type="Box" left="3840" top="1605" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4020" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="3840" top="1605" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Verb">
    </PIN>
@@ -206,6 +206,8 @@
    <PIN pinname="File Mask" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PartOfSpeech">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
@@ -227,14 +229,6 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   </NODE>
-   <NODE systemname="mySQL-1" filename="..\mySQL-1.v4p" nodename="mySQL-1.v4p" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="3465" top="4567" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="mySQL-2" filename="..\mySQL-2.v4p" nodename="mySQL-2.v4p" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="3465" top="4567" width="100" height="100">
-   </BOUNDS>
    </NODE>
    <NODE id="16" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Connection">
@@ -267,27 +261,25 @@
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="4" dstpinname="Input 2">
    </LINK>
    <NODE id="17" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 3|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="AnswerId">
    </PIN>
-   <BOUNDS type="Box" left="2505" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="4845" top="2240" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2505" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="4845" top="2240" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="4" dstpinname="Input 3">
    </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Input 4">
-   </LINK>
    <NODE id="18" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 5 - Input String|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID">
    </PIN>
-   <BOUNDS type="Box" left="3405" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="2490" top="785" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3405" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="2490" top="785" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="4" dstpinname="Input 5">
-   </LINK>
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="8" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="6" dstpinname="Input 2">
@@ -297,13 +289,55 @@
    <NODE id="19" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input String|">
    </PIN>
-   <BOUNDS type="Box" left="6750" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="7335" top="425" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6750" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="7335" top="425" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="7" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Status" dstnodeid="2" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="8310" top="2085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" values="&quot;">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="&quot;">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="4" dstpinname="Input 6">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8490" top="1125" width="795" height="315">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8490" top="1125" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Lemma">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Lemma">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="21" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="4" dstpinname="Input 4" linkstyle="Bezier">
+   <LINKPOINT x="2550" y="1913">
+   </LINKPOINT>
+   <LINKPOINT x="6015" y="1913">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Input 5">
    </LINK>
    </PATCH>

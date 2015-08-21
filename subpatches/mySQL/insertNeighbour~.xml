@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="345" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="4035">
    <BOUNDS type="Window" left="-21195" top="2370" width="20295" height="14490">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -153,7 +153,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4140" top="16135" width="795" height="240">
+   <BOUNDS type="Box" left="4140" top="16135" width="2370" height="660">
    </BOUNDS>
    <BOUNDS type="Node" left="4140" top="16135" width="0" height="0">
    </BOUNDS>
@@ -255,9 +255,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="SendQuery">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="37" dstpinname="SendQuery">
-   </LINK>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="6315" top="1725" width="100" height="100">
    </BOUNDS>
@@ -453,5 +453,7 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="4" dstpinname="Input 1" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="37" dstpinname="SendQuery">
    </LINK>
    </PATCH>

@@ -201,7 +201,7 @@
    </PIN>
    </NODE>
    <NODE id="19" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Language">
    </PIN>
    <BOUNDS type="Box" left="5445" top="495" width="750" height="240">
    </BOUNDS>

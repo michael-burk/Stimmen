@@ -155,11 +155,11 @@
    <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="4" dstpinname="Input 1">
    </LINK>
    <NODE id="9" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Length">
    </PIN>
-   <BOUNDS type="Box" left="4410" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="5535" top="665" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4410" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="5535" top="665" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="4" dstpinname="Input 2">
@@ -167,11 +167,11 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Input 3">
    </LINK>
    <NODE id="10" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 2 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Envelope">
    </PIN>
-   <BOUNDS type="Box" left="7590" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="7815" top="500" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7590" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="7815" top="500" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="5" dstpinname="Input 2">

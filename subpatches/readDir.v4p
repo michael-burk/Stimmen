@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="1155" scrolly="2325">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="1155" scrolly="2325">
    <BOUNDS type="Window" left="-24975" top="3180" width="17055" height="12090">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -39,7 +39,7 @@
    <NODE componentmode="InABox" id="3" nodename="IOBOX (STRING)" systemname="IOBox (String)">
    <BOUNDS height="0" left="2181" top="7209" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="915" left="2181" top="7209" type="Box" width="5790">
+   <BOUNDS height="915" left="2181" top="7209" type="Box" width="5895">
    </BOUNDS>
    <BOUNDS height="160" left="4440" top="6510" type="Window" width="215">
    </BOUNDS>
@@ -199,7 +199,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Substring" slicecount="1" values="fav" visible="1">
+   <PIN pinname="Substring" slicecount="1" visible="1" values="fav">
    </PIN>
    <PIN pinname="Count" visible="1">
    </PIN>
@@ -329,7 +329,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Set" slicecount="1" values="0" visible="1">
+   <PIN pinname="Set" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Count" dstnodeid="33" dstpinname="Input">
@@ -362,6 +362,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Input 2">
