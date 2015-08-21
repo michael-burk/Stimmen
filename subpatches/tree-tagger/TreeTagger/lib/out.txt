@@ -1,4 +1,7 @@
-DT	the
-JJ	only
-JJ	such
-NN	case
+ART	die
+ADJA	klein
+NN	Übel
+KON	und
+ART	die
+ADJA	klein
+NN	Hund
