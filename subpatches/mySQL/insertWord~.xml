@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="1185">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="4905">
    <BOUNDS type="Window" left="-15660" top="1740" width="14100" height="14580">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -411,7 +411,7 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Reset">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1305" top="15675" width="2370" height="555">
+   <BOUNDS type="Box" left="1305" top="15675" width="2535" height="2895">
    </BOUNDS>
    <BOUNDS type="Node" left="1305" top="15675" width="0" height="0">
    </BOUNDS>

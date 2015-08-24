@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="17745">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="20385">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2985" top="13335" width="0" height="0">
    </BOUNDS>
@@ -296,7 +296,7 @@
    <LINKPOINT x="14540" y="14140">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="-26730" top="1695" width="23475" height="15180">
+   <BOUNDS type="Window" left="-26685" top="1335" width="23475" height="14595">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -437,9 +437,9 @@
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="40" dstpinname="JSON">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2235" top="24285" width="9180" height="31545">
+   <BOUNDS type="Box" left="2220" top="28725" width="9180" height="31545">
    </BOUNDS>
-   <BOUNDS type="Node" left="2235" top="24285" width="0" height="0">
+   <BOUNDS type="Node" left="2220" top="28725" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -605,7 +605,7 @@
    <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="68" dstpinname="Jobject">
    </LINK>
    <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="69">
-   <BOUNDS type="Node" left="2235" top="23745" width="100" height="100">
+   <BOUNDS type="Node" left="2235" top="25995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -636,12 +636,188 @@
    <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="70" dstpinname="Jobject">
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="70" dstpinname="Jobject" linkstyle="Bezier">
+   <LINKPOINT x="2865" y="23235">
+   </LINKPOINT>
+   <LINKPOINT x="13095" y="23235">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="70" srcpinname="Output" dstnodeid="67" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="59" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="ListChildren (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="ListChildren (JSON)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="10485" top="23640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JObject" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Recursive" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Type" visible="1">
+   </PIN>
+   <PIN pinname="Path" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Filtering Paths" slicecount="1" values="response.entities">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10500" top="24135" width="2055" height="900">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10500" top="24135" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="14" values="Property,Property,Property,Property,Property,Property,Property,Property,Property,Property,Property,Property,Property,Property">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="77" dstpinname="JObject" linkstyle="Bezier">
+   <LINKPOINT x="3385" y="23273">
+   </LINKPOINT>
+   <LINKPOINT x="9965" y="23243">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="77" srcpinname="Output" dstnodeid="78" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="AsXElement (JSON)" filename="%VVVV%\addonpack\lib\nodes\plugins\JSONStringAsElement.dll" nodename="AsXElement (JSON)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="5400" top="25305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JSON" visible="1" slicecount="1" values="|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ELEMENT (XELEMENT SPLIT)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="5385" top="25740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Element" dstnodeid="87" dstpinname="Element">
+   </LINK>
+   <NODE systemname="ELEMENT (XELEMENT SPLIT)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="5850" top="26280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Children" dstnodeid="88" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6000" top="26760" width="1455" height="915">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6000" top="26760" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="4" values="item,item,item,item">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Value" dstnodeid="89" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5400" top="23655" width="1725" height="1365">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5400" top="23655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|,|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;&cr;&lf;]|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="91" srcpinname="Output String" dstnodeid="85" dstpinname="JSON">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7830" top="26265" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7830" top="26265" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Children Bin Size" dstnodeid="92" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="3570" top="25395" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="key" slicecount="1" values="matchingTokens">
+   </PIN>
+   <PIN pinname="path" slicecount="1" values="response.entities">
+   </PIN>
+   <BOUNDS type="Box" left="3570" top="25395">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Object" visible="1">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Jobject" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="93" dstpinname="Jobject">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3570" top="25920" width="1170" height="1785">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3570" top="25920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Output" dstnodeid="94" dstpinname="Input String">
    </LINK>
    </PATCH>

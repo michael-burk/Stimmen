@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="0" scrolly="14880">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="11685" scrolly="3705">
    <BOUNDS type="Window" left="-20520" top="1950" width="19335" height="14565">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -757,7 +757,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="176" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="14865" top="12885" width="2310" height="1920">
+   <BOUNDS type="Box" left="14865" top="12885" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="14865" top="12885" width="0" height="0">
    </BOUNDS>
@@ -777,7 +777,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="177" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="17340" top="12885" width="1590" height="1350">
+   <BOUNDS type="Box" left="17340" top="12885" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="17340" top="12885" width="0" height="0">
    </BOUNDS>
@@ -801,7 +801,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="178" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="19200" top="12885" width="1455" height="1185">
+   <BOUNDS type="Box" left="19200" top="12885" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="19200" top="12885" width="0" height="0">
    </BOUNDS>
@@ -863,9 +863,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="147" dstpinname="QuestionID" linkstyle="Bezier">
-   <LINKPOINT x="13395" y="7703">
+   <LINKPOINT x="13395" y="7688">
    </LINKPOINT>
-   <LINKPOINT x="15705" y="7703">
+   <LINKPOINT x="15690" y="7688">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="117" srcpinname="Output String" dstnodeid="147" dstpinname="Language" linkstyle="Bezier">
@@ -911,7 +911,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="217" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="20805" top="12885" width="2280" height="1005">
+   <BOUNDS type="Box" left="20805" top="12885" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="20805" top="12885" width="0" height="0">
    </BOUNDS>
@@ -1021,21 +1021,21 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="insertQuestion" filename="mySQL\insertQuestion.v4p" nodename="mySQL\insertQuestion.v4p" componentmode="Hidden" id="256">
-   <BOUNDS type="Node" left="17374" top="18021" width="0" height="0">
+   <BOUNDS type="Node" left="17374" top="20421" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="14517" top="14661" width="5715" height="6720">
+   <BOUNDS type="Box" left="14517" top="17061" width="5715" height="6720">
    </BOUNDS>
    <BOUNDS type="Window" left="-17610" top="6135" width="8010" height="7605">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="256" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="5565" y="11790">
+   <LINKPOINT x="5565" y="12590">
    </LINKPOINT>
-   <LINKPOINT x="16590" y="13320">
+   <LINKPOINT x="16590" y="14920">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="257" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="23790" top="12885" width="4695" height="1740">
+   <BOUNDS type="Box" left="23790" top="12885" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="23790" top="12885" width="0" height="0">
    </BOUNDS>
@@ -1071,7 +1071,7 @@
    <LINK srcnodeid="149" srcpinname="Output 1" dstnodeid="147" dstpinname="SendQuery" linkstyle="Bezier">
    <LINKPOINT x="21390" y="7778">
    </LINKPOINT>
-   <LINKPOINT x="16215" y="7778">
+   <LINKPOINT x="16365" y="7778">
    </LINKPOINT>
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="258">
@@ -1082,7 +1082,11 @@
    <PIN pinname="Output 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="149" srcpinname="Output 1" dstnodeid="258" dstpinname="Input 1" linkstyle="PolyLine">
+   <LINK srcnodeid="149" srcpinname="Output 1" dstnodeid="258" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="21435" y="3435">
+   </LINKPOINT>
+   <LINKPOINT x="21600" y="3435">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="258" srcpinname="Output 1" dstnodeid="196" dstpinname="SendQuery" linkstyle="Bezier">
    <LINKPOINT x="21630" y="8063">
@@ -1103,9 +1107,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="deleteALL" filename="mySQL\deleteALL.v4p" nodename="mySQL\deleteALL.v4p" componentmode="Hidden" id="259">
-   <BOUNDS type="Node" left="15522" top="17987" width="0" height="0">
+   <BOUNDS type="Node" left="15522" top="20387" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11517" top="14477" width="8010" height="7020">
+   <BOUNDS type="Box" left="11517" top="16877" width="8010" height="7020">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="8010" height="7020">
    </BOUNDS>
@@ -1113,15 +1117,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="259" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="4785" y="12548">
+   <LINKPOINT x="4785" y="13348">
    </LINKPOINT>
-   <LINKPOINT x="15525" y="12548">
+   <LINKPOINT x="15525" y="14148">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="260" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="16440" top="16950" width="480" height="480">
+   <BOUNDS type="Box" left="16440" top="19350" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16440" top="16950" width="0" height="0">
+   <BOUNDS type="Node" left="16440" top="19350" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1225,9 +1229,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="264" srcpinname="Output String" dstnodeid="147" dstpinname="active" linkstyle="Bezier">
-   <LINKPOINT x="13410" y="9698">
+   <LINKPOINT x="13425" y="9698">
    </LINKPOINT>
-   <LINKPOINT x="15870" y="9698">
+   <LINKPOINT x="16005" y="9698">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="265" systemname="IOBox (String)">
@@ -1247,9 +1251,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="265" srcpinname="Output String" dstnodeid="147" dstpinname="fav" linkstyle="Bezier">
-   <LINKPOINT x="13425" y="9945">
+   <LINKPOINT x="13425" y="9938">
    </LINKPOINT>
-   <LINKPOINT x="16005" y="9945">
+   <LINKPOINT x="16155" y="9938">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="263" srcpinname="Output String" dstnodeid="148" dstpinname="ID" linkstyle="Bezier">
@@ -1265,7 +1269,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="267">
-   <BOUNDS type="Node" left="21000" top="16485" width="100" height="100">
+   <BOUNDS type="Node" left="18060" top="15585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
@@ -1282,18 +1286,38 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="176" srcpinname="Output String" dstnodeid="267" dstpinname="Input 1">
+   <LINK srcnodeid="176" srcpinname="Output String" dstnodeid="267" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="13945" y="15330">
+   </LINKPOINT>
+   <LINKPOINT x="19040" y="15030">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="177" srcpinname="Output String" dstnodeid="267" dstpinname="Input 2">
+   <LINK srcnodeid="177" srcpinname="Output String" dstnodeid="267" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="16420" y="15045">
+   </LINKPOINT>
+   <LINKPOINT x="19205" y="14745">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="178" srcpinname="Output String" dstnodeid="267" dstpinname="Input 3">
+   <LINK srcnodeid="178" srcpinname="Output String" dstnodeid="267" dstpinname="Input 3" linkstyle="VHV">
+   <LINKPOINT x="18280" y="14970">
+   </LINKPOINT>
+   <LINKPOINT x="19385" y="14670">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="267" dstpinname="Input 4">
+   <LINK srcnodeid="217" srcpinname="Output String" dstnodeid="267" dstpinname="Input 4" linkstyle="VHV">
+   <LINKPOINT x="19855" y="14888">
+   </LINKPOINT>
+   <LINKPOINT x="19580" y="14588">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="257" srcpinname="Output String" dstnodeid="267" dstpinname="Input 5">
+   <LINK srcnodeid="257" srcpinname="Output String" dstnodeid="267" dstpinname="Input 5" linkstyle="VHV">
+   <LINKPOINT x="22810" y="15233">
+   </LINKPOINT>
+   <LINKPOINT x="19790" y="14933">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="268">
-   <BOUNDS type="Node" left="21000" top="17010" width="100" height="100">
+   <BOUNDS type="Node" left="18060" top="16110" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1307,9 +1331,9 @@
    <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="269" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="20985" top="17700" width="1785" height="285">
+   <BOUNDS type="Box" left="18045" top="16800" width="1785" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="20985" top="17700" width="0" height="0">
+   <BOUNDS type="Node" left="18045" top="16800" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>

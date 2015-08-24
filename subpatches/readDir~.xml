@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="6255" scrolly="9405">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="0" scrolly="4620">
    <BOUNDS type="Window" left="-19890" top="2295" width="19575" height="12090">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -39,7 +39,7 @@
    <NODE componentmode="InABox" id="3" nodename="IOBOX (STRING)" systemname="IOBox (String)">
    <BOUNDS height="0" left="2181" top="7209" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="1035" left="2181" top="7209" type="Box" width="6150">
+   <BOUNDS height="930" left="2181" top="7209" type="Box" width="6120">
    </BOUNDS>
    <BOUNDS height="160" left="4440" top="6510" type="Window" width="215">
    </BOUNDS>
@@ -455,7 +455,7 @@
    <LINK srcnodeid="45" srcpinname="Output 2" dstnodeid="46" dstpinname="Input String">
    </LINK>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="3090" top="11085" width="100" height="100">
+   <BOUNDS type="Node" left="2160" top="11415" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="|Please Update|">
    </PIN>
@@ -463,7 +463,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="51">
-   <BOUNDS type="Node" left="3105" top="10680" width="100" height="100">
+   <BOUNDS type="Node" left="2175" top="11010" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -475,9 +475,9 @@
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="47" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3135" top="11700" width="795" height="240">
+   <BOUNDS type="Box" left="2175" top="12030" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3135" top="11700" width="0" height="0">
+   <BOUNDS type="Node" left="2175" top="12030" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

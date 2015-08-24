@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\wordWeight.v4p" systemname="wordWeight" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\wordWeight.v4p" scrollx="30" scrolly="1605">
-   <BOUNDS type="Window" left="-15435" top="1005" width="15945" height="15525">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\wordWeight.v4p" systemname="wordWeight" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\wordWeight.v4p" scrollx="0" scrolly="5700">
+   <BOUNDS type="Window" left="-19050" top="1005" width="19560" height="15525">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -151,9 +151,9 @@
    </PIN>
    </NODE>
    <NODE id="13" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4125" top="14970" width="795" height="240">
+   <BOUNDS type="Box" left="4200" top="14970" width="1755" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4125" top="14970" width="0" height="0">
+   <BOUNDS type="Node" left="4200" top="14970" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -181,7 +181,7 @@
    </PIN>
    </NODE>
    <NODE id="15" systemname="DeleteSlice (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="DeleteSlice (String)" componentmode="Hidden">
-   <BOUNDS type="Node" left="4125" top="12135" width="100" height="100">
+   <BOUNDS type="Node" left="4200" top="12135" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -193,13 +193,13 @@
    <NODE id="16" systemname="Cons (String)" nodename="Cons (String)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" hiddenwhenlocked="0" managers="">
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Node" left="4140" top="13350" width="100" height="100">
+   <BOUNDS type="Node" left="4215" top="13350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" pintype="Input">
    </PIN>
    <PIN pinname="Input 2" visible="1" pintype="Input">
    </PIN>
-   <BOUNDS type="Box" left="-19980" top="-11250" width="2400" height="1800">
+   <BOUNDS type="Box" left="0" top="0" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -365,17 +365,17 @@
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="16" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="7290" y="7935">
+   <LINKPOINT x="7315" y="7935">
    </LINKPOINT>
-   <LINKPOINT x="4395" y="7935">
+   <LINKPOINT x="4445" y="7935">
    </LINKPOINT>
    </LINK>
    <NODE id="24" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Output 1|">
    </PIN>
-   <BOUNDS type="Box" left="4125" top="14010" width="750" height="240">
+   <BOUNDS type="Box" left="4200" top="14010" width="1260" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4125" top="14010" width="750" height="240">
+   <BOUNDS type="Node" left="4200" top="14010" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="24" dstpinname="Input String">
@@ -431,9 +431,9 @@
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="8" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="16" dstpinname="Input 3" linkstyle="Bezier">
-   <LINKPOINT x="1695" y="8580">
+   <LINKPOINT x="1720" y="8580">
    </LINKPOINT>
-   <LINKPOINT x="4590" y="8580">
+   <LINKPOINT x="4640" y="8580">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
