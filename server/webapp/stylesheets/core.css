@@ -1,0 +1,8 @@
+#volume {
+	background: black;
+	position: absolute;
+	left: 5px;
+	top: 50px;
+	height: 5px;
+	width: 500px;
+}

@@ -41,9 +41,6 @@
 	<script language="javascript" type="text/javascript" src="js/vendor/socket.io.js"></script>
 	<script language="javascript" type="text/javascript" src="js/core.js"></script>
 
-
-
-
 </head>
 
 <body>
@@ -55,11 +52,10 @@
 			<h5>Result</h5>
 			<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
 			</div>
-
-			
 			
 </div>
-
+<div id ="volume">
+</dv>
 
 <script type="text/javascript">
 	
@@ -87,6 +83,74 @@
 	    }  
 	};
 
+
+
+$( document ).ready(function() {
+
+	// var context = new AudioContext();
+
+           
+
+	//    // setup a javascript node
+ //    javascriptNode = context.createScriptProcessor(2048, 1, 1);
+
+//	setupAudioNodes();
+
+	var aCtx;
+	var analyser;
+	var microphone;
+
+
+	if (navigator.webkitGetUserMedia) {
+	   navigator.webkitGetUserMedia({ audio: true},
+	      function(stream) {
+			aCtx = new AudioContext();
+			analyser = aCtx.createAnalyser();
+			microphone = aCtx.createMediaStreamSource(stream);
+			microphone.connect(analyser);
+			// analyser.connect(aCtx.destination);
+			process();
+	      },
+	      function(err) {
+	         console.log("The following error occured: " + err.name);
+	      }
+	   );
+	} else {
+	   console.log("getUserMedia not supported");
+	}
+
+
+	function process(){
+	    setInterval(function(){
+	        FFTData = new Float32Array(analyser.frequencyBinCount);
+	        analyser.getFloatFrequencyData(FFTData);
+	      //  console.log("       " + FFTData[0]);
+
+	      	var average = getAverageVolume(FFTData)
+ 			
+ 			$("#volume").css("height",""+ (average+150)*20 +"px");
+	      //console.log(average+200);
+
+	    },10);
+	}
+
+    function getAverageVolume(array) {
+        var values = 0;
+        var average;
+ 
+        var length = array.length;
+ 
+        // get all the frequency amplitudes
+        for (var i = 0; i < length; i++) {
+            values += array[i];
+        }
+ 
+        average = values / length;
+        return average;
+    }
+
+
+});
 
 
 

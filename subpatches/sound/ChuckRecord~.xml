@@ -929,7 +929,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="\fav">
+   <PIN pinname="Input 2" slicecount="1" values="\inactive">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
