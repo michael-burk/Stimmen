@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="8310">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="5325">
    <BOUNDS type="Window" left="-28800" top="0" width="21285" height="17400">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
@@ -1043,7 +1043,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="801" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12375" top="18225" width="1410" height="345">
+   <BOUNDS type="Box" left="12375" top="18225" width="1770" height="1485">
    </BOUNDS>
    <BOUNDS type="Node" left="12375" top="18225" width="0" height="0">
    </BOUNDS>
@@ -1053,7 +1053,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="|OK OK Duplicate entry &apos;Tauchgang&apos; for key &apos;PRIMARY&apos; OK Cannot add or update a child row: a foreign key constraint fails (`stimmen`.`dictionaryentry`, CONSTRAINT `fk_DictionaryEntry_Word1` FOREIGN KEY (`Word_idWord`) REFERENCES `word` (`idWord`) ON DELETE NO ACTION ON UPDATE NO ACTION)|">
+   <PIN pinname="Input String" slicecount="1" values="|OK OK You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;&apos; at line 1 Column count doesn&apos;t match value count at row 1 Column count doesn&apos;t match value count at row 1 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;&apos; at line 1|">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="802" systemname="IOBox (Value Advanced)">
@@ -1080,10 +1080,48 @@
    </NODE>
    <LINK srcnodeid="802" srcpinname="Y Output Value" dstnodeid="792" dstpinname="Check">
    </LINK>
-   <NODE id="794" componentmode="Hidden" systemname="mySQL" filename="subpatches\mySQL.v4p" nodename="subpatches\mySQL.v4p" stayontop="1">
+   <NODE systemname="Playback" filename="subpatches\sound\Playback.v4p" nodename="subpatches\sound\Playback.v4p" componentmode="Hidden" id="819">
+   <BOUNDS type="Node" left="3215" top="10644" width="1935" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="5807" width="7185" height="9675">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-15435" top="2730" width="9870" height="10395">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="820" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="11025" top="16770" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11025" top="16770" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="result">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="501" srcpinname="result" dstnodeid="820" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="821" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9990" top="17115" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9990" top="17115" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="757" srcpinname="Output String" dstnodeid="821" dstpinname="Input String">
+   </LINK>
+   <NODE id="794" componentmode="Hidden" systemname="mySQL" filename="subpatches\mySQL.v4p" nodename="subpatches\mySQL.v4p" stayontop="0">
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="-20520" top="1950" width="19335" height="14565">
+   <BOUNDS type="Window" left="-21225" top="1005" width="19335" height="15810">
    </BOUNDS>
    <PIN pinname="Write!" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1095,9 +1133,9 @@
    </PIN>
    <PIN pinname="Connection" visible="1">
    </PIN>
-   <PIN pinname="SoundID" visible="1">
+   <PIN pinname="SoundID" visible="1" slicecount="1" values="2015.08.2232">
    </PIN>
-   <PIN pinname="Input_Antwort" visible="1">
+   <PIN pinname="Input_Antwort" visible="1" slicecount="1" values="teeest2">
    </PIN>
    <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1112,24 +1150,10 @@
    </NODE>
    <LINK srcnodeid="794" srcpinname="Output" dstnodeid="801" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="799" srcpinname="Output" dstnodeid="794" dstpinname="Write!">
-   </LINK>
    <LINK srcnodeid="794" srcpinname="Status" dstnodeid="800" dstpinname="Input String" linkstyle="Bezier">
    <LINKPOINT x="7530" y="18023">
    </LINKPOINT>
    <LINKPOINT x="7530" y="18023">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="794" dstpinname="Input_Antwort" linkstyle="Bezier">
-   <LINKPOINT x="12240" y="15518">
-   </LINKPOINT>
-   <LINKPOINT x="11760" y="15518">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="757" srcpinname="Output String" dstnodeid="794" dstpinname="SoundID" linkstyle="Bezier">
-   <LINKPOINT x="4935" y="11940">
-   </LINKPOINT>
-   <LINKPOINT x="10440" y="11940">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="794" srcpinname="Is Connected" dstnodeid="796" dstpinname="Y Input Value" linkstyle="Bezier">
@@ -1162,12 +1186,4 @@
    <LINKPOINT x="8490" y="11933">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Playback" filename="subpatches\sound\Playback.v4p" nodename="subpatches\sound\Playback.v4p" componentmode="Hidden" id="819">
-   <BOUNDS type="Node" left="3215" top="10644" width="1935" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="0" top="5807" width="7185" height="9675">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-15435" top="2730" width="9870" height="10395">
-   </BOUNDS>
-   </NODE>
    </PATCH>

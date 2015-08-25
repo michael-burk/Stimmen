@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="1845">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" systemname="insertWord" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertWord.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="-15660" top="1740" width="14100" height="14580">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -144,7 +144,7 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="5" dstpinname="Input">
    </LINK>
-   <NODE systemname="selectWord" filename="mySQL\selectWord.v4p" nodename="mySQL\selectWord.v4p" componentmode="Hidden" id="9">
+   <NODE systemname="selectEntity" filename="selectEntity.v4p" nodename="selectEntity.v4p" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="3690" top="2040" width="1305" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1335" top="0" width="9940" height="8235">
@@ -153,7 +153,7 @@
    </BOUNDS>
    <PIN pinname="Word" visible="1" slicecount="3" values=",,">
    </PIN>
-   <PIN pinname="Connection" visible="1">
+   <PIN pinname="Connection" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>
@@ -300,9 +300,17 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="3" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="idWord" dstnodeid="18" dstpinname="Input 1">
+   <LINK srcnodeid="9" srcpinname="EntitiyName" dstnodeid="18" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="4920" y="3345">
+   </LINKPOINT>
+   <LINKPOINT x="3000" y="3345">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="18" dstpinname="Input 2">
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="18" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="4365" y="2520">
+   </LINKPOINT>
+   <LINKPOINT x="4365" y="2520">
+   </LINKPOINT>
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="4155" top="13920" width="100" height="100">
@@ -358,12 +366,16 @@
    <PIN pinname="Up Edge" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="OnData" dstnodeid="54" dstpinname="Input">
+   <LINK srcnodeid="9" srcpinname="OnData" dstnodeid="54" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3720" y="3150">
+   </LINKPOINT>
+   <LINKPOINT x="3735" y="3150">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="54" srcpinname="Up Edge" dstnodeid="32" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="WordCount (String)" nodename="WordCount (String)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="5745" top="5985" width="100" height="100">
+   <BOUNDS type="Node" left="4860" top="6270" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input String" visible="1" slicecount="1" values="Merkel">
    </PIN>
@@ -377,7 +389,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="5745" top="5355" width="100" height="100">
+   <BOUNDS type="Node" left="4860" top="5640" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -386,7 +398,11 @@
    <PIN pinname="Intersperse" slicecount="1" values="Space">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="60" dstpinname="Input">
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="60" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="4365" y="3143">
+   </LINKPOINT>
+   <LINKPOINT x="4875" y="3143">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="60" srcpinname="Output" dstnodeid="58" dstpinname="Input String">
    </LINK>
@@ -406,9 +422,17 @@
    </LINK>
    <LINK srcnodeid="61" srcpinname="Output 1" dstnodeid="9" dstpinname="SendQuery">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Reset">
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Reset" linkstyle="Bezier">
+   <LINKPOINT x="6315" y="3488">
+   </LINKPOINT>
+   <LINKPOINT x="5295" y="3488">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Reset">
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Reset" linkstyle="Bezier">
+   <LINKPOINT x="6300" y="3353">
+   </LINKPOINT>
+   <LINKPOINT x="3375" y="3353">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1305" top="15675" width="2535" height="2895">
