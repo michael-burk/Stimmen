@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="9525" scrolly="8235">
-   <BOUNDS type="Window" left="-23400" top="525" width="22800" height="15810">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="7320" scrolly="0">
+   <BOUNDS type="Window" left="-24855" top="675" width="24285" height="15810">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -675,6 +675,8 @@
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="Unlimited">
    </PIN>
+   <PIN pinname="Default" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="150">
    <BOUNDS type="Node" left="18135" top="3960" width="100" height="100">
@@ -853,9 +855,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="196" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="5235" y="9683">
+   <LINKPOINT x="4785" y="9683">
    </LINKPOINT>
-   <LINKPOINT x="24105" y="9683">
+   <LINKPOINT x="24555" y="9683">
    </LINKPOINT>
    </LINK>
    <NODE nodename="R (Value)" id="221" systemname="R (Value)">
@@ -897,9 +899,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="254" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="5235" y="9683">
+   <LINKPOINT x="4785" y="9683">
    </LINKPOINT>
-   <LINKPOINT x="26925" y="9683">
+   <LINKPOINT x="27375" y="9683">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="150" srcpinname="Output" dstnodeid="254" dstpinname="AnswerId" linkstyle="Bezier">
@@ -931,7 +933,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="257" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="27390" top="12885" width="1905" height="750">
+   <BOUNDS type="Box" left="27390" top="12885" width="1890" height="855">
    </BOUNDS>
    <BOUNDS type="Node" left="27390" top="12885" width="0" height="0">
    </BOUNDS>
@@ -1181,7 +1183,7 @@
    <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="269" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18045" top="16800" width="5040" height="285">
+   <BOUNDS type="Box" left="18045" top="16800" width="6810" height="1245">
    </BOUNDS>
    <BOUNDS type="Node" left="18045" top="16800" width="0" height="0">
    </BOUNDS>
@@ -1323,7 +1325,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="||">
+   <PIN pinname="Input String" slicecount="1" values="OK">
    </PIN>
    </NODE>
    <LINK srcnodeid="319" srcpinname="Output String" dstnodeid="267" dstpinname="Input 3" linkstyle="VHV">
@@ -1337,7 +1339,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13365" top="7335" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="3" visible="1" values="Michi,Anni,Michi">
+   <PIN pinname="Input String" slicecount="3" visible="1" values="A,B,X">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -1383,9 +1385,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="323" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="21555" top="12855" width="285" height="240">
+   <BOUNDS type="Box" left="21555" top="12885" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="21555" top="12855" width="0" height="0">
+   <BOUNDS type="Node" left="21555" top="12885" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1470,36 +1472,6 @@
    <PIN pinname="Input String" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE id="330" componentmode="Hidden" stayontop="1" systemname="insertEntity" filename="mySQL\insertEntity.v4p" nodename="mySQL\insertEntity.v4p">
-   <BOUNDS type="Node" left="19500" top="12270" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="19500" top="12270" width="13260" height="10315">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-27060" top="150" width="24165" height="16170">
-   </BOUNDS>
-   <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Insert" visible="1">
-   </PIN>
-   <PIN pinname="OnData" visible="1">
-   </PIN>
-   <PIN pinname="OnChange" visible="1">
-   </PIN>
-   <PIN pinname="EntityName" visible="1" slicecount="1" values="aaa">
-   </PIN>
-   <PIN pinname="EntitiyIdOut" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="330" srcpinname="Status" dstnodeid="319" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="330" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="4785" y="9683">
-   </LINKPOINT>
-   <LINKPOINT x="19500" y="9683">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="327" srcpinname="Y Output Value" dstnodeid="330" dstpinname="SendQuery">
-   </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="334">
    <BOUNDS type="Node" left="28170" top="11670" width="100" height="100">
    </BOUNDS>
@@ -1535,7 +1507,7 @@
    </LINKPOINT>
    </LINK>
    <NODE id="114" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
-   <PIN pinname="Input String" slicecount="1" values="|A B C D E F|">
+   <PIN pinname="Input String" slicecount="1" values="|Wow wow wow wow wow wow|">
    </PIN>
    <BOUNDS type="Node" left="15465" top="1905" width="100" height="100">
    </BOUNDS>
@@ -1574,8 +1546,6 @@
    <PIN pinname="Mode" slicecount="1" values="Point">
    </PIN>
    </NODE>
-   <LINK srcnodeid="336" srcpinname="Output" dstnodeid="334" dstpinname="Input">
-   </LINK>
    <NODE systemname="insertCategory" filename="mySQL\insertCategory.v4p" nodename="mySQL\insertCategory.v4p" componentmode="Hidden" id="331" stayontop="1">
    <BOUNDS type="Node" left="21555" top="12270" width="100" height="100">
    </BOUNDS>
@@ -1590,10 +1560,10 @@
    <BOUNDS type="Box" left="21555" top="12270">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="331" dstpinname="Connection" linkstyle="Bezier">
-   <LINKPOINT x="4760" y="9663">
+   <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="331" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4785" y="9683">
    </LINKPOINT>
-   <LINKPOINT x="21580" y="9628">
+   <LINKPOINT x="21555" y="9683">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="331" srcpinname="Status" dstnodeid="323" dstpinname="Input String" linkstyle="VHV">
@@ -1612,22 +1582,10 @@
    <LINKPOINT x="22755" y="7703">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="330" srcpinname="OnData" dstnodeid="336" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="20535" y="11768">
-   </LINKPOINT>
-   <LINKPOINT x="28185" y="11768">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="321" srcpinname="Output String" dstnodeid="331" dstpinname="EntityName" linkstyle="Bezier">
    <LINKPOINT x="13405" y="10580">
    </LINKPOINT>
    <LINKPOINT x="22145" y="10375">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="320" srcpinname="Output String" dstnodeid="330" dstpinname="EntityName" linkstyle="Bezier">
-   <LINKPOINT x="13425" y="10118">
-   </LINKPOINT>
-   <LINKPOINT x="19995" y="10118">
    </LINKPOINT>
    </LINK>
    <NODE systemname="entryIDs" filename="mySQL\entryIDs.v4p" nodename="mySQL\entryIDs.v4p" componentmode="Hidden" id="246" stayontop="1">
@@ -1675,7 +1633,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="27540" top="8250" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0,1,0,1,1,0">
+   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="1,1,1,1,1,1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1736,12 +1694,6 @@
    </NODE>
    <LINK srcnodeid="340" srcpinname="Output" dstnodeid="343" dstpinname="Spread">
    </LINK>
-   <LINK srcnodeid="330" srcpinname="EntitiyIdOut" dstnodeid="343" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="19560" y="11790">
-   </LINKPOINT>
-   <LINKPOINT x="29895" y="11790">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="344" systemname="IOBox (String)">
    <BOUNDS type="Box" left="29535" top="11760" width="870" height="1380">
    </BOUNDS>
@@ -1755,7 +1707,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
+   <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
    </NODE>
    <LINK srcnodeid="343" srcpinname="Output" dstnodeid="344" dstpinname="Input String">
@@ -1778,28 +1730,158 @@
    </LINK>
    <LINK srcnodeid="343" srcpinname="Output" dstnodeid="254" dstpinname="idEntity">
    </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="346" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11535" top="7260" width="1725" height="915">
+   <LINK srcnodeid="336" srcpinname="Output" dstnodeid="334" dstpinname="Input">
+   </LINK>
+   <NODE id="330" componentmode="Hidden" stayontop="1" systemname="insertEntity" filename="mySQL\insertEntity.v4p" nodename="mySQL\insertEntity.v4p">
+   <BOUNDS type="Node" left="19500" top="12270" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Node" left="11535" top="7260" width="0" height="0">
+   <BOUNDS type="Box" left="19500" top="12270" width="13260" height="10315">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="3" visible="1" values="|Angela Merkel|,Putin,Anni">
+   <BOUNDS type="Window" left="-26520" top="1920" width="24165" height="16170">
+   </BOUNDS>
+   <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
+   <PIN pinname="Insert" visible="1">
    </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
+   <PIN pinname="OnData" visible="1">
    </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   <PIN pinname="OnChange" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Entity">
+   <PIN pinname="EntityName" visible="1" slicecount="1" values="aaa">
    </PIN>
-   <PIN pinname="Output String" visible="1">
+   <PIN pinname="EntitiyIdOut" visible="1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   <PIN pinname="DoQuery" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="334" srcpinname="Up Edge" dstnodeid="254" dstpinname="SendQuery">
+   <LINK srcnodeid="330" srcpinname="Status" dstnodeid="319" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="330" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4785" y="9683">
+   </LINKPOINT>
+   <LINKPOINT x="19500" y="9683">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="330" srcpinname="OnData" dstnodeid="336" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="20535" y="11768">
+   </LINKPOINT>
+   <LINKPOINT x="28185" y="11768">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="320" srcpinname="Output String" dstnodeid="330" dstpinname="EntityName" linkstyle="Bezier">
+   <LINKPOINT x="13425" y="10118">
+   </LINKPOINT>
+   <LINKPOINT x="19995" y="10118">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="330" srcpinname="EntitiyIdOut" dstnodeid="343" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="19560" y="11790">
+   </LINKPOINT>
+   <LINKPOINT x="29895" y="11790">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="327" srcpinname="Y Output Value" dstnodeid="330" dstpinname="SendQuery">
+   </LINK>
+   <LINK srcnodeid="330" srcpinname="DoQuery" dstnodeid="254" dstpinname="SendQuery">
+   </LINK>
+   <NODE id="349" systemname="Select (MySQL Network)" filename="%VVVV%\addonpack\lib\nodes\plugins\MySQLNodes.dll" nodename="Select (MySQL Network)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="SendQuery" visible="1" slicecount="1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="OnData" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="18030" top="1230" width="1200" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18030" top="1230" width="2400" height="1800">
+   </BOUNDS>
+   <PIN pinname="idEntity" visible="1">
+   </PIN>
+   <PIN pinname="EntityName" visible="1">
+   </PIN>
+   <PIN pinname="Connection" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Fields" visible="1" slicecount="1" pintype="Input" values="|* FROM Entity|">
+   </PIN>
+   <PIN pinname="Field Names" slicecount="1" pintype="Configuration" values="|idEntity, EntityName|">
+   </PIN>
+   <PIN pinname="CategoryName" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="idCategory" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Tables" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Dataset Column Names" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Host" visible="1">
+   </PIN>
+   <PIN pinname=" User" visible="1">
+   </PIN>
+   <PIN pinname="User" visible="1">
+   </PIN>
+   <PIN pinname="Having" slicecount="1" pintype="Input" visible="1" values="||">
+   </PIN>
+   <PIN pinname="text" visible="1">
+   </PIN>
+   <PIN pinname="envelope" visible="1">
+   </PIN>
+   <PIN pinname="idWord" visible="1">
+   </PIN>
+   <PIN pinname="Group By" slicecount="1" pintype="Input" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Where" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Order By" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Statement" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Status" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="348">
+   <BOUNDS type="Node" left="18960" top="1830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="349" srcpinname="idEntity" dstnodeid="348" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="347">
+   <BOUNDS type="Node" left="19170" top="675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="347" srcpinname="Bang" dstnodeid="349" dstpinname="SendQuery">
+   </LINK>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="346">
+   <BOUNDS type="Node" left="18945" top="2325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="348" srcpinname="Count" dstnodeid="346" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="349" srcpinname="OnData" dstnodeid="346" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="346" srcpinname="Output" dstnodeid="151" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="349" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="2720" y="4518">
+   </LINKPOINT>
+   <LINKPOINT x="20095" y="3808">
+   </LINKPOINT>
    </LINK>
    </PATCH>
