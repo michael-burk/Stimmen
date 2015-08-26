@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="5685" scrolly="6435">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="3510" scrolly="3900">
    <BOUNDS type="Window" left="-24375" top="2400" width="19860" height="11310">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
