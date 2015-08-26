@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="7875" scrolly="2685">
-   <BOUNDS height="12810" left="-23160" top="1365" type="Window" width="20580">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="0" scrolly="1665">
+   <BOUNDS height="12810" left="-21435" top="2895" type="Window" width="20580">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
    <BOUNDS height="276" left="7359" top="7596" type="Node" width="1020">
@@ -262,36 +262,6 @@
    </NODE>
    <LINK dstnodeid="6" dstpinname="Input String" srcnodeid="3" srcpinname="Output">
    </LINK>
-   <NODE id="2" nodename="ShellExecute (Windows)">
-   <BOUNDS height="0" left="3690" top="10905" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="File" slicecount="1" values="chuck.exe">
-   </PIN>
-   <PIN pinname="Commandline Arguments" slicecount="1" values="ChuckRecord.ck">
-   </PIN>
-   <PIN pinname="Show Window" visible="1">
-   </PIN>
-   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Block until finished" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Result" visible="1">
-   </PIN>
-   </NODE>
-   <NODE id="1" nodename="ShellExecute (Windows)">
-   <BOUNDS height="0" left="5100" top="10905" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="File" slicecount="1" values="chuck.exe">
-   </PIN>
-   <PIN pinname="Commandline Arguments" slicecount="1" values="--kill">
-   </PIN>
-   <PIN pinname="Show Window" visible="1">
-   </PIN>
-   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Block until finished" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE id="0" nodename="TOGEDGE (ANIMATION)">
    <BOUNDS height="270" left="4590" top="10140" type="Node" width="1455">
    </BOUNDS>
@@ -376,18 +346,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="DeBug">
    </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Show Window" hiddenwhenlocked="0" linkstyle="Bezier">
-   <LINKPOINT x="3390" y="7710">
-   </LINKPOINT>
-   <LINKPOINT x="4140" y="7710">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Show Window" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="3405" y="7725">
-   </LINKPOINT>
-   <LINKPOINT x="5550" y="7725">
-   </LINKPOINT>
-   </LINK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -447,10 +405,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Output 1" dstnodeid="23" dstpinname="Do Execute">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Up Edge" dstnodeid="2" dstpinname="Do Execute">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Down Edge" dstnodeid="1" dstpinname="Do Execute">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="16515" top="11880" width="0" height="0">
@@ -681,9 +635,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8460" top="3975" width="480" height="480">
+   <BOUNDS type="Box" left="8460" top="3915" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8460" top="3975" width="0" height="0">
+   <BOUNDS type="Node" left="8460" top="3915" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -699,9 +653,9 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1935" top="11655" width="795" height="240">
    </BOUNDS>
@@ -845,7 +799,7 @@
    <LINK srcnodeid="73" srcpinname="Output" dstnodeid="3" dstpinname="Input 4">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="13305" top="2430" width="100" height="100">
+   <BOUNDS type="Node" left="13905" top="2370" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -937,5 +891,91 @@
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="75" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="75" srcpinname="Output" dstnodeid="77" dstpinname="Commandline Arguments">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="80" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5130" top="11430" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5130" top="11430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="81" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3795" top="11445" width="1170" height="735">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3795" top="11445" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|The specified file was not found|">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="0" left="5100" top="10905" width="0">
+   </BOUNDS>
+   <PIN pinname="File" slicecount="1" values="chuck.exe">
+   </PIN>
+   <PIN pinname="Commandline Arguments" slicecount="1" values="--kill">
+   </PIN>
+   <PIN pinname="Show Window" visible="1">
+   </PIN>
+   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Block until finished" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Result" dstnodeid="80" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Down Edge" dstnodeid="1" dstpinname="Do Execute">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Show Window" linkstyle="Bezier" hiddenwhenlocked="0">
+   <LINKPOINT x="3405" y="7725">
+   </LINKPOINT>
+   <LINKPOINT x="5550" y="7725">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="2" nodename="ShellExecute (Windows)" systemname="ShellExecute (Windows)">
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   <BOUNDS type="Node" height="0" left="3690" top="10905" width="0">
+   </BOUNDS>
+   <PIN pinname="File" slicecount="1" values="chuck.exe">
+   </PIN>
+   <PIN pinname="Commandline Arguments" slicecount="1" values="ChuckRecord.ck">
+   </PIN>
+   <PIN pinname="Show Window" visible="1">
+   </PIN>
+   <PIN pinname="Do Execute" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Block until finished" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Result" dstnodeid="81" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Up Edge" dstnodeid="2" dstpinname="Do Execute">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Show Window" hiddenwhenlocked="0" linkstyle="Bezier">
+   <LINKPOINT x="3390" y="7710">
+   </LINKPOINT>
+   <LINKPOINT x="4140" y="7710">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
    </LINK>
    </PATCH>

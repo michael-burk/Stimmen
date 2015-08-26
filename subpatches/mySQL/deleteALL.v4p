@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" systemname="deleteALL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" scrollx="195" scrolly="375">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" systemname="deleteALL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Delete (MySQL Network)" filename="%VVVV%\addonpack\lib\nodes\plugins\MySQLNodes.dll" nodename="Delete (MySQL Network)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="3225" width="4035" height="270">
    </BOUNDS>
