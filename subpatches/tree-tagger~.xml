@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" scrollx="160" scrolly="18390" bgcolor="14935011" locked="0">
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" scrollx="2610" scrolly="15900" bgcolor="14935011" locked="0">
    <BOUNDS type="Window" left="4550" top="0" width="21050" height="15440">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -547,7 +547,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5730" top="11100" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Hallo Hallo Hallo Russland und Deutschland hängen mir mal sowas von echt zum Hals raus 23|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Я мой мне вам ваш себе|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -617,7 +617,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10275" top="2480" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -787,7 +787,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="20">
+   <PIN pinname="Rows" slicecount="1" values="25">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -832,10 +832,10 @@
    </NODE>
    <LINK srcnodeid="47" srcpinname="Output" dstnodeid="621" dstpinname="Input String">
    </LINK>
-   <NODE systemname="POS Parser" filename="POS Parser.v4p" nodename="POS Parser.v4p" componentmode="Hidden" id="1229">
-   <BOUNDS type="Node" left="11036" top="21488" width="0" height="0">
+   <NODE systemname="POS Parser" filename="POS Parser.v4p" nodename="POS Parser.v4p" componentmode="InAWindow" id="1229" stayontop="0">
+   <BOUNDS type="Node" left="10996" top="21508" width="2170" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5655" top="9933" width="10763" height="23110">
+   <BOUNDS type="Box" left="5615" top="9953" width="10763" height="23110">
    </BOUNDS>
    <BOUNDS type="Window" left="7220" top="1300" width="14370" height="16140">
    </BOUNDS>
@@ -876,8 +876,6 @@
    </NODE>
    <LINK srcnodeid="52" srcpinname="Output" dstnodeid="54" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="40" srcpinname="Up Edge" dstnodeid="1229" dstpinname="Execute">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1231" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3560" top="22420" width="5630" height="6330">
    </BOUNDS>
@@ -905,5 +903,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="96" srcpinname="Output 1" dstnodeid="1231" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Up Edge" dstnodeid="1229" dstpinname="Execute">
    </LINK>
    </PATCH>

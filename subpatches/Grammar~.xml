@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" systemname="Grammar" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" scrollx="17260" scrolly="1650">
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" systemname="Grammar" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" scrollx="0" scrolly="12020">
    <BOUNDS type="Window" left="-110" top="-110" width="25740" height="16140">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.0.0">
@@ -1052,6 +1052,146 @@
    <PIN pinname="Output String" visible="0">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="99" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="18160" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="18160" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|personalpronomen: wer? who? I, you, he... me, you, him,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="18750" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="18750" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|possessivpronomen: wessen? whose? my, your, his,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5030" top="18160" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5030" top="18160" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Verb|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5030" top="18750" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5030" top="18750" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Nomen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="19940" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="19940" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|relativpronomen: who?, which?, whose?|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="20500" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="20500" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|reflexivpronomen: -self, -selves|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="19330" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="19330" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|possessivbegleiter: wessen? whose? mine, yours, his, hers, theirs,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5030" top="19330" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5030" top="19330" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Nomen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="21310" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="21310" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|substituierend = pronoun&cr;&lf;replaces noun phrase (wer, was, who)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="90" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="21870" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="21870" width="2810" height="640">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|attribuierend = determiner&cr;&lf;modifies noun phrase (wessen Hut, whose, which)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
