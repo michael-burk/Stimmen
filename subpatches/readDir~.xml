@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="0" scrolly="3030">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="705" scrolly="3735">
    <BOUNDS type="Window" left="3855" top="1800" width="19575" height="12090">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -39,7 +39,7 @@
    <NODE componentmode="InABox" id="3" nodename="IOBOX (STRING)" systemname="IOBox (String)">
    <BOUNDS height="0" left="2181" top="7209" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="930" left="2181" top="7209" type="Box" width="6120">
+   <BOUNDS height="1080" left="2181" top="7209" type="Box" width="5970">
    </BOUNDS>
    <BOUNDS height="160" left="4440" top="6510" type="Window" width="215">
    </BOUNDS>

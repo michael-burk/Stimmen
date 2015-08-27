@@ -1,0 +1,125 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" systemname="Quote" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4020" top="1980" width="19395" height="10140">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="1860" top="6585" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1860" top="6585" width="9945" height="4545">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="50" values="0.1533203125,0.1494140625,0.1444091796875,0.14190673828125,0.134490966796875,0.129150390625,0.126983642578125,0.122161865234375,0.109161376953125,0.103057861328125,0.093536376953125,0.09808349609375,0.10284423828125,0.104461669921875,0.10467529296875,0.10919189453125,0.10687255859375,0.095672607421875,0.10369873046875,0.09918212890625,0.107147216796875,0.104644775390625,0.10345458984375,0.101654052734375,0.110321044921875,0.107635498046875,0.1033935546875,0.104278564453125,0.1126708984375,0.108367919921875,0.105865478515625,0.107635498046875,0.118865966796875,0.119049072265625,0.106475830078125,0.101898193359375,0.092315673828125,0.099273681640625,0.09161376953125,0.0894775390625,0.085296630859375,0.09503173828125,0.10113525390625,0.09405517578125,0.08941650390625,0.08837890625,0.085906982421875,0.073974609375,0.0855712890625,0.087005615234375">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Connections" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2565" top="2430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2565" top="2430">
+   </BOUNDS>
+   <PIN pinname="Output Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="R (String)" id="3" systemname="R (String)">
+   <BOUNDS type="Node" left="2565" top="1680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="|Sound Playing - Position(Duration/Path|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2565" top="3195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="2.2060">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2610" top="4485" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output 1" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <NODE systemname="WaveForm (Spreads)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.dll" nodename="WaveForm (Spreads)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1890" top="3900" width="3525" height="270">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Start Time" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="1" values="..\sound\Recordings\2015_8_27\2015.08.27-18.51.09.wav">
+   </PIN>
+   <PIN pinname="Wave Form" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="17" dstpinname="End Time">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output 3" dstnodeid="17" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output 2" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSpread (Spreads)" nodename="GetSpread (Spreads)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="1875" top="5730" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1" slicecount="50" values="1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44,1.44">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Wave Form" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="2625" top="5130" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Destination Maximum" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Source Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="20" dstpinname="Source Maximum">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="20" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="18" dstpinname="Count">
+   </LINK>
+   </PATCH>

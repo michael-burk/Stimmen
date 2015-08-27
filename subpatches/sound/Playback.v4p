@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback.v4p" systemname="Playback" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback.v4p" systemname="Playback" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback.v4p" scrollx="450" scrolly="0">
    <BOUNDS type="Window" left="8460" top="2625" width="9870" height="10395">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -145,7 +145,7 @@
    </PIN>
    <PIN pinname="Desired Output Channels" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Desired Input Channels" slicecount="1" values="2">
+   <PIN pinname="Desired Input Channels" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Sample Rate">
    </PIN>
@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4095" top="2685" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Recordings\2015_8_27\2015.08.27-13.02.37.wav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Recordings\2015_8_27\audioPackRecording.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -255,7 +255,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
    </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="12" dstpinname="Filename">
-   </LINK>
    </PATCH>
