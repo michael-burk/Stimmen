@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\wordWeight.v4p" systemname="wordWeight" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\wordWeight.v4p" scrollx="0" scrolly="5700">
-   <BOUNDS type="Window" left="-19050" top="1005" width="19560" height="15525">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\wordWeight.v4p" systemname="wordWeight" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\wordWeight.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="2625" top="225" width="19560" height="15525">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>

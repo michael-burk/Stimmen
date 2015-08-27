@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback.v4p" systemname="Playback" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="-15435" top="2730" width="9870" height="10395">
+   <BOUNDS type="Window" left="8460" top="2625" width="9870" height="10395">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4395" top="7005" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1530" top="1890" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -61,7 +61,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
@@ -71,9 +71,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3105" top="2730" width="795" height="240">
+   <BOUNDS type="Box" left="3135" top="2355" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3105" top="2730" width="0" height="0">
+   <BOUNDS type="Node" left="3135" top="2355" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -110,28 +110,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4080" top="1890" width="3480" height="525">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="1890" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="2" values="..\..\..\lib\assets\sounds\vvvv.wav,..\..\..\lib\assets\sounds\vvvv5.1.wav">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="|Audio File (*.wav, *.mp3, *.aiff, *.m4a)||*.wav;*.mp3;*.aiff;*.m4a|">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="7" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="5685" top="7410" width="1590" height="240">
    </BOUNDS>
@@ -143,7 +121,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="8" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="5505" top="6900" width="1590" height="240">
+   <BOUNDS type="Box" left="5505" top="6900" width="1905" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="5505" top="6900" width="0" height="0">
    </BOUNDS>
@@ -261,11 +239,11 @@
    <LINK srcnodeid="7" srcpinname="Output Enum" dstnodeid="10" dstpinname="Sample Rate">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4095" top="2685" width="795" height="240">
+   <BOUNDS type="Box" left="4095" top="2685" width="4695" height="270">
    </BOUNDS>
    <BOUNDS type="Node" left="4095" top="2685" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Recordings\2015_8_27\2015.08.27-13.02.37.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

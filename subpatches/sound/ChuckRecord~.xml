@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="0" scrolly="1665">
-   <BOUNDS height="12810" left="-21435" top="2895" type="Window" width="20580">
+   <BOUNDS height="12810" left="615" top="2070" type="Window" width="20580">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
    <BOUNDS height="276" left="7359" top="7596" type="Node" width="1020">
@@ -157,7 +157,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="SubType" slicecount="1" values="|Integer (0 .. MaxInt)|">
    </PIN>
@@ -909,9 +909,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="81" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3795" top="11445" width="1170" height="735">
+   <BOUNDS type="Box" left="3675" top="11490" width="1170" height="735">
    </BOUNDS>
-   <BOUNDS type="Node" left="3795" top="11445" width="0" height="0">
+   <BOUNDS type="Node" left="3675" top="11490" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -955,7 +955,7 @@
    </PIN>
    <BOUNDS type="Node" height="0" left="3690" top="10905" width="0">
    </BOUNDS>
-   <PIN pinname="File" slicecount="1" values="chuck.exe">
+   <PIN pinname="File" slicecount="1" visible="1" values="chuck.exe">
    </PIN>
    <PIN pinname="Commandline Arguments" slicecount="1" values="ChuckRecord.ck">
    </PIN>
@@ -975,6 +975,30 @@
    </LINKPOINT>
    <LINKPOINT x="4140" y="7710">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="3900" top="8385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Do Rescan" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Folder" slicecount="1" values="CurrentPatch">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="3735" top="9165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="chuck.exe">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="84" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Output" dstnodeid="2" dstpinname="File">
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input">
    </LINK>

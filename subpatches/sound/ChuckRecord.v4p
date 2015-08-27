@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="0" scrolly="1665">
-   <BOUNDS height="12810" left="-21435" top="2895" type="Window" width="20580">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="285" scrolly="2370">
+   <BOUNDS height="12810" left="615" top="2070" type="Window" width="20580">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
    <BOUNDS height="276" left="7359" top="7596" type="Node" width="1020">
@@ -955,7 +955,7 @@
    </PIN>
    <BOUNDS type="Node" height="0" left="3690" top="10905" width="0">
    </BOUNDS>
-   <PIN pinname="File" slicecount="1" values="chuck.exe" visible="1">
+   <PIN pinname="File" slicecount="1" visible="1" values="chuck.exe">
    </PIN>
    <PIN pinname="Commandline Arguments" slicecount="1" values="ChuckRecord.ck">
    </PIN>

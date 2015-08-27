@@ -1,199 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="360">
-   <BOUNDS type="Window" left="-28800" top="0" width="21285" height="17400">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-120" top="-120" width="25260" height="15810">
    </BOUNDS>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="101">
-   <BOUNDS type="Node" left="15015" top="1710" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15015" top="1710" width="1905" height="240">
-   </BOUNDS>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="192.168.100.26">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="IP">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="104">
-   <BOUNDS type="Node" left="9375" top="14925" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9375" top="14925" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="5001">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Remote UDP Port|">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="161" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11865" top="1680" width="2520" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11865" top="1680" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="server\server.js">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="Filename">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|path to script|">
-   </PIN>
-   </NODE>
-   <NODE systemname="OpenURL (Network)" filename="%VVVV%\lib\nodes\modules\Network\OpenURL (Network).v4p" nodename="OpenURL (Network)" componentmode="Hidden" id="162">
-   <BOUNDS type="Node" left="14820" top="4275" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Open" slicecount="1" visible="1" values="0">
-   </PIN>
-   <BOUNDS type="Box" left="14820" top="4275">
-   </BOUNDS>
-   <PIN pinname="Url" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="197" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9090" top="6420" width="915" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9090" top="6420" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="5000">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Local UDP Port|">
-   </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="303">
-   <BOUNDS type="Node" left="14835" top="3180" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" visible="1" values=":">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="https://">
-   </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values=":">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 4" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="304">
-   <BOUNDS type="Node" left="15330" top="2385" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15330" top="2385" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="8005">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|HTTP Port|">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="303" srcpinname="Output" dstnodeid="162" dstpinname="Url">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="303" dstpinname="Input 2" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="304" srcpinname="Output String" dstnodeid="303" dstpinname="Input 4">
-   </LINK>
-   <NODE systemname="Info (Message)" filename="plugins\message\Message.csproj" nodename="Info (Message)" componentmode="Hidden" id="283">
-   <BOUNDS type="Node" left="10440" top="8985" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Box" left="10440" top="8985">
-   </BOUNDS>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="389" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10815" top="9555" width="7305" height="1110">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10815" top="9555" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Sessions">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="6">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="283" srcpinname="Output" dstnodeid="389" dstpinname="Input String">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="395" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9915" top="7110" width="1170" height="375">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9915" top="7110" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|string result|">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Configuration">
-   </PIN>
-   </NODE>
-   <NODE systemname="localNodeJs" filename="subpatches\nodejs\localNodeJs.v4p" nodename="subpatches\nodejs\localNodeJs.v4p" componentmode="Hidden" id="156" stayontop="0">
-   <BOUNDS type="Node" left="8580" top="2460" width="3330" height="270">
-   </BOUNDS>
-   <BOUNDS type="Window" left="5220" top="735" width="17490" height="11655">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8430" top="2460">
-   </BOUNDS>
-   <PIN pinname="stop nodejs" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="start nodejs" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="IsRunning" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="161" srcpinname="Output String" dstnodeid="156" dstpinname="path to script" linkstyle="PolyLine">
-   </LINK>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="509" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8265" top="7110" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8265" top="7110" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Clear Session Ids|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="511" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4485" top="2955" width="1440" height="1470">
+   <BOUNDS type="Box" left="5310" top="1320" width="1440" height="1470">
    </BOUNDS>
-   <BOUNDS type="Node" left="4485" top="2955" width="0" height="0">
+   <BOUNDS type="Node" left="5310" top="1320" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -213,9 +29,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="514">
-   <BOUNDS type="Node" left="5280" top="5115" width="100" height="100">
+   <BOUNDS type="Node" left="6105" top="3480" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5280" top="5115" width="480" height="480">
+   <BOUNDS type="Box" left="6105" top="3480" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -230,106 +46,8 @@
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="522" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="14355" top="20775" width="3795" height="9075">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14355" top="20775" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="6">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="116" values="Recordings\2015.08.05-14.08.42.wav,|bei dir Arbeitsagentur beschleunigt werden der Iran kritisiert die usa bitte das Leiter der internationalen Atomenergiebehörde das Wetter viel Sonne nur im Osten und Südosten wolkig in den Alpen und im Schwarzwald kurze Schauer und Gewitter im norden 20 bis 28 grad im süden bis 32 Grad auch morgen hochsommer Wetter mit viel sonne gegen Abend vereinzelte wärmegewitter 27 bis 31 Grad soweit die Meldungen die nächste Nachrichten um 14 30 uhr dran. 14 Uhr 8 die Verkehrslage A1 Münster richtung dortmund zwischen Aschberg und hamburg werne viel kilometer stockender verkehr Münster Richtung Osnabrück zwischen lengerich und Kreuz lotte osnabrück 8 kilometer|,Recordings\2015.08.05-14.07.43.wav,|den Dauerkonflikt mit dem piloten bei liegen zu können Vorstandschef Spur sagte Frankfurt am Main ihr bewerte das vor einigen tagen vorgelegte Angebot der Gewerkschaft Vereinigung Cockpit positiv erstmals seit mehreren Jahren sein darin Kosteneinsparungen vorgesehen eine schnelle Einigung bis zum ersten September hatte er wegen der Komplexität und Vielzahl der Themen allerdings für unrealistisch betonte schwarz die Gewerkschaft der angebotenen innerhalb des Lufthansa Tarifvertrag niedriger dotierte gehaltstarife für Piloten der geplanten billig Plattform Euro wenn es zu akzeptieren Lufthansa müsste dafür aber die geplante aus flagge von jetzt an ausländische Gesellschaften aufgeben und dir einmal die Übersicht Justizminister master|,Recordings\2015.08.05-14.06.42.wav,|Korean auf ein stärkeres internationales Engagement das Land verletzte Resolutionen des uno Sicherheitsrat ist sagte der südkoreanischer außenministerium nach Angaben aus zog sich demnach beim Treffen der außenminister der südostasiatischer staatenbund mannschaft asian in kuala lumpur deren Mitglieder er aufruf gegen Nordkorea Saturn Programm deutlich Position zugegeben zuvor hatte schon am Rande der konferenz mit dem russischen Restaurant chef gesprochen in griechenland hat am mittag ein Streik die fluglotsen gegen die Sparpolitik begonnen Reisende müssen mit ausfällen und verspätungen rechnen die meisten internationalen Verbindungen sollen am abend wieder aufgenommen werden die Wahl haben in|,Recordings\2015.08.05-14.05.42.wav,|1000 der weiße tauben schießen auf serbien Beginn seine Niederlage mit dem Volkstrauertag alle Zeitungen erschienen in schwarz auf Unterhaltungsmusik rundfunk wurde verzichtet der Bürgerkrieg auf dem Balkan dauert es von 1993 bis 1995 israel hat das Verteidigungsministerium eine 6 monatige sogenannte administrativ haft für einen jüdischen Extremisten angeordnet eine mitteilung zu Folge 18 jährige an gewaltsamen Aktivitäten und Terrorangriffen beteiligt er gehört zu einer Gruppe die im juni einen Brandanschlag auf eine Kirche am See Genezareth begangen haben soll gegen den jungen Mann wurde bislang allerdings keine Anklage erhoben die administrativ haftet vor|,Recordings\2015.08.05-14.04.43.wav,|zum Spielball der amerikanischen Außenpolitik werden Thema des besuchs von amadeus ist den US Senat über die im Juni getroffenen Vereinbarungen mit Tieren zu informieren angesichts massiver Widerstände im republikanische Medienkongress will us präsident obama heute in einer außenpolitischen Grundsatzrede für das Atom Abkommen mit dem Iran werden immer noch Script heißt es nach Angaben us-amerikanischer Medien es gibt nur einen Weg nach vorn und zwar eine zustimmung sollte der kongress das Abkommen ablehnen könnte Obermain veto einlegen er könnte aber anschließend von einer Zweidrittelmehrheit überschwemmt werden einen tag nach der Militärparade in zagreb kroatien in der einstigen serben hochburg|,Recordings\2015.08.05-14.03.42.wav,|im durchschnitt nimmt die Bearbeitung der zeit mehr als 5 monate in Anspruch konkreten Fällen oft auch länger als ein Jahr stuttgart ist ein mutmaßliches Mitglied der Terrorgruppe islamischer Staat festgenommen worden der aus Marokko stammende mann war im letzten Monat den ermittlern in Spanien entkommen nach Angaben des Innenministeriums in Madrid soll er eine aktive Rolle bei der Orientierung von Kämpfern für die israelis gespielt haben das Landeskriminalamt Stuttgart will am nachmittag eine erklärung zu der Festnahme abgeben der geplante besuch von IAAF Amano in washington stößt im iran auf Kritik treffen stelle den neutralen Status der internationalen Atomenergiebehörde infrage sagt|,Recordings\2015.08.05-14.02.42.wav,|der Präsident des Bundesamtes für Verfassungsschutz maßen habe die Anzeige gegen seinen Blog durch ein sehr fragwürdiges Gutachten verziert dann habe maßen offenbar in range ein willfähriges opfer gefunden Mitarbeiter der Bundesagentur für Arbeit könnten nach einem frosch baden-württemberg helfen die Bearbeitung von Asylanträgen zu beschleunigen in einem Brief an das Kanzleramt bitte die grüne rote Landesregierung eine entzündung von Beschäftigten an das Bundesamt für Migration und Flüchtlinge zu prüfen die bundesagentur für arbeit hat im Frühjahr angekündigt bis 2019 und 17000 stellen abzubauen und dies unter anderem mit der sinkenden Arbeitslosigkeit in Deutschland gegründet|,Recordings\2015.08.05-14.01.42.wav,|Zustimmung von bundeskanzlerin merkel erfolgt eine Regierungssprecherin erklärte Justizminister Mars habe diesen Schritt mit der kanzlerin gesprochen und ihre unterstützung erhalten hatte gestern die Versetzung alles in den Ruhestand angekündigt politischer Sprecher der SPD-Bundestagsfraktion Fechner sagt im Deutschlandfunk wissen müssen welche Konsequenzen seine öffentliche kritik an was habe dir gerade Bundesanwalt sei nicht wegen seiner Fehleinschätzung sondern wegen der zerstörten vertrauensverhältnis entlassen worden Mars habe nicht früher von seinem Weisungsrecht gebrauch gemacht weil ihr die Unabhängigkeit der Justiz respektiere der Rechtsausschuss des bundestages müssen über Konsequenzen beraten etwa wir schon ein bisschen besser geschützt werden können|,Recordings\2015.08.05-13.59.42.wav,|Presseschau und die Wirtschaft am mittag geht zu Ende der blick auf den DAX ST bei 8595. Das 1,2 Prozent hören sie gleich eine Seite Deutschland heute unter anderem mit Beiträgen zur Debatte um die Asylpolitik in Deutschland bis hierhin was ich gerade am mikrofon ich wünsche ihnen noch einen schönen tag tschüss Deutschlandfunk herzlich willkommen mitten im Sommerloch und die Henne schon bei dem Treffen gefragt keine sommerpause waren sie mit den bnd im Bett nein ein bisschen unter einer decke abdecken unserer sommerhits katze haben wir für Sie aktuelle Kabarettprogramm ausgewählt|,Recordings\2015.08.05-13.58.42.wav,|weil der früher aussah Händler keineswegs so etwas wie der Hauptverantwortliche für den libor-skandal ist so etwas wie der große sinister Strippenzieher im Hintergrund seine Manipulationen betreff nur einen teil des Marktes und zahlreiche andere Händler nutzen genau die gleichen Tricks die tageszeitung chords tabs sieht das anders der händler ist der erde aus einem Netzwerk von gierigen Bank an der verurteilt wird hoffentlich nicht letzte in der Finanzbranche werden täglich unzählige Milliarden Euro hin und her bewegt Transparenz und Kontrolle über die gewaltigen transaktionen gibt es kaum schlimm genug das andere natürlich weitaus ärmere zahlen müssen wenn sich diese leute einfach nur fertig|,Recordings\2015.08.05-13.57.43.wav,|gewesen sei und sich der Markt nun normalisieren wirken beschwichtigend klar ist das die Entwicklung in der Volksrepublik auch die BMW Führung wollte nach Ansicht der Frankfurter Allgemeinen Zeitung wird Krüger die Rekordfahrt seines Vorgängers reithofer bestenfalls in gemäßigten tempo fortsetzen können und in ferner Zukunft steht zu befürchten das neue wettbewerber wie Google und Apple das Geschäftsmodell der Autobauer gänzlich auf den Kopf stellen Grüße hat das längste kannst wieder Milliarden kauft das Nokia kartendienstes zeigt Krüger mahnt und er handelt für unangemessen hoch hält die Süddeutsche Zeitung die von einem Londoner gericht gegen einen text banker fängt der herbst|,Recordings\2015.08.05-13.56.43.wav,|regen gibt es das richtige chef du nicht mehr Zustandekommen bislang geben Unternehmen freiwillig Auskunft über ihre soziale oder Umweltstandards das soll sich ändern ab 2017 müssen Sie darüber informieren das sieht eine Richtlinie der EU vor noch ist allerdings völlig unklar wie streng und wirksam die neuen Vorschriften dann tatsächlich sind es geht mir die frage wie wichtig ethisches Verhalten an den Kapitalmärkten ist meine Halbjahres dann geht es heute ein Ort in der Wirtschaft Presseschau nämlich die von BMW dazu schreibt die Börsen Zeitung für den neuen an der BMW spitze weiß kein auftrag nach Maß der zwischenbericht den der seit Mitte Mai amtierender Vorstandschef Krüger präsentierte legt die baustellen das Auto ganze anzurufen die größte baustelle für die Münchner ist zweifellos China der Wachstumsmotor|,Recordings\2015.08.05-13.55.45.wav,|er will nicht mehr in Unternehmen investieren die mehr als 30 Prozent ihres Umsatz mit Klasse wegen der Kohle machen auch weil dies ein wirtschaftliches Risiko sei so die Begründung mal dieses Jahres betroffen sind davon zum beispiel Energieversorger Rendite Anreiz für ethisch-ökologische und Sozialstandards das klingt wieder Traum aller linken aktivisten lösen sich also in Zukunft sozial und umweltprobleme von selbst Thomas Küchenmeister ist geschäftsführender Vorstand der Finanzkrise schon Organisation face and Finance er ist weniger optimistisch und spricht von guten ersten Bestrebungen wir in den dialog auch mit Banken dass einige sich wirklich Mühe geben und Nacht guide mehr und mehr zu ihrem Geschäftsmodell machen aber auf der anderen Seite steht auch immer wieder fest in das ist noch eine ganze Reihe|,Recordings\2015.08.05-13.54.42.wav,|gesetzlich und verlangt für den Umweltschutz tut hatte durch geringere Risiken dass irgendein Störfall am Rhein Gewässerverschmutzung oder dass die Luftverschmutzung wird was hat Russland streng genommen hat ein Unternehmen das da sicherer ist vor Störfällen hat auch eine sichere wenn diese durch das Internet können fehltritte schnell zu einem shit storm für ein Unternehmen die ein entsprechendes Problem feststellen haben ein Interesse die schnell zu lösen sag christina Jeromin verantwortlich für das Nachhaltigkeitsmanagement bei der Deutschen Börse sie können davon ausgehen dass vor dem hintergrund einer demokratischen interessierten Öffentlichkeit früher oder später irgendeine gesellschaftlichen anspruch gruppe dieses Problem bei ihnen auch erkennen wird und sie möchten das eben managed umgekehrt kann Soziales nachhaltiges Wirtschaften dem Unternehmen nutzen mein Christina Jeromin weil die Unternehmen erkannt haben dass sie über die nachhaltig|,Recordings\2015.08.05-13.53.42.wav,|Unternehmen nachhaltig produzieren und sozial und Umweltstandards einhalten franz-josef Leben stellvertretender Geschäftsführer beim deutschen Aktieninstitut öffne bin immer größeres Angebot an Forsthaus derwesten.de nachhaltigkeits und jetzt oder ich euch heute Aktienfonds und andre voss anbieten und das würde nicht passieren wenn du nicht auf Seiten der Nachfrage eine halbe stunde geld verdienen mit Ferien oder ökologischen Produkten dafür interessieren sich traditionell Kirchenstiftung oder Gewerkschaften stichwort Geldanlage für gute menschen die nicht zuerst auf die rendite schauen das ändert sich offenbar gerade Wer geld verdienen will muss auf ecologie Nachhaltigkeit oder als bedingung schauen diese Überzeugung scheint sich immer mehr durchzusetzen denn zu nehmen zum Risiko wenn Unternehmen gegen umweltschutz|,Recordings\2015.08.05-13.52.44.wav,|Euro diese Tage das Forum fairer Handel heute veröffentlicht klingt viel aber etwas abstand erfolgreichster Vertrieb Produkt kaffee macht nur drei Prozent des gesamten kaffee&lf;&lf;In Deutschland aus wie viel Sterne sorgt für Handel also in der Welt der Geschäftsführer des Forums fairer Handel manuel blondinen ganz konkret würde ich sagen dass der faire Handel alleine als Konsum entscheidung nicht unbedingt die lösung darstellt und komplett die probleme und Kaffeehandel zu lösen und deswegen möchte ich dass es da auch politische Regulierung gibt also Unternehmen lieb dich dazu zwingen sich verantwortlich zu verhalten ohne dich wäre das ein Unternehmen das von sich aus und würden aus freien Stücken oder weil Investoren sie quasi dazu zwingen nach dem Motto benimmst dich gut gebe ich dir mein geld ist das nur tobi|,Recordings\2015.08.05-13.51.42.wav,|heiligen zu können deshalb positiv dass die piloten Gewerkschaft Cockpit nach Jahren der Verhandlungen erstmals ein Angebot vorgelegt habe das Kosteneinsparungen beinhaltet sagte Vorstandschef Carsten Spohr am abend fußball ist in frankfurt an einer Stelle Einigung bis Anfang September glaube er doch nicht komplexe der martin Siegel für mich auch inhalt vor Geschwindigkeit ich freue mich dass er wieder im Dialog sind und ich arbeite daran Interesse hier nicht länger zu verhandeln als nötig aber halt doch so nötig wie ist der komplizierten gerecht werden muss die Lufthansa und komplett streiten vor allem um Vorruhestandsregelungen der Elektrokonzern Siemens bald eine neue Fabrik für Windkraftanlagen in cuxhaven an der nordsee Unternehmen mitteilte sollen in den kommenden Jahren 200 millionen euro investiert und 1000 neue Arbeitsplatte|,Recordings\2015.08.05-13.50.42.wav,|concrete nennt Junker weiter den zwanzigsten August als ziel Marken an diesem Tag muss die griechische Regierung 3,4 milliarden euro an die europäische zentralbank zurückzahlen volumen eines Dritten Hilfspaket für griechenland wird mit bis zu 60 80 Milliarden Euro veranschlagt mitten in der Urlaubszeit streiken die Fluglotsen in Griechenland der Aufstand soll von 13 bis 17 Uhr unserer Zeit dauern allein am größten flughafen Landes martin wurde deshalb etwa 22 Flüge gestrichen und 173 verschoben wie eine Sprecherin mitteilte wie viele Verbindungen landesweit betroffen sind gerade die Luftfahrtbehörde nicht bekannt die Fluglotsen fordern die Einrichtung einer für Sie zuständigen unabhängige Behörde dadurch kann man mit Finanzamt Personalengpässen besser umgehen sollte die Regierung auf die forderungen nicht eingehen|,Recordings\2015.08.05-13.49.43.wav,|Beiersdorf Chef Heidenreich bald ein Umsatzplus von drei bis fünf Prozent für das Gesamtjahr an nach dem zuwachs von nur 1,4 Prozent in den ersten 6 Monaten müsste das Unternehmen der kräftig zu legen glaubt Analyst Heiko Weber untere Ende erreicht wird das würde bedeuten dass im zweiten Halbjahr so ungefähr fünf Prozent Wachstum der Beiersdorf chef aber selbst für die zukunft auch auf Innovationen wie ich wa care oder eine Produktserie für Männer erhofft aber auch auf eine weitere Stabilisierung des Geschäfts in China das in den ersten 6 Monaten gespeichert hatte Beiersdorf präsentiert für das erste Halbjahr gut getan brigitte schalte in den Verhandlungen über andere das Kredit paket für griechenland rechne der chef der EU-Kommission jean-claude juncker mit einem raschen Ergebnis mehr dazu in den Wirtschaftsmeldungen|,Recordings\2015.08.05-13.48.43.wav,|Braten in Russland Russland Sicherheiten baugeschäft im augenblick verweile Marktanteil zahlen und Betreuung besonders gefährlich sind insgesamt entwickelt aber im augenblick wenn es so weitergeht mussten zeigen sich doch auch beeindruckt von dem unerwartet guten Russland geschäft Weber vom Bankhaus Lampe verweist aber auch auf die Währungseffekte durch den Schwachen rubel denn abgerechnet wird am Ende in Euro und da werde aus dem Umsatzplus in Osteuropa von gut sechs Prozent 1 - von mehr als vier Prozent meint er organisch Jahr eisel konnten erhöht werden die man Nachfrage ist da die währung für hagen das letztendlich nachher auf der dritten Ebene aber das ist jetzt kein grundlegendes Problem was die Nachfrage tatsächlich getragen wird das Geschäft von beiersdorf verarsche|,Recordings\2015.08.05-13.47.46.wav,|ist gut für beiersdorf der Hamburger Kosmetikkonzern war zwar nur Verhalten in das Jahr startet aber im zweiten Quartal holte er auf mehr als das mit einem Betriebsergebnis von 508 Millionen Euro immerhin gut zwölf Prozent mehr als einem Jahr liefert er so zwischen Januar und Juni das beste Halbjahresergebnis ab dass der hersteller von Produkten wie Nivea oder Tee sei erreicht hat er ist ein viertel Jahr habe mein langwierige Preisverhandlungen mit dem Handel führen müssen sagte Beiersdorf Chef Stefan Heidenreich in einer Telefonkonferenz die hätten den Umsatz geschwächt wieder bremsspur die Werbung ja noch die war bewusst einkalkuliert geplant ja doch dazu geführt dass ein faktor um unsere mal besser jetzt aussieht die Preiserhöhungen|,Recordings\2015.08.05-13.46.42.wav,|gamescom und ich denke das genau das geschrieben gestern abend kurz vor Messestadt vermisse Microsoft noch dass das neue betriebssystem windows 10 November auch auf der xbox one laufen wird damit lassen Sie spiele von der xbox auf windows 10 Geräte streamen größte Anziehungspunkt der Gamescom dürfte wie in den vergangenen Jahren vor allem das Rahmenprogramm denn sie werden wir könnten youtuber Benz DJs und dritten bis sonntag auf zahlreichen tribünen auch in der Kölner Innenstadt auf zu meiner letzten Bahn mit Informationen über die spiele Industrie der Kosmetikkonzern Beiersdorf schaffte es in den vergangenen Monaten oft mit einem thema in die Schlagzeilen der gerichtlichen auseinandersetzung das sogenannte nivea blaubär konzernwelten blauduns eine wichtige Marke als farbmarkierung zulassen dagegen gibt es ein Spruch richtig besser|,Recordings\2015.08.05-13.45.43.wav,|ich zu verleihen wurde in diesem Jahr erstmals ein spezieller license day eingerichtet raus aus der Stube in einen ein Expertenforum gerade die Frage nach der Lizenzierung von Medien Mattenberger zahlreiche Fallstricke in sich zu gamescom Manager tim Endress das niemals enden lizenzhandel ist schon immer ein Thema aufregend gewesen. Aber bislang kann sagen er dezentral Stadt also auf den Aussteller Ständen insbesondere in der Bild von der Lizenzgeber Lizenznehmern aufeinander treffen und entsprechend verhandeln in diesem Jahr gemein zu mir leisten stay bin ziemlich zentral auf der Gamescom Einnahmen und ein konkret arzt neu ist der deutsche Gemeinschaftsstand das habe wenig etwas damit zu tun dass der anwalt der Ausstellung aus Deutschland in einer internationalisierten browser zurückgehe auf der Gamescom 19 Länderpark|,Recordings\2015.08.05-13.44.45.wav,|Bundesverband interaktive Unterhaltungssoftware bio-markt hat sich sehr positiv entwickelt im jahr 2014 sind wir um elf Prozent gewachsen wir gehen davon aus das auch dieses 12 stellig wachsen und das erste Halbjahr hat ja sehr vielversprechend bekommen angetrieben wird der Erfolg vor allem durch die stationären Spielekonsolen die Playstation 4 und Xbox one Spiele App für mobiltelefone eine erstaunliche Entwicklung haben auch indie games genommen kreative videospiele für den schmalen geldbeutel in Köln vorgestellt von 50 ambitionierten Startup-Unternehmen einer 2015 neue spiele Generation die fantastisch aus sieht das ist zum zweiten die virtuelle Realität zum dritten eine Kreativität und eine Vielfalt an spielen wir müssen noch nie haben|,Recordings\2015.08.05-13.43.42.wav,|wirtschaftswissenschaftler menschliches Verhalten in ihre Theorien einbeziehen dann tun sie das auch in Form des homo ökonomikus eine theoretische figur die steht den eigenen nutzen maximieren denn in den nächsten 5 Tagen tritt aber ein wirtschaftszweig in den Vordergrund dessen Grundmodell nicht der homo oeconomicus sondern der homo ludens älteste mensch der spielt denn in köln hat heute die gamescom Messe für Computerspiele auf das Geschäft mit dem Spieltrieb schaut Susanne Lettenbauer fremde Welten erobern mit 3D Brillen Flugsimulationen oder spiele für Demenzkranke erlebt einen ungebrochenen. 543 Millionen Euro kunden im ersten Halbjahr 2015 umgesetzt werden 3 Prozent mehr wie im Vorjahr|,Recordings\2015.08.05-13.42.42.wav,|erzählen hat Beiersdorf heute vorgelegt wie reagiert die Börse auf diese Weise Hersteller Beiersdorf eben wichtig bei Beiersdorf die Kosmetik spart und der Klebstoff Bereich und was der zeigt ihm Macht anlegen wo die Aktie mit einem Fluss von 3 Prozent stürmer hat in der zweiten Reihe Hannover Rück gute Zahlen präsentiert wie reagieren die Anleger ja das reicht den Anleger nicht beziehungsweise da manche Experten bisschen enttäuscht außerdem sei der breit und bei der schaden und Unfallversicherung großen dir einige sind da vorsichtig die aktien von Hannover Rück mit einem - von dreieinhalb Prozent den aber die haben jetzt eben schon erwähnt dann kommt noch der blick auf die Entwicklung deutsche Staatsanleihen und 20 Preis für die deutsche Staatsanleihen sind heute weniger gefragt die durchschnittliche Rendite von deutschen Staatsanleihen es deswegen geschieden auf null, 50 Prozent der goldpreis|,Recordings\2015.08.05-13.41.43.wav,|philipp hessler von hier aus dem studio herzig wie sieht es denn heute am Gesamtmarkt aus also für den deutschen Aktienmarkt dir geht es ganz gut nach oben der Werkstatt jetzt doch um mittlerweile einen halb Prozent auf 11 1623. Der DAX stark weil der Euro schwach ist der Euro dir fehlt auf ein Dollar 08 77 das hilft natürlich den europäischen exportieren Hero dem Ausland zu verkaufen willst du auf den Unternehmen mehr Gewinn bescheren also darauf sitzen Anleger kaufen Aktien treiben das nach oben und was schlecht in Euro nun ist er die Stärke des us-dollars mit der Spekulation dass die US-Notenbank den Leitzins bald anhebt und damit eben Investitionen in den USA im US Dollar interessante wegen der chef der regionalen Notenbank von der Blender zum|,Recordings\2015.08.05-13.40.43.wav,|wahrscheinlichkeit ist zumindest wissen ich werde dich jetzt etwas ändern wird und die ersten eindrücke die mama von email bekommen mal zu einem Konzert Call beispielsweise sind doch durchaus positiv und ich denke der Wille ist schon ganz laut aber der deutschen bank jetzt wirklich den Kulturen lacht die voranzutreiben aber es muss auch konzert ihr die Probleme planet durch die alpen riesigen wo die deutsche bank bad kleiden das wird leider nicht von heute auf morgen verschieben nochmal so ein bisschen als Fazit gezogene Banken in der Krise ist die Party vorbei war auch die züge formuliere stark angezogen werden ja das wird nicht unbedingt so sehen weil die boerse.de nach nach vorne und dass die regulierung ich verstehe das ist ja ein Prozess über mehrere Jahre schon gegangen ich denke da ein oder andere sieht auch glaube ich erschossen beispielsweise eine wirtschaftliche holen Europawahl natürlich positiv für die Banken wenn beispielsweise|,Recordings\2015.08.05-13.39.42.wav,|aber wie gesagt so generell zu sagen ob USA der opa ist strengere das ist schwierig wie sieht&apos;s denn aus welche bank aktien sind denn aus ihrer Sicht irgendwelche an dich interessant gut ich denke die Investoren ein bisschen risikofreudiger sind ganz leicht beispielsweise italienische Banken anschauen die profitieren mit dürften wenn die Wirtschaft dort weiter wo wir ja konservativ vorsichtig unterwegs ist für den vielleicht eher die Banken wir Französisch Großbank interessant wir folgen hat Deutschland ganz kleine Aareal Bank die haben sehr gutes geschäft in der sind sehr gut kapitalisiert und da sind wir positive den Wert vielleicht auch mal auf das größte deutsche Geld Haushalt auf die deutsche bank jetzt mit dem neuen Chef John crane ja auch wieder immer wieder was mit auf die bücher geschrieben hat der Kulturwandel|,Recordings\2015.08.05-13.38.42.wav,|Schuldenschnitt oder zumindest wahrscheinlich eine Umstrukturierung der Schulden das Brot Datenbanken gut ich denke für die Griechen wann hat mich angesprochen hätte ich sehr negativ war das die haben auch noch einen großen Anteil griechische Staatsanleihen die anderen europäischen Banken haben dieser Staatsanleihen eigentlich zum Großteil weitergereicht andy und ich an ihn denke ich soll dir jetzt das Thema Griechenland die meisten Banken eigentlich relativ unberührt lassen solange es nicht wirklich zum flag sieht doch noch camel werde dann auch älter aus ein paar auswirkung negative Natur die aber auch beherrschen sein sollten um möchte riesen vorzubeugen um Krisen zu bekämpfen die Banken Sonja mir reguliert werden wie sieht&apos;s auf beiden seiten des atlantiks aus hinter die Regulierer in den USA härter und vielleicht sogar mit gefürchtet als Regulierer in Europa|,Recordings\2015.08.05-13.37.44.wav,|deutlich weiter hab ich denke dass sie uns ja doch sehr groß wie viele Banken weiter geht klar ist sie haben müssen wir uns an der Not leider Gedichte Glas auch dass sie wahrscheinlich oder ihr sicher neues Kapital braun und das sind natürlich nicht gute Aussichten für die zukunft und da kommt auch das natürlich die Bank schließen die letzten 4 5 Wochen sich mit Sicherheit nicht positiv auf das Geschäft ausgeben sollte wer kauft denn im moment überhaupt ihre bank aktien von griechischen Bank West auf der Käufer Seite das weiß ich natürlich auch nicht ich kann nur spekulieren vielleicht indirekt schwarz und ansonsten ist doch der andre klein Aktionär mitnehmen zum zocken ok ist natürlich auch schon eine Einschätzung also ihr vorsichtig sein mit griechischem Banken ich werde definitiv die finger von lassen aktuell|,Recordings\2015.08.05-13.36.43.wav,|märkte heute mit ihrem platz im Frankfurter Börsensaal hatte gestern machen europaweit die Banken die großen verlierer in den Indizes geht das heute so weiter deutschen Geldhäusern ist es nicht wirklich der Fall die aktie der deutschen bank die vertragen sich zumindest um ein halbes Prozent der Anteilscheine der commerzbank steigen ein Viertel prozente sein dieser Stelle aber auch schon mal erwähnt dass sowohl die aktie der deutschen bank als auch Commerzbank damit heute den Gesamtmarkt hinterherhinken und der Blick natürlich auch nach griechenland rüber während der allgemeine griechische aktienmarkt heute noch mal mehr als drei prozent gibt es für viele Aktien von griechischen Banken nochmal sehr deutlich in den keller zum teil sind da voll lust alleine heute von mir als 20 Prozent bei verschieben griechischen bank aktien zu verzeichnen|,Recordings\2015.08.05-13.35.42.wav,|zum Köln zwischen ransbach-baumbach und Neuwied 8 kilometer A6 Nürnberg Richtung Heilbronn zwischen kreuzwort Wangen crailsheim und Schnelldorf 4 kilometer 6 Mannheim Richtung Nürnberg zwischen bad rappenau und Heilbronn Neckarsulm drei kilometer unter 96 München Richtung Lindau zwischen schöffelding und landsberg am lech Nord drei kilometer stau deutschlandfunk bist schön heute mit dir gerne guten Tag das uns sieht richtig schiller in der Wirtschaft begegnet das ist ja eher selten heute aber erinnert uns die spielemesse games.com an seinen auspuff dass der Mensch nur da ganz Mensch ist wo er spielt gleich eines unserer Themen außerdem fairer Handel|,Recordings\2015.08.05-13.34.43.wav,|kurze Schauer und Gewitter im norden 20 bis 28 grad im süden 32 grad auch morgen hochsommer Wetter mit viel sonne gegen Abend vereinzelte wärmegewitter 27 bis 31 Grad die weiteren Aussichten am Freitag zunächst ohne im Nordwesten und Wissen schaue im Tagesverlauf auch in den übrigen gebeten tatkräftige Gedanken 23 bis 38 grad so weit die Meldungen die nächste Nachrichten um 14 Uhr Deutschlandfunk 13 Uhr 34 die verkehrslage Vorsicht auf der a31 bottrop Gronau zwischen schermbeck und lembeck sind tiere auf der fahrbahn ebenfalls bitte vorsicht auf der a45 hagen richtung gießen zwischen lüdenscheid Süden Meinerzhagen ist eine ungewisse|,Recordings\2015.08.05-13.33.43.wav,|anschlag auf eine Kirche am See Genezareth begangen haben soll gegen den jungen Mann wurde bislang allerdings keine Anklage erhoben die administrativ haft sieht vor dass ein Terror Verdächtiger auch ohne Anklage festgehalten werden kann einen Tag nach dir Militär Parade in zagreb hat Kroatien in den einzigen in der einzige serben hochburg knien seinen lieg im Bürgerkrieg gefeiert auf der dortigen Festung nordöstlich der Arbeitsstätte schiebenick wurde die nationalfahne gehisst tausende weiße tauben schießen auf serbien Beginn seiner Niederlage mit einem Volkstrauertag alle Zeitungen erschienen in schwarz auf Unterhaltungsmusik im Rundfunk wort verzichtet der Bürgerkrieg auf dem Balkan|,Recordings\2015.08.05-13.32.42.wav,|Martin verbuchte heute weitere Verluste 9 Monate nachdem gewaltsamen demonstrationen von Rechtsextremisten und Hooligans in Köln hat das dortige Amtsgericht einen der Täter zu einer dreijährigen haftstrafe verurteilt der 24-Jährige wurde wegen versuchter schwerer Körperverletzung und Diebstahl schuldig gesprochen er hat er zugegeben bei den zusammenstoss während der sogenannten Hobby Sakko kundgebung ein schweres ruhe in richtung einer Bezahlkarte geworfen zu haben bei den Ausschreitungen waren im Oktober knapp 50 polizisten verletzt worden in israel hat das Verteidigungsministerium eine 6 monatige sogenannte administrativ haft für einen jüdischen Extremisten angeordnet|,Recordings\2015.08.05-13.31.42.wav,|gestört seit wann hat er den Justizministerium vorgeworfen Einfluss zu nehmen auf seine entwicklungen wegen Landesverrats gegen das Internetportal bundeskanzlerin Merkel ist heute erklären dass sie keinerlei Einwände gegen das Vorgehen von mark gehört habe Union und SPD lehnen eine von den grünen geforderte Sondersitzung des Bundestags Rechtsausschusses zu den Landesverrat Ermittlungen gegen das Internetportal mit Politik outub in griechenland hat am mittag ein Streik der Fluglotsen gegen die Sparpolitik begonnen Reisende müssen mit ausfällen und verspätungen rechnen die meisten internationale Verbindungen sollen am abend wieder aufgenommen werden derweil haben in Athen die Vertreter der internationalen geldgeber und der griechischen Regierung ihre vater|,Recordings\2015.08.05-13.30.42.wav,|jonas riesen zum Abschluss dieser Informationen am Mittag ich empfehle ihnen leisten nach nach den Nachrichten noch die Sendung Wirtschaft am mittag mit der Kollegin silke hahne für Aufmerksamkeit bisschen bedankt sich im namen aller Beteiligten Verträge Deutschland 13 Uhr 30 die nachrichten Politik out beckedahl hat die sofortige Einstellung der Ermittlungen gegen sein Internetportal verlangt zugleich verwies er darauf dass die Affäre noch nicht beendet sein? Nur ein Bauernopfer sagte beckedahl Reuters TV da eigentlich verantwortliche sei Verfassungsschutzpräsident Tomaten dir|,Recordings\2015.08.05-13.29.42.wav,|ich auch für die Vertreibung über die Enteignung viele menschen die im den Baustellen der olympischen spiele Platz machen mussten die ganze Stadt rio ist eine gesamte baustelle das nicht die Bewohner natürlich auch und die viel Stress der bauarbeiter die auch noch Johannes Position natürlich ausnutzen wollen vor dem spielen kann ihm auch nicht so gute Stimmung bei einander. Sind die hohen Kosten 10 bis 11 Milliarden Euro sollen die spiele kostenlos ist zwar weniger als die Olympischen Spiele in London 60 prozent sind privat finanziert aber bleibt eben fraglich ob es dabei bleibt denn auch eine aktuelle Ausstellung zu den kosten die bislang verschoben sodass man auch nicht fertig waren dann noch ist auch ein wichtiger. Das Erbrechen in einem Korruptionsskandal versinkt derzeit in mehr als drei Milliarden auto wurden dort von der regierung in veruntreut und das|,Recordings\2015.08.05-13.28.42.wav,|kurz vor Beginn der spiele abgeschlossen werden ganz so wie auch bei der Fußball-Weltmeisterschaft dir auch als das Eröffnungsspiel Stadion oder das spiel des öffne das stadion des öffnung spielen ich nur ganz kurz vor Beginn fertig wurde wie ist denn überhaupt der Riesen die Stimmung in Brasilien wie erinnern uns bei der Fußball-Weltmeisterschaft gab es heftige soziale proteste werden die olympischen spiele von der Bevölkerung affektiert ja man kann sagen die Akzeptanz die singt der zeit also in den vergangenen zwei jahren m wann die Zustimmungswerte so bei ungefähr 60 Prozent jetzt liegen sie also ein Jahr vor Beginn der spiele noch bei 50 Prozent also es ist wirklich einen kleinen riss in der dadurch die Gesellschaft geht und sie an die sozialen proteste vergangenen Jahr oder beziehungsweise vor der Weltmeisterschaft angesprochen|,Recordings\2015.08.05-13.27.42.wav,|dann in Wirklichkeit dem stand auch entspricht ist abzuwarten alles kann jedenfalls definitiv knapp werden und deswegen sprach das IOC im vergangenen Jahr auch von der schlechtesten Vorbereitung aller Zeiten heute sagt thomas Bach zum schleppen den vortritt aber etwas nüchterner folgendes die Organisatoren wissen das sehr gut deshalb bin ich sehr zuversichtlich dass wir dann in Rio am fünften august 2012 16 eine großartige Eröffnungsfeier erleben werden aber auch dass es mir bei meiner Ankunft am Stadion dann noch möglich sein würde den letzten Arbeiten der persönlich mit Handschlag für ihren großartigen einer Zelle zu danken um dann hinauszugehen in das Stadion unterwelt ich zu werden von der Gastfreundschaft der brasilianer|,Recordings\2015.08.05-13.26.46.wav,|Schienennetz nur noch anfälliger der Beitrag von Sandra Peters man heute in einem Jahr beginnen die olympischen spiele in rio de janeiro die ersten Spiele auf südamerikanischen boden wie schon vor der Fussball-Weltmeisterschaft bereiten die Brasilianer den Organisatoren einige Sorgen denn die vorbereitungen laufen nur schleppend IOC-Präsident thomas Bach wird sich deshalb heute vor Ort vom Stand der Dinge überzeugen wollen jonas Resort unserer Sportredaktion welches Bild wird sich denn im darbieten ja thomas Bach Wetter heute regelrecht eine großbaustelle vorfinden in der ganzen Stadt rio de janeiro wird derzeit gebaut die baustellen sind derzeit nur halb fertig oder etwas mehr an|,Recordings\2015.08.05-13.25.42.wav,|züge fahren auf parallel verlaufenden Glasbecken unterwegs der eine war auf dem weg nach Mumbai der andere war auf dem weg zurück aus Mumbai sie nähern sich vor ihrer in Kleidung einer Brücke die vom Wasser des darunterliegenden angeschwollenen Flusses überflutet war insgesamt sprengen fast 20 waggons aus den Schienen eingestürzten in den Fluss es ist unklar wie viele Menschen zum Zeitpunkt des Unglücks in den beiden Typen unterwegs waren die bergungsarbeiten dauern noch an es sind auch taucher im einsatz in der nacht hat die Dunkelheit die Suche nach Überlebenden im hochwasser des flusses erschwert in Indien kommst immer wieder zu schweren Zugunglück in die staatliche indischer Eisenbahn hat täglich zwölf Tagen Passagier Züge im Einsatz dir und 23 Millionen Reisende täglich transportieren das Schienennetz ist veraltet die sich|,Recordings\2015.08.05-13.24.42.wav,|browser Bedingung die kleinen dörfer dir Wasser versinken und in den ist nichts mehr sehen wieder sobald ein paar lebensmittel käthe abgeworfen werden laufen hunderte Menschen zu der Abwurfstelle und noch immer bis gegen den in die I Teams beispielsweise nicht vorgedrungen sind die kommenden Tage werden weitere schlechte Nachrichten bringen Informationen von udo spielt bayern 2 zugunglück in indien sind zahlreiche Menschen ums Leben gekommen und verletzt worden nach Behördenangaben entgleisten beide Züge in der nacht zu heute kurz nacheinander auf einer übung überfluteten brücke also auch eine Folge des Monsunregen Sandra Peters man die Regenzeit in Indien weitere Todesopfer gefordert|,Recordings\2015.08.05-13.23.43.wav,|das Wasser strömt weiter rasen von Nord nach Süd und bedroht die dort dichte bevölkerten gegen den etwa die großen Reis Anbaugebiete im raum war die Regierung in den vergangenen Tagen gescholten weil die Hilfe viel zu zögerlich alice hat jetzt zum internationale Unterstützung gebeten das Ausmaß der Katastrophe heißt es aus dem Umfeld von Präsident entfernen übersteigt die Möglichkeiten ist am 50 Millionen Einwohner land ist die amelia Mars verteilt. Schrauben Lebensmittel und Trinkwasser pakete die Hilfe läuft jetzt an aber viele mitleidende warte bereits seit tagen die Zeit drängt hallo Tobias Altdorf der leitende München der war kein provinz|,Recordings\2015.08.05-13.19.43.wav,|seit 10 jahren solche geschichten aber ich habe noch nie eine solche Situation erlebt die so verzweifelt und so emotional aufgeladen war und ich habe noch nie eine transaktion erlebt die so spontan und improvisiert war das wird was tun wir morgen in washington 16 Millionen amerikanischen Soldaten im Zweiten Weltkrieg gedient haben sie haben mitgeholfen die Welt von der Naziherrschaft zu befreien hier zeigen wir den Preis der Freiheit heißt eine Inschrift eine andere amerikaner kamen zu befreien nicht zu Robert Freiheit herzustellen und die amerikaner zogen oft um den Preis der Freiheit im Krieg in Vietnam sind kommunisten zu retten den irak Forum diktate hussein Afghanistan von den Taliban und jetzt in irak und syrien für den unfassbar|,Recordings\2015.08.05-13.18.42.wav,|amerikanische Soldaten trainieren das kurdische mütter in den Friedensnobelpreisträger muss es besonders bitte seid wieder einen Kriegseinsatz zu Befehl doch neben dem politisch strategisch wirtschaftlichen Grund gab es einen weiteren aspect mit dem Obama die Luftangriffe begründete einen menschlichen und damit treffe die amerikaner ins Herz racing polizei verfolgt religiöse Gruppen waren vor dem essen oder Frauen und Kinder mit nichts außer ein paar Fetzen Stoff bleibt im wahrsten sinne des wortes ihrer Haut DIS bitte Einlagerung sind die US Luftwaffe sprengt die diesen Ring die soldaten Waffen 20 liter wasser und 8000|,Recordings\2015.08.05-13.17.42.wav,|fünf Uhr nachmittags run 4 Stunden vor der Hauptveranstaltung so weit hinten die Information von rolf billmann das US-Militär hatte in mayen programm für Ausbildung von bis zu 5400 syrische Rebellen bruder gestartet bislang wurden allerdings erst 60 eingesetzt sie sollen vor allem gegen den islamischen Staat kämpfen letzten Freitag wurde die US Luftwaffe offiziellen Angaben zufolge erstmals auch zum Schutz eben diesen Eindruck eingesetzt seit bald ein Jahr gekämpft eine Allianz unterführung der vereinigten staaten von amerika gegen im islamischen Staat Sabrina fritzi deine erste Bilanz als präsident obama am siebten august 2014 an die Öffentlichkeit gegen zwei gründe für die luftangriff|,Recordings\2015.08.05-13.16.42.wav,|arm dran die anderen müssen sich mit dem nachmittag begnügen rolf will man den durchschnitt von 5 landesweiten Umfragen hat Fox News zugrunde gelegt und die Entscheidung darüber zu treffen wir auf die große Bühne darf das Ergebnis donald trump und jetzt duschen dabei außerdem die Senatoren Cruz Rubio und Paul Walker Christian Case ich dann noch extra wenn er mal kacken und Seiteneinsteiger wenn Katzen ein ehemaliger neurochirurg das heißt das zweite deutlichsten kritiker von Spitzenreiter donald trump nicht bei der Hauptwache am donnerstagabend dabei sein werden Blackberry früher gouverneur von texas und schon vor vier Jahren Präsidentschaftswahl werbe bezeichnet trampolin als Krebsgeschwür das aus der republikanische Partei herausgeschnitten werden müssen und dann sollen sie Graham satt und benehmen sich|,Recordings\2015.08.05-13.15.42.wav,|bitte vornehmen selbst muschel Fragmente die sich auf dem flugzeug Teil gebildet haben können eine geschichte erzählen etwa darüber welchen Weg der Gegenstand genommen hat welchen wassertemperaturen der ausgesetzt war bisher an den strand von La Reunion gespült wurde die Analyse in toulouse Weimar wird allerdings einige Zeit in Anspruch nehmen und ob das Rätsel des verschollenen Fluges mh370 damit gelöst werden kann ist keineswegs sicher ein bericht aus Paris von Ursula Wetter die Qual der Wahl 16 konservative wollen präsidentschaftskandidaten Republikaner bei den nächsten Präsidentenwahlen in den USA werden am Ende wird nur eine übrig bleiben aber wie findet die Auswahl Stadt nun der konservativen fernsehsender Fax News liefert uns Hinweise|,Recordings\2015.08.05-13.14.44.wav,|ich sagte heute im französischen Fernsehen es gehe nun zunächst darum nach der Seriennummer des Fluges Kuala Lumpur Peking zu suchen denn damit lass es dir gefundene Gegenstand eindeutig dem Flug mh370 zu a******** sollte diese Bestätigung nicht gefunden werden gibt es weitere denkbar Indizien etwa die Farbe der Anstrich der Maschine wie er von malaysia airlines verwendet ist eindeutig festgestellt dass das Wrack Teil dem Flug mh370 zuzuordnen ist geht es an die Frage was geschehen sein könnte ein hartes stück lässt sich sagen ob es ein feuer an Bord gab es eine Explosion gab all das wird untersucht werden und damit wird es Anhaltspunkte geben in welchem Zustand das flugzeug auf das wasser aufgeschlagen ist|,Recordings\2015.08.05-13.13.42.wav,|weil am Strand der insel la reunion gegen 9 uhr an dem tag habe ich dorthin das Stück gefunden schilder der Mann der auf den gegenstand im Nordosten der insel gestoßen da la reunion französisches Überseegebiet ist und da die französische Justiz bereits Verfahren eingeleitet hatte zwei Landsleute an Bord der verschollenen Maschine waren Zug Paris nun auch diese untersuchung kann sich das Spezial ADG ATA unter Federführung des französischen Verteidigungsministeriums in weimar nach Toulouse nimmt den gegenstand ab heute unter die Lupe das Vorgehen wurde mit malaysia und Australien abgestimmt Experten aus beiden Ländern sind in frankreich mit von der partie das Institut wird in Fällen wie diesen von der französischen behörde für die Untersuchung von Flugunglück der BAB auf|,Recordings\2015.08.05-13.12.43.wav,|telephoniere air france pilot sie rafael sehr im Sender France Info und david rossi bitte löschen Sie die leitung da es gibt drei Hypothesen mein tablet Fernseher Selbstmordattentat mechanisches Problem mehrfach müssen die zahlreichen Nationen die sich an der suche beteilige ihr sucht Gebiet ändern Kerosin wecken auf hoher See an der einen Stelle fraktale an einer anderen Satellitenaufnahmen die schließlich die These stützen dass die Maschine den kurs wechselte und womöglich noch stundenlang Flug ohne signal an die Tower zusenden mal bitte im großraum Malaysia gesucht mal vor den Küsten Australiens die Spur verliert sich aber im indischen ozean und fast wäre der Flug mh370 in Vergessenheit geraten zu mal leise sein Behörden einen Schlussstrich unter weitere|,Recordings\2015.08.05-13.11.42.wav,|aber danach kurz im flur Pflug verliert sich die Spur der Maschine sende keine signale mehr auf die Daten Transponder schweigen heute haben und die Analyse kann Wochen dauern nimmt ein Spezial hinzugehen Südfrankreich ein vandal unter die Lupe das war eine woche auf der insel la reunion gefunden wurde und das womöglich zu der verschollenen Maschinen gehört Ursula werther berichtete aus paris die Labor Experten in toulouse Palma prüfen ob die malaysische Behörden mit ihrer Aussage richtig liegen dass das am 29. Juli an einem nordöstlichen Strand der insel la reunion gefunden gewagt Teil tatsächlich zu einer boing 777 gehört ein Flugzeug dieser Bauart wird derzeit welt|,Recordings\2015.08.05-13.10.42.wav,|lindau zwischen schöffelding und samstag am Lech Nord drei kilometer stau deutschlandfunk Informationen am Mittag weiterhin mit der träger und unter anderem diesen themen bis 13 Uhr 30 das Warten auf Aufklärung um Flug mh370 die Folgen der kandidaten flut bei den Republikanern in den USA ein Jahr Kampf gegen die Terroristen des islamischen Staaten die katastrophale flut in asien und die Folgen nach den monsun regen und ein Jahr für den olympischen spielen in rio de janeiro am 18 märz 2014 war die EM hat|,Recordings\2015.08.05-13.09.43.wav,|man zwischen rheinfelden Bad Schwartau viel kilometer stockend 42 Hannover Berlin zwischen Magdeburg Zentrum und wo kaufst sieben kilometer stau a3 Oberhausen richtung köln Übergrößen abladen und köln Mülheim zwei kilometer stockender verkehr Passau Nürnberg zwischen Aicha vorm Wald und egensbach 9 kilometer stau a5 basel richtung frankfurt zwischen ettlingen und Karlsruhe nord 8 kilometer zwischen Feuchtwangen Nord und schnell darf ein unfall 5 kilometer stau a7 würzburg richtung fulda zwischen Gramschatzer Wald und reik schweinfurt-werneck sechs kilometer stau a8 stuttgart richtung karlsruhe zwischen Heimsheim und Pforzheim 84 Kilometer stockender verkehr zwischen Pforzheim West und 3 Karlsruhe ebenfalls viel kilometer stockend|,Recordings\2015.08.05-13.08.43.wav,|kurze Schauer und Gewitter im norden 20 bis 28 grad im süden bis 32 Grad auch morgen hochsommer Wetter mit viel sonne gegen Abend vereinzelte wärmegewitter 27 bis 37 Grad die weiteren Aussichten am freitag. Sonne im Nordwesten und Westen schaue im Tagesverlauf auch in den übrigen gebieten teils kräftige gewitter 23 bis 38 grad so weit die Meldungen die nächste Nachrichten um 13 30. 13 Uhr 8 die verkehrslage Vorsicht auf der a45 hagen richtung gießen zwischen lüdenscheid Süd und Meinerzhagen befindet sich eine ungesicherte Unfallstelle 1 hamburg richtung bremen zwischen gerade und hollenstedt viel kilometer stau a1 Münster Dortmund zwischen Ascheberg und Hamburg Werner 4|,Recordings\2015.08.05-13.07.43.wav,|begegnung der Versöhnung geworden deren Wirkung weit über den Sport hinaus gehe auch der Regierende Bürgermeister von Berlin müller sprach von gegenseitigem Respekt und betonte die sei die Botschaft die man aus berlin sende 2300 sportler aus 38 Ländern hatten an den neuntägigen Wettkämpfen teilgenommen viele davon fanden im Berliner Olympiastadion Stadt dem austragungsort die Olympischen Spiele unter den Nationalsozialisten 1936 und hier noch einmal die Übersicht bundeskanzlerin Merkel hat sich hinter die entlassung von generalbundesanwalt Range durch Justizminister marke stellt die griechischen Fluglotsen protestieren mit einem Aufstand gegen die Sparpolitik im Tarifkonflikt|">
-   </PIN>
-   </NODE>
-   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="553" filename="">
-   <BOUNDS type="Node" left="14370" top="19650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Bin Size" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Count" slicecount="1" values="12">
-   </PIN>
-   <PIN pinname="Offset" slicecount="1" visible="1" values="37">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="553" srcpinname="Output" dstnodeid="522" dstpinname="Input String">
-   </LINK>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="555">
-   <BOUNDS type="Node" left="14745" top="19245" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="555" srcpinname="Output" dstnodeid="553" dstpinname="Offset">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="556" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14730" top="18855" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14730" top="18855" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="556" srcpinname="Y Output Value" dstnodeid="555" dstpinname="Input 1">
-   </LINK>
-   <NODE systemname="storeText" filename="subpatches\storeText.v4p" nodename="subpatches\storeText.v4p" componentmode="Hidden" id="560">
-   <BOUNDS type="Node" left="14373" top="17995" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10543" top="12985" width="7660" height="10020">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-13275" top="1905" width="8655" height="12150">
-   </BOUNDS>
-   <PIN pinname="TextInput" visible="1" slicecount="1" values="|muss neu geregelt werden weil ihr 2019 ausläuft nach dem Ende der Makadi spiele in Berlin der größten jüdischen Sportveranstaltung Europas haben die Veranstalter ein positives Fazit gezogen der Präsident des Verbandes in Deutschland maja sagte die wettkämpfe in deutschland sein für juni zu erhofften begegnung der Versöhnung geworden deren Wirkung weit über den Sport hinaus dir auch der Regierende Bürgermeister von Berlin müller sprach von gegenseitigem Respekt und betonte die Seite Botschaft die man aus berlin sende und 2300 sportler aus 38 Ländern hatten an den neuntägigen Wettkämpfen teilgenommen viele davon fanden im Berliner Olympiastadion Stadt der Austragungsort der olympischen spiele unter den hut|">
-   </PIN>
-   <PIN pinname="ID" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="560" srcpinname="Output" dstnodeid="553" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="560" dstpinname="DoRecord" linkstyle="Bezier">
-   <LINKPOINT x="4545" y="11205">
-   </LINKPOINT>
-   <LINKPOINT x="14805" y="11205">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="562">
-   <BOUNDS type="Node" left="15270" top="17505" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="562" srcpinname="Output" dstnodeid="560" dstpinname="TextInput" linkstyle="Bezier">
-   <LINKPOINT x="15285" y="17888">
-   </LINKPOINT>
-   <LINKPOINT x="15285" y="17888">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Stopwatch (Animation)" nodename="Stopwatch (Animation)" componentmode="Hidden" id="588">
-   <BOUNDS type="Node" left="2925" top="6045" width="1335" height="270">
+   <BOUNDS type="Node" left="3750" top="4410" width="1335" height="270">
    </BOUNDS>
    <PIN pinname="Run" visible="1">
    </PIN>
@@ -339,15 +57,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="588" dstpinname="Run" linkstyle="Bezier">
-   <LINKPOINT x="4470" y="5228">
+   <LINKPOINT x="5295" y="3593">
    </LINKPOINT>
-   <LINKPOINT x="2985" y="5228">
+   <LINKPOINT x="3810" y="3593">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="589" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2940" top="7290" width="795" height="240">
+   <BOUNDS type="Box" left="3765" top="5655" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2940" top="7290" width="0" height="0">
+   <BOUNDS type="Node" left="3765" top="5655" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -357,7 +75,7 @@
    <LINK srcnodeid="588" srcpinname="Output" dstnodeid="589" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="590">
-   <BOUNDS type="Node" left="3540" top="5115" width="100" height="100">
+   <BOUNDS type="Node" left="4365" top="3480" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -365,489 +83,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="590" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="4470" y="4965">
+   <LINKPOINT x="5295" y="3330">
    </LINKPOINT>
-   <LINKPOINT x="3600" y="4965">
+   <LINKPOINT x="4425" y="3330">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="590" srcpinname="Down Edge" dstnodeid="588" dstpinname="Reset">
    </LINK>
-   <NODE systemname="treeMap" filename="subpatches\treeMap.v4p" nodename="subpatches\treeMap.v4p" componentmode="Hidden" id="591">
-   <BOUNDS type="Node" left="8580" top="9450" width="1080" height="270">
-   </BOUNDS>
-   <PIN pinname="Text" visible="1" slicecount="72" values="asiatische,Kunst,Berlin,unserer,Kultur,heute,Sommerreifen,humboldtforum,dass,vier,Jahren,seine,Türen,öffnen,soll,im,stadtschloss,Berlin,Authentizität,so,ganz,leicht,geht,einem,das,wort,gar,nicht,über,Lippen,dabei,ist,es,seit,geraumer,Zeit,aller,Munde,echt,und,glaubwürdig,verlässlich,und,unverstellt,von,mir,selbst,sein,soll,aber,auch,chefin,soll,natürlich,der,Partner,sein,ganz,bei,sich,und,100,|jetzige premierminister|,|Zivilisten in Hiroshima|,|gesetzt die bombe|,|tierisch längst|,|Krieg beendet|,nachweislich,tut,Legende,Hiroshima,USA">
-   </PIN>
-   <PIN pinname="Value" visible="1" slicecount="72" values="0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.947889,0.85983,0.853799,0.820132,0.78362,0.507451,0.451771,0.4231,1,1">
-   </PIN>
-   </NODE>
-   <NODE systemname="wordWeight" filename="subpatches\wordWeight.v4p" nodename="subpatches\wordWeight.v4p" componentmode="Hidden" id="652">
-   <BOUNDS type="Node" left="8576" top="8795" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2884" top="1320" width="11385" height="14950">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-19050" top="1005" width="19560" height="15525">
-   </BOUNDS>
-   <PIN pinname="result" visible="1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="Relevance - Input">
-   </PIN>
-   <PIN pinname="Entity">
-   </PIN>
-   <PIN pinname="Keyword">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="652" srcpinname="Output" dstnodeid="591" dstpinname="Value">
-   </LINK>
-   <LINK srcnodeid="652" srcpinname="result" dstnodeid="591" dstpinname="Text">
-   </LINK>
-   <NODE systemname="REST APIs" filename="subpatches\REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="Hidden" id="587" stayontop="1">
-   <BOUNDS type="Node" left="16335" top="16005" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="16335" top="16005" width="14215" height="16110">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-24330" top="900" width="23475" height="14595">
-   </BOUNDS>
-   <PIN pinname="Execute" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|abstammung morando meine der Garantie möchte für die territoriale Integrität der Ukraine die USA england und russland haben sich bemüht zu fahren wir schaffen wir es die weite verbreitung von Nuklearwaffen zu und bin dann mit dem Zusammenbruch der Sowjetunion plötzlich nicht nur eine macht nämlich Russland nuclear macht einen auf die Ukraine Belarus Kasachstan wann du kleine nichte und dann hat man der Ukraine das angebot gemacht wir garantieren euch eure territoriale Integrität gegen die Ablieferung und den Verzicht auf Nuklearwaffen und den Beitritt zu nichts weiter Verwaltungsgebäude und heute stellen wir fest eine der Signatur|">
-   </PIN>
-   </NODE>
-   <NODE systemname="tree-tagger" filename="subpatches\tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="Hidden" id="672" stayontop="1">
-   <BOUNDS type="Node" left="17805" top="16005" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="17805" top="16005" width="14215" height="9810">
-   </BOUNDS>
-   <BOUNDS type="Window" left="670" top="350" width="23410" height="14910">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|This is a house you are such a nice girl and I am laughing  lot|">
-   </PIN>
-   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Tokens" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Grammar" visible="1" slicecount="119" values="|VAFIN&tab;haben|,|PRF&tab;sich|,|ART&tab;die|,|ADJA&tab;griechisch|,|NN&tab;Regierung|,|APPR&tab;mit|,|ART&tab;die|,|NN&tab;EU|,|NN&tab;Institution|,|KON&tab;und|,|ART&tab;die|,|ADJA&tab;international|,|NN&tab;Währungsfonds|,|APPR&tab;auf|,|ART&tab;eine|,|ADJA&tab;neu|,|NN&tab;&lt;unknown&gt;|,|NN&tab;Hilfsprogramm|,|VVPP&tab;einigen|,|PAV&tab;demnach|,|VMFIN&tab;sollen|,|NE&tab;Griechenland|,|CARD&tab;86|,|NN&tab;Milliarde|,|NN&tab;Euro|,|ART&tab;eine|,|ADJA&tab;neu|,|NN&tab;Hit|,|ADJD&tab;&lt;unknown&gt;|,|VVINF&tab;bekommen|,|VMFIN&tab;müssen|,|KON&tab;aber|,|APPRART&tab;in|,|NN&tab;Gegenzug|,|APPR&tab;für|,|ART&tab;die|,|ADJA&tab;kommend|,|CARD&tab;drei|,|NN&tab;Jahr|,|ADJA&tab;neu|,|NN&tab;Sparmaßnahme|,|VVFIN&tab;durchsetzen|,|PIAT&tab;alle|,|ADJA&tab;&lt;unknown&gt;|,|VVFIN&tab;warten|,|ADJD&tab;gespannt|,|APPR&tab;auf|,|PPER&tab;sie|,|ADV&tab;ja|,|ADJD&tab;grausam|,|NN&tab;Neuigkeit|,|PIAT&tab;welche|,|NN&tab;Sparmaßnahme|,|ART&tab;die|,|APPRART&tab;in|,|NN&tab;Einzelne|,|PPOSAT&tab;sein|,|ADV&tab;aber|,|NN&tab;Finanzminister|,|NE&tab;&lt;unknown&gt;|,|NE&tab;Carlos|,|VAFIN&tab;haben|,|PRF&tab;sich|,|ADV&tab;heute|,|ADV&tab;vormittag|,|ADV&tab;erst|,|ADV&tab;einmal|,|APPR&tab;mit|,|ADJA&tab;&lt;unknown&gt;|,|NN&tab;&lt;unknown&gt;|,|ADV&tab;noch|,|VAFIN&tab;sein|,|ART&tab;die|,|NN&tab;&lt;unknown&gt;|,|ADV&tab;quasi|,|ADJD&tab;geheim|,|NN&tab;Lotus|,|VAFIN&tab;haben|,|ADV&tab;heute|,|ADJD&tab;früh|,|ADV&tab;auch|,|ADV&tab;nur|,|ADJD&tab;bedingt|,|ADJD&tab;bestätigt|,|PDS&tab;die|,|VAFIN&tab;sein|,|ART&tab;eine|,|NN&tab;Einigung|,|VVFIN&tab;geben|,|ART&tab;die|,|VVFIN&tab;warten|,|ART&tab;die|,|NN&tab;Journalist|,|VVFIN&tab;sagen|,|PPER&tab;er|,|APPRART&tab;bei|,|VVFIN&tab;vorbeigehen|,|ADV&tab;ja|,|PPER&tab;es|,|VVFIN&tab;geben|,|ADV&tab;noch|,|ART&tab;eine|,|CARD&tab;zwei|,|ADJA&tab;klein|,|NN&tab;Frage|,|ADV&tab;aber|,|PPER&tab;wir|,|VAFIN&tab;sein|,|ADJD&tab;praktisch|,|APPR&tab;durch|,|ADV&tab;so|,|NE&tab;&lt;unknown&gt;|,|ART&tab;die|,|NN&tab;Einigung|,|VVFIN&tab;fliegen|,|ADV&tab;also|,|APPR&tab;auf|,|ART&tab;die|,|NN&tab;Tisch|">
-   </PIN>
-   <PIN pinname="Completed" visible="1">
-   </PIN>
-   <PIN pinname="0: DE, 1: EN, 2: RU" visible="1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="706">
-   <BOUNDS type="Node" left="18270" top="14310" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="3" values="german,english,russian">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden" id="708">
-   <BOUNDS type="Node" left="17805" top="14895" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="3" values="german,english,russian">
-   </PIN>
-   <PIN pinname="Select" visible="1">
-   </PIN>
-   <PIN pinname="Former Slice" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="706" srcpinname="Output" dstnodeid="708" dstpinname="Select" linkstyle="Bezier">
-   <LINKPOINT x="18300" y="14738">
-   </LINKPOINT>
-   <LINKPOINT x="18300" y="14738">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="709">
-   <BOUNDS type="Node" left="17805" top="12285" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="17805" top="12285" width="750" height="840">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Input String" slicecount="3" values="german,english,russian">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="709" srcpinname="Output String" dstnodeid="708" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="17835" y="14010">
-   </LINKPOINT>
-   <LINKPOINT x="17835" y="14010">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="710">
-   <BOUNDS type="Node" left="18780" top="14970" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|hallo hallo|">
-   </PIN>
-   <PIN pinname="OnChange" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="713">
-   <BOUNDS type="Node" left="18780" top="15345" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output 1" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="710" srcpinname="OnChange" dstnodeid="713" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="18810" y="15293">
-   </LINKPOINT>
-   <LINKPOINT x="18810" y="15293">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="714" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18480" top="13875" width="1005" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="18480" top="13875" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Input String">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="714" srcpinname="Output String" dstnodeid="706" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="18495" y="14213">
-   </LINKPOINT>
-   <LINKPOINT x="18495" y="14213">
-   </LINKPOINT>
-   </LINK>
-   <NODE id="501" systemname="Message (Split)" filename="plugins\message\Message.csproj" nodename="Message (Split)" componentmode="Hidden">
-   <BOUNDS type="Node" left="8265" top="13200" width="5004" height="264">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|string socketId,string result|">
-   </PIN>
-   <BOUNDS type="Box" left="8265" top="13200">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="Number" visible="1">
-   </PIN>
-   <PIN pinname="Number Bin Size">
-   </PIN>
-   <PIN pinname="Transform Bin Size">
-   </PIN>
-   <PIN pinname="Color" visible="1">
-   </PIN>
-   <PIN pinname="Floaty" visible="1">
-   </PIN>
-   <PIN pinname="sting">
-   </PIN>
-   <PIN pinname="color" visible="1">
-   </PIN>
-   <PIN pinname="t" visible="1">
-   </PIN>
-   <PIN pinname="color Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Address">
-   </PIN>
-   <PIN pinname="t Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Floaty Bin Size">
-   </PIN>
-   <PIN pinname="Message Type" slicecount="1" values="SessionData">
-   </PIN>
-   <PIN pinname="sting Bin Size">
-   </PIN>
-   <PIN pinname="Send">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="SessionID" visible="1">
-   </PIN>
-   <PIN pinname="Hold if Nil" slicecount="1" values="Off">
-   </PIN>
-   <PIN pinname="edges" visible="1">
-   </PIN>
-   <PIN pinname="2dpointer" visible="1">
-   </PIN>
-   <PIN pinname="size" visible="1">
-   </PIN>
-   <PIN pinname="usercolor" visible="1">
-   </PIN>
-   <PIN pinname="bang" visible="1">
-   </PIN>
-   <PIN pinname="randomizecolor" visible="1">
-   </PIN>
-   <PIN pinname="clientname" visible="1">
-   </PIN>
-   <PIN pinname="clientName" visible="1">
-   </PIN>
-   <PIN pinname="randomizeColor" visible="1">
-   </PIN>
-   <PIN pinname="edgeCount" visible="1">
-   </PIN>
-   <PIN pinname="cursorSize" visible="1">
-   </PIN>
-   <PIN pinname="bangButton" visible="1">
-   </PIN>
-   <PIN pinname="2dPointer" visible="1">
-   </PIN>
-   <PIN pinname="userColor" visible="1">
-   </PIN>
-   <PIN pinname="SocketId" visible="1">
-   </PIN>
-   <PIN pinname="socketId" visible="1">
-   </PIN>
-   <PIN pinname="xy" visible="1">
-   </PIN>
-   <PIN pinname="toggleButton" visible="1">
-   </PIN>
-   <PIN pinname="result" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="652" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12225" y="11123">
-   </LINKPOINT>
-   <LINKPOINT x="8970" y="11123">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="562" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12285" y="15473">
-   </LINKPOINT>
-   <LINKPOINT x="15270" y="15473">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="dataInputHandler" filename="subpatches\connection\dataInputHandler.v4p" nodename="dataInputHandler" componentmode="Hidden" id="196" stayontop="1">
-   <BOUNDS type="Node" left="8250" top="8175" width="1740" height="270">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-31395" top="1635" width="22080" height="13440">
-   </BOUNDS>
-   <PIN pinname="Session Id" visible="1">
-   </PIN>
-   <PIN pinname="Session Ids" visible="1">
-   </PIN>
-   <PIN pinname="Clear Session Ids" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="interaction data" visible="1">
-   </PIN>
-   <PIN pinname="Message" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="8250" top="8175">
-   </BOUNDS>
-   <PIN pinname="SessionData" visible="1">
-   </PIN>
-   <PIN pinname="Configuration">
-   </PIN>
-   <PIN pinname="Update Configuration">
-   </PIN>
-   <PIN pinname="Keyword" visible="1">
-   </PIN>
-   <PIN pinname="Relevance" visible="1">
-   </PIN>
-   <PIN pinname="Entity" visible="1">
-   </PIN>
-   <PIN pinname="Language" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="197" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Local Port" linkstyle="PolyLine" hiddenwhenlocked="0">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="SessionData" dstnodeid="283" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="8290" y="8693">
-   </LINKPOINT>
-   <LINKPOINT x="10460" y="8708">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="395" srcpinname="Output String" dstnodeid="196" dstpinname="Configuration">
-   </LINK>
-   <LINK srcnodeid="509" srcpinname="Y Output Value" dstnodeid="196" dstpinname="Clear Session Ids">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Relevance" dstnodeid="652" dstpinname="Relevance - Input">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Entity" dstnodeid="652" dstpinname="Entity">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Keyword" dstnodeid="652" dstpinname="Keyword">
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Language" dstnodeid="706" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="9990" y="11363">
-   </LINKPOINT>
-   <LINKPOINT x="18255" y="11363">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="Language" dstnodeid="714" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="9990" y="11145">
-   </LINKPOINT>
-   <LINKPOINT x="18480" y="11145">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="196" srcpinname="SessionData" dstnodeid="501" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="8280" y="10823">
-   </LINKPOINT>
-   <LINKPOINT x="8280" y="10823">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="send" filename="subpatches\send.v4p" nodename="subpatches\send.v4p" componentmode="Hidden" id="738">
-   <BOUNDS type="Node" left="9382" top="15515" width="1830" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6602" top="10305" width="5560" height="10420">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-14070" top="10800" width="5550" height="10410">
-   </BOUNDS>
-   <PIN pinname="Lang" visible="1">
-   </PIN>
-   <PIN pinname="Message Interval" slicecount="1" values="0.2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="501" srcpinname="socketId" dstnodeid="738" dstpinname="SocketID" linkstyle="Bezier">
-   <LINKPOINT x="10275" y="14490">
-   </LINKPOINT>
-   <LINKPOINT x="10275" y="14490">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="738" dstpinname="Start/Stop" linkstyle="Bezier">
-   <LINKPOINT x="4545" y="9968">
-   </LINKPOINT>
-   <LINKPOINT x="11145" y="9968">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="104" srcpinname="Y Output Value" dstnodeid="738" dstpinname="Remote Port" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="9405" y="15338">
-   </LINKPOINT>
-   <LINKPOINT x="9405" y="15338">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="739" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10695" top="15000" width="405" height="315">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10695" top="15000" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="ru">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="739" srcpinname="Output String" dstnodeid="738" dstpinname="Lang" linkstyle="Bezier">
-   <LINKPOINT x="10725" y="15405">
-   </LINKPOINT>
-   <LINKPOINT x="10725" y="15405">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="514" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="4545" y="4755">
+   <LINKPOINT x="5370" y="3120">
    </LINKPOINT>
-   <LINKPOINT x="5265" y="4755">
+   <LINKPOINT x="6090" y="3120">
    </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="761" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15705" top="3690" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="15705" top="3690" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Open">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="761" srcpinname="Y Output Value" dstnodeid="162" dstpinname="Open">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="762" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10230" top="1635" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10230" top="1635" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|stop nodejs|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="762" srcpinname="Y Output Value" dstnodeid="156" dstpinname="stop nodejs">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="763" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8280" top="1635" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8280" top="1635" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|start nodejs|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="763" srcpinname="Y Output Value" dstnodeid="156" dstpinname="start nodejs" linkstyle="Bezier">
-   <LINKPOINT x="8340" y="2280">
-   </LINKPOINT>
-   <LINKPOINT x="8580" y="2280">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="763" srcpinname="Y Output Value" dstnodeid="509" dstpinname="Y Input Value" linkstyle="PolyLine">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="764" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11850" top="3120" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="11850" top="3120" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="IsRunning">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="156" srcpinname="IsRunning" dstnodeid="764" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="readDir" filename="subpatches\readDir.v4p" nodename="subpatches\readDir.v4p" componentmode="Hidden" id="792" stayontop="0">
-   <BOUNDS type="Node" left="6285" top="6045" width="1710" height="270">
+   <BOUNDS type="Node" left="7110" top="4410" width="1710" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6285" top="6045" width="23223" height="12090">
+   <BOUNDS type="Box" left="7110" top="4410" width="23223" height="12090">
    </BOUNDS>
-   <BOUNDS type="Window" left="-19890" top="2295" width="19575" height="12090">
+   <BOUNDS type="Window" left="3855" top="1800" width="19575" height="12090">
    </BOUNDS>
    <PIN pinname="favs" visible="1">
    </PIN>
@@ -858,38 +112,10 @@
    <PIN pinname="actives" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="793">
-   <BOUNDS type="Node" left="18810" top="14355" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="793" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12285" y="13898">
-   </LINKPOINT>
-   <LINKPOINT x="18810" y="13898">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="793" srcpinname="Output" dstnodeid="710" dstpinname="Input" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="587" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12285" y="14723">
-   </LINKPOINT>
-   <LINKPOINT x="16335" y="14723">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="713" srcpinname="Output 1" dstnodeid="587" dstpinname="Execute" linkstyle="Bezier">
-   <LINKPOINT x="18780" y="15795">
-   </LINKPOINT>
-   <LINKPOINT x="17400" y="15795">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="796" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10740" top="18225" width="480" height="480">
+   <BOUNDS type="Box" left="9450" top="11205" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10740" top="18225" width="0" height="0">
+   <BOUNDS type="Node" left="9450" top="11205" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -904,40 +130,16 @@
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="797" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2055" top="15480" width="4410" height="2325">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2055" top="15480" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="797" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="12225" y="14460">
-   </LINKPOINT>
-   <LINKPOINT x="2115" y="14460">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="798">
-   <BOUNDS type="Node" left="12375" top="16425" width="100" height="100">
+   <BOUNDS type="Node" left="11085" top="9405" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="798" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12255" y="14940">
-   </LINKPOINT>
-   <LINKPOINT x="12390" y="14940">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="799">
-   <BOUNDS type="Node" left="12390" top="16920" width="100" height="100">
+   <BOUNDS type="Node" left="11100" top="9900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -945,15 +147,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="798" srcpinname="OnChange" dstnodeid="799" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12405" y="16808">
+   <LINKPOINT x="11115" y="9788">
    </LINKPOINT>
-   <LINKPOINT x="12405" y="16808">
+   <LINKPOINT x="11115" y="9788">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="800" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7515" top="18225" width="1530" height="465">
+   <BOUNDS type="Box" left="6225" top="11205" width="1530" height="465">
    </BOUNDS>
-   <BOUNDS type="Node" left="7515" top="18225" width="0" height="0">
+   <BOUNDS type="Node" left="6225" top="11205" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -969,9 +171,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="801" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12375" top="18225" width="1770" height="1485">
+   <BOUNDS type="Box" left="11085" top="11205" width="1770" height="1485">
    </BOUNDS>
-   <BOUNDS type="Node" left="12375" top="18225" width="0" height="0">
+   <BOUNDS type="Node" left="11085" top="11205" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -983,9 +185,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="802" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6285" top="5115" width="480" height="480">
+   <BOUNDS type="Box" left="7110" top="3480" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6285" top="5115" width="0" height="0">
+   <BOUNDS type="Node" left="7110" top="3480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1007,9 +209,9 @@
    <LINK srcnodeid="802" srcpinname="Y Output Value" dstnodeid="792" dstpinname="Check">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="820" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="11835" top="15990" width="795" height="240">
+   <BOUNDS type="Box" left="10545" top="8970" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11835" top="15990" width="0" height="0">
+   <BOUNDS type="Node" left="10545" top="8970" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1021,13 +223,13 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="Input String">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="501" srcpinname="result" dstnodeid="820" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="821" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9990" top="17115" width="795" height="240">
+   <BOUNDS type="Box" left="9180" top="9975" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9990" top="17115" width="0" height="0">
+   <BOUNDS type="Node" left="9180" top="9975" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -1047,7 +249,7 @@
    </BOUNDS>
    <PIN pinname="Write!" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Node" left="7500" top="17565" width="4935" height="270">
+   <BOUNDS type="Node" left="6210" top="10545" width="4935" height="270">
    </BOUNDS>
    <PIN pinname="Status" visible="1">
    </PIN>
@@ -1073,39 +275,39 @@
    <LINK srcnodeid="794" srcpinname="Output" dstnodeid="801" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="794" srcpinname="Status" dstnodeid="800" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="7530" y="18023">
+   <LINKPOINT x="6240" y="11003">
    </LINKPOINT>
-   <LINKPOINT x="7530" y="18023">
+   <LINKPOINT x="6240" y="11003">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="794" srcpinname="Is Connected" dstnodeid="796" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="10770" y="18023">
+   <LINKPOINT x="9480" y="11003">
    </LINKPOINT>
-   <LINKPOINT x="10770" y="18023">
+   <LINKPOINT x="9480" y="11003">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="favs" dstnodeid="794" dstpinname="Favs" linkstyle="Bezier">
-   <LINKPOINT x="7410" y="11933">
+   <LINKPOINT x="8220" y="7913">
    </LINKPOINT>
-   <LINKPOINT x="7515" y="11933">
+   <LINKPOINT x="6240" y="7313">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="OnChange" dstnodeid="794" dstpinname="Update Favs" linkstyle="Bezier">
-   <LINKPOINT x="6315" y="11933">
+   <LINKPOINT x="7125" y="7913">
    </LINKPOINT>
-   <LINKPOINT x="7845" y="11933">
+   <LINKPOINT x="6510" y="7313">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="actives" dstnodeid="794" dstpinname="Actives" linkstyle="Bezier">
-   <LINKPOINT x="7965" y="11940">
+   <LINKPOINT x="8775" y="7913">
    </LINKPOINT>
-   <LINKPOINT x="8160" y="11940">
+   <LINKPOINT x="6780" y="7313">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="OnChange" dstnodeid="794" dstpinname="Update Active" linkstyle="Bezier">
-   <LINKPOINT x="6315" y="11933">
+   <LINKPOINT x="7125" y="7905">
    </LINKPOINT>
-   <LINKPOINT x="8490" y="11933">
+   <LINKPOINT x="7050" y="7305">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="821" srcpinname="Output String" dstnodeid="794" dstpinname="SoundID">
@@ -1113,27 +315,197 @@
    <LINK srcnodeid="820" srcpinname="Output String" dstnodeid="794" dstpinname="Input_Antwort">
    </LINK>
    <NODE systemname="ChuckRecord" filename="subpatches\sound\ChuckRecord.v4p" nodename="ChuckRecord" componentmode="Hidden" id="822" stayontop="1">
-   <BOUNDS type="Node" left="4890" top="6045" width="100" height="100">
+   <BOUNDS type="Node" left="5715" top="4410" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="-21435" top="2895" width="20580" height="12810">
+   <BOUNDS type="Window" left="615" top="2070" width="20580" height="12810">
    </BOUNDS>
-   <BOUNDS type="Box" left="4890" top="6045">
+   <BOUNDS type="Box" left="5715" top="4410">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="514" srcpinname="Y Output Value" dstnodeid="822" dstpinname="Enable" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="822" srcpinname="Output String" dstnodeid="560" dstpinname="ID" linkstyle="Bezier">
-   <LINKPOINT x="4950" y="12150">
-   </LINKPOINT>
-   <LINKPOINT x="14370" y="12150">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="822" dstpinname="Record" linkstyle="Bezier">
-   <LINKPOINT x="4545" y="5220">
+   <LINKPOINT x="5370" y="3585">
    </LINKPOINT>
-   <LINKPOINT x="5655" y="5220">
+   <LINKPOINT x="6480" y="3585">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="822" srcpinname="Output String" dstnodeid="821" dstpinname="Input String">
+   <LINK srcnodeid="822" srcpinname="Output String" dstnodeid="821" dstpinname="Input String" linkstyle="Bezier">
+   <LINKPOINT x="5760" y="7593">
+   </LINKPOINT>
+   <LINKPOINT x="9195" y="7063">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Playback" filename="subpatches\sound\Playback.v4p" nodename="subpatches\sound\Playback.v4p" componentmode="InAWindow" id="823">
+   <BOUNDS type="Node" left="3060" top="9720" width="2055" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8460" top="2625" width="9870" height="10395">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DataInput" filename="subpatches\DataInput.v4p" nodename="subpatches\DataInput.v4p" componentmode="Hidden" id="824">
+   <BOUNDS type="Node" left="10156" top="3724" width="8055" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4876" top="0" width="10560" height="10275">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8835" top="2175" width="10560" height="10275">
+   </BOUNDS>
+   <PIN pinname="start nodejs" visible="1">
+   </PIN>
+   <PIN pinname="IsRunning" visible="1">
+   </PIN>
+   <PIN pinname="path to script" slicecount="1" values="server\server.js">
+   </PIN>
+   <PIN pinname="Open Website" visible="1">
+   </PIN>
+   <PIN pinname="stop nodejs" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="824" srcpinname="result" dstnodeid="820" dstpinname="Input String" linkstyle="Bezier">
+   <LINKPOINT x="12450" y="6780">
+   </LINKPOINT>
+   <LINKPOINT x="10575" y="6180">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="824" srcpinname="result" dstnodeid="798" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="12450" y="6983">
+   </LINKPOINT>
+   <LINKPOINT x="11115" y="6383">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="825" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10155" top="2490" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10155" top="2490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|start nodejs|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="825" srcpinname="Y Output Value" dstnodeid="824" dstpinname="start nodejs">
+   </LINK>
+   <NODE systemname="DataOut" filename="subpatches\DataOut.v4p" nodename="subpatches\DataOut.v4p" componentmode="Hidden" id="826">
+   <BOUNDS type="Node" left="10147" top="5381" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7729" top="3451" width="4837" height="3860">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="824" srcpinname="socketId" dstnodeid="826" dstpinname="SocketID">
+   </LINK>
+   <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Start/Stop" linkstyle="Bezier">
+   <LINKPOINT x="5370" y="4073">
+   </LINKPOINT>
+   <LINKPOINT x="10950" y="4073">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="LanguageProcessing" filename="subpatches\LanguageProcessing.v4p" nodename="subpatches\LanguageProcessing.v4p" componentmode="Hidden" id="827">
+   <BOUNDS type="Node" left="11761" top="6888" width="5490" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7817" top="3438" width="7889" height="6900">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8535" top="2085" width="11715" height="8760">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="824" srcpinname="Language" dstnodeid="827" dstpinname="Input 1 - Input String" linkstyle="Bezier">
+   <LINKPOINT x="18165" y="5423">
+   </LINKPOINT>
+   <LINKPOINT x="17220" y="5423">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="824" srcpinname="result" dstnodeid="827" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="12465" y="5423">
+   </LINKPOINT>
+   <LINKPOINT x="13140" y="5423">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="824" srcpinname="Entity" dstnodeid="827" dstpinname="Entity" linkstyle="Bezier">
+   <LINKPOINT x="11325" y="5430">
+   </LINKPOINT>
+   <LINKPOINT x="11775" y="5430">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="824" srcpinname="Keyword" dstnodeid="827" dstpinname="Keyword" linkstyle="Bezier">
+   <LINKPOINT x="13605" y="5423">
+   </LINKPOINT>
+   <LINKPOINT x="14490" y="5423">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="824" srcpinname="Relevance" dstnodeid="827" dstpinname="Relevance - Input" linkstyle="Bezier">
+   <LINKPOINT x="14775" y="5430">
+   </LINKPOINT>
+   <LINKPOINT x="15855" y="5430">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="828" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="15885" top="4485" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15885" top="4485" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="IsRunning">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="824" srcpinname="IsRunning" dstnodeid="828" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="829" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18165" top="2490" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18165" top="2490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Open Website|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="829" srcpinname="Y Output Value" dstnodeid="824" dstpinname="Open Website">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="830" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14175" top="2490" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14175" top="2490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|stop nodejs|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="824" dstpinname="stop nodejs">
    </LINK>
    </PATCH>
