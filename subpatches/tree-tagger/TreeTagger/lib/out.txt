@@ -1,1 +1,16 @@
-NN	Becher
+ITJ	hallo
+NN	Hallo
+NN	Hallo
+NE	Russland
+KON	und
+NE	Deutschland
+VVFIN	hängen
+PPER	ich
+ADV	mal
+PIS	sowas
+APPR	von
+ADJD	echt
+APPRART	zu
+NN	Hals
+ADV	raus
+CARD	23
