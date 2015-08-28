@@ -1,0 +1,461 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\todo_POS.v4p" scrollx="0" scrolly="4210" systemname="todo_POS" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\todo_POS.v4p">
+   <NODE id="0" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9370" top="15330" width="1190" height="10120">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9370" top="15330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="50" values="|D, E, R|,|E, R|,E,|D, E, R|,D,D,E,E,|D, E, R|,|E, R|,|D, E, R|,|E, R|,|D, E, R|,R,R,|D, E, R|,D,D,D,|D, E, R|,D,D,D,|D, E|,D,D,|D, E, R|,|D, (E), R|,E,|D, E, R|,|D, E|,|D, E|,|D, E|,|D, E|,|D, E|,|D, E|,D,D,D,D,D,D,|D, E|,D,|D, E, R|,,,,,">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="1" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10680" top="15330" width="6280" height="10350">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10680" top="15330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="50" values=",,|R - not working?|,,|D - Pronominaladverb|,|D - Negationspartikel|,|R - not working, gets recognized as Afc|,,|D - no difference between singular or plural|,,|D - no difference between singular or plural|,| |,,|R - Numeral, ordinal|,|R - Numeral p* ? no idea what it is|,|D - unterordnende Konjunktion|,|D - nebenordnende Konjunktion|,|D - unterordnende Konjunktion mit &quot;zu&quot; und Infinitiv|,|D - Vergleichspartikel|,|D - Präposition, links|,|D - Zirkumposition rechts|,|D - Präposition mit Artikel|,|D - Postposition|,|D - &quot;zu&quot; vor Infinitiv, E - Preposition to|,|D - abgetrennter Verbzusatz|,|D - Partikel bei Adjektiv oder Adverb|,,|D - Adverb, E - most of the times recognized as Adverb (RB)|,|Existential there|,|E - Personal Pronoun, D - Personalpronomen, irreflexiv|,|E - Possessive ending, D - Personalpronomen, reflexiv|,|E - Possessive pronoun, D - Relativpronomen, substituierend|,|E - Wh-pronoun, possessive, D - Relativpronomen, attribuierend|,|E - Wh-adverb, D - Interrogativpronomen, substituierend|,|E - Wh-determiner, D - Interrogativpronomen, attribuierend|,|E - Wh-pronoun, D - Interrogativ- / Relativpronomen, adverbial|,|D - bestimmter oder unbestimmter Artikel|,|D - substituierendes Demonstrativpronomen|,|D - attribuierendes Demonstrativpronomen|,|D - substituierendes Possessivpronomen|,|D - attribuierendes Possessivpronomen|,|D - substituierendes Indefinitpronomen|,|D - attribuierendes Indefinitpronomen ohne Determiner, E - Article, Determiner|,|D - attribuierendes Indefinitpronomen mit Determiner|,,|D - Verb, Infinitiv mit &quot;zu&quot;|,|E - Verb, &quot;be&quot;, base form|,,,">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="14200" top="25910" width="10840" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14200" top="25910" width="3570" height="960">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|PIDAT: manche der als PIDAT erkannten Wörter, weden im Russ &amp; Engl als Adjektive oder Numerale erkannt (Russ: einige / etliche - Numeral, Engl: several - AdjektivPIDAT)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="3" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="17200" top="1500" width="1340" height="22760">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17200" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="80">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="80" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FM,,,,,,,,,,,,,,,,PTKANT,,TRUNC,,VVFIN,VVIMP,,,VVPP,VAFIN,VAIMP,VAINF,VAPP,VMFIN,VMINF,VMPP,,XY,,|$,|,$.,$(">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE id="4" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2930" top="14920" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2930" top="14920" width="720" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="ENGLISH">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="5" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4270" top="14920" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4270" top="14920" width="720" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="RUSSIAN">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="50" pintype="Input" visible="1" values="Adjective,|Adjective, comparative|,|Adjective, superlative|,Adverb,Adverb,Adverb,|Adverb, comparative|,|Adverb, superlative|,|Noun, common, singular|,|Noun, common, plural|,|Noun, proper, singular|,|Noun, proper, plural|,|Numeral, cardinal|,Adjective,Adjective,Conjunction,Conjunction,Conjunction,Conjunction,Adposition,Adposition,Adposition,Adposition,Adposition,Adposition,Adposition,Interjection,Particle,Particle,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,|Verb, infinitive|,|Verb, infinitive|,|Verb, infinitive|,,,">
+   </PIN>
+   <BOUNDS type="Node" left="5580" top="15330" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5580" top="15330" width="3140" height="10230">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="50">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="String Type" pintype="Configuration" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="7" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Box" left="23600" top="15690" width="2890" height="11950">
+   </BOUNDS>
+   <BOUNDS type="Node" left="23600" top="15690" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="55" visible="1" pintype="Input" values=",,,,,,,,,,,,,|Verb, &quot;be&quot;, present tense, 3rd person singular present|,|Verb, &quot;be&quot;, gerund or present participle|,|Verb, &quot;be&quot;, present tense, non-3rd person singular present|,|Verb, &quot;be&quot;, past participle|,|Verb, &quot;be&quot;, past tense|,|Verb, &quot;have&quot;, base form|,|Verb, &quot;have&quot;, present tense, 3rd person singular present|,|Verb, &quot;have&quot;, gerund or present participle|,|Verb, &quot;have&quot;, present tense, non-3rd person singular present|,|Verb, &quot;have&quot;, past participle|,|Verb, &quot;have&quot;, past tense|,,|Verb, present tense, 3rd person singular present|,|Verb, gerund or present participle|,|Verb, present tense, non-3rd person singular present|,|Verb, past participle|,|Verb, past tense|,|Modal verb|,,,,,,,,,,Predeterminer,,,,,,,,,,|List item marker|,Symbol,,|Foreign word|,">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="8">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="55">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="8" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Box" left="22160" top="15690" width="1310" height="11900">
+   </BOUNDS>
+   <BOUNDS type="Node" left="22160" top="15690" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="55" visible="1" pintype="Input" values=",,,,,,,,,,,,,VBZ,VBG,VBP,VBN,VBD,VH,VHZ,VHG,VHP,VHN,VHD,,VVZ,VVG,VVP,VVN,VVD,MD,,,,,,,,,,PDT,,,,,,,,,,LS,SYM,,FW,">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="8">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="55">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" pintype="Configuration" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="9" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1500" top="15330" width="1190" height="10120">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="15330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="50" values="ADJA,,,ADJD,PAV,PTKNEG,,,NN,,NE,,CARD,,,KOUS,KON,KOUI,KOKOM,APPR,APZR,APPRART,APPO,PTKZU,PTKVZ,PTKA,ITJ,ADV,,PPER,PRF,PRELS,PRELAT,PWS,PWAT,PWAV,ART,PDS,PDAT,PPOSS,PPOSAT,PIS,PIAT,PIDAT,VVINF,VVIZU,,,,">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE id="10" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Box" left="18630" top="1500" width="3440" height="22580">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18630" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="80" visible="1" pintype="Input" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,|Fremdsprachliches Material|,,,,,,,,,,,,,,,,Antwortpartikel,,Kompositions-Erstglied,,|Verb, finite|,|Verb, Imperativ|,,,|Verb, Patrizip Perfekt|,|Verb, finit, aux|,|Verb, Imperativ, aux|,|Verb, Infinitiv, aux|,|Verb, Partizip Perfekt, aux|,|Verb, finit, modal|,|Verb, Infinitiv, modal|,|Verb, Partizip Perfekt, modal|,,|Nichtwort, Sonerzeichen|,,Komma,|Satzbeende Interpunktion|,|sonstige Satzzeichen|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="80">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="11" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="50" pintype="Input" visible="1" values="Afc,Afp,Afs,R,,,Rc,,Nc-s,Nc-p,Np-s,Np-p,Mc,Mo,Mp,C,,,,S,,,,,,,I,Q,,P,,,,,,,,,,,,,,,,,,,,">
+   </PIN>
+   <BOUNDS type="Node" left="4290" top="15330" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4290" top="15330" width="1190" height="10120">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="50">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="String Type" pintype="Configuration" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Default" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" pintype="Configuration" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE id="12" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2920" top="15330" width="1190" height="10120">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2920" top="15330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="50">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="50" values="JJ,JJR,JJS,RB,,,RBR,RBS,NN,NNS,NP,NPS,CD,,,CC,,,,IN,,,,TO,,,UH,RP,EX,PP,POS,PP$,WP$,WRB,WDT,WP,,,,,,,DT,,VV,,VB,,,">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="2680" top="2110" width="25740" height="16140">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   </PATCH>

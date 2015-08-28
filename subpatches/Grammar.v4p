@@ -1,0 +1,1199 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" systemname="Grammar" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" scrollx="1150" scrolly="3200">
+   <BOUNDS type="Window" left="-110" top="-110" width="25740" height="16140">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="69" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1560" top="2140" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1560" top="2140" width="2560" height="700">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="ENGLISH">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="68" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2570" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2570" top="3190" width="2540" height="490">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|part of speech|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="67" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1560" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1560" top="3190" width="890" height="490">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="short">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="66" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7460" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7460" top="3190" width="2630" height="500">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="description">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="65" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="13160" top="2140" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13160" top="2140" width="2560" height="700">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="GERMAN">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="64" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="13160" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13160" top="3190" width="2630" height="500">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|part of speech|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="17650" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17650" top="3190" width="1250" height="480">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="short">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="19100" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19100" top="3190" width="2630" height="500">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="description">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="61" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="17650" top="3660" width="1350" height="14240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17650" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="61">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="61" values="NN,NE,,ADJA,ADJD,PAV,PTKNEG,,ART,PDS,PDAT,PPER,PPOSS,PPOSAT,PIS,PIAT,PIDAT,PRELS,PRELAT,PRF,PWS,PWAT,PWAV,,CARD,,KOUI,KOUS,KON,KOKOM,APPR,APPRART,APPO,APZR,,ITJ,FM,ADV,PTKZU,PTKVZ,PTKANT,PTKA,TRUNC,,VVFIN,VVIMP,VVINF,VVIZU,VVPP,VAFIN,VAIMP,VAINF,VAPP,VMFIN,VMINF,VMPP,,XY,|$,|,$.,$(">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1560" top="3660" width="920" height="12760">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1560" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="55">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="55" values="NN,NNS,NP,NPS,,JJ,JJR,JJS,RB,RBR,RBS,,VB,VBZ,VBG,VBP,VBN,VBD,VH,VHZ,VHG,VHP,VHN,VHD,VV,VVZ,VVG,VVP,VVN,VVD,MD,,DT,PP,POS,PP$,WP$,WRB,WDT,WP,PDT,,CD,,CC,IN,TO,,RP,EX,LS,SYM,UH,FW,">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE id="59" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="55" visible="1" pintype="Input" values="|Noun, singular or mass|,|Noun, plural|,|Proper noun, singular|,|Proper noun, plural|,,Adjective,|Adjective, comparative |,|Adjective, superlative|,Adverb,|Adverb, comparative|,|Adverb, superlative|,,|Verb, &quot;be&quot;, base form|,|Verb, &quot;be&quot;, present tense, 3rd person singular present|,|Verb, &quot;be&quot;, gerund or present participle|,|Verb, &quot;be&quot;, present tense, non-3rd person singular present|,|Verb, &quot;be&quot;, past participle|,|Verb, &quot;be&quot;, past tense|,|Verb, &quot;have&quot;, base form|,|Verb, &quot;have&quot;, present tense, 3rd person singular present|,|Verb, &quot;have&quot;, gerund or present participle|,|Verb, &quot;have&quot;, present tense, non-3rd person singular present|,|Verb, &quot;have&quot;, past participle|,|Verb, &quot;have&quot;, past tense|,|Verb, base form|,|Verb, present tense, 3rd person singular present|,|Verb, gerund or present participle|,|Verb, present tense, non-3rd person singular present|,|Verb, past participle|,|Verb, past tense|,|Modal verb|,,|Article, Determiner|,|Personal pronoun|,|Possessive ending|,|Possessive pronoun|,|Wh-pronoun, possessive|,Wh-adverb,Wh-determiner,Wh-pronoun,Predeterminer,,|Cardinal number|,,|Coordinating conjunction|,|Preposition, Subordinating conjunction |,|Preposition to|,,Particle,|Existential there|,|List item marker|,Symbol,|Interjection, Exclamation|,|Foreign word|,">
+   </PIN>
+   <BOUNDS type="Box" left="2570" top="3660" width="4800" height="12820">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2570" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="55">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="7">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="58" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7460" top="3660" width="2990" height="12760">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7460" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="55">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="55" encoded="0" values="|Noun singular|,|Noun plural|,|Proper noun singular, more specific, actual name|,|Proper noun plural, morespecific, actual names|,,|Adjective, not comp meaning but with -er like &apos;further details&apos;, Adjective comp without -er like superior, Adjective super without -est like first, last|,|Adjective comp with -er and more/less|,|Adjective, super with -est as well as worst, alsomost and least|,|Adverb, most words with -ly, degree words (quite, too, very), posthead modifiers (enough, indeed), neg markers (not, n&apos;t, never), Adverb with -er but without comp meaning like later|,|Adverb, comp -er|,|Adverb, super|,,|Verb be, imperatives, infnitives and subjunctives|,|Verb be, present tense, 3rd person singular (he is)|,|Verb be, gerund or present participle (being)|,|Verb be, present tense, non 3rd person singular (I am)|,|Verb be, past participle (I have been)|,|Verb be, past tense (she was)|,|Verb have, imperatives, infnitives and subjunctives (to have)|,|Verb have, present tense, 3rd person singular (he had)|,|Verb have, gerund or present participle (having)|,|Verb have, present tense, non 3rd person singular (I have)|,|Verb have, past participle (we had had)|,|Verb have, past tense (he had)|,|Verb, imperatives, infnitives and subjunctives (to sing)|,|Verb, present tense, 3rd person singular (she loves)|,|Verb, gerund or present participle (laughing)|,|Verb, present tense, non 3rd person singular (I love)|,|Verb, past participle (I had seen)|,|Verb, past tense (I saw)|,|can, could, dare, may, might, must, ought, shall, should, will, would|,,|articles (a, an, every, no, the), indefnite determiners (another, any, some, each, either, neither, that, these, this, those), instances of all and both|,|personal pronouns (I, me, you, he, him, etc), reflexive pronouns ending in -self or -selves, nominal pronouns (mine, yours, his, hers, ours, theirs)|,|possessive ending on nouns ending in &apos;s or s&apos; is split of by the tagging algorithm and tagged as if it were a separate word (John/NP &apos;s/POS idea)|,|adjectival possessive forms (my, your, his, her, its, one&apos;s, our and their)|,whose,|how, where, why, when|,|which, what, that|,|who, what, whom|,|all, both, half, many, nary, quite, rather, such|,,|Cardinal number|,,|Coordinating conjunction (and, but, nor, or, yet, plus, minus, less, times, over)|,|no distinction between prepositions and subordinating conjunctions|,|the preposition &apos;to&apos; has its own special tag whether it is a preposition or an infnitival marker|,,|Particle (along, away, back, by, down, forward, in, off, on, out, over, round, under, up)|,|Existential there is the unstressed there that triggers inversion of the inflected verb and the logical subject of a sentence|,|This category includes letters and numerals when they are used to identify items in a list|,|mathematical scientific and technical symbols or expressions, names of chemicals, units of measurement|,|my, oh, please, see, uh, well, yes, ... (My what a gorgeous day, See its like this)|,|like &apos;bete noire&apos; and &apos;persona non grata&apos;|,">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE id="57" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input String" slicecount="61" visible="1" pintype="Input" values="|normales Nomen|,Eigennamen,,|attributives Adjektiv|,|adverbiales Adjektiv|,Pronominaladverb,Negationspartikel,,|bestimmter oder unbestimmter Artikel|,|substituierendes Demonstrativpronomen|,|attribuierendes Demonstrativpronomen|,|Personalpronomen, irreflexiv|,|substituierendes Possessivpronomen|,|attribuierendes Possessivpronomen|,|substituierendes Indefinitpronomen|,|attribuierendes Indefinitpronomen ohne Determiner|,|attribuierendes Indefinitpronomen mit Determiner|,|Relativpronomen, substituierend|,|Relativpronomen, attribuierend|,|Personalpronomen, reflexiv|,|Interrogativpronomen, substituierend|,|Interrogativpronomen, attribuierend|,|Interrogativ- / Relativpronomen, adverbial|,,Kardinalzahl,,|unterordnende Konjunktion mit &quot;zu&quot; und Infinitiv|,|unterordnende Konjunktion|,|nebenordnende Konjunktion|,Vergleichspartikel,|Präposition, links|,|Präposition mit Artikel|,Postposition,|Zirkumposition rechts|,,Interjektion,|Fremdsprachliches Material|,Adverb,|&quot;zu&quot; vor Infinitiv|,|abgetrennter Verbzusatz|,Antwortpartikel,|Partikel bei Adjektiv oder Adverb|,Kompositions-Erstglied,,|Verb, finite|,|Verb, Imperativ|,|Verb, Infinitiv|,|Verb, Infinitiv mit &quot;zu&quot;|,|Verb, Patrizip Perfekt|,|Verb, finit, aux|,|Verb, Imperativ, aux|,|Verb, Infinitiv, aux|,|Verb, Partizip Perfekt, aux|,|Verb, finit, modal|,|Verb, Infinitiv, modal|,|Verb, Partizip Perfekt, modal|,,|Nichtwort, Sonerzeichen|,Komma,|Satzbeende Interpunktion|,|sonstige Satzzeichen|">
+   </PIN>
+   <BOUNDS type="Box" left="13160" top="3660" width="4390" height="14240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13160" top="3660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="61">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" pintype="Configuration" values="7">
+   </PIN>
+   <PIN pinname="Output String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" pintype="Configuration" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" pintype="Configuration" values="ColsRowsPages">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="56" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="24910" top="2140" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="24910" top="2140" width="2560" height="700">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="RUSSIAN">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="55" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="24910" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="24910" top="3190" width="2630" height="500">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|part of speech|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="54" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="28730" top="3190" width="720" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="28730" top="3190" width="1250" height="480">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="short">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="53" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="27240" top="2330" width="4020" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="27240" top="2330" width="2310" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|you can also get the case, gender and many other things|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="52">
+   <BOUNDS type="Node" left="36360" top="6650" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36360" top="6650" width="2820" height="1010">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|numerals: cardinal (one, two, twenty,...), ordinal (first, seconde, third,...), subclass of ordinals (next, last, previous, subsequent)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="51">
+   <BOUNDS type="Node" left="29950" top="3690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="3690" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Adjectives (examples: Afp-pa, Afpfsa)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="50">
+   <BOUNDS type="Node" left="29950" top="4010" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="4010" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|1. CATEGORY:  A - Adjective|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="49">
+   <BOUNDS type="Node" left="29950" top="4630" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="4630" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="| 3. DEGREE:  p - positive, c - comparative, s- superlative|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="48">
+   <BOUNDS type="Node" left="29950" top="4950" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="4950" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|4. GENDER:  m - masculine, f - feminine, n - neuter|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="47">
+   <BOUNDS type="Node" left="29950" top="5260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="5260" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|5. NUMBER:  s - singular, p - plural|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="29950" top="5560" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="5560" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|6. CASE:  n - nominative, g - genitive, d - dative, a - accusative, l - locative, i - instrumental|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="45">
+   <BOUNDS type="Node" left="29950" top="5870" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="5870" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|7. f - full-art, s- short-art|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="44">
+   <BOUNDS type="Node" left="29950" top="6660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="6660" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Numeral (examples: Mofsa, Mompl----n)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="43">
+   <BOUNDS type="Node" left="29950" top="6980" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="6980" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|1. CATEGORY:  M - Numeral|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="42">
+   <BOUNDS type="Node" left="29950" top="7290" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="7290" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|2. TYPE: c - cardinal, o - ordinal, p - *p (don&apos;t know what it stands for)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="41">
+   <BOUNDS type="Node" left="29950" top="7610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="7610" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|3. GENDER:  m - masculine, f - feminine, n - neuter|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="40">
+   <BOUNDS type="Node" left="29950" top="7920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="7920" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|4. NUMBER:  s - singular, p - plural|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="39">
+   <BOUNDS type="Node" left="29950" top="8220" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="8220" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|5. CASE:  n - nominative, g - genitive, d - dative, a - accusative, l - locative, i - instrumental|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="38">
+   <BOUNDS type="Node" left="29950" top="8530" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="8530" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|(10. ? ANIMATE: n - no, y - yes (----y))|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="37">
+   <BOUNDS type="Node" left="29950" top="10280" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="10280" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Noun (examples: Npcpay, Nc-pa)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="29950" top="10600" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="10600" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|1. CATEGORY:  N - Noun|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="35">
+   <BOUNDS type="Node" left="29950" top="10910" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="10910" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|2. SUB_TYPE: c - common, p - Proper|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="34">
+   <BOUNDS type="Node" left="29950" top="11230" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="11230" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|3. GENDER:  m - masculine, f - feminine, n - neuter, c - common|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="33">
+   <BOUNDS type="Node" left="29950" top="11540" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="11540" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|4. NUMBER:  s - singular, p - plural|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="32">
+   <BOUNDS type="Node" left="29950" top="11840" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="11840" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|5. CASE:  n - nominative, g - genitive, d - dative, a - accusative, l - locative, i - instrumental|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="31">
+   <BOUNDS type="Node" left="29950" top="12220" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="12220" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|6. ANIMATE: n - no, y - yes|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="29950" top="13660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="13660" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Pronoun (examples: P-1-pa, P--nsd-n)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="29950" top="13980" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="13980" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|1. CATEGORY:  P - Pronoun|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="28">
+   <BOUNDS type="Node" left="29950" top="14290" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="14290" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|2. TYPE: - |">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="29950" top="14610" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="14610" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|3. PERSON: 1, 2, 3 person|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="29950" top="14920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="14920" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|4. GENDER:  m - masculine, f - feminine, n - neuter, c - common|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="25">
+   <BOUNDS type="Node" left="29950" top="15520" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="15520" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|6. CASE:  n - nominative, g - genitive, d - dative, a - accusative, l - locative, i - instrumental|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="29950" top="15830" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="15830" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|7. ANIMATE: n - no, y - yes|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="23">
+   <BOUNDS type="Node" left="24910" top="3660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="24910" top="3660" width="3720" height="16870">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="73">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Input String" slicecount="73" values="|Adjective, comparative|,Adjective,|Adjective, singular|,|Adjective, singular|,|Adjective, plural|,|Adjective, singular|,|Adjective, plural|,|Adjective, superlative, singular|,,Conjunction,Interjection,,|Numeral, cardinal|,|Numeral, cardinal, plural&tab;|,|Numeral, cardinal, singular|,|Numeral, cardinal, plural&tab;|,|Numeral, cardinal, singular|,|Numeral, cardinal, plural&tab;|,|Numeral, cardinal, singular|,|Numeral, cardinal, plural&tab;|,|Numeral, cardinal, singular|,|Numeral, ordinal|,|Numeral, ordinal, plural|,|Numeral, ordinal, singular|,|Numeral, ordinal, plural|,|Numeral, ordinal, singular|,|Numeral, ordinal, plural|,|Numeral, ordinal, singular|,|Numeral, ordinal, plural|,|Numeral, ordinal, singular|,|Numeral, *p, singular|,|Numeral, *p, singular|,,|Noun, common, plural|,|Noun, common, singular|,|Noun, common, plural|,|Noun, common, singular|,|Noun, common, plural|,|Noun, common, singular|,|Noun, common|,|Noun, common, plural|,|Noun, common, singular|,|Noun, common, plural|,|Noun, proper, plural|,|Noun, proper, singular|,|Noun, proper, plural|,|Noun, proper, singular|,|Noun, proper, plural|,|Noun, proper, singular|,,|Pronoun, first person, plural|,|Pronoun, first person, singular|,|Pronoun, second person, plural|,|Pronoun, second person, singular|,|Pronoun, third person, feminine, singular|,|Pronoun, third person, masculine, singular|,|Pronoun, third person, neuter, singular|,|Pronoun, third person, plural|,|Pronoun, accusative|,|Pronoun, dative|,|Pronoun, feminine, singular|,|Pronoun, genitive|,|Pronoun, instrumental|,|Pronoun, locative|,|Pronoun, masculine, singular|,|Pronoun, neuter, plural|,|Pronoun, neuter, singular|,|Pronoun, plural|,|Pronoun, singular|,,Particle,Adverb,|Adverb, comparative|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="28730" top="3660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="28730" top="3660" width="1040" height="16890">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="73">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Input String" slicecount="73" values="Afc,Afp,Afpfs,Afpms,Afpnp,Afpns,Afp-p,Afsfs,,C,I,,Mc,Mcfp,Mcfs,Mcmp,Mcms,Mcnp,Mcns,Mc-p,Mc-s,Mo,Mofp,Mofs,Momp,Moms,Monp,Mons,Mo-p,Mo-s,Mpfs,Mpms,,Nccp,Nccs,Ncfp,Ncfs,Ncmp,Ncms,Nc,Ncnp,Ncns,Nc-p,Npcp,Npcs,Npfp,Npfs,Npmp,Npms,,P-1-p,P-1-s,P-2-p,P-2-s,P-3fs,P-3ms,P-3ns,P-3-p,P----a,P----d,P--fs,P----g,P----i,P----l,P--ms,P--np,P--ns,P---p,P---s,,Q,R,Rc">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Node" left="29950" top="4320" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="4320" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|2. TYPE:  f - (don&apos;t know what it stands for)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="29950" top="17170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="17170" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Verb (examples: Vmip1pmpsp, Vmgs---m-e)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="29950" top="17490" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="17490" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|1. CATEGORY:  V - Verb|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="29950" top="17800" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="17800" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|2. TYPE: m - main|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Node" left="29950" top="18120" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="18120" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|3. VFORM: g - gerund, i - indicative, m - imperative, n - infinitive, p - participle|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="29950" top="18430" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="18430" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|4. TENSE: p - present, s - past, f - future|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="29950" top="18730" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="18730" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|5. PERSON: 1 - first, 2 - second, 3 - third|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="14">
+   <BOUNDS type="Node" left="29950" top="19040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="19040" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|6. NUMBER: s - singular, p- plural|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="13">
+   <BOUNDS type="Node" left="29950" top="19360" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="19360" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|7. GENDER: m - masculine, f - feminine, n - neuter|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="29950" top="19660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="19660" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|8. VOICE: a - active, p - passive, m - medial (medial verbs? or did they mean modal verbs?)|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="29950" top="19970" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="19970" width="6170" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|9. COORD_TYPE: s - short-art, f - full-art|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="29950" top="20270" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="20270" width="6170" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|10. ASPECT: p - progressive, e - perfective|">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="29950" top="15220" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="29950" top="15220" width="6180" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|5. NUMBER: s - singular, p - plural|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="42020" top="13640" width="6750" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="42020" top="13640" width="4080" height="2540">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|RUSSIAN ARTICLES: &cr;&lf;&cr;&lf;There are no definite or indefinite articles (such as the, a, an in English) in the Russian language.&cr;&lf;&cr;&lf;- do show that it is definite or undefinite they change the objects ending (a book/the book - ви́жу/кни́ги)&cr;&lf;- the use of the numeral one sometimes signifies that the noun is indefinite (I met one (=a) friend)&cr;&lf;- Word order may also be used for this purpose&cr;&lf;- The plural form may signify indefiniteness|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="1" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox">
+   <PIN pinname="Input String" slicecount="61" values="|Tisch, Herr, (das) Reisen|,|Hans, Hamburg, HSV|,,|attributives Adjektiv|,|adverbiales oder prädikatives Adjektiv|,|dafür, dabei, deswegen, trotzdem|,nicht,,|der, die, das, ein, eine|,|dieser, jener|,|jener (Mensch)|,|ich, er, ihm mich, dir|,|meins, deiner|,|mein (Buch), deine (Mutter)|,|keiner, viele, man, niemand|,|kein (Mensch), irgendein (Glas)|,|(ein) wenig (Wasser), (die) beiden (Brüder)|,|(der Hund,) der|,|(der Mann,) dessen (Hund)|,|(der Mann,) dessen (Hundsich, einander, dich, mir|,|wer, was|,|welche (Farbe), wessen (Hut)|,|warum, wo, wann, worüber, wobei|,,|zwei (Männer), (im Jahre) 1994|,,|um (zu leben), anstatt (zu fragen)|,|weil, dass, damit, wenn, ob|,|und, oder, aber|,|als, wie|,|in, ohne|,|im, zur, am|,|(ihm) zufolge, (der Sache) wegen|,|(von jetzt) an |,,|mhm, ach, tja|,|fremdsprachliche Wörter / Ausdrücke (A big fish)|,|schon, bald, doch|,|zu (gehen)|,|(er kommt) an, (er fährt) rad|,|ja, nein, danke, bitte|,|am (schönsten), zu (schnell)|,|An- (und Abreise)|,,|(du) gehst, (wir) kommen (an)|,komm,gehen,|anzukommen, loszulassen|,|gegangen, angekommen|,|(du) bist, (wir) werden|,|sei (ruhig)|,|werden, wein|,gewesen,dürfen,wollen,|(er hat) gekonnt|,,D2XW3,|,|,|. ? ! ; :|,|- ( ) |">
+   </PIN>
+   <BOUNDS type="Node" left="19100" top="3660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19100" top="3660" width="2810" height="14240">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="61">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="77" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36810" top="13920" width="2020" height="1420">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36810" top="13920" width="2020" height="1420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Я - I&cr;&lf;Ты - You (informal)&cr;&lf;Он - He, It (m)&cr;&lf;Она - She, It (f)&cr;&lf;Оно - It (n)&cr;&lf;Мы - We&cr;&lf;Вы - You (formal, or plural)&cr;&lf;Они - They|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="76" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36810" top="13640" width="1380" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36810" top="13640" width="2500" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Russian Pronouns - as subjects|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="75" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="39430" top="13920" width="2020" height="1420">
+   </BOUNDS>
+   <BOUNDS type="Box" left="39430" top="13920" width="2020" height="1420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Меня - Me&cr;&lf;Тебя - You (informal)&cr;&lf;Его - (&quot;yevo&quot;) - Him, It (m,n)&cr;&lf;Её - Her, It (f)&cr;&lf;Нас - Us&cr;&lf;Вас - You (formal, or plural)&cr;&lf;Их - Them|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="74" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="39430" top="13640" width="1380" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="39430" top="13640" width="2500" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Russian Pronouns - as objects|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="73" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36800" top="17130" width="2560" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36800" top="17130" width="3190" height="950">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|RUSSIAN VERBS: &cr;&lf;&cr;&lf;Russian has only one present tense&cr;&lf;only one way of saying &quot;I work&quot;, &quot;I am working&quot; and &quot;I do work&quot;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="72" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36800" top="18090" width="19860" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36800" top="18090" width="4110" height="1830">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Russian verbs change their endings depending on the subject. This happens a little in English, but not as much. (Example: I work, he works). This happens according to two different patterns known as the first conjugation, and the second conjugation. (There are also some irregular verbs)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="88" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="3990" width="1120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="3990" width="3100" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|R&tab;более&tab;more|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="87" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="4240" width="1120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="4240" width="3100" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|R&tab;менее&tab;less|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="86" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="4450" width="1120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="4450" width="3100" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Afpmsnf&tab;быстрый&tab;fast|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="85" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="4730" width="1120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="4730" width="5250" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Afcmsnf&tab;быстрый&tab;faster&tab;&tab;erkannt als comp|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="84" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="5000" width="1120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="5000" width="5810" height="280">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Afpmsnf&tab;красивый&tab;most beautiful &tab;! nicht als superlativ erkannt !|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="83" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="5640" width="3460" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="5640" width="3460" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|самый красивый дом - the most beautiful house|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="82" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="5280" width="1120" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="5280" width="5810" height="280">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Afpnsnf&tab;дешёвое&tab;cheapiest &tab;&tab;! nicht als superlativ erkannt !|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="81" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="42310" top="4870" width="3460" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="42310" top="4870" width="2450" height="670">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Superlative is not working for Russian|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="80" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="42310" top="3630" width="3460" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="42310" top="3630" width="2450" height="1190">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Comparative works for Russian, but more, less ... are recognized as adverbs|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="79" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="42310" top="5590" width="3460" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="42310" top="5590" width="2450" height="1310">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Adverb works, but not Adverb comp. then it gets recognized as an adjective comp|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="10600" top="13330" width="4320" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10600" top="13330" width="1700" height="1390">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|in English numbers are cardinals and their lemma is @card@!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="36330" top="3670" width="1620" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="36330" top="3670" width="1620" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|RUSSIAN ADJECTIVES:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="99" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="18160" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="18160" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|personalpronomen: wer? who? I, you, he... me, you, him,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="18750" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="18750" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|possessivpronomen: wessen? whose? my, your, his,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5030" top="18160" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5030" top="18160" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Verb|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5030" top="18750" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5030" top="18750" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Nomen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="19940" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="19940" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|relativpronomen: who?, which?, whose?|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="20500" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="20500" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|reflexivpronomen: -self, -selves|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="19330" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="19330" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|possessivbegleiter: wessen? whose? mine, yours, his, hers, theirs,...|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5030" top="19330" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5030" top="19330" width="1710" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|es folgt ein Nomen|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="21310" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="21310" width="2790" height="530">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|substituierend = pronoun&cr;&lf;replaces noun phrase (wer, was, who)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="90" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2130" top="21870" width="1470" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="21870" width="2810" height="640">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|attribuierend = determiner&cr;&lf;modifies noun phrase (wessen Hut, whose, which)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
