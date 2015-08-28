@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianPOS_RestoreOriginalOrder.v4p" systemname="RussianPOS_RestoreOriginalOrder" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianPOS_RestoreOriginalOrder.v4p" scrollx="1210" scrolly="2890">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\RussianPOS_RestoreOriginalOrder.v4p" systemname="RussianPOS_RestoreOriginalOrder" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianPOS_RestoreOriginalOrder.v4p" scrollx="855" scrolly="1095">
    <NODE id="0" systemname="Cons (String)" nodename="Cons (String)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
    <BOUNDS type="Node" left="2240" top="4310" width="13930" height="270">
    </BOUNDS>
@@ -265,7 +265,7 @@
    <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="9760" top="9120" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" slicecount="1" values="20" visible="1">
+   <PIN pinname="Select" slicecount="1" visible="1" values="20">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -586,7 +586,7 @@
    </LINK>
    <BOUNDS type="Window" left="760" top="760" width="19890" height="13400">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="40">
    <BOUNDS type="Node" left="8700" top="7650" width="100" height="100">
@@ -600,4 +600,6 @@
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="24" dstpinname="Select">
    </LINK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
    </PATCH>

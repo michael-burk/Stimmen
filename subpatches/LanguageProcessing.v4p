@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="15" scrolly="1635">
    <BOUNDS type="Window" left="-12900" top="3495" width="11715" height="8760">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -45,15 +45,19 @@
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
+   <PIN pinname="Entity Out" visible="1">
+   </PIN>
+   <PIN pinname="Category Out" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="tree-tagger" filename="tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="Hidden" id="3" stayontop="1">
    <BOUNDS type="Node" left="5284" top="5220" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="5284" top="5220" width="14215" height="9810">
    </BOUNDS>
-   <BOUNDS type="Window" left="670" top="350" width="23410" height="14910">
+   <BOUNDS type="Window" left="-22440" top="1860" width="23400" height="14910">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|This is a house you are such a nice girl and I am laughing  lot|">
+   <PIN pinname="Input" visible="1" slicecount="1" values="|This is a house you are such a nice girl and I am laughing a lot|">
    </PIN>
    <PIN pinname="Execute" visible="1" slicecount="1" values="0">
    </PIN>
@@ -63,7 +67,11 @@
    </PIN>
    <PIN pinname="Completed" visible="1">
    </PIN>
-   <PIN pinname="0: DE, 1: EN, 2: RU" visible="1" slicecount="1" values="1">
+   <PIN pinname="0: DE, 1: EN, 2: RU" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="PartOfSpeech" visible="1">
+   </PIN>
+   <PIN pinname="Lemma" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="4">
@@ -161,6 +169,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2400" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="1" dstpinname="Input">
    </LINK>
@@ -235,5 +245,115 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output 1" dstnodeid="3" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7260" top="6480" width="1380" height="2265">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7260" top="6480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PartOfSpeech">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="PartOfSpeech" dstnodeid="16" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5865" top="6540" width="1380" height="2265">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5865" top="6540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Tokens">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Tokens" dstnodeid="17" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9285" top="6660" width="1380" height="2265">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9285" top="6660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Lemma">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Lemma" dstnodeid="19" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2865" top="6600" width="1230" height="3300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2865" top="6600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Entity Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Entity Out" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4305" top="6600" width="1380" height="2265">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4305" top="6600" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Category Out|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Category Out" dstnodeid="21" dstpinname="Input String">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="21045">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="25260">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4395" top="13515" width="0" height="0">
    </BOUNDS>
@@ -69,7 +69,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4200" top="19410" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4200" top="19410" width="9375" height="2625">
+   <BOUNDS type="Box" left="4200" top="19410" width="10680" height="2700">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -437,9 +437,9 @@
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="40" dstpinname="JSON">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="41" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3630" top="28905" width="9180" height="31545">
+   <BOUNDS type="Box" left="3630" top="32205" width="9180" height="31545">
    </BOUNDS>
-   <BOUNDS type="Node" left="3630" top="28905" width="0" height="0">
+   <BOUNDS type="Node" left="3630" top="32205" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -449,7 +449,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="20">
    </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="3" values="|&quot;response&quot;: {&cr;&lf;  &quot;language&quot;: &quot;ger&quot;,&cr;&lf;  &quot;languageIsReliable&quot;: true,&cr;&lf;  &quot;entities&quot;: [&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 0,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        7&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/projects/project_participant&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/exhibitions/exhibition_subject&quot;,&cr;&lf;        &quot;/travel/travel_destination&quot;,&cr;&lf;        &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;        &quot;/location/region&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/visual_art/art_subject&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;        &quot;/location/administrative_division&quot;,&cr;&lf;        &quot;/location/dated_location&quot;,&cr;&lf;        &quot;/food/beer_country_region&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/religion/religious_leadership_jurisdiction&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/film/film_location&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 9.11652,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Ukraine&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/07t21&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.229087,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;startingPos&quot;: 46,&cr;&lf;      &quot;endingPos&quot;: 53,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q212&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 1,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        15&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Staat&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/media_common/quotation_subject&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 1.18815,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Staat&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Staat&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/06_02&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.293095,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;State (polity)&quot;,&cr;&lf;      &quot;startingPos&quot;: 116,&cr;&lf;      &quot;endingPos&quot;: 121,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q7275&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 2,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        24&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Sowjetunion&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/spaceflight/space_program_sponsor&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/film/film_subject&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/location/dated_location&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 10.4064,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Sowjetunion&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Sowjetunion&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/05vz3zq&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.244497,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Soviet Union&quot;,&cr;&lf;      &quot;startingPos&quot;: 157,&cr;&lf;      &quot;endingPos&quot;: 168,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q15180&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 3,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        55&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/projects/project_participant&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/exhibitions/exhibition_subject&quot;,&cr;&lf;        &quot;/travel/travel_destination&quot;,&cr;&lf;        &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;        &quot;/location/region&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/visual_art/art_subject&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;        &quot;/location/administrative_division&quot;,&cr;&lf;        &quot;/location/dated_location&quot;,&cr;&lf;        &quot;/food/beer_country_region&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/religion/religious_leadership_jurisdiction&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/film/film_location&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 9.11652,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Ukraine&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/07t21&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.229087,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Ukraine&quot;,&cr;&lf;      &quot;startingPos&quot;: 363,&cr;&lf;      &quot;endingPos&quot;: 370,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q212&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 4,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        63&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Perestroika&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/time/event&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 6.74263,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Perestroika&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;perestroika&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/060nw&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.250926,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Perestroika&quot;,&cr;&lf;      &quot;startingPos&quot;: 403,&cr;&lf;      &quot;endingPos&quot;: 414,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q167634&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 5,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        66&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Streik&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/film/film_subject&quot;,&cr;&lf;        &quot;/visual_art/art_subject&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 2.04586,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Streik&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;streik&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/0149p3&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.232989,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Strike action&quot;,&cr;&lf;      &quot;startingPos&quot;: 428,&cr;&lf;      &quot;endingPos&quot;: 434,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q49776&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 6,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        66,&cr;&lf;        67,&cr;&lf;        68&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Bergarbeiterstreik von 1889&quot;,&cr;&lf;      &quot;confidenceScore&quot;: 1.13811,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Bergarbeiterstreik_von_1889&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;streik von Bergarbeitern&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.0319231,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;&quot;,&cr;&lf;      &quot;startingPos&quot;: 428,&cr;&lf;      &quot;endingPos&quot;: 452,&cr;&lf;      &quot;wikidataId&quot;: &quot;&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 7,&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        80&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Bergmann&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/fictional_universe/character_occupation&quot;,&cr;&lf;        &quot;/people/profession&quot;,&cr;&lf;        &quot;/book/book_subject&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 1.1102,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Bergmann&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Bergarbeiter&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/04n7j9g&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.114939,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Miner&quot;,&cr;&lf;      &quot;startingPos&quot;: 525,&cr;&lf;      &quot;endingPos&quot;: 537,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q820037&quot;&cr;&lf;    },&cr;&lf;    {&cr;&lf;      &quot;id&quot;: 8,&cr;&lf;      &quot;type&quot;: [&cr;&lf;        &quot;Wikidata:Q532&quot;,&cr;&lf;        &quot;Place&quot;,&cr;&lf;        &quot;PopulatedPlace&quot;,&cr;&lf;        &quot;Country&quot;&cr;&lf;      ],&cr;&lf;      &quot;matchingTokens&quot;: [&cr;&lf;        84&cr;&lf;      ],&cr;&lf;      &quot;entityId&quot;: &quot;Russland&quot;,&cr;&lf;      &quot;freebaseTypes&quot;: [&cr;&lf;        &quot;/location/statistical_region&quot;,&cr;&lf;        &quot;/meteorology/cyclone_affected_area&quot;,&cr;&lf;        &quot;/olympics/olympic_participating_country&quot;,&cr;&lf;        &quot;/fictional_universe/fictional_setting&quot;,&cr;&lf;        &quot;/book/book_subject&quot;,&cr;&lf;        &quot;/organization/organization_founder&quot;,&cr;&lf;        &quot;/sports/sports_team_location&quot;,&cr;&lf;        &quot;/location/administrative_division&quot;,&cr;&lf;        &quot;/government/governmental_jurisdiction&quot;,&cr;&lf;        &quot;/symbols/coat_of_arms_bearer&quot;,&cr;&lf;        &quot;/military/military_combatant&quot;,&cr;&lf;        &quot;/tv/tv_location&quot;,&cr;&lf;        &quot;/food/beer_country_region&quot;,&cr;&lf;        &quot;/organization/organization_member&quot;,&cr;&lf;        &quot;/travel/travel_destination&quot;,&cr;&lf;        &quot;/biology/breed_origin&quot;,&cr;&lf;        &quot;/media_common/netflix_genre&quot;,&cr;&lf;        &quot;/periodicals/newspaper_circulation_area&quot;,&cr;&lf;        &quot;/symbols/flag_referent&quot;,&cr;&lf;        &quot;/location/location&quot;,&cr;&lf;        &quot;/location/country&quot;,&cr;&lf;        &quot;/sports/sport_country&quot;,&cr;&lf;        &quot;/organization/organization_scope&quot;,&cr;&lf;        &quot;/location/dated_location&quot;&cr;&lf;      ],&cr;&lf;      &quot;confidenceScore&quot;: 7.56047,&cr;&lf;      &quot;wikiLink&quot;: &quot;http://de.wikipedia.org/wiki/Russland&quot;,&cr;&lf;      &quot;matchedText&quot;: &quot;Russland&quot;,&cr;&lf;      &quot;freebaseId&quot;: &quot;/m/06bnz&quot;,&cr;&lf;      &quot;relevanceScore&quot;: 0.332313,&cr;&lf;      &quot;entityEnglishId&quot;: &quot;Russia&quot;,&cr;&lf;      &quot;startingPos&quot;: 551,&cr;&lf;      &quot;endingPos&quot;: 559,&cr;&lf;      &quot;wikidataId&quot;: &quot;Q159&quot;&cr;&lf;    }&cr;&lf;  ]&cr;&lf;}|,|&quot;time&quot;: 2.85844|,|&quot;ok&quot;: true|">
+   <PIN pinname="Input String" visible="1" slicecount="5" values="|Angela Merkel|,|Bundestag de Alemania|,Greece,Rusia,|Bla Bla|">
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="2">
    </PIN>
@@ -581,17 +581,17 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="2">
+   <PIN pinname="Index" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="3240" top="23370" width="100" height="100">
+   <BOUNDS type="Node" left="1995" top="23535" width="100" height="100">
    </BOUNDS>
    <PIN pinname="key" slicecount="1" values="entityId">
    </PIN>
    <PIN pinname="path" slicecount="1" values="response.entities">
    </PIN>
-   <BOUNDS type="Box" left="3240" top="23370">
+   <BOUNDS type="Box" left="1995" top="23535">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -607,17 +607,13 @@
    <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="69">
    <BOUNDS type="Node" left="3645" top="26175" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="3" values="|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|,|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|,">
    </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="3" values="Russland,Russland,Wodka">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="69" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="69" dstpinname="Input 1">
-   </LINK>
    <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="70">
    <BOUNDS type="Node" left="14505" top="23775" width="100" height="100">
    </BOUNDS>
@@ -641,8 +637,6 @@
    </LINKPOINT>
    <LINKPOINT x="14505" y="23415">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="70" srcpinname="Output" dstnodeid="67" dstpinname="Input">
    </LINK>
@@ -691,7 +685,7 @@
    <LINK srcnodeid="77" srcpinname="Output" dstnodeid="78" dstpinname="Input String">
    </LINK>
    <NODE systemname="AsXElement (JSON)" filename="%VVVV%\addonpack\lib\nodes\plugins\JSONStringAsElement.dll" nodename="AsXElement (JSON)" componentmode="Hidden" id="85">
-   <BOUNDS type="Node" left="6810" top="25485" width="100" height="100">
+   <BOUNDS type="Node" left="8490" top="25335" width="100" height="100">
    </BOUNDS>
    <PIN pinname="JSON" visible="1" slicecount="1" values="|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|">
    </PIN>
@@ -699,7 +693,7 @@
    </PIN>
    </NODE>
    <NODE systemname="ELEMENT (XELEMENT SPLIT)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="87">
-   <BOUNDS type="Node" left="6795" top="25920" width="100" height="100">
+   <BOUNDS type="Node" left="8475" top="25770" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Element" visible="1" slicecount="1" values="||">
    </PIN>
@@ -711,7 +705,7 @@
    <LINK srcnodeid="85" srcpinname="Element" dstnodeid="87" dstpinname="Element">
    </LINK>
    <NODE systemname="ELEMENT (XELEMENT SPLIT)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="88">
-   <BOUNDS type="Node" left="7260" top="26460" width="100" height="100">
+   <BOUNDS type="Node" left="8940" top="26310" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Element" visible="1" slicecount="1" values="||">
    </PIN>
@@ -725,9 +719,9 @@
    <LINK srcnodeid="87" srcpinname="Children" dstnodeid="88" dstpinname="Element">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="89" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7410" top="26940" width="1455" height="915">
+   <BOUNDS type="Box" left="9090" top="26790" width="1455" height="915">
    </BOUNDS>
-   <BOUNDS type="Node" left="7410" top="26940" width="0" height="0">
+   <BOUNDS type="Node" left="9090" top="26790" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -745,9 +739,9 @@
    <LINK srcnodeid="88" srcpinname="Value" dstnodeid="89" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="91" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6810" top="23835" width="1725" height="1365">
+   <BOUNDS type="Box" left="8490" top="23685" width="1725" height="1365">
    </BOUNDS>
-   <BOUNDS type="Node" left="6810" top="23835" width="0" height="0">
+   <BOUNDS type="Node" left="8490" top="23685" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="2" visible="1" values="|[&cr;&lf;  0&cr;&lf;]|,|[&cr;&lf;  2&cr;&lf;]|">
    </PIN>
@@ -765,9 +759,9 @@
    <LINK srcnodeid="91" srcpinname="Output String" dstnodeid="85" dstpinname="JSON">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9240" top="26445" width="795" height="480">
+   <BOUNDS type="Box" left="10920" top="26295" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9240" top="26445" width="0" height="0">
+   <BOUNDS type="Node" left="10920" top="26295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -777,7 +771,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0,">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="4,4,0">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -786,12 +780,10 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Entity - Category|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="87" srcpinname="Children Bin Size" dstnodeid="92" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2055" top="25995" width="1095" height="2010">
+   <BOUNDS type="Box" left="1350" top="27450" width="1095" height="2010">
    </BOUNDS>
-   <BOUNDS type="Node" left="2055" top="25995" width="0" height="0">
+   <BOUNDS type="Node" left="1350" top="27450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -803,17 +795,299 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Entity Out|">
    </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="2" values="|Helmut Kohl|,|Angela Merkel|">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="95" dstpinname="Input String">
-   </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="91" dstpinname="Input String">
    </LINK>
    <NODE systemname="Occurrence (String)" filename="%VVVV%\addonpack\lib\nodes\plugins\Occurrence.dll" nodename="Occurrence (String)" componentmode="Hidden" id="96">
-   <BOUNDS type="Node" left="1725" top="24945" width="100" height="100">
+   <BOUNDS type="Node" left="1410" top="25515" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
+   <PIN pinname="Unique" visible="1">
+   </PIN>
+   <PIN pinname="First Occurrence" visible="1">
+   </PIN>
+   <PIN pinname="Former Index Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="68" srcpinname="Output" dstnodeid="96" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="97">
+   <BOUNDS type="Node" left="10920" top="25815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="87" srcpinname="Children Bin Size" dstnodeid="97" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="First Occurrence" dstnodeid="97" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="92" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Unique" dstnodeid="69" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="98">
+   <BOUNDS type="Node" left="3930" top="25635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="First Occurrence" dstnodeid="98" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="98" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="98" srcpinname="Output" dstnodeid="69" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="3090" top="23625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="key" slicecount="1" values="matchingTokens">
+   </PIN>
+   <PIN pinname="path" slicecount="1" values="response.entities">
+   </PIN>
+   <BOUNDS type="Box" left="3090" top="23625">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Output Object" visible="1">
+   </PIN>
+   <PIN pinname="Parse" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Jobject" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output json" dstnodeid="102" dstpinname="Jobject">
+   </LINK>
+   <NODE systemname="AsXElement (JSON)" filename="%VVVV%\addonpack\lib\nodes\plugins\JSONStringAsElement.dll" nodename="AsXElement (JSON)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="5235" top="25875" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="JSON" visible="1" slicecount="1" values="|[&cr;&lf;  &quot;Wikidata:Q532&quot;,&cr;&lf;  &quot;Place&quot;,&cr;&lf;  &quot;PopulatedPlace&quot;,&cr;&lf;  &quot;Country&quot;&cr;&lf;]|">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ELEMENT (XELEMENT SPLIT)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="108">
+   <BOUNDS type="Node" left="5220" top="26310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="109" srcpinname="Element" dstnodeid="108" dstpinname="Element">
+   </LINK>
+   <NODE systemname="ELEMENT (XELEMENT SPLIT)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XML Split)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="5685" top="26850" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="108" srcpinname="Children" dstnodeid="107" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="105" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5235" top="24225" width="1725" height="1365">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5235" top="24225" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="4" visible="1" values="|[&cr;&lf;  0,&cr;&lf;  1&cr;&lf;]|,|[&cr;&lf;  1&cr;&lf;]|,|[&cr;&lf;  10&cr;&lf;]|,|[&cr;&lf;  13,&cr;&lf;  14&cr;&lf;]|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="105" srcpinname="Output String" dstnodeid="109" dstpinname="JSON">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="104" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7665" top="26835" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7665" top="26835" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="4,4,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Entity - Category|">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="103">
+   <BOUNDS type="Node" left="7665" top="26355" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="108" srcpinname="Children Bin Size" dstnodeid="103" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="104" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="111">
+   <BOUNDS type="Node" left="6150" top="28260" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="Value" dstnodeid="111" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="6150" top="28680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="111" srcpinname="Output" dstnodeid="110" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6150" top="29220" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6150" top="29220" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="112" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Sort (Spreads)" nodename="Sort (Spreads)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="6105" top="29955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="113" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="114">
+   <BOUNDS type="Node" left="5865" top="30600" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Former Index" dstnodeid="114" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="96" srcpinname="Unique" dstnodeid="114" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="114" srcpinname="Output" dstnodeid="95" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="108" srcpinname="Children Bin Size" dstnodeid="110" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="41" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="115" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3870" top="28020" width="1845" height="1320">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3870" top="28020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="4" values="|[&cr;&lf;  0,&cr;&lf;  1&cr;&lf;]|,|[&cr;&lf;  1&cr;&lf;]|,|[&cr;&lf;  10&cr;&lf;]|,|[&cr;&lf;  13,&cr;&lf;  14&cr;&lf;]|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="116" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2505" top="26535" width="795" height="960">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2505" top="26535" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0,1,2,3">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="First Occurrence" dstnodeid="116" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="117">
+   <BOUNDS type="Node" left="4035" top="27330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="First Occurrence" dstnodeid="117" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="117" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Output" dstnodeid="115" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Output" dstnodeid="105" dstpinname="Input String">
    </LINK>
    </PATCH>

@@ -1,0 +1,61 @@
+Texture2D displaceTex : register( t0 );
+
+SamplerState g_samLinear : IMMUTABLE
+{
+	Filter = MIN_MAG_MIP_LINEAR;
+	AddressU = BORDER;
+	AddressV = BORDER;
+};
+
+struct VSIn
+{	
+    float3 pos  : POSITION; 
+	float3 norm  : NORMAL;
+	float2 texcoord : TEXCOORD0;
+};
+
+float1 mapRange(float1 value, float from1,float to1,float from2, float to2){
+	
+	return  (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+}
+
+StructuredBuffer<float1> displaceData;
+
+VSIn VS2(VSIn input,uint id : SV_VertexID)
+{
+	VSIn o;
+	//float4 displace = displaceTex.SampleLevel(g_samLinear,float2(100,100),0);
+	//uint2 pos_xy = { id%1000, id} ;
+	o.texcoord = input.texcoord;
+	//float1 lookupA = mapRange(input.pos.x,2,-2,0,1);
+	//float1 lookupB = mapRange(input.pos.y,2,-2,0,1);
+	float lookupA = mapRange(input.pos.x,-2,2,-1,2);
+	float lookupB = mapRange(input.pos.y,2,-2,-1,2);
+	
+	//float1 lookupA = (input.pos.x);
+	//float1 lookupB = (input.pos.y);
+	
+	//uint3 sampleCoord = uint3(lookupA*256,lookupB*256, 0);
+	//float4 sample = displaceTex.Load(sampleCoord);
+	float4 sample = displaceTex.SampleLevel(g_samLinear,float2(lookupA,lookupB),0);
+	//o.pos = float3(input.pos.x,input.pos.y,(1-sample.r) + sin(input.pos.y*2 + bendFactor)*0.7*bend * sin(input.pos.x*2 + bendFactor)*0.7*bend);
+	o.pos = float3(input.pos.x,input.pos.y,(1-sample.r)*1);
+	
+	//1-sample.r
+	o.norm =  input.norm;
+	
+  	return o;
+} 
+
+
+GeometryShader StreamOutGS = ConstructGSWithSO( CompileShader( vs_4_0, VS2() ),
+"POSITION.xyz; NORMAL.xyz; TEXCOORD.xy", NULL, NULL, NULL, -1);
+
+technique10 PassMesh
+{
+    pass PP2
+    {
+        SetVertexShader( CompileShader( vs_5_0, VS2() ) );
+        SetGeometryShader( StreamOutGS );
+    }  
+}

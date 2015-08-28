@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="240" scrolly="120">
-   <BOUNDS type="Window" left="-22725" top="1710" width="18675" height="14970">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-13545" top="2070" width="12840" height="14925">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -209,7 +209,7 @@
    <LINK srcnodeid="802" srcpinname="Y Output Value" dstnodeid="792" dstpinname="Check">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="820" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9480" top="9045" width="795" height="240">
+   <BOUNDS type="Box" left="9480" top="9045" width="1290" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="9480" top="9045" width="0" height="0">
    </BOUNDS>
@@ -314,12 +314,142 @@
    </LINK>
    <LINK srcnodeid="820" srcpinname="Output String" dstnodeid="794" dstpinname="Input_Antwort">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="825" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9090" top="2565" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9090" top="2565" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|start nodejs|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="DataOut" filename="subpatches\DataOut.v4p" nodename="subpatches\DataOut.v4p" componentmode="Hidden" id="826">
+   <BOUNDS type="Node" left="9082" top="5456" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6664" top="3526" width="4837" height="3860">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
+   </BOUNDS>
+   <PIN pinname="SocketID">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Start/Stop" linkstyle="Bezier">
+   <LINKPOINT x="4305" y="4110">
+   </LINKPOINT>
+   <LINKPOINT x="9885" y="4110">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="LanguageProcessing" filename="subpatches\LanguageProcessing.v4p" nodename="subpatches\LanguageProcessing.v4p" componentmode="Hidden" id="827">
+   <BOUNDS type="Node" left="10696" top="6963" width="5490" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6752" top="3513" width="7889" height="6900">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-12900" top="3495" width="11715" height="8760">
+   </BOUNDS>
+   <PIN pinname="Input 1 - Input String">
+   </PIN>
+   <PIN pinname="Input">
+   </PIN>
+   <PIN pinname="Entity">
+   </PIN>
+   <PIN pinname="Keyword">
+   </PIN>
+   <PIN pinname="Relevance - Input">
+   </PIN>
+   <PIN pinname="Entity Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="828" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14820" top="4560" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14820" top="4560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="IsRunning">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="829" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="17100" top="2565" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17100" top="2565" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Open Website|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="830" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13110" top="2565" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13110" top="2565" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|stop nodejs|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Record_Play" filename="subpatches\sound\Record_Play.v4p" nodename="subpatches\sound\Record_Play.v4p" componentmode="Hidden" id="822" stayontop="1">
+   <BOUNDS type="Node" left="4380" top="4485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-23805" top="3210" width="22050" height="12435">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4380" top="4485">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="514" srcpinname="Y Output Value" dstnodeid="822" dstpinname="Enable" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="822" srcpinname="Output String" dstnodeid="821" dstpinname="Input String" linkstyle="Bezier">
+   <LINKPOINT x="4515" y="7688">
+   </LINKPOINT>
+   <LINKPOINT x="8040" y="7148">
+   </LINKPOINT>
+   </LINK>
    <NODE systemname="DataInput" filename="subpatches\DataInput.v4p" nodename="subpatches\DataInput.v4p" componentmode="Hidden" id="824">
    <BOUNDS type="Node" left="9091" top="3799" width="8055" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3811" top="75" width="10560" height="10275">
    </BOUNDS>
-   <BOUNDS type="Window" left="8835" top="2175" width="10560" height="10275">
+   <BOUNDS type="Window" left="5550" top="1050" width="13845" height="11400">
    </BOUNDS>
    <PIN pinname="start nodejs" visible="1">
    </PIN>
@@ -344,52 +474,10 @@
    <LINKPOINT x="10050" y="6458">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="825" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9090" top="2565" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9090" top="2565" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|start nodejs|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="825" srcpinname="Y Output Value" dstnodeid="824" dstpinname="start nodejs">
    </LINK>
-   <NODE systemname="DataOut" filename="subpatches\DataOut.v4p" nodename="subpatches\DataOut.v4p" componentmode="Hidden" id="826">
-   <BOUNDS type="Node" left="9082" top="5456" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6664" top="3526" width="4837" height="3860">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
-   </BOUNDS>
-   </NODE>
    <LINK srcnodeid="824" srcpinname="socketId" dstnodeid="826" dstpinname="SocketID">
    </LINK>
-   <LINK srcnodeid="511" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Start/Stop" linkstyle="Bezier">
-   <LINKPOINT x="4305" y="4110">
-   </LINKPOINT>
-   <LINKPOINT x="9885" y="4110">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="LanguageProcessing" filename="subpatches\LanguageProcessing.v4p" nodename="subpatches\LanguageProcessing.v4p" componentmode="Hidden" id="827">
-   <BOUNDS type="Node" left="10696" top="6963" width="5490" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6752" top="3513" width="7889" height="6900">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8535" top="2085" width="11715" height="8760">
-   </BOUNDS>
-   </NODE>
    <LINK srcnodeid="824" srcpinname="Language" dstnodeid="827" dstpinname="Input 1 - Input String" linkstyle="Bezier">
    <LINKPOINT x="17100" y="5498">
    </LINKPOINT>
@@ -420,88 +508,22 @@
    <LINKPOINT x="14790" y="5505">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="828" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14820" top="4560" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="14820" top="4560" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="IsRunning">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="824" srcpinname="IsRunning" dstnodeid="828" dstpinname="Y Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="829" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="17100" top="2565" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="17100" top="2565" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Open Website|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="829" srcpinname="Y Output Value" dstnodeid="824" dstpinname="Open Website">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="830" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13110" top="2565" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="13110" top="2565" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|stop nodejs|">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="830" srcpinname="Y Output Value" dstnodeid="824" dstpinname="stop nodejs">
    </LINK>
-   <NODE systemname="Record_Play" filename="subpatches\sound\Record_Play.v4p" nodename="subpatches\sound\Record_Play.v4p" componentmode="Hidden" id="822" stayontop="1">
-   <BOUNDS type="Node" left="4380" top="4485" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-23955" top="4440" width="22050" height="12435">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4380" top="4485">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="514" srcpinname="Y Output Value" dstnodeid="822" dstpinname="Enable" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="822" srcpinname="Output String" dstnodeid="821" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="4515" y="7688">
-   </LINKPOINT>
-   <LINKPOINT x="8040" y="7148">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Quote" filename="subpatches\Visualizations\Quote.v4p" nodename="subpatches\Visualizations\Quote.v4p" componentmode="Hidden" id="833" stayontop="1">
+   <NODE systemname="Quote" filename="subpatches\Visualizations\Quote.v4p" nodename="subpatches\Visualizations\Quote.v4p" componentmode="Hidden" id="833" stayontop="0" debug="0">
    <BOUNDS type="Node" left="13012" top="10500" width="3045" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="9750" top="8425" width="6525" height="4150">
    </BOUNDS>
-   <BOUNDS type="Window" left="4020" top="1980" width="19395" height="10140">
+   <BOUNDS type="Window" left="-13650" top="1170" width="13455" height="13365">
    </BOUNDS>
+   <PIN pinname="Entities" visible="1">
+   </PIN>
    </NODE>
+   <LINK srcnodeid="827" srcpinname="Entity Out" dstnodeid="833" dstpinname="Entities">
+   </LINK>
    </PATCH>
