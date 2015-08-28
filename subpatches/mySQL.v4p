@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="5970" scrolly="6180">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="9120" scrolly="270">
    <BOUNDS type="Window" left="-25125" top="915" width="24285" height="15810">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -1403,7 +1403,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="||" visible="1">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="323" srcpinname="Output String" dstnodeid="267" dstpinname="Input 6" linkstyle="VHV">

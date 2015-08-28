@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="6525" top="0" width="18675" height="15150">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="2070" scrolly="1320">
+   <BOUNDS type="Window" left="-22725" top="1710" width="18675" height="14970">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -387,7 +387,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6752" top="3513" width="7889" height="6900">
    </BOUNDS>
-   <BOUNDS type="Window" left="8535" top="2085" width="11715" height="8760">
+   <BOUNDS type="Window" left="-12900" top="3495" width="11715" height="8760">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="824" srcpinname="Language" dstnodeid="827" dstpinname="Input 1 - Input String" linkstyle="Bezier">
@@ -483,7 +483,7 @@
    <NODE systemname="Record_Play" filename="subpatches\sound\Record_Play.v4p" nodename="subpatches\sound\Record_Play.v4p" componentmode="Hidden" id="822" stayontop="1">
    <BOUNDS type="Node" left="4380" top="4485" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="945" top="1245" width="22050" height="12435">
+   <BOUNDS type="Window" left="-23955" top="4440" width="22050" height="12435">
    </BOUNDS>
    <BOUNDS type="Box" left="4380" top="4485">
    </BOUNDS>

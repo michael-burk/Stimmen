@@ -1,5 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p">
+   <BOUNDS type="Window" left="8535" top="2085" width="11715" height="8760">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
    <NODE systemname="treeMap" filename="treeMap.v4p" nodename="subpatches\treeMap.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1504" top="5130" width="1080" height="270">
    </BOUNDS>
@@ -230,10 +236,4 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="10" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="8535" top="2085" width="11715" height="8760">
-   </BOUNDS>
-   <PACK Name="VVVV.Packs" Version="0.2.0">
-   </PACK>
-   <PACK Name="addonpack" Version="33.7.0">
-   </PACK>
    </PATCH>

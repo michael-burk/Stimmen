@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p" scrollx="10035" scrolly="0" systemname="Record_Play" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p">
-   <BOUNDS height="12435" left="945" top="1245" type="Window" width="22050">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p" scrollx="10755" scrolly="5070" systemname="Record_Play" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p">
+   <BOUNDS height="12435" left="-23955" top="4440" type="Window" width="22050">
    </BOUNDS>
    <NODE componentmode="InABox" id="10" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5013" top="1545" type="Node" width="0">
@@ -565,7 +565,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14850" top="9195" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -575,7 +575,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
@@ -765,9 +765,9 @@
    </PIN>
    <PIN pinname="Desired Input Channels" slicecount="1" values="2">
    </PIN>
+   <PIN pinname="Play" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="136" dstpinname="Play">
-   </LINK>
    <LINK srcnodeid="122" srcpinname="Output Enum" dstnodeid="136" dstpinname="Sample Rate">
    </LINK>
    <LINK srcnodeid="121" srcpinname="Output Enum" dstnodeid="136" dstpinname="Driver">
@@ -805,11 +805,11 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="139" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14850" top="14580" width="2670" height="1320">
+   <BOUNDS type="Box" left="15255" top="15225" width="2670" height="1320">
    </BOUNDS>
-   <BOUNDS type="Node" left="14850" top="14580" width="0" height="0">
+   <BOUNDS type="Node" left="15255" top="15225" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,1,1,1">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="3,3,3,3">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1365,6 +1365,8 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="183" srcpinname="Output" dstnodeid="184" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Y Output Value" dstnodeid="136" dstpinname="Play">
    </LINK>
    <LINK srcnodeid="184" srcpinname="Output" dstnodeid="127" dstpinname="Y Input Value">
    </LINK>
