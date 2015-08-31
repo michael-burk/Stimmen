@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Desktop\Stimmen\subpatches\nodejs\localNodeJs.v4p" systemname="localNodeJs" filename="D:\workspace\_research\nodejsPrototype\subpatches\localNodeJs.v4p" scrollx="0" scrolly="2700">
+   <PATCH nodename="C:\Users\Michael\Desktop\Stimmen\subpatches\nodejs\localNodeJs.v4p" systemname="localNodeJs" filename="D:\workspace\_research\nodejsPrototype\subpatches\localNodeJs.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="5220" top="735" width="17490" height="11655">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">

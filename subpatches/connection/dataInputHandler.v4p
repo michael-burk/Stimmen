@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\connection\dataInputHandler.v4p" systemname="dataInputHandler" filename="D:\workspace\_research\nodejsPrototype\subpatches\dataInputHandler.v4p" scrollx="18540" scrolly="6345">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\connection\dataInputHandler.v4p" systemname="dataInputHandler" filename="D:\workspace\_research\nodejsPrototype\subpatches\dataInputHandler.v4p" scrollx="16755" scrolly="7230">
    <BOUNDS type="Window" left="-2790" top="1005" width="22080" height="13440">
    </BOUNDS>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="24">
@@ -1740,4 +1740,20 @@
    </LINK>
    <LINK srcnodeid="279" srcpinname="Output" dstnodeid="281" dstpinname="Input">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="283" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="27810" top="18015" width="1290" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="27810" top="18015" width="4200" height="720">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alchemy Results|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="705" scrolly="3735">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="105" scrolly="540">
    <BOUNDS type="Window" left="3855" top="1800" width="19575" height="12090">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">

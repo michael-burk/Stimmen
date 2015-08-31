@@ -153,12 +153,13 @@ function initServerMessageHandler(){
 
 		if(vname == "Record"){
 			if(valuearray[0] == 1 && !started){
+				console.log(vname);
 				recognizer.start();
 				started = true;
 
 			}
 			if(valuearray[0] == 0 && started){
-				console.log(vname);
+				
 				recognizer.stop();
 				started = false;
 

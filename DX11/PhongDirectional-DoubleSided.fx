@@ -101,29 +101,29 @@ float4 PS(vs2ps In, bool front : SV_IsFrontFace): SV_Target
   
 	 float4 col;
 	
-	if(zTex == 1){
+	//if(zTex == 1){
 		
 	
 	//	float4 c0=tfront.Sample(g_samLinear,In.TexCd.xy);
 	//	float4 c1=tZ.Sample(g_samLinear,In.TexCd.xy)*float4(1,1,1,saturate(-In.Pos.z*zPower));
 	//  float4 col=bld(max(c0,c1),c0,c1);
 	
-		float4 c0=tfront.Sample(g_samLinear,In.TexCd.xy);
-		float4 c1=tZ.Sample(g_samLinear,In.TexCd.xy)*float4(1,1,1,saturate(-In.Pos.z*zPower));
-	    col=bld(lerp(c0,c1,saturate(-In.Pos.z*zPower)),c1,c0);
+	//	float4 c0=tfront.Sample(g_samLinear,In.TexCd.xy);
+	//	float4 c1=tZ.Sample(g_samLinear,In.TexCd.xy)*float4(1,1,1,saturate(-In.Pos.z*zPower));
+	//    col=bld(lerp(c0,c1,saturate(-In.Pos.z*zPower)),c1,c0);
 		
 		
-	    col.rgb *= PhongDirectional(In.NormV, In.ViewDirV, In.LightDirV);
+	 //   col.rgb *= PhongDirectional(In.NormV, In.ViewDirV, In.LightDirV);
 		
-		col.a *= Alpha;
+	//	col.a *= Alpha;
 		
-		col += In.Pos.z*1;
+	//	col += In.Pos.z*1;
 	
-	} else {
+	//} else {
 		col = tfront.Sample(g_samLinear, In.TexCd.xy);
-		col.rgb *= PhongDirectional(In.NormV, In.ViewDirV, In.LightDirV);	
+		col.rgb *= PhongDirectional(In.NormV, In.ViewDirV, In.LightDirV) * .7;	
 		col.a *= Alpha;
-	}
+//	}
 	
 	
 	float4 col2 = tback.Sample(g_samLinear, In.TexCd.xy);
