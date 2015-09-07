@@ -130,7 +130,7 @@ io.sockets.on('connection', function (socket) {
 	    /////////////////////////////////////////////////////////////////////
 	    // Alchemy
 
-	 	analyze(receivedJsonObject["Value"]["Spread"][0]);
+	 	//analyze(receivedJsonObject["Value"]["Spread"][0]);
 
 	 	/////////////////////////////////////////////////////////////////////
 

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataInput.v4p" systemname="DataInput" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataInput.v4p" scrollx="0" scrolly="2760">
-   <BOUNDS type="Window" left="5550" top="1050" width="13845" height="11400">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataInput.v4p" systemname="DataInput" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataInput.v4p" scrollx="0" scrolly="270">
+   <BOUNDS type="Window" left="-23130" top="1365" width="13845" height="11400">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -267,11 +267,15 @@
    </PIN>
    <PIN pinname="result" visible="1">
    </PIN>
+   <PIN pinname="server" visible="1">
+   </PIN>
+   <PIN pinname="record" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="dataInputHandler" filename="connection\dataInputHandler.v4p" nodename="dataInputHandler" componentmode="Hidden" id="12" stayontop="1">
    <BOUNDS type="Node" left="1605" top="5940" width="1740" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="-2790" top="1005" width="22080" height="13440">
+   <BOUNDS type="Window" left="-26970" top="585" width="22080" height="13440">
    </BOUNDS>
    <PIN pinname="Session Id" visible="1">
    </PIN>
@@ -298,6 +302,8 @@
    <PIN pinname="Entity" visible="1">
    </PIN>
    <PIN pinname="Language" visible="1">
+   </PIN>
+   <PIN pinname="RecordState" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
@@ -521,5 +527,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="0" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="28" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1890" top="8985" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1890" top="8985" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="RecordState">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="RecordState" dstnodeid="28" dstpinname="Input String">
    </LINK>
    </PATCH>

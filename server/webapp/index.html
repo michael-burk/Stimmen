@@ -49,18 +49,31 @@
 
 <div class="one-third column">	
 
-			<h5>Result</h5>
+<!-- 			<h5>Result</h5>
 			<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
-			</div>
+			</div> -->
 			
 </div>
-<div id ="volume">
+<!-- <div id ="volume">
 </dv>
+ -->
+
+<div id = "recordButton">
+</div>
 
 <script type="text/javascript">
 	
 
-	var recognizer = new webkitSpeechRecognition();
+
+var recognizer = new webkitSpeechRecognition();
+
+
+$( document ).ready(function() {
+
+
+	
+	var speechArray = new Array();
+
 	recognizer.lang = "de";
 	recognizer.continuous = true;
 	recognizer.interimResults = true;
@@ -71,11 +84,11 @@
 	            console.log(result[0].transcript);
 	           //console.log(event);
 
-	        	var valuearray = new Array();
-				valuearray.push(result[0].transcript);
-				sendMessage("result", valuearray);
-
-				$("#resultHolder").append( result[0].transcript);
+	        	
+				speechArray.push(result[0].transcript);
+				
+				sendMessage("result", speechArray);
+			//	$("#resultHolder").append( result[0].transcript);
 				console.log(valuearray);
 
 
@@ -85,7 +98,58 @@
 
 
 
-$( document ).ready(function() {
+
+	$("#recordButton").bind('touchstart', function(ev){
+
+		speechArray = new Array();
+
+		ev.preventDefault();
+		$("#recordButton").css("background-color","red");
+  		recognizer.start();
+  		
+  		var valuearray = new Array();
+		valuearray.push("start");
+		sendMessage("record", valuearray);
+
+		//$("#resultHolder").append( "start");
+	});
+
+
+	$("#recordButton").bind('touchend', function(ev){
+		ev.preventDefault();
+
+		$("#recordButton").css("background-color","black");
+  		//recognizer.stop();
+
+  		var valuearray = new Array();
+		valuearray.push("stop");
+		sendMessage("record", valuearray);
+
+		//sendMessage("result", speechArray);
+		//$("#resultHolder").append( "end");
+	});
+
+
+	$( "#recordButton" ).mousedown(function() {
+		recognizer.start();
+
+		var valuearray = new Array();
+		valuearray.push("start");
+		sendMessage("record", valuearray);
+		
+	});
+
+	$( "#recordButton" ).mouseup(function() {
+		sendMessage("result", speechArray);
+		recognizer.stop();	
+
+		var valuearray = new Array();
+		valuearray.push("stop");
+		sendMessage("record", valuearray);
+	});
+
+
+
 
 	// var context = new AudioContext();
 
@@ -101,58 +165,56 @@ $( document ).ready(function() {
 	var microphone;
 
 
-	if (navigator.webkitGetUserMedia) {
-	   navigator.webkitGetUserMedia({ audio: true},
-	      function(stream) {
-			aCtx = new AudioContext();
-			analyser = aCtx.createAnalyser();
-			microphone = aCtx.createMediaStreamSource(stream);
-			microphone.connect(analyser);
-			// analyser.connect(aCtx.destination);
-			process();
-	      },
-	      function(err) {
-	         console.log("The following error occured: " + err.name);
-	      }
-	   );
-	} else {
-	   console.log("getUserMedia not supported");
-	}
+	// if (navigator.webkitGetUserMedia) {
+	//    navigator.webkitGetUserMedia({ audio: true},
+	//       function(stream) {
+	// 		aCtx = new AudioContext();
+	// 		analyser = aCtx.createAnalyser();
+	// 		microphone = aCtx.createMediaStreamSource(stream);
+	// 		microphone.connect(analyser);
+	// 		// analyser.connect(aCtx.destination);
+	// 		process();
+	//       },
+	//       function(err) {
+	//          console.log("The following error occured: " + err.name);
+	//       }
+	//    );
+	// } else {
+	//    console.log("getUserMedia not supported");
+	// }
 
 
-	function process(){
-	    setInterval(function(){
-	        FFTData = new Float32Array(analyser.frequencyBinCount);
-	        analyser.getFloatFrequencyData(FFTData);
-	      //  console.log("       " + FFTData[0]);
+	// function process(){
+	//     setInterval(function(){
+	//         FFTData = new Float32Array(analyser.frequencyBinCount);
+	//         analyser.getFloatFrequencyData(FFTData);
+	//       //  console.log("       " + FFTData[0]);
 
-	      	var average = getAverageVolume(FFTData)
+	//       	var average = getAverageVolume(FFTData)
  			
- 			$("#volume").css("height",""+ (average+150)*20 +"px");
-	      //console.log(average+200);
+ // 			$("#volume").css("height",""+ (average+150)*20 +"px");
+	//       //console.log(average+200);
 
-	    },10);
-	}
+	//     },10);
+	// }
 
-    function getAverageVolume(array) {
-        var values = 0;
-        var average;
+ //    function getAverageVolume(array) {
+ //        var values = 0;
+ //        var average;
  
-        var length = array.length;
+ //        var length = array.length;
  
-        // get all the frequency amplitudes
-        for (var i = 0; i < length; i++) {
-            values += array[i];
-        }
+ //        // get all the frequency amplitudes
+ //        for (var i = 0; i < length; i++) {
+ //            values += array[i];
+ //        }
  
-        average = values / length;
-        return average;
-    }
+ //        average = values / length;
+ //        return average;
+ //    }
 
 
 });
-
-
 
 
 </script>

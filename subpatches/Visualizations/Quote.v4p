@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" systemname="Quote" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" scrollx="12630" scrolly="20910">
-   <BOUNDS type="Window" left="2265" top="765" width="13770" height="14385">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" systemname="Quote" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" scrollx="0" scrolly="5760">
+   <BOUNDS type="Window" left="-22155" top="2775" width="13770" height="14385">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -135,7 +135,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13845" top="31320" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="15825" top="0" width="9375" height="9570">
+   <BOUNDS type="Window" left="-10800" top="420" width="9375" height="9570">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>

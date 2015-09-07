@@ -6,3 +6,18 @@
 	height: 5px;
 	width: 500px;
 }
+
+#recordButton {
+
+	position: absolute;
+	background-color: black;
+	left: 50px;
+	top: 50px;
+	width: 100px;
+	height: 100px;
+}
+
+#recordButton:active {
+
+	background-color: red;
+}

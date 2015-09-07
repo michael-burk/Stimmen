@@ -1,5 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataOut.v4p" systemname="DataOut" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataOut.v4p">
+   <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
    <NODE id="0" systemname="send" filename="send.v4p" nodename="subpatches\send.v4p" componentmode="Hidden">
    <BOUNDS type="Node" left="1507" top="2090" width="1830" height="270">
    </BOUNDS>
@@ -19,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2820" top="1575" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="ru">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="de">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -38,6 +44,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Remote UDP Port|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Remote Port" linkstyle="Bezier" hiddenwhenlocked="0">
@@ -72,10 +80,4 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Start/Stop">
    </LINK>
-   <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
-   </BOUNDS>
-   <PACK Name="VVVV.Packs" Version="0.2.0">
-   </PACK>
-   <PACK Name="addonpack" Version="33.7.0">
-   </PACK>
    </PATCH>
