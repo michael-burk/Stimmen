@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p" scrollx="22395" scrolly="6285" systemname="Record_Play" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p">
-   <BOUNDS height="12435" left="-25995" top="3570" type="Window" width="19170">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p" scrollx="0" scrolly="0" systemname="Record_Play" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p">
+   <BOUNDS height="1380" left="19065" top="2685" type="Window" width="3405">
    </BOUNDS>
    <NODE componentmode="InABox" id="10" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5013" top="1545" type="Node" width="0">
@@ -1185,9 +1185,9 @@
    <LINK srcnodeid="173" srcpinname="Output String" dstnodeid="176" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="38220" top="8955" width="480" height="480">
+   <BOUNDS type="Box" left="37665" top="8475" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="38220" top="8955" width="0" height="0">
+   <BOUNDS type="Node" left="37665" top="8475" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1205,7 +1205,7 @@
    <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="161" dstpinname="Input 2">
    </LINK>
    <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="178">
-   <BOUNDS type="Node" left="38205" top="8460" width="100" height="100">
+   <BOUNDS type="Node" left="37650" top="7980" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>

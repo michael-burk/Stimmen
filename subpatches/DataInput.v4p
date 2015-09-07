@@ -305,6 +305,8 @@
    </PIN>
    <PIN pinname="RecordState" visible="1">
    </PIN>
+   <PIN pinname="Lang" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="9060" top="3555" width="480" height="480">
@@ -545,5 +547,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="RecordState" dstnodeid="28" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="29" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2340" top="8355" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2340" top="8355" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Lang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Lang" dstnodeid="29" dstpinname="Input String">
    </LINK>
    </PATCH>

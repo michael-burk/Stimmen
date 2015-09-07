@@ -1,6 +1,6 @@
-NN	test
-NN	test
-NN	test
-NNS	<unknown>
-NP	<unknown>
-NP	<unknown>
+ITJ	hallo
+ITJ	hallo
+ITJ	hallo
+ITJ	hallo
+NE	Michi
+NE	Russland

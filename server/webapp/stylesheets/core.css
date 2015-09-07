@@ -7,17 +7,57 @@
 	width: 500px;
 }
 
-#recordButton {
 
+
+.langButton{
 	position: absolute;
 	background-color: black;
-	left: 50px;
-	top: 50px;
 	width: 100px;
 	height: 100px;
+}
+
+#recordButton {
+    background-color: black;
+    margin: auto;
+    margin-top: 220px;
+    position: relative;
+    width: 200px;
+	height: 200px;
+	border-radius: 100px;
 }
 
 #recordButton:active {
 
 	background-color: red;
+}
+
+#deButton {
+	background-color: rgba(200,0,0,1);
+	right: 10px;
+	top: 10px;
+	text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 30px;
+
+}
+
+#enButton {
+	background-color: rgba(200,200,200,1);
+	right: 120px;
+	top: 10px;
+	text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 30px;
+}
+
+#ruButton {
+	background-color: rgba(200,200,200,1);
+    right: 230px;
+    top: 10px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    font-size: 30px;
 }

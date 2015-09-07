@@ -61,6 +61,18 @@
 <div id = "recordButton">
 </div>
 
+<div id = "deButton" class="langButton" type="de">
+	DE
+</div>
+
+<div id = "enButton" class="langButton" type="en">
+	EN
+</div>
+
+<div id = "ruButton" class="langButton" type="ru">
+	RU
+</div>
+
 <script type="text/javascript">
 	
 
@@ -89,7 +101,7 @@ $( document ).ready(function() {
 				
 				sendMessage("result", speechArray);
 			//	$("#resultHolder").append( result[0].transcript);
-				console.log(valuearray);
+				console.log(speechArray);
 
 
 	        }
@@ -101,7 +113,7 @@ $( document ).ready(function() {
 
 	$("#recordButton").bind('touchstart', function(ev){
 
-		speechArray = new Array();
+		
 
 		ev.preventDefault();
 		$("#recordButton").css("background-color","red");
@@ -125,6 +137,9 @@ $( document ).ready(function() {
 		valuearray.push("stop");
 		sendMessage("record", valuearray);
 
+
+		speechArray = new Array();
+
 		//sendMessage("result", speechArray);
 		//$("#resultHolder").append( "end");
 	});
@@ -146,6 +161,22 @@ $( document ).ready(function() {
 		var valuearray = new Array();
 		valuearray.push("stop");
 		sendMessage("record", valuearray);
+
+		speechArray = new Array();
+	});
+
+
+	$( ".langButton" ).click(function(ev) {
+
+		$( ".langButton" ).css("background-color","rgba(200,200,200,1)");
+		$(ev.currentTarget).css("background-color","rgba(200,0,0,1)");
+
+		var valuearray = new Array();
+		valuearray.push(ev.currentTarget.getAttribute("TYPE"));
+		sendMessage("lang", valuearray);
+
+		recognizer.lang = ev.currentTarget.getAttribute("TYPE");
+
 	});
 
 

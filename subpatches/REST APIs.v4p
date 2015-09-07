@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="17520">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="1110" scrolly="24645">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4395" top="13515" width="0" height="0">
    </BOUNDS>
@@ -238,7 +238,7 @@
    <LINKPOINT x="15950" y="14320">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="0" top="390" width="23475" height="14595">
+   <BOUNDS type="Window" left="-18615" top="2010" width="23475" height="14595">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -979,5 +979,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="122" srcpinname="Output" dstnodeid="124" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="S (String)" id="125" systemname="S (String)">
+   <BOUNDS type="Node" left="2325" top="29175" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="EntitiySend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="125" dstpinname="Input Value">
    </LINK>
    </PATCH>

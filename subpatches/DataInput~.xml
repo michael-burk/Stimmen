@@ -187,7 +187,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|string socketId,string result,string record|">
+   <PIN pinname="Configuration" slicecount="1" values="|string socketId,string result|">
    </PIN>
    <BOUNDS type="Box" left="1635" top="11745">
    </BOUNDS>
