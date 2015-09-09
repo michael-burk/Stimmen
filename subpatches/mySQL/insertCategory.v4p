@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="4200" scrolly="10260">
-   <BOUNDS type="Window" left="-28125" top="900" width="14865" height="15240">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="0" scrolly="17325">
+   <BOUNDS type="Window" left="-28125" top="900" width="22425" height="15240">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1341,9 +1341,9 @@
    <LINK srcnodeid="192" srcpinname="Output String" dstnodeid="213" dstpinname="Input String">
    </LINK>
    <NODE systemname="Filter_Unique_OriginalOrder" filename="Filter_Unique_OriginalOrder.v4p" nodename="Filter_Unique_OriginalOrder.v4p" componentmode="Hidden" id="220" stayontop="1">
-   <BOUNDS type="Node" left="15540" top="18840" width="0" height="0">
+   <BOUNDS type="Node" left="15420" top="19185" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12533" top="14665" width="6015" height="8350">
+   <BOUNDS type="Box" left="12413" top="15010" width="6015" height="8350">
    </BOUNDS>
    <BOUNDS type="Window" left="-25350" top="5010" width="6015" height="9255">
    </BOUNDS>
@@ -1354,28 +1354,6 @@
    <PIN pinname="Input Words" visible="1" slicecount="7" values="Place,PopulatedPlace,Country,Wikidata:Q532,Person,Agent,OfficeHolder">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="222" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8160" top="12405" width="795" height="960">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8160" top="12405" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0,,,">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="202" srcpinname="Count per Word" dstnodeid="222" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="211" srcpinname="Output String" dstnodeid="220" dstpinname="Input Words">
    </LINK>
    <NODE systemname="Sort (Spreads)" nodename="Sort (Spreads)" componentmode="Hidden" id="225">
@@ -1389,7 +1367,7 @@
    <LINK srcnodeid="220" srcpinname="Former Index" dstnodeid="225" dstpinname="Input">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="226">
-   <BOUNDS type="Node" left="15345" top="20340" width="100" height="100">
+   <BOUNDS type="Node" left="15210" top="20355" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="7" values="2,2,2,2,2,1,1">
    </PIN>
@@ -1407,7 +1385,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4263" top="21493" width="13630" height="9220">
    </BOUNDS>
-   <BOUNDS type="Window" left="-15000" top="1245" width="17730" height="15750">
+   <BOUNDS type="Window" left="-21285" top="1320" width="20625" height="15750">
    </BOUNDS>
    <PIN pinname="DatabaseEntity" visible="1">
    </PIN>
@@ -1418,6 +1396,8 @@
    <PIN pinname="New Word Count DB" visible="1">
    </PIN>
    <PIN pinname="New Wordcount DB" visible="1">
+   </PIN>
+   <PIN pinname="New Word Count" visible="1" slicecount="7" values="2,2,2,1,1,1,1">
    </PIN>
    </NODE>
    <LINK srcnodeid="192" srcpinname="Output String" dstnodeid="145" dstpinname="InputWords" linkstyle="Bezier">
@@ -1438,12 +1418,6 @@
    <LINKPOINT x="4155" y="25703">
    </LINKPOINT>
    <LINKPOINT x="11085" y="25703">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="197" srcpinname="Count per Word" dstnodeid="145" dstpinname="New Word Count" linkstyle="Bezier">
-   <LINKPOINT x="9970" y="19290">
-   </LINKPOINT>
-   <LINKPOINT x="11870" y="19395">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="200" srcpinname="Output" dstnodeid="145" dstpinname="New Word Select" linkstyle="Bezier">
@@ -1473,7 +1447,7 @@
    <LINK srcnodeid="226" srcpinname="Output" dstnodeid="145" dstpinname="New Wordcount DB">
    </LINK>
    <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="229">
-   <BOUNDS type="Node" left="15570" top="17835" width="100" height="100">
+   <BOUNDS type="Node" left="15420" top="18450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="Angelao-Merkel">
    </PIN>
@@ -1487,5 +1461,39 @@
    <LINK srcnodeid="197" srcpinname="Words" dstnodeid="229" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="229" srcpinname="Output" dstnodeid="220" dstpinname="New Words">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="230" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8895" top="27855" width="1065" height="2400">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8895" top="27855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|New IDs|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="181" srcpinname="IDs" dstnodeid="230" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="236">
+   <BOUNDS type="Node" left="11325" top="17235" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="197" srcpinname="Count per Word" dstnodeid="236" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="236" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="236" srcpinname="Output" dstnodeid="145" dstpinname="New Word Count">
    </LINK>
    </PATCH>

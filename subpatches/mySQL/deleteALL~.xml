@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" systemname="deleteALL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" scrollx="195" scrolly="375">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" systemname="deleteALL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\deleteALL.v4p" scrollx="795" scrolly="0">
    <NODE systemname="Delete (MySQL Network)" filename="%VVVV%\addonpack\lib\nodes\plugins\MySQLNodes.dll" nodename="Delete (MySQL Network)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="3225" width="4035" height="270">
    </BOUNDS>
@@ -79,11 +79,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2850" top="1500" width="4440" height="840">
+   <BOUNDS type="Box" left="2820" top="1215" width="4440" height="840">
    </BOUNDS>
-   <BOUNDS type="Node" left="2850" top="1500" width="0" height="0">
+   <BOUNDS type="Node" left="2820" top="1215" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|FROM DictionaryEntry; DELETE FROM Answer; DELETE FROM Sound; DELETE FROM Neighbour; DELETE FROM Entity; DELETE FROM Category; DELETE FROM Entity_has_Category;|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|FROM DictionaryEntry; DELETE FROM Answer; DELETE FROM Sound; DELETE FROM Neighbour; DELETE FROM Entity; DELETE FROM Category; DELETE FROM entity_has_category;|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

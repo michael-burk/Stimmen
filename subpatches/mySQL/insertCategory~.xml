@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="6375" scrolly="4320">
-   <BOUNDS type="Window" left="-28125" top="900" width="14865" height="15240">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="0" scrolly="7770">
+   <BOUNDS type="Window" left="-28125" top="900" width="22425" height="15240">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1341,15 +1341,15 @@
    <LINK srcnodeid="192" srcpinname="Output String" dstnodeid="213" dstpinname="Input String">
    </LINK>
    <NODE systemname="Filter_Unique_OriginalOrder" filename="Filter_Unique_OriginalOrder.v4p" nodename="Filter_Unique_OriginalOrder.v4p" componentmode="Hidden" id="220" stayontop="1">
-   <BOUNDS type="Node" left="15540" top="18840" width="0" height="0">
+   <BOUNDS type="Node" left="15420" top="19185" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="12533" top="14665" width="6015" height="8350">
+   <BOUNDS type="Box" left="12413" top="15010" width="6015" height="8350">
    </BOUNDS>
    <BOUNDS type="Window" left="-25350" top="5010" width="6015" height="9255">
    </BOUNDS>
    <PIN pinname="Former Index" visible="1">
    </PIN>
-   <PIN pinname="New Words" visible="1" slicecount="7" values="Place,PopulatedPlace,Country,Wikidata:Q532,Person,Agent,OfficeHolder">
+   <PIN pinname="New Words" visible="1" slicecount="8" values="Person,Agent,OfficeHolder,AdministrativeRegion,Place,Wikidata:Q532,Region,PopulatedPlace">
    </PIN>
    <PIN pinname="Input Words" visible="1" slicecount="7" values="Place,PopulatedPlace,Country,Wikidata:Q532,Person,Agent,OfficeHolder">
    </PIN>
@@ -1389,7 +1389,7 @@
    <LINK srcnodeid="220" srcpinname="Former Index" dstnodeid="225" dstpinname="Input">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="226">
-   <BOUNDS type="Node" left="15345" top="20340" width="100" height="100">
+   <BOUNDS type="Node" left="15210" top="20355" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="7" values="2,2,2,2,2,1,1">
    </PIN>
@@ -1400,8 +1400,6 @@
    </NODE>
    <LINK srcnodeid="225" srcpinname="Former Index" dstnodeid="226" dstpinname="Index">
    </LINK>
-   <LINK srcnodeid="197" srcpinname="Words" dstnodeid="220" dstpinname="New Words">
-   </LINK>
    <LINK srcnodeid="197" srcpinname="Count per Word" dstnodeid="226" dstpinname="Input">
    </LINK>
    <NODE systemname="idOut" filename="idOut.v4p" nodename="idOut.v4p" componentmode="Hidden" id="145" stayontop="1">
@@ -1409,7 +1407,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4263" top="21493" width="13630" height="9220">
    </BOUNDS>
-   <BOUNDS type="Window" left="-15000" top="1245" width="17730" height="15750">
+   <BOUNDS type="Window" left="-21285" top="1320" width="20625" height="15750">
    </BOUNDS>
    <PIN pinname="DatabaseEntity" visible="1">
    </PIN>
@@ -1418,6 +1416,8 @@
    <PIN pinname="OriginalWordCountOrder" visible="1">
    </PIN>
    <PIN pinname="New Word Count DB" visible="1">
+   </PIN>
+   <PIN pinname="New Wordcount DB" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="192" srcpinname="Output String" dstnodeid="145" dstpinname="InputWords" linkstyle="Bezier">
@@ -1469,5 +1469,41 @@
    </LINKPOINT>
    <LINKPOINT x="11415" y="21675">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="226" srcpinname="Output" dstnodeid="145" dstpinname="New Wordcount DB">
+   </LINK>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="229">
+   <BOUNDS type="Node" left="15420" top="18450" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="Angelao-Merkel">
+   </PIN>
+   <PIN pinname="From" slicecount="1" values="$">
+   </PIN>
+   <PIN pinname="To" slicecount="1" values="| |">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="197" srcpinname="Words" dstnodeid="229" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="229" srcpinname="Output" dstnodeid="220" dstpinname="New Words">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="230" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8895" top="27855" width="1065" height="2400">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8895" top="27855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|New IDs|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="181" srcpinname="IDs" dstnodeid="230" dstpinname="Input String">
    </LINK>
    </PATCH>

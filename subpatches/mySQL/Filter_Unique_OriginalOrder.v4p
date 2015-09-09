@@ -125,10 +125,12 @@
    <NODE id="10" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|New Words|">
    </PIN>
-   <BOUNDS type="Box" left="1560" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="1560" top="500" width="1230" height="855">
    </BOUNDS>
    <BOUNDS type="Node" left="1560" top="500" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="6" dstpinname="Input">
    </LINK>
@@ -165,10 +167,12 @@
    <NODE id="12" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Words|">
    </PIN>
-   <BOUNDS type="Box" left="2460" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="3450" top="410" width="1395" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="2460" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="3450" top="410" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="1" dstpinname="Input">
    </LINK>
@@ -184,7 +188,7 @@
    <LINKPOINT x="3015" y="1815">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="-25350" top="5010" width="6015" height="9255">
+   <BOUNDS type="Window" left="-11955" top="4035" width="7185" height="9375">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="1365">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="195" scrolly="915">
    <BOUNDS type="Window" left="-23520" top="4365" width="19140" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3814" top="5220" width="14215" height="16110">
    </BOUNDS>
-   <BOUNDS type="Window" left="-21600" top="4185" width="20625" height="13725">
+   <BOUNDS type="Window" left="-16650" top="2985" width="20625" height="13725">
    </BOUNDS>
    <PIN pinname="Execute" slicecount="1" visible="1" values="0">
    </PIN>
@@ -126,7 +126,11 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="2" dstpinname="Input">
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="2" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="2430" y="2970">
+   </LINKPOINT>
+   <LINKPOINT x="3825" y="2970">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="5" dstpinname="Input" linkstyle="Bezier">
    <LINKPOINT x="5314" y="2225">
@@ -140,9 +144,17 @@
    <LINKPOINT x="5779" y="2453">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="10" dstpinname="Input">
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="10" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="2460" y="1688">
+   </LINKPOINT>
+   <LINKPOINT x="6270" y="1688">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="3" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="2460" y="2970">
+   </LINKPOINT>
+   <LINKPOINT x="5280" y="2970">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
    <BOUNDS type="Box" left="7260" top="6480" width="1440" height="3045">
@@ -269,9 +281,9 @@
    <LINK srcnodeid="7" srcpinname="OnChange" dstnodeid="22" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4470" top="735" width="480" height="480">
+   <BOUNDS type="Box" left="4695" top="390" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4470" top="735" width="0" height="0">
+   <BOUNDS type="Node" left="4695" top="390" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -439,5 +451,153 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Tokens per Entity" dstnodeid="35" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="14670" top="7125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="14700" top="7995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="14685" top="7545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="OnChange" dstnodeid="46" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="47" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="14430" top="9045" width="1185" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="15525" top="7125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="15555" top="7995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="15540" top="7545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="OnChange" dstnodeid="42" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="43" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="45" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="14655" top="5670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="48" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="14415" top="8385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="14400" top="6750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="4" values="|Wladimir Wladimirowitsch Putin|,|Angela Merkel|,Russland,amerika">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="40" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="40" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="45" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="S (Value)" id="38" systemname="S (Value)">
+   <BOUNDS type="Node" left="13095" top="11490" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|NLP Done|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="38" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="14250" top="11475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="37" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output 1" dstnodeid="43" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output 1" dstnodeid="47" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="14400" top="6240" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="36" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="39" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Entity Out" dstnodeid="41" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Tokens" dstnodeid="44" dstpinname="Input">
    </LINK>
    </PATCH>

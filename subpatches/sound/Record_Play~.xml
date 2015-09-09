@@ -1473,13 +1473,11 @@
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="192" srcpinname="Output" dstnodeid="199" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="199" srcpinname="Output" dstnodeid="127" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="201">
