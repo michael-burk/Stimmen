@@ -1,6 +1,10 @@
-ITJ	hallo
-ITJ	hallo
-ITJ	hallo
-ITJ	hallo
-NE	Michi
-NE	Russland
+NN	Haus
+NN	Brot
+KON	und
+NN	Fahrrad
+KON	und
+NN	Verfassung
+KON	und
+NN	Bundesrepublik
+KON	und
+NE	Afrika

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\POS Parser.v4p" systemname="POS Parser" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" scrollx="0" scrolly="10200">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\POS Parser.v4p" systemname="POS Parser" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" scrollx="0" scrolly="9855">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="6500" top="440" width="1300" height="9920">
    </BOUNDS>
@@ -408,7 +408,7 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="3" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="7260" top="330" width="14370" height="14820">
+   <BOUNDS type="Window" left="-19350" top="1440" width="14370" height="14820">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

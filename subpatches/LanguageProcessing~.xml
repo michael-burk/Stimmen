@@ -1,17 +1,17 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="180" scrolly="0">
-   <BOUNDS type="Window" left="-24570" top="3615" width="15270" height="11670">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="1365">
+   <BOUNDS type="Window" left="-23520" top="4365" width="19140" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="REST APIs" filename="REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="Hidden" id="2" stayontop="1">
+   <NODE systemname="REST APIs" filename="REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="Hidden" id="2" stayontop="0">
    <BOUNDS type="Node" left="3814" top="5220" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3814" top="5220" width="14215" height="16110">
    </BOUNDS>
-   <BOUNDS type="Window" left="-18615" top="2010" width="23475" height="14595">
+   <BOUNDS type="Window" left="-21600" top="4185" width="20625" height="13725">
    </BOUNDS>
    <PIN pinname="Execute" slicecount="1" visible="1" values="0">
    </PIN>
@@ -22,6 +22,14 @@
    <PIN pinname="Category Out" visible="1">
    </PIN>
    <PIN pinname="Language" visible="1">
+   </PIN>
+   <PIN pinname="Entity - Category" visible="1">
+   </PIN>
+   <PIN pinname="Has Entity" visible="1">
+   </PIN>
+   <PIN pinname="Words per Entity" visible="1">
+   </PIN>
+   <PIN pinname="Tokens per Entity" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="tree-tagger" filename="tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="Hidden" id="3" stayontop="1">
@@ -203,9 +211,9 @@
    <LINK srcnodeid="3" srcpinname="Lemma" dstnodeid="19" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="20" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2865" top="6480" width="1350" height="4065">
+   <BOUNDS type="Box" left="780" top="7245" width="1350" height="4065">
    </BOUNDS>
-   <BOUNDS type="Node" left="2865" top="6480" width="0" height="0">
+   <BOUNDS type="Node" left="780" top="7245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -223,9 +231,9 @@
    <LINK srcnodeid="2" srcpinname="Entity Out" dstnodeid="20" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4305" top="6480" width="1380" height="2265">
+   <BOUNDS type="Box" left="2220" top="7245" width="1380" height="2265">
    </BOUNDS>
-   <BOUNDS type="Node" left="4305" top="6480" width="0" height="0">
+   <BOUNDS type="Node" left="2220" top="7245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -373,5 +381,63 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="4" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3600" top="6375" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3600" top="6375" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values=",">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Entity - Category|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Entity - Category" dstnodeid="32" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4770" top="7440" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4770" top="7440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Has Entity|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Has Entity" dstnodeid="33" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4440" top="9810" width="795" height="960">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4440" top="9810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values=",,,">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Tokens per Entity|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Tokens per Entity" dstnodeid="35" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

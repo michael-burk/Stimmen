@@ -123,7 +123,7 @@
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="3" dstpinname="Select">
    </LINK>
    <NODE id="10" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|New Words|">
    </PIN>
    <BOUNDS type="Box" left="1560" top="500" width="750" height="240">
    </BOUNDS>
@@ -163,7 +163,7 @@
    <LINK srcnodeid="7" srcpinname="Former Index" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    <NODE id="12" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input 1|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Words|">
    </PIN>
    <BOUNDS type="Box" left="2460" top="500" width="750" height="240">
    </BOUNDS>
@@ -184,7 +184,7 @@
    <LINKPOINT x="3015" y="1815">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="-12555" top="8490" width="6015" height="8340">
+   <BOUNDS type="Window" left="-13890" top="4185" width="7185" height="9375">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>

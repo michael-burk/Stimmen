@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" systemname="Quote" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" scrollx="1770" scrolly="20100">
-   <BOUNDS type="Window" left="18465" top="4260" width="3405" height="1500">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" systemname="Quote" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Visualizations\Quote.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-4290" top="6705" width="3405" height="1500">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -130,12 +130,12 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="18" dstpinname="Count">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="FullScreen" id="21" stayontop="1">
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="21" stayontop="0">
    <BOUNDS type="Node" left="13845" top="31320" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="13845" top="31320" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-12600" top="420" width="11175" height="9990">
+   <BOUNDS type="Window" left="-12150" top="420" width="11175" height="9990">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -417,7 +417,7 @@
    </PIN>
    <PIN pinname="Diffuse Color" slicecount="1" visible="1" values="|0.19344,0.19516,0.08643,1.00000|">
    </PIN>
-   <PIN pinname="Ambient Color" slicecount="1" visible="1" values="|0.70557,0.70557,0.70557,1.00000|">
+   <PIN pinname="Ambient Color" slicecount="1" visible="1" values="|0.60530,0.60530,0.60530,1.00000|">
    </PIN>
    <PIN pinname="Light DirectionXYZ" visible="1" slicecount="3" values="0.0608178414404392,-0.998026728630066,0.0156153673306108">
    </PIN>
@@ -503,21 +503,19 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15240" top="24720" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.54335,0.51399,0.40658,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.60530,0.60530,0.60530,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Ambient Color|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="98" srcpinname="Color Output" dstnodeid="53" dstpinname="Ambient Color">
-   </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="99" systemname="IOBox (Color)">
    <BOUNDS type="Box" left="16500" top="23985" width="1680" height="690">
    </BOUNDS>
    <BOUNDS type="Node" left="16500" top="23985" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.25605,0.46347,0.44097,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.19812,0.32212,0.35860,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Diffuse Color|">
    </PIN>
@@ -531,7 +529,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="16530" top="25050" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.18878,0.00000,0.12210,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.16339,0.07573,0.22310,1.00000|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Specular Color|">
    </PIN>
@@ -563,7 +561,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.67">
+   <PIN pinname="Width" slicecount="1" values="0.79">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="0">
    </PIN>
@@ -667,6 +665,8 @@
    </BOUNDS>
    <PIN pinname="Time Mode" slicecount="1" values="Filtered">
    </PIN>
+   <PIN pinname="Maximum background fpsS" slicecount="1" values="60">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="331" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="19335" top="16275" width="480" height="480">
@@ -719,7 +719,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" slicecount="1" values="0.4">
+   <PIN pinname="XYZ" slicecount="1" values="0.459">
    </PIN>
    </NODE>
    <NODE id="338" systemname="Transform (Transform 3d)" nodename="Transform (Transform 3d)" componentmode="Hidden">
@@ -736,6 +736,8 @@
    <PIN pinname="ScaleX" slicecount="1" values="1">
    </PIN>
    <PIN pinname="ScaleY" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1" slicecount="34" values="0.0212266872520559,-0.0183074363972992,-0.0243917866959237,0.0175343054579571,0.0234865039936267,0.020268783159554,-0.0211504002916627,0.00541572745423764,0.0206312982249074,-0.00849265255965292,-0.00325375389074907,0.0240723813185468,0.0130531612201594,0.0156670526601374,0.009583832800854,0.00739116461481899,0.0199790612678044,-0.0246548573952168,0.000160590431187302,0.00592328917700797,0.0144653505063616,0.0248248428106308,0.022399970900733,-0.0106773643987253,-0.0175354626146145,0.0197842228692025,0.0217699588858522,0.0078173108631745,-0.0229419252485968,0.0228351368568838,-0.0151472260127775,-0.000566840940155089,0.00144891355885193,0.00286099188961089">
    </PIN>
    </NODE>
    <LINK srcnodeid="103" srcpinname="Output" dstnodeid="338" dstpinname="TranslateX" linkstyle="Bezier">
@@ -1243,6 +1245,8 @@
    </PIN>
    <PIN pinname="Font" slicecount="1" values="TStarProLight">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="32">
+   </PIN>
    </NODE>
    <LINK srcnodeid="333" srcpinname="Output String" dstnodeid="335" dstpinname="String" linkstyle="Bezier">
    <LINKPOINT x="23535" y="20333">
@@ -1271,5 +1275,97 @@
    <LINK srcnodeid="335" srcpinname="Layer" dstnodeid="49" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Color Output" dstnodeid="21" dstpinname="Background Color">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="404" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="8700" top="25050" width="1770" height="900">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8700" top="25050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.54335,0.51399,0.40658,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Ambient Color|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="403" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="9960" top="24315" width="1680" height="690">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9960" top="24315" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.25605,0.46347,0.44097,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Diffuse Color|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="402" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="9990" top="25380" width="1920" height="1110">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9990" top="25380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.18878,0.00000,0.12210,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Specular Color|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="407" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="4455" top="24120" width="1770" height="900">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4455" top="24120" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.75981,0.59735,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Ambient Color|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="406" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="5715" top="23385" width="1680" height="690">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5715" top="23385" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.25605,0.46347,0.44097,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Diffuse Color|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="405" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="5745" top="24450" width="1920" height="1110">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5745" top="24450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.18878,0.00000,0.12210,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Specular Color|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="407" srcpinname="Color Output" dstnodeid="53" dstpinname="Ambient Color">
+   </LINK>
+   <NODE systemname="GaussianSpread (Spreads)" nodename="GaussianSpread (Spreads)" componentmode="Hidden" id="408">
+   <BOUNDS type="Node" left="24405" top="24975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="51">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Standard Deviation" slicecount="1" values="-0.03">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="-0.02">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="408" srcpinname="Output" dstnodeid="338" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="334" srcpinname="Count" dstnodeid="408" dstpinname="Spread Count">
    </LINK>
    </PATCH>

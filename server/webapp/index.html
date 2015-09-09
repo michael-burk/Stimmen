@@ -49,9 +49,9 @@
 
 <div class="one-third column">	
 
-<!-- 			<h5>Result</h5>
-			<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
-			</div> -->
+<!-- 		<h5>Result</h5>
+		<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
+		</div> -->
 			
 </div>
 <!-- <div id ="volume">
@@ -76,94 +76,106 @@
 <script type="text/javascript">
 	
 
+var START_EV = " ";
+var END_EV = " ";
+var hasTouch = "ontouchstart" in window;
 
-var recognizer = new webkitSpeechRecognition();
+var active = false;
 
 
 $( document ).ready(function() {
+	var recognizer = new webkitSpeechRecognition();
 
-
+	START_EV = hasTouch ? "touchstart" : "mousedown";
+	END_EV = hasTouch ? "touchend" : "mouseup";
 	
+
+	//alert(hasTouch);
+
 	var speechArray = new Array();
 
 	recognizer.lang = "de";
 	recognizer.continuous = true;
-	recognizer.interimResults = true;
+	recognizer.interimResults = false;
 	recognizer.onresult = function(event) {
+	//	$("#resultHolder").append( "result");
+	//speechArray = new Array();
 	    if (event.results.length > 0) {
 	        var result = event.results[event.results.length-1];
 	        if(result.isFinal) {
-	            console.log(result[0].transcript);
+	           // console.log(result[0].transcript);
 	           //console.log(event);
 
 	        	
 				speechArray.push(result[0].transcript);
 				
 				sendMessage("result", speechArray);
-			//	$("#resultHolder").append( result[0].transcript);
-				console.log(speechArray);
+				//$("#resultHolder").append( result[0].transcript);
 
+				//console.log(speechArray);
 
-	        }
+				if(!active) speechArray = new Array();
+	        } 
 	    }  
 	};
 
 
 
 
-	$("#recordButton").bind('touchstart', function(ev){
-
+	$("#recordButton").bind(START_EV, function(ev1){
+		ev1.preventDefault();
+		recognizer.start();
+		active = true;
 		
-
-		ev.preventDefault();
 		$("#recordButton").css("background-color","red");
-  		recognizer.start();
+  		
   		
   		var valuearray = new Array();
 		valuearray.push("start");
 		sendMessage("record", valuearray);
-
+		//$("#resultHolder").append( "aaa ");
 		//$("#resultHolder").append( "start");
 	});
 
 
-	$("#recordButton").bind('touchend', function(ev){
-		ev.preventDefault();
+	$("#recordButton").bind(END_EV, function(ev2){
+		ev2.preventDefault();
+		recognizer.stop();
+		active = false;
 
 		$("#recordButton").css("background-color","black");
-  		//recognizer.stop();
 
   		var valuearray = new Array();
 		valuearray.push("stop");
 		sendMessage("record", valuearray);
 
 
-		speechArray = new Array();
+		
 
 		//sendMessage("result", speechArray);
 		//$("#resultHolder").append( "end");
 	});
 
 
-	$( "#recordButton" ).mousedown(function() {
-		recognizer.start();
+	// $( "#recordButton" ).mousedown(function() {
+	// 	recognizer.start();
 
-		var valuearray = new Array();
-		valuearray.push("start");
-		sendMessage("record", valuearray);
+	// 	var valuearray = new Array();
+	// 	valuearray.push("start");
+	// 	sendMessage("record", valuearray);
 		
-	});
+	// });
 
-	$( "#recordButton" ).mouseup(function() {
-		sendMessage("result", speechArray);
-		recognizer.stop();	
+	// $( "#recordButton" ).mouseup(function() {
+	// 	sendMessage("result", speechArray);
+	// 	recognizer.stop();	
 
-		var valuearray = new Array();
-		valuearray.push("stop");
-		sendMessage("record", valuearray);
+	// 	var valuearray = new Array();
+	// 	valuearray.push("stop");
+	// 	sendMessage("record", valuearray);
 
-		speechArray = new Array();
-	});
+	// 	speechArray = new Array();
+	// });
 
 
 	$( ".langButton" ).click(function(ev) {

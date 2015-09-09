@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p" scrollx="0" scrolly="0" systemname="Record_Play" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p">
-   <BOUNDS height="1380" left="19065" top="2685" type="Window" width="3405">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p" scrollx="7140" scrolly="4680" systemname="Record_Play" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Record_Play.v4p">
+   <BOUNDS height="15990" left="-120" top="-120" type="Window" width="25440">
    </BOUNDS>
    <NODE componentmode="InABox" id="10" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5013" top="1545" type="Node" width="0">
@@ -1165,7 +1165,7 @@
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 3" visible="1">
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="174" srcpinname="Bang" dstnodeid="161" dstpinname="Input 1">
@@ -1379,7 +1379,7 @@
    <LINK srcnodeid="188" srcpinname="Output" dstnodeid="153" dstpinname="Input">
    </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="191">
-   <BOUNDS type="Node" left="17610" top="8910" width="100" height="100">
+   <BOUNDS type="Node" left="18825" top="7485" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Key Match" slicecount="1" values="P">
    </PIN>
@@ -1389,17 +1389,17 @@
    </PIN>
    </NODE>
    <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="192">
-   <BOUNDS type="Node" left="17595" top="9900" width="100" height="100">
+   <BOUNDS type="Node" left="21150" top="8880" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="192" srcpinname="Output" dstnodeid="127" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="193">
-   <BOUNDS type="Node" left="17595" top="9420" width="100" height="100">
+   <BOUNDS type="Node" left="18810" top="7995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1408,14 +1408,10 @@
    </NODE>
    <LINK srcnodeid="191" srcpinname="P" dstnodeid="193" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="193" srcpinname="Up Edge" dstnodeid="192" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="127" srcpinname="Y Output Value" dstnodeid="188" dstpinname="Run">
    </LINK>
-   <LINK srcnodeid="193" srcpinname="Up Edge" dstnodeid="161" dstpinname="Input 3">
-   </LINK>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="190">
-   <BOUNDS type="Node" left="17610" top="8370" width="100" height="100">
+   <BOUNDS type="Node" left="18825" top="6945" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
@@ -1449,5 +1445,53 @@
    <LINK srcnodeid="188" srcpinname="Output" dstnodeid="196" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="187" srcpinname="Output" dstnodeid="179" dstpinname="Do Seek">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="197">
+   <BOUNDS type="Node" left="21630" top="8115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="R (Value)" id="198" systemname="R (Value)">
+   <BOUNDS type="Node" left="21645" top="7440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="|NLP Done|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="198" srcpinname="Input Value" dstnodeid="197" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="197" srcpinname="Up Edge" dstnodeid="161" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="197" srcpinname="Up Edge" dstnodeid="192" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="199">
+   <BOUNDS type="Node" left="18360" top="9045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="199" srcpinname="Output" dstnodeid="127" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="201">
+   <BOUNDS type="Node" left="18780" top="8520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="193" srcpinname="Up Edge" dstnodeid="201" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Output" dstnodeid="199" dstpinname="Input 2">
    </LINK>
    </PATCH>
