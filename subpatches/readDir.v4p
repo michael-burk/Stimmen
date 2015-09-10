@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="45" scrolly="11925">
-   <BOUNDS type="Window" left="-24450" top="3045" width="19575" height="12090">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\readDir.v4p" systemname="readDir" filename="C:\Users\Michael\Desktop\Stimmen\subpatches\readDir.v4p" scrollx="330" scrolly="9510">
+   <BOUNDS type="Window" left="-25035" top="2730" width="22155" height="13920">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -195,7 +195,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Find (String)" nodename="Find (String)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="8322" top="10095" width="100" height="100">
+   <BOUNDS type="Node" left="8592" top="11460" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -223,9 +223,9 @@
    <LINK srcnodeid="13" srcpinname="File Count" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="13" srcpinname="Filenames" dstnodeid="24" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2235" y="8250">
+   <LINKPOINT x="2325" y="8705">
    </LINKPOINT>
-   <LINKPOINT x="8325" y="8250">
+   <LINKPOINT x="8505" y="9160">
    </LINKPOINT>
    </LINK>
    <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="27">
@@ -275,7 +275,7 @@
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Count">
    </LINK>
    <NODE systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="8235" top="11175" width="100" height="100">
+   <BOUNDS type="Node" left="8505" top="12540" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -285,17 +285,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="30" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2235" y="9638">
+   <LINKPOINT x="2325" y="10093">
    </LINKPOINT>
-   <LINKPOINT x="8235" y="9638">
+   <LINKPOINT x="8415" y="10548">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="32" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8535" top="9405" width="795" height="240">
+   <BOUNDS type="Box" left="8805" top="10770" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8535" top="9405" width="0" height="0">
+   <BOUNDS type="Node" left="8805" top="10770" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="fav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Favoriten">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -307,7 +307,7 @@
    <LINK srcnodeid="32" srcpinname="Output String" dstnodeid="24" dstpinname="Substring">
    </LINK>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="8730" top="10620" width="100" height="100">
+   <BOUNDS type="Node" left="9000" top="11985" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -357,23 +357,23 @@
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="13" dstpinname="Update">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="33" dstpinname="Set" linkstyle="Bezier">
-   <LINKPOINT x="12390" y="8303">
+   <LINKPOINT x="12480" y="8758">
    </LINKPOINT>
-   <LINKPOINT x="9135" y="8303">
+   <LINKPOINT x="9315" y="9213">
    </LINKPOINT>
    </LINK>
    <NODE id="38" nodename="RegExpr (String)" systemname="RegExpr (String)">
-   <BOUNDS height="0" left="8235" top="12675" type="Node" width="0">
+   <BOUNDS height="0" left="8505" top="14040" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="2" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_9\fav\2015.09.09-10.31.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-11.27.38.wav">
    </PIN>
-   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="|fav (.*?) .wav|">
+   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="|Favoriten (.*?) .wav|">
    </PIN>
    <PIN pinname="Match 1" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="8220" top="14175" width="100" height="100">
+   <BOUNDS type="Node" left="8490" top="15540" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="\2015.09.09-10.31.29">
    </PIN>
@@ -385,7 +385,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="8220" top="14625" width="100" height="100">
+   <BOUNDS type="Node" left="8490" top="15990" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -395,9 +395,9 @@
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="45" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="46" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8715" top="16245" width="2715" height="960">
+   <BOUNDS type="Box" left="8940" top="17925" width="2715" height="960">
    </BOUNDS>
-   <BOUNDS type="Node" left="8715" top="16245" width="0" height="0">
+   <BOUNDS type="Node" left="8940" top="17925" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -407,13 +407,13 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="favs">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Favoriten">
    </PIN>
    <PIN pinname="Input String" visible="1" slicecount="1" values="2015.09.09-10.31.29">
    </PIN>
    </NODE>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="10350" top="19110" width="630" height="270">
+   <BOUNDS type="Node" left="7500" top="22200" width="630" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="|Please Update|">
    </PIN>
@@ -421,9 +421,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="51">
-   <BOUNDS type="Node" left="10365" top="18615" width="100" height="100">
+   <BOUNDS type="Node" left="7515" top="21705" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="2015.09.09-10.31.29">
+   <PIN pinname="Input" visible="1" slicecount="1" values="2015.09.10-11.55.15">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -431,9 +431,9 @@
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="47" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10365" top="20205" width="765" height="765">
+   <BOUNDS type="Box" left="7515" top="23295" width="765" height="765">
    </BOUNDS>
-   <BOUNDS type="Node" left="10365" top="20205" width="0" height="0">
+   <BOUNDS type="Node" left="7515" top="23295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -445,7 +445,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Find (String)" nodename="Find (String)" componentmode="Hidden" id="62">
-   <BOUNDS type="Node" left="15597" top="13755" width="100" height="100">
+   <BOUNDS type="Node" left="17517" top="11505" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -455,13 +455,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Filenames" dstnodeid="62" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2235" y="10080">
+   <LINKPOINT x="2875" y="9330">
    </LINKPOINT>
-   <LINKPOINT x="15600" y="10080">
+   <LINKPOINT x="16880" y="8580">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden" id="61">
-   <BOUNDS type="Node" left="15510" top="15435" width="100" height="100">
+   <BOUNDS type="Node" left="17430" top="13185" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -471,17 +471,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="61" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2235" y="11728">
+   <LINKPOINT x="2875" y="10978">
    </LINKPOINT>
-   <LINKPOINT x="15510" y="11928">
+   <LINKPOINT x="16790" y="10428">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="59" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="15810" top="13065" width="795" height="240">
+   <BOUNDS type="Box" left="17730" top="10815" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15810" top="13065" width="0" height="0">
+   <BOUNDS type="Node" left="17730" top="10815" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="inactive">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Inaktiv">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -493,7 +493,7 @@
    <LINK srcnodeid="59" srcpinname="Output String" dstnodeid="62" dstpinname="Substring">
    </LINK>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="16005" top="14880" width="100" height="100">
+   <BOUNDS type="Node" left="17925" top="12630" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="3" values="1,0,0">
    </PIN>
@@ -505,9 +505,9 @@
    <LINK srcnodeid="58" srcpinname="Output" dstnodeid="61" dstpinname="Select">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="53" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="15480" top="18540" width="2715" height="960">
+   <BOUNDS type="Box" left="17400" top="16290" width="2715" height="960">
    </BOUNDS>
-   <BOUNDS type="Node" left="15480" top="18540" width="0" height="0">
+   <BOUNDS type="Node" left="17400" top="16290" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -523,7 +523,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="16020" top="14400" width="100" height="100">
+   <BOUNDS type="Node" left="17925" top="12000" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -535,7 +535,7 @@
    <LINK srcnodeid="62" srcpinname="Count" dstnodeid="63" dstpinname="Switch">
    </LINK>
    <NODE id="69" nodename="RegExpr (String)" systemname="RegExpr (String)">
-   <BOUNDS height="0" left="15495" top="16695" type="Node" width="0">
+   <BOUNDS height="0" left="17415" top="14445" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="259" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-11.27.38.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-11.28.43.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.30.45.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.36.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.36.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.42.02.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.42.41.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.47.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.48.03.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.48.25.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.48.51.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.48.58.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.49.01.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.49.02.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.49.08.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.49.10.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.49.16.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.49.42.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.50.21.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.50.32.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.50.37.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.52.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.52.50.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.54.31.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.55.00.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.55.28.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.55.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.57.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.57.17.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-13.57.21.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.23.20.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.23.38.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.40.54.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.44.33.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.45.04.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.46.05.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.47.20.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.47.41.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.48.08.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.48.48.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.51.01.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.51.14.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.52.30.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-15.53.58.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.00.09.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.02.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.04.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.07.39.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.14.10.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.14.21.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.14.22.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.14.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.16.11.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.16.40.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.16.49.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.17.30.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.17.58.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.18.10.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.18.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.19.35.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.21.28.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.22.14.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.26.48.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.27.28.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.39.21.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.48.18.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.48.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.48.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.48.54.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.53.09.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.55.00.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.55.37.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.56.16.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-16.56.33.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.33.53.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.39.04.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.39.05.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.39.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.39.09.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.39.36.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.39.43.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.40.05.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.41.40.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.42.52.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.43.35.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.44.50.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.50.39.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.51.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.51.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.51.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-19.54.13.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.03.04.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.07.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.07.25.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.07.51.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.08.18.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.08.32.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.16.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.17.53.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.18.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.29.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.29.49.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.30.42.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.32.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.32.50.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.33.00.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.34.48.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.35.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.54.51.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-20.58.52.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-21.07.24.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-21.08.18.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-21.08.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.34.07.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.34.30.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.40.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.42.30.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.43.24.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.43.32.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.46.41.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.46.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.47.22.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.47.53.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.48.28.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.49.22.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.49.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.50.27.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.50.32.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.51.35.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.59.19.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-10.59.39.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.00.24.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.01.35.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.02.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.02.11.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.02.24.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.02.30.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.03.19.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.03.24.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.03.37.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.04.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.05.58.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.06.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.07.16.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.07.38.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.12.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.13.02.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.13.16.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.14.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.14.59.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.16.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.16.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.18.31.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.19.14.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.19.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.20.19.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.21.40.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.21.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.21.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.22.03.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.22.38.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.23.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.23.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.23.47.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.24.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.24.32.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.24.54.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.25.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.25.40.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.26.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.26.47.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.27.10.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.27.22.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.27.40.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.28.25.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.28.31.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.28.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.29.09.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.29.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.30.25.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.30.37.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.30.39.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.30.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.30.49.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.31.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.32.42.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.32.50.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.33.16.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.34.21.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.34.38.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.34.52.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.35.41.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.36.43.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.37.25.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.38.43.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.41.36.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.41.45.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.41.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.42.14.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.42.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.43.54.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.44.28.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.45.04.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.46.00.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.46.41.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.48.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.48.58.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.49.08.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.49.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.50.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.51.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.52.07.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.52.36.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.52.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.53.50.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-11.56.56.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.03.07.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.03.44.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.05.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.05.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.05.39.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.07.28.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.08.46.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.10.48.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.12.58.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.13.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.13.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.15.33.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.16.54.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.17.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.17.56.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.18.33.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.18.48.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.19.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.20.12.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.22.33.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.23.08.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.24.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.24.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.25.39.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.26.02.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.26.20.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.37.26.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.40.23.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.45.36.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.49.33.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.54.18.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.54.19.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.56.07.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-12.57.15.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-13.10.27.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-13.11.14.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-14.44.55.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-14.56.35.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-15.02.06.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_8\2015.09.08-16.29.49.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_9\2015.09.09-11.00.41.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_9\fav\2015.09.09-10.31.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-11.27.38.wav">
    </PIN>
@@ -545,7 +545,7 @@
    </PIN>
    </NODE>
    <NODE id="73" nodename="RegExpr (String)" systemname="RegExpr (String)">
-   <BOUNDS height="0" left="15495" top="17415" type="Node" width="0">
+   <BOUNDS height="0" left="17415" top="15165" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="2" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_8_21\2015.08.21-16.50.34.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_8_21\fav\2015.08.21-16.50.15.wav">
    </PIN>
@@ -557,15 +557,15 @@
    <LINK srcnodeid="69" srcpinname="Match 1" dstnodeid="73" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="58" dstpinname="Set" linkstyle="Bezier">
-   <LINKPOINT x="12450" y="10433">
+   <LINKPOINT x="13090" y="9683">
    </LINKPOINT>
-   <LINKPOINT x="16365" y="10433">
+   <LINKPOINT x="17645" y="8933">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="63" srcpinname="Output" dstnodeid="58" dstpinname="Input">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="82">
-   <BOUNDS type="Node" left="10350" top="19665" width="100" height="100">
+   <BOUNDS type="Node" left="7500" top="22755" width="1950" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -573,17 +573,21 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="83">
-   <BOUNDS type="Node" left="13440" top="19215" width="100" height="100">
+   <BOUNDS type="Node" left="8430" top="21705" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="259" values="2015.09.07-11.27.38,2015.09.07-11.28.43,2015.09.07-13.30.45,2015.09.07-13.36.06,2015.09.07-13.36.12,2015.09.07-13.42.02,2015.09.07-13.42.41,2015.09.07-13.47.44,2015.09.07-13.48.03,2015.09.07-13.48.25,2015.09.07-13.48.51,2015.09.07-13.48.58,2015.09.07-13.49.01,2015.09.07-13.49.02,2015.09.07-13.49.08,2015.09.07-13.49.10,2015.09.07-13.49.16,2015.09.07-13.49.42,2015.09.07-13.50.21,2015.09.07-13.50.32,2015.09.07-13.50.37,2015.09.07-13.52.44,2015.09.07-13.52.50,2015.09.07-13.54.31,2015.09.07-13.55.00,2015.09.07-13.55.28,2015.09.07-13.55.55,2015.09.07-13.57.12,2015.09.07-13.57.17,2015.09.07-13.57.21,2015.09.07-15.23.20,2015.09.07-15.23.38,2015.09.07-15.40.54,2015.09.07-15.44.33,2015.09.07-15.45.04,2015.09.07-15.46.05,2015.09.07-15.47.20,2015.09.07-15.47.41,2015.09.07-15.48.08,2015.09.07-15.48.48,2015.09.07-15.51.01,2015.09.07-15.51.14,2015.09.07-15.52.30,2015.09.07-15.53.58,2015.09.07-16.00.09,2015.09.07-16.02.06,2015.09.07-16.04.34,2015.09.07-16.07.39,2015.09.07-16.14.10,2015.09.07-16.14.21,2015.09.07-16.14.22,2015.09.07-16.14.34,2015.09.07-16.16.11,2015.09.07-16.16.40,2015.09.07-16.16.49,2015.09.07-16.17.30,2015.09.07-16.17.58,2015.09.07-16.18.10,2015.09.07-16.18.23,2015.09.07-16.19.35,2015.09.07-16.21.28,2015.09.07-16.22.14,2015.09.07-16.26.48,2015.09.07-16.27.28,2015.09.07-16.39.21,2015.09.07-16.48.18,2015.09.07-16.48.34,2015.09.07-16.48.46,2015.09.07-16.48.54,2015.09.07-16.53.09,2015.09.07-16.55.00,2015.09.07-16.55.37,2015.09.07-16.56.16,2015.09.07-16.56.33,2015.09.07-19.33.53,2015.09.07-19.39.04,2015.09.07-19.39.05,2015.09.07-19.39.06,2015.09.07-19.39.09,2015.09.07-19.39.36,2015.09.07-19.39.43,2015.09.07-19.40.05,2015.09.07-19.41.40,2015.09.07-19.42.52,2015.09.07-19.43.35,2015.09.07-19.44.50,2015.09.07-19.50.39,2015.09.07-19.51.23,2015.09.07-19.51.34,2015.09.07-19.51.55,2015.09.07-19.54.13,2015.09.07-20.03.04,2015.09.07-20.07.15,2015.09.07-20.07.25,2015.09.07-20.07.51,2015.09.07-20.08.18,2015.09.07-20.08.32,2015.09.07-20.16.46,2015.09.07-20.17.53,2015.09.07-20.18.12,2015.09.07-20.29.12,2015.09.07-20.29.49,2015.09.07-20.30.42,2015.09.07-20.32.29,2015.09.07-20.32.50,2015.09.07-20.33.00,2015.09.07-20.34.48,2015.09.07-20.35.29,2015.09.07-20.54.51,2015.09.07-20.58.52,2015.09.07-21.07.24,2015.09.07-21.08.18,2015.09.07-21.08.55,2015.09.08-10.34.07,2015.09.08-10.34.30,2015.09.08-10.40.15,2015.09.08-10.42.30,2015.09.08-10.43.24,2015.09.08-10.43.32,2015.09.08-10.46.41,2015.09.08-10.46.46,2015.09.08-10.47.22,2015.09.08-10.47.53,2015.09.08-10.48.28,2015.09.08-10.49.22,2015.09.08-10.49.29,2015.09.08-10.50.27,2015.09.08-10.50.32,2015.09.08-10.51.35,2015.09.08-10.59.19,2015.09.08-10.59.39,2015.09.08-11.00.24,2015.09.08-11.01.35,2015.09.08-11.02.06,2015.09.08-11.02.11,2015.09.08-11.02.24,2015.09.08-11.02.30,2015.09.08-11.03.19,2015.09.08-11.03.24,2015.09.08-11.03.37,2015.09.08-11.04.23,2015.09.08-11.05.58,2015.09.08-11.06.29,2015.09.08-11.07.16,2015.09.08-11.07.38,2015.09.08-11.12.44,2015.09.08-11.13.02,2015.09.08-11.13.16,2015.09.08-11.14.12,2015.09.08-11.14.59,2015.09.08-11.16.06,2015.09.08-11.16.15,2015.09.08-11.18.31,2015.09.08-11.19.14,2015.09.08-11.19.29,2015.09.08-11.20.19,2015.09.08-11.21.40,2015.09.08-11.21.46,2015.09.08-11.21.55,2015.09.08-11.22.03,2015.09.08-11.22.38,2015.09.08-11.23.29,2015.09.08-11.23.44,2015.09.08-11.23.47,2015.09.08-11.24.15,2015.09.08-11.24.32,2015.09.08-11.24.54,2015.09.08-11.25.06,2015.09.08-11.25.40,2015.09.08-11.26.12,2015.09.08-11.26.47,2015.09.08-11.27.10,2015.09.08-11.27.22,2015.09.08-11.27.40,2015.09.08-11.28.25,2015.09.08-11.28.31,2015.09.08-11.28.46,2015.09.08-11.29.09,2015.09.08-11.29.34,2015.09.08-11.30.25,2015.09.08-11.30.37,2015.09.08-11.30.39,2015.09.08-11.30.44,2015.09.08-11.30.49,2015.09.08-11.31.23,2015.09.08-11.32.42,2015.09.08-11.32.50,2015.09.08-11.33.16,2015.09.08-11.34.21,2015.09.08-11.34.38,2015.09.08-11.34.52,2015.09.08-11.35.41,2015.09.08-11.36.43,2015.09.08-11.37.25,2015.09.08-11.38.43,2015.09.08-11.41.36,2015.09.08-11.41.45,2015.09.08-11.41.55,2015.09.08-11.42.14,2015.09.08-11.42.55,2015.09.08-11.43.54,2015.09.08-11.44.28,2015.09.08-11.45.04,2015.09.08-11.46.00,2015.09.08-11.46.41,2015.09.08-11.48.12,2015.09.08-11.48.58,2015.09.08-11.49.08,2015.09.08-11.49.23,2015.09.08-11.50.46,2015.09.08-11.51.15,2015.09.08-11.52.07,2015.09.08-11.52.36,2015.09.08-11.52.44,2015.09.08-11.53.50,2015.09.08-11.56.56,2015.09.08-12.03.07,2015.09.08-12.03.44,2015.09.08-12.05.06,2015.09.08-12.05.23,2015.09.08-12.05.39,2015.09.08-12.07.28,2015.09.08-12.08.46,2015.09.08-12.10.48,2015.09.08-12.12.58,2015.09.08-12.13.12,2015.09.08-12.13.55,2015.09.08-12.15.33,2015.09.08-12.16.54,2015.09.08-12.17.34,2015.09.08-12.17.56,2015.09.08-12.18.33,2015.09.08-12.18.48,2015.09.08-12.19.34,2015.09.08-12.20.12,2015.09.08-12.22.33,2015.09.08-12.23.08,2015.09.08-12.24.15,2015.09.08-12.24.55,2015.09.08-12.25.39,2015.09.08-12.26.02,2015.09.08-12.26.20,2015.09.08-12.37.26,2015.09.08-12.40.23,2015.09.08-12.45.36,2015.09.08-12.49.33,2015.09.08-12.54.18,2015.09.08-12.54.19,2015.09.08-12.56.07,2015.09.08-12.57.15,2015.09.08-13.10.27,2015.09.08-13.11.14,2015.09.08-14.44.55,2015.09.08-14.56.35,2015.09.08-15.02.06,2015.09.08-16.29.49,2015.09.09-11.00.41,2015.09.09-10.31.29,2015.09.07-11.27.38">
+   <PIN pinname="Input" visible="1" slicecount="1" values="2015.09.10-11.55.15">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="84">
-   <BOUNDS type="Node" left="13410" top="19920" width="630" height="270">
+   <BOUNDS type="Node" left="8430" top="22200" width="630" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="|Please Update|">
    </PIN>
@@ -601,7 +605,7 @@
    <LINK srcnodeid="61" srcpinname="Output" dstnodeid="69" dstpinname="Input">
    </LINK>
    <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="85">
-   <BOUNDS type="Node" left="15480" top="17955" width="100" height="100">
+   <BOUNDS type="Node" left="17400" top="15705" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -615,7 +619,7 @@
    <LINK srcnodeid="85" srcpinname="Output" dstnodeid="53" dstpinname="Input String">
    </LINK>
    <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="86">
-   <BOUNDS type="Node" left="8655" top="15480" width="100" height="100">
+   <BOUNDS type="Node" left="8925" top="16845" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -629,23 +633,337 @@
    <LINK srcnodeid="86" srcpinname="Output" dstnodeid="46" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="86" dstpinname="Set" linkstyle="Bezier">
-   <LINKPOINT x="12405" y="10748">
+   <LINKPOINT x="12495" y="11203">
    </LINKPOINT>
-   <LINKPOINT x="9030" y="10748">
+   <LINKPOINT x="9210" y="11658">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="85" dstpinname="Set" linkstyle="Bezier">
-   <LINKPOINT x="12435" y="11985">
+   <LINKPOINT x="13075" y="11235">
    </LINKPOINT>
-   <LINKPOINT x="15840" y="11985">
+   <LINKPOINT x="17120" y="10485">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="85" srcpinname="Output" dstnodeid="83" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="51" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Output" dstnodeid="38" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Match 1" dstnodeid="40" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Find (String)" nodename="Find (String)" componentmode="Hidden" id="95">
+   <BOUNDS type="Node" left="3792" top="11565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Substring" slicecount="1" visible="1" values="fav">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Filenames" dstnodeid="95" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="725" y="8740">
+   </LINKPOINT>
+   <LINKPOINT x="5305" y="9230">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="3705" top="12645" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1" slicecount="3" values="0,0,1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="94" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="725" y="10128">
+   </LINKPOINT>
+   <LINKPOINT x="5215" y="10618">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4005" top="10875" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4005" top="10875" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Normal">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Output String" dstnodeid="95" dstpinname="Substring">
+   </LINK>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="92">
+   <BOUNDS type="Node" left="4200" top="12090" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="95" srcpinname="Count" dstnodeid="92" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="92" srcpinname="Output" dstnodeid="94" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="92" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="10880" y="8793">
+   </LINKPOINT>
+   <LINKPOINT x="6115" y="9283">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="91" nodename="RegExpr (String)" systemname="RegExpr (String)">
+   <BOUNDS height="0" left="3705" top="14145" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="2" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_9\fav\2015.09.09-10.31.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-11.27.38.wav">
+   </PIN>
+   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="|Normal (.*?) .wav|">
+   </PIN>
+   <PIN pinname="Match 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="90">
+   <BOUNDS type="Node" left="3690" top="15645" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="\2015.09.09-10.31.29">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse String" slicecount="1" values="\">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="3690" top="16095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="90" srcpinname="Output" dstnodeid="89" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="88">
+   <BOUNDS type="Node" left="4125" top="16950" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output 2" dstnodeid="88" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="88" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="10895" y="11238">
+   </LINKPOINT>
+   <LINKPOINT x="6010" y="11728">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="94" srcpinname="Output" dstnodeid="91" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Match 1" dstnodeid="90" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4140" top="17535" width="3015" height="1470">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4140" top="17535" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Normal">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="88" srcpinname="Output" dstnodeid="96" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Find (String)" nodename="Find (String)" componentmode="Hidden" id="104">
+   <BOUNDS type="Node" left="12792" top="11895" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Substring" slicecount="1" visible="1" values="fav">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Filenames" dstnodeid="104" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3725" y="8850">
+   </LINKPOINT>
+   <LINKPOINT x="11305" y="9450">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden" id="103">
+   <BOUNDS type="Node" left="12705" top="12975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1" slicecount="3" values="0,0,1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="103" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3725" y="10238">
+   </LINKPOINT>
+   <LINKPOINT x="11215" y="10838">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="102" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13005" top="11205" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13005" top="11205" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Inaktiv">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Output String" dstnodeid="104" dstpinname="Substring">
+   </LINK>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="101">
+   <BOUNDS type="Node" left="13200" top="12420" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="104" srcpinname="Count" dstnodeid="101" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="103" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="101" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="13880" y="8903">
+   </LINKPOINT>
+   <LINKPOINT x="12115" y="9503">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="100" nodename="RegExpr (String)" systemname="RegExpr (String)">
+   <BOUNDS height="0" left="12705" top="14475" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="2" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_9\fav\2015.09.09-10.31.29.wav,C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015_9_7\2015.09.07-11.27.38.wav">
+   </PIN>
+   <PIN pinname="Regular Expression" slicecount="1" encoded="0" values="|Inaktiv (.*?) .wav|">
+   </PIN>
+   <PIN pinname="Match 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="99">
+   <BOUNDS type="Node" left="12690" top="15975" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="\2015.09.09-10.31.29">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse String" slicecount="1" values="\">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="98">
+   <BOUNDS type="Node" left="12690" top="16425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Output" dstnodeid="98" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="97">
+   <BOUNDS type="Node" left="13125" top="17280" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="98" srcpinname="Output 2" dstnodeid="97" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="97" dstpinname="Set" linkstyle="Bezier">
+   <LINKPOINT x="13895" y="11348">
+   </LINKPOINT>
+   <LINKPOINT x="12010" y="11948">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="100" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Match 1" dstnodeid="99" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="105" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13095" top="18045" width="2670" height="780">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13095" top="18045" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Inaktiv">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="105" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="9390" top="21705" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="4" values="2015.09.10-11.44.45,2015.09.10-11.52.02,2015.09.10-11.55.15,2015.09.10-11.53.32">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="106">
+   <BOUNDS type="Node" left="9390" top="22200" width="630" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|Please Update|">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="Output" dstnodeid="106" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="107" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="13110" y="19620">
+   </LINKPOINT>
+   <LINKPOINT x="9450" y="19620">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="88" srcpinname="Output" dstnodeid="51" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="4185" y="19455">
+   </LINKPOINT>
+   <LINKPOINT x="7515" y="19455">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="83" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="8940" y="19403">
+   </LINKPOINT>
+   <LINKPOINT x="8460" y="19403">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="106" srcpinname="OnChange" dstnodeid="82" dstpinname="Input 3">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="0" scrolly="4275">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="11175" scrolly="3630">
    <BOUNDS type="Window" left="-26010" top="2760" width="24285" height="13605">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -883,7 +883,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13365" top="6180" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="1">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -1013,7 +1013,7 @@
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="270">
    <BOUNDS type="Node" left="5325" top="23280" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5325" top="23280" width="795" height="240">
+   <BOUNDS type="Box" left="5325" top="23280" width="1950" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Favs">
    </PIN>
@@ -1079,9 +1079,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="302" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="8235" top="24060" width="1650" height="240">
+   <BOUNDS type="Box" left="8310" top="24390" width="1650" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8235" top="24060" width="0" height="0">
+   <BOUNDS type="Node" left="8310" top="24390" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -1091,15 +1091,15 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Actives">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Normal">
    </PIN>
    </NODE>
    <LINK srcnodeid="302" srcpinname="Output String" dstnodeid="301" dstpinname="Actives">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="303" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8805" top="22905" width="480" height="480">
+   <BOUNDS type="Box" left="8850" top="23235" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8805" top="22905" width="0" height="0">
+   <BOUNDS type="Node" left="8850" top="23235" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1111,7 +1111,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Active|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Normal|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1837,9 +1837,9 @@
    <LINK srcnodeid="279" srcpinname="Y Output Value" dstnodeid="278" dstpinname="Update Favs">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="415" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10575" top="16680" width="1425" height="5415">
+   <BOUNDS type="Box" left="10560" top="16935" width="1425" height="5415">
    </BOUNDS>
-   <BOUNDS type="Node" left="10575" top="16680" width="0" height="0">
+   <BOUNDS type="Node" left="10560" top="16935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
