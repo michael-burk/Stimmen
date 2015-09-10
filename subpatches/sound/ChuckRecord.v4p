@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="2820" scrolly="750">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="6030" scrolly="4575">
    <BOUNDS height="15150" left="-25980" top="3135" type="Window" width="25050">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
@@ -367,9 +367,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="28" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="13545" top="4620" width="1650" height="240">
+   <BOUNDS type="Box" left="13530" top="4890" width="1650" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13545" top="4620" width="0" height="0">
+   <BOUNDS type="Node" left="13530" top="4890" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -385,9 +385,9 @@
    <LINK srcnodeid="26" srcpinname="Output 1" dstnodeid="23" dstpinname="Do Execute">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="16380" top="12585" width="0" height="0">
+   <BOUNDS type="Node" left="16305" top="12450" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="16380" top="12585" width="480" height="480">
+   <BOUNDS type="Box" left="16305" top="12450" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -437,7 +437,7 @@
    </PIN>
    <PIN pinname="Block until finished" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Execute" visible="1">
+   <PIN pinname="Execute" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Executable file" visible="1">
    </PIN>
@@ -462,8 +462,6 @@
    <PIN pinname="Completed" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Execute">
-   </LINK>
    <LINK srcnodeid="37" srcpinname="Output" dstnodeid="29" dstpinname="File">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="50">
@@ -722,20 +720,6 @@
    </NODE>
    <LINK srcnodeid="67" srcpinname="Output" dstnodeid="66" dstpinname="File">
    </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="21150" top="12120" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Completed" dstnodeid="70" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="16470" y="12980">
-   </LINKPOINT>
-   <LINKPOINT x="21105" y="12745">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="71">
    <BOUNDS type="Node" left="18525" top="12195" width="100" height="100">
    </BOUNDS>
@@ -829,20 +813,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="78" srcpinname="Output" dstnodeid="77" dstpinname="File">
-   </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="76">
-   <BOUNDS type="Node" left="25560" top="12135" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Completed" dstnodeid="76" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="16470" y="12988">
-   </LINKPOINT>
-   <LINKPOINT x="25515" y="12753">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="22935" top="12210" width="100" height="100">
@@ -977,7 +947,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="142">
-   <BOUNDS type="Node" left="16335" top="11730" width="100" height="100">
+   <BOUNDS type="Node" left="16290" top="11475" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
@@ -1131,6 +1101,8 @@
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Bang" dstnodeid="156" dstpinname="Reset">
    </LINK>
@@ -1195,20 +1167,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="161" srcpinname="Output" dstnodeid="160" dstpinname="File">
-   </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="159">
-   <BOUNDS type="Node" left="30000" top="12120" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Completed" dstnodeid="159" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="16470" y="12980">
-   </LINKPOINT>
-   <LINKPOINT x="29955" y="12745">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="158">
    <BOUNDS type="Node" left="27375" top="12195" width="100" height="100">

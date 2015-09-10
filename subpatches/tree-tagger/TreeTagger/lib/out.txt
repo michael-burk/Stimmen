@@ -1,11 +1,5 @@
-NE	Vladimir
-NE	<unknown>
-KON	und
-NE	Angela
-NE	Merkel
-VVFIN	fahren
-ADV	sehr
-ADV	sehr
-ADJD	langsam
-APPR	nach
-NE	Deutschland
+PDS	dies
+VAFIN	sein
+ART	eine
+ADJA	weit
+NN	Test

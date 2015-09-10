@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" scrollx="0" scrolly="15225" bgcolor="14935011" locked="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" scrollx="0" scrolly="3420" bgcolor="14935011" locked="0">
    <BOUNDS type="Window" left="-24945" top="750" width="23400" height="14910">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -155,7 +155,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -199,12 +199,6 @@
    <LINK srcnodeid="16" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Down Edge" dstnodeid="16" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Reset" linkstyle="VHV">
-   <LINKPOINT x="12370" y="7910">
-   </LINKPOINT>
-   <LINKPOINT x="13700" y="7915">
-   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1950" top="9435" width="2960" height="1550">
@@ -907,5 +901,29 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="96" srcpinname="Output 1" dstnodeid="1231" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="1232">
+   <BOUNDS type="Node" left="14265" top="10305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="1232" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1232" srcpinname="Output" dstnodeid="16" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="1234">
+   <BOUNDS type="Node" left="14505" top="9405" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1234" srcpinname="Bang" dstnodeid="1232" dstpinname="Input 2">
    </LINK>
    </PATCH>

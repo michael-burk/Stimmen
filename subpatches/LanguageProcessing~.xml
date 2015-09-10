@@ -1,17 +1,17 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="195" scrolly="915">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="360" scrolly="0">
    <BOUNDS type="Window" left="-23520" top="4365" width="19140" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="REST APIs" filename="REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="Hidden" id="2" stayontop="0">
+   <NODE systemname="REST APIs" filename="REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="Hidden" id="2" stayontop="1">
    <BOUNDS type="Node" left="3814" top="5220" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3814" top="5220" width="14215" height="16110">
    </BOUNDS>
-   <BOUNDS type="Window" left="-16650" top="2985" width="20625" height="13725">
+   <BOUNDS type="Window" left="-17730" top="1950" width="23895" height="13725">
    </BOUNDS>
    <PIN pinname="Execute" slicecount="1" visible="1" values="0">
    </PIN>
@@ -30,6 +30,8 @@
    <PIN pinname="Words per Entity" visible="1">
    </PIN>
    <PIN pinname="Tokens per Entity" visible="1">
+   </PIN>
+   <PIN pinname="Completed" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="tree-tagger" filename="tree-tagger.v4p" nodename="subpatches\tree-tagger.v4p" componentmode="Hidden" id="3" stayontop="1">
@@ -79,9 +81,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="6">
-   <BOUNDS type="Node" left="5284" top="750" width="100" height="100">
+   <BOUNDS type="Node" left="5284" top="900" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5284" top="750" width="750" height="840">
+   <BOUNDS type="Box" left="5284" top="900" width="750" height="840">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -133,9 +135,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="5" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="5314" y="2225">
+   <LINKPOINT x="5314" y="2325">
    </LINKPOINT>
-   <LINKPOINT x="5314" y="1975">
+   <LINKPOINT x="5314" y="2025">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Select" linkstyle="Bezier">
@@ -271,19 +273,17 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="2" dstpinname="Execute">
    </LINK>
-   <LINK srcnodeid="7" srcpinname="OnChange" dstnodeid="22" dstpinname="Input 2">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4695" top="390" width="480" height="480">
+   <BOUNDS type="Box" left="4830" top="285" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4695" top="390" width="0" height="0">
+   <BOUNDS type="Node" left="4830" top="285" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -369,8 +369,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="27" srcpinname="Up Edge" dstnodeid="30" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="26" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input 2">
    </LINK>
@@ -485,7 +483,7 @@
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="14430" top="9045" width="1185" height="270">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
@@ -521,8 +519,6 @@
    <LINK srcnodeid="44" srcpinname="OnChange" dstnodeid="42" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="43" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="45" dstpinname="Input 2">
    </LINK>
    <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="14655" top="5670" width="100" height="100">
@@ -561,15 +557,15 @@
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="45" dstpinname="Input 1">
    </LINK>
    <NODE nodename="S (Value)" id="38" systemname="S (Value)">
-   <BOUNDS type="Node" left="13095" top="11490" width="0" height="0">
+   <BOUNDS type="Node" left="12495" top="10665" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="|NLP Done|">
    </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="38" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="14250" top="11475" width="100" height="100">
+   <BOUNDS type="Node" left="14415" top="10050" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -600,4 +596,62 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Tokens" dstnodeid="44" dstpinname="Input">
    </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
+   <BOUNDS type="Node" left="8145" top="690" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8145" top="690" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Process!">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="45" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="12555" top="9345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Completed" dstnodeid="50" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Completed" dstnodeid="50" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="12480" top="9900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="51" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Up Edge" dstnodeid="38" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8190" top="4275" width="765" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8190" top="4275" width="8070" height="555">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|on open toggle reset in tree tagger!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="9">
+   </PIN>
+   </NODE>
    </PATCH>

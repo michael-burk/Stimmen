@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="0" scrolly="9450">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="0" scrolly="8940">
    <BOUNDS type="Window" left="-24375" top="2415" width="21345" height="15210">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -323,7 +323,7 @@
    <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="4" dstpinname="Input 7">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1500" top="19890" width="12480" height="1890">
+   <BOUNDS type="Box" left="1500" top="19890" width="15540" height="2265">
    </BOUNDS>
    <BOUNDS type="Node" left="1500" top="19890" width="0" height="0">
    </BOUNDS>
@@ -952,6 +952,24 @@
    <LINKPOINT x="2700" y="12008">
    </LINKPOINT>
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4530" top="15990" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4530" top="15990" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="0" dstpinname="SendQuery">
    </LINK>
    </PATCH>
