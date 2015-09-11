@@ -1,0 +1,217 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\mySQL\Queries.v4p" systemname="Queries" filename="C:\Users\Michael\Documents\GitHub\Stimmen\mySQL\Queries.v4p">
+   <BOUNDS type="Window" left="-1" top="-1" width="12615" height="9750">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7485" top="7200" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7485" top="7200" width="1500" height="2160">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Column List|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="7485" top="6471" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="CarriageReturnLineFeed">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4350" top="1500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4350" top="1500" width="4005" height="855">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Word From DictionaryEntry WHERE Answer_idAnswer = ANY (SELECT Answer_idAnswer FROM DictionaryEntry WHERE Entity_idEntity = (SELECT idEntity FROM Entity WHERE EntityName = &quot;Angela Merkel&quot;)) AND PartOfSpeech LIKE &quot;Ad%&quot;|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Where">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6555" top="4986" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6555" top="4986" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Group By|">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="8805" top="3360" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8805" top="3360" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SendQuery">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1500" top="6210" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="6210" width="4500" height="1665">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Statement">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|SELECT Word FROM DictionaryEntry WHERE SELECT Answer_idAnswer FROM DictionaryEntry WHERE Entity_idEntity = (SELECT idEntity FROM Entity WHERE EntityName = &quot;Angela Merkel&quot;)|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4080" top="8250" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4080" top="8250" width="3180" height="2460">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="|You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;SELECT Answer_idAnswer FROM DictionaryEntry WHERE Entity_idEntity = (SELECT idEn&apos; at line 1|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="11115" top="6030" width="1425" height="5415">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11115" top="6030" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="19">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9570" top="6825" width="1215" height="2220">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9570" top="6825" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (MySQL Network)" filename="%VVVV%\addonpack\lib\nodes\plugins\MySQLNodes.dll" nodename="Select (MySQL Network)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3570" top="5535" width="5280" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3570" top="5535">
+   </BOUNDS>
+   <PIN pinname="Tables" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Where" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Fields" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Field Names" slicecount="1" values="|Answer_idAnswer, Word|">
+   </PIN>
+   <PIN pinname="Answer_idAnswer" visible="1">
+   </PIN>
+   <PIN pinname="Word" visible="1">
+   </PIN>
+   <PIN pinname="Connection" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Statement" dstnodeid="5" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="9" dstpinname="Fields">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="9" dstpinname="Group By">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="9" dstpinname="SendQuery">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Status" dstnodeid="6" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="0" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Dataset Column Names" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Answer_idAnswer" dstnodeid="8" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Word" dstnodeid="7" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="10" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1860" top="3180" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1860" top="3180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connection">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="9" dstpinname="Connection">
+   </LINK>
+   </PATCH>

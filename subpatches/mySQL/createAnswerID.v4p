@@ -1,0 +1,197 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\createAnswerID.v4p" systemname="createAnswerID" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\createAnswerID.v4p">
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1605" top="5205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (0 .. MaxInt)|">
+   </PIN>
+   </NODE>
+   <NODE nodename="R (Value)" id="1" systemname="R (Value)">
+   <BOUNDS type="Node" left="4035" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="DeleteDatabase!">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" systemname="Select (MySQL Network)" filename="%VVVV%\addonpack\lib\nodes\plugins\MySQLNodes.dll" nodename="Select (MySQL Network)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="SendQuery" visible="1" slicecount="1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="OnData" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="1500" top="2475" width="1200" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="2475" width="2400" height="1800">
+   </BOUNDS>
+   <PIN pinname="idEntity" visible="1">
+   </PIN>
+   <PIN pinname="EntityName" visible="1">
+   </PIN>
+   <PIN pinname="Connection" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Fields" visible="1" slicecount="1" pintype="Input" values="|* FROM Answer|">
+   </PIN>
+   <PIN pinname="Field Names" slicecount="1" pintype="Configuration" values="idAnswer">
+   </PIN>
+   <PIN pinname="CategoryName" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="idCategory" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Tables" slicecount="1" visible="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Dataset Column Names" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Host" visible="1">
+   </PIN>
+   <PIN pinname=" User" visible="1">
+   </PIN>
+   <PIN pinname="User" visible="1">
+   </PIN>
+   <PIN pinname="Having" slicecount="1" pintype="Input" visible="1" values="||">
+   </PIN>
+   <PIN pinname="text" visible="1">
+   </PIN>
+   <PIN pinname="envelope" visible="1">
+   </PIN>
+   <PIN pinname="idWord" visible="1">
+   </PIN>
+   <PIN pinname="Group By" slicecount="1" pintype="Input" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Where" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Order By" pintype="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="Statement" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Status" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="idAnswer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (String)" nodename="Count (String)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2430" top="3075" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="8" values="idAnswer,wordCount,language,text,Question_idQuestion,Sound_idSound,active,fav">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2640" top="1635" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   <PIN pinname="Simulate" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2415" top="3570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" filename="" nodename="OR (Boolean)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2625" top="2055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2565" top="4200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1605" top="4800" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connection">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="2" dstpinname="Connection">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="2" dstpinname="SendQuery">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Up">
+   </PIN>
+   <BOUNDS type="Box" left="2400" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Up">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="8" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Reset">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="0" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="1635" y="5138">
+   </LINKPOINT>
+   <LINKPOINT x="1635" y="5138">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="11" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1605" top="5805" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1605" top="5805" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="11" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Count" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="OnData" dstnodeid="5" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="idAnswer" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="OnData" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Bang" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Input Value" dstnodeid="6" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="4035" y="1898">
+   </LINKPOINT>
+   <LINKPOINT x="2985" y="1898">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="5535" height="6805">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>

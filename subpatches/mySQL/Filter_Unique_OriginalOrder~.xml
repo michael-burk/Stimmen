@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\Filter_Unique_OriginalOrder.v4p" systemname="Filter_Unique_OriginalOrder" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\Filter_Unique_OriginalOrder.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\Filter_Unique_OriginalOrder.v4p" systemname="Filter_Unique_OriginalOrder" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\Filter_Unique_OriginalOrder.v4p" scrollx="1350" scrolly="0">
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1965" top="3315" width="100" height="100">
    </BOUNDS>
@@ -125,10 +125,14 @@
    <NODE id="10" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|New Words|">
    </PIN>
-   <BOUNDS type="Box" left="1560" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="1545" top="245" width="1230" height="855">
    </BOUNDS>
-   <BOUNDS type="Node" left="1560" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="1545" top="245" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="6" dstpinname="Input">
    </LINK>
@@ -153,22 +157,26 @@
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Input">
    </LINK>
    <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Former Index|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Former Index Unique|">
    </PIN>
-   <BOUNDS type="Box" left="2010" top="7350" width="750" height="240">
+   <BOUNDS type="Box" left="2385" top="7245" width="870" height="1170">
    </BOUNDS>
-   <BOUNDS type="Node" left="2010" top="7350" width="750" height="240">
+   <BOUNDS type="Node" left="2385" top="7245" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Former Index" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    <NODE id="12" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input Words|">
    </PIN>
-   <BOUNDS type="Box" left="2460" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="3450" top="410" width="1395" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="2460" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="3450" top="410" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="1" dstpinname="Input">
    </LINK>
@@ -184,10 +192,26 @@
    <LINKPOINT x="3015" y="1815">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="-25350" top="5010" width="6015" height="9255">
+   <BOUNDS type="Window" left="-22155" top="2190" width="9675" height="9465">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="210" top="2565" width="1110" height="3345">
+   </BOUNDS>
+   <BOUNDS type="Node" left="210" top="2565" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="7">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Unique" dstnodeid="13" dstpinname="Input String">
+   </LINK>
    </PATCH>

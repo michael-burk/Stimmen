@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="855" scrolly="28140" locked="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="2145" scrolly="27765" locked="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5190" top="13950" width="0" height="0">
    </BOUNDS>
@@ -659,7 +659,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="8">
+   <PIN pinname="Rows" slicecount="1" values="9">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="3,1,0">
    </PIN>
@@ -673,9 +673,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="95" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4815" top="32595" width="2775" height="2925">
+   <BOUNDS type="Box" left="6240" top="32550" width="2775" height="2925">
    </BOUNDS>
-   <BOUNDS type="Node" left="4815" top="32595" width="0" height="0">
+   <BOUNDS type="Node" left="6240" top="32550" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -811,9 +811,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="181" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10020" top="32625" width="1110" height="4680">
+   <BOUNDS type="Box" left="10005" top="32955" width="1560" height="5310">
    </BOUNDS>
-   <BOUNDS type="Node" left="10020" top="32625" width="0" height="0">
+   <BOUNDS type="Node" left="10005" top="32955" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -939,7 +939,7 @@
    <LINK srcnodeid="199" srcpinname="Output" dstnodeid="198" dstpinname="Index">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="201" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13560" top="32625" width="795" height="960">
+   <BOUNDS type="Box" left="13560" top="32625" width="885" height="2025">
    </BOUNDS>
    <BOUNDS type="Node" left="13560" top="32625" width="0" height="0">
    </BOUNDS>
@@ -951,7 +951,7 @@
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
+   <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="8" visible="1" values="2,1,1,1,2,2,2,2">
    </PIN>
