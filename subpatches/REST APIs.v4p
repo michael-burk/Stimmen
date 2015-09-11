@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="26190" locked="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="0" scrolly="34530" locked="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5190" top="13950" width="0" height="0">
    </BOUNDS>
@@ -232,7 +232,7 @@
    </LINK>
    <LINK srcnodeid="16" srcpinname="Down Edge" dstnodeid="18" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="-27330" top="3720" width="23640" height="11760">
+   <BOUNDS type="Window" left="-26415" top="5040" width="23640" height="11760">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -327,7 +327,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7035" top="3375" width="14580" height="1665">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="|curl -X POST -k \&cr;&lf;&tab;-d &quot;apiKey=7a655444b5803aa4071725df22ce00bb377581a29fa87bf728d39fa2&quot; \&cr;&lf;&tab;-d &quot;extractors=entities,entailments&quot; \&cr;&lf;&tab;-d &quot;text=|">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="|curl -X POST -k \&cr;&lf;&tab;-d &quot;apiKey=7a655444b5803aa4071725df22ce00bb377581a29fa87bf728d39fa2&quot; \&cr;&lf;&tab;-d &quot;entities.allowOverlap=False&quot; \ &cr;&lf;&tab;-d &quot;extractors=entities,entailments&quot; \ &cr;&lf;&tab;-d &quot;text=|">
    </PIN>
    <PIN pinname="Default" slicecount="1" encoded="0" values="||">
    </PIN>

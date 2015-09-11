@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="1935">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="-22425" top="2970" width="19140" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3814" top="5220" width="14215" height="16110">
    </BOUNDS>
-   <BOUNDS type="Window" left="-27330" top="3720" width="23640" height="11760">
+   <BOUNDS type="Window" left="-26415" top="5040" width="23640" height="11760">
    </BOUNDS>
    <PIN pinname="Execute" slicecount="1" visible="1" values="0">
    </PIN>
