@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\EntityIDs.v4p" systemname="EntityIDs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\EntityIDs.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\EntityIDs.v4p" systemname="EntityIDs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\EntityIDs.v4p" scrollx="0" scrolly="615">
    <BOUNDS type="Window" left="-14685" top="4905" width="8610" height="12090">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -29,7 +29,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="2250" top="5370" width="100" height="100">
+   <BOUNDS type="Node" left="2235" top="5205" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="2">
    </PIN>
@@ -83,7 +83,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="3030" top="6120" width="1560" height="270">
+   <BOUNDS type="Node" left="3030" top="6720" width="1560" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -105,7 +105,7 @@
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="1995" top="8910" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="2" values="7,0">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
@@ -127,8 +127,6 @@
    </LINKPOINT>
    <LINKPOINT x="2655" y="5415">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="9" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output 2" dstnodeid="8" dstpinname="[ From .." linkstyle="Bezier">
    <LINKPOINT x="2400" y="9368">
@@ -163,9 +161,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="IDs">
    </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="7" values="text,text,text,text,text,text,text">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="13" dstpinname="Input String">
-   </LINK>
    <NODE nodename="R (Value)" id="15" systemname="R (Value)">
    <BOUNDS type="Node" left="1920" top="360" width="0" height="0">
    </BOUNDS>
@@ -293,5 +291,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="13" dstpinname="Input String">
    </LINK>
    </PATCH>

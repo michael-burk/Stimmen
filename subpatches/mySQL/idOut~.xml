@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\idOut.v4p" systemname="idOut" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\idOut.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\idOut.v4p" systemname="idOut" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\idOut.v4p" scrollx="255" scrolly="2175">
    <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5010" top="7515" width="100" height="100">
    </BOUNDS>
@@ -446,7 +446,7 @@
    <LINKPOINT x="15810" y="3053">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="-21285" top="1320" width="20625" height="15750">
+   <BOUNDS type="Window" left="-22380" top="1830" width="19185" height="13455">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -649,7 +649,7 @@
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="5505" top="3405" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="7" values="2,2,2,1,1,1,1">
+   <PIN pinname="Input" visible="1" slicecount="4" values="1,1,1,1">
    </PIN>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -816,24 +816,6 @@
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="73" dstpinname="Input String">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="74">
-   <BOUNDS type="Node" left="2325" top="4740" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2325" top="4740" width="795" height="720">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="1,1,1,1">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input">
    </LINK>
    </PATCH>

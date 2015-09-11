@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" systemname="Playback_Sender" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" scrollx="0" scrolly="1710">
-   <BOUNDS type="Window" left="-22425" top="7785" width="14040" height="8325">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" systemname="Playback_Sender" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" scrollx="0" scrolly="240">
+   <BOUNDS type="Window" left="-21285" top="5595" width="14040" height="8325">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -113,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2070" top="1635" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Recordings\Normal\2015.09.10-11.53.32.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

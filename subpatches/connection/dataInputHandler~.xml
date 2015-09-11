@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\connection\dataInputHandler.v4p" systemname="dataInputHandler" filename="D:\workspace\_research\nodejsPrototype\subpatches\dataInputHandler.v4p" scrollx="11505" scrolly="4905">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\connection\dataInputHandler.v4p" systemname="dataInputHandler" filename="D:\workspace\_research\nodejsPrototype\subpatches\dataInputHandler.v4p" scrollx="7140" scrolly="13725">
    <BOUNDS type="Window" left="-26970" top="585" width="22080" height="13440">
    </BOUNDS>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="24">

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" systemname="Playback_Sender" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" scrollx="0" scrolly="240">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" systemname="Playback_Sender" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Playback_Sender.v4p" scrollx="0" scrolly="60">
    <BOUNDS type="Window" left="-21285" top="5595" width="14040" height="8325">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
