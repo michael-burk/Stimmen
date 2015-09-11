@@ -1,8 +1,6 @@
-NE	Helmut
-VVIMP	kohlen
-KON	und
-NE	Gerhard
-ADJD	<unknown>
-VVFIN	fliegen
-APPR	nach
-NE	China
+ART	die
+ADJA	<unknown>
+ADJA	erst
+NN	<unknown>
+ADJA	<unknown>
+NN	<unknown>

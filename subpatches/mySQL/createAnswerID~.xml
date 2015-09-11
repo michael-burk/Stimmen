@@ -7,7 +7,7 @@
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1605" top="5775" width="100" height="100">
+   <BOUNDS type="Node" left="1605" top="5205" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -133,10 +133,8 @@
    </PIN>
    </NODE>
    <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="1605" top="5370" width="100" height="100">
+   <BOUNDS type="Node" left="1605" top="4800" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Default" visible="1" slicecount="1" values="0">
-   </PIN>
    </NODE>
    <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Connection">
@@ -160,20 +158,22 @@
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Up">
    </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="8" dstpinname="Default">
+   </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Reset">
    </LINK>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="0" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="1635" y="5708">
+   <LINKPOINT x="1635" y="5138">
    </LINKPOINT>
-   <LINKPOINT x="1635" y="5708">
+   <LINKPOINT x="1635" y="5138">
    </LINKPOINT>
    </LINK>
    <NODE id="11" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="1605" top="6375" width="750" height="240">
+   <BOUNDS type="Box" left="1605" top="5805" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1605" top="6375" width="750" height="240">
+   <BOUNDS type="Node" left="1605" top="5805" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="11" dstpinname="Input String">
@@ -193,19 +193,5 @@
    </LINKPOINT>
    <LINKPOINT x="2985" y="1898">
    </LINKPOINT>
-   </LINK>
-   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="2400" top="4785" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="13" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="8" dstpinname="Default">
    </LINK>
    </PATCH>

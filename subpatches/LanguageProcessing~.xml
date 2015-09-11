@@ -1,17 +1,17 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="-23520" top="4365" width="19140" height="12630">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="1935">
+   <BOUNDS type="Window" left="-22425" top="2970" width="19140" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE systemname="REST APIs" filename="REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="Hidden" id="2" stayontop="1">
+   <NODE systemname="REST APIs" filename="REST APIs.v4p" nodename="subpatches\REST APIs.v4p" componentmode="InAWindow" id="2" stayontop="1">
    <BOUNDS type="Node" left="3814" top="5220" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3814" top="5220" width="14215" height="16110">
    </BOUNDS>
-   <BOUNDS type="Window" left="-25620" top="1500" width="23640" height="13725">
+   <BOUNDS type="Window" left="-27330" top="3720" width="23640" height="11760">
    </BOUNDS>
    <PIN pinname="Execute" slicecount="1" visible="1" values="0">
    </PIN>
@@ -241,9 +241,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Entity Out|">
    </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="5" values="|Angela Merkel|,|Bundeskanzler (Deutschland)|,|Bundesrepublik Deutschland|,Frankreich,Deutschland">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Entity Out" dstnodeid="20" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
    <BOUNDS type="Box" left="2220" top="7245" width="1380" height="2265">
    </BOUNDS>
@@ -523,5 +523,7 @@
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="53" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="51" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Entity Out" dstnodeid="20" dstpinname="Input String">
    </LINK>
    </PATCH>

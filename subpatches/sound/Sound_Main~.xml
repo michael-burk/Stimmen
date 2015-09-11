@@ -1,5 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p">
+   <BOUNDS type="Window" left="-22425" top="3630" width="8325" height="13305">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4260" top="3525" width="285" height="240">
    </BOUNDS>
@@ -301,9 +307,9 @@
    <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <BOUNDS type="Box" left="2070" top="11720" width="750" height="240">
+   <BOUNDS type="Box" left="2055" top="12140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2070" top="11720" width="750" height="240">
+   <BOUNDS type="Node" left="2055" top="12140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="22" dstpinname="Y Input Value">
@@ -325,9 +331,9 @@
    <NODE id="23" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Down Edge|">
    </PIN>
-   <BOUNDS type="Box" left="2970" top="11720" width="750" height="240">
+   <BOUNDS type="Box" left="2955" top="12140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2970" top="11720" width="750" height="240">
+   <BOUNDS type="Node" left="2955" top="12140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Down Edge" dstnodeid="23" dstpinname="Y Input Value">
@@ -335,9 +341,9 @@
    <NODE id="24" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Y Output Value|">
    </PIN>
-   <BOUNDS type="Box" left="3870" top="11720" width="750" height="240">
+   <BOUNDS type="Box" left="3855" top="12140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3870" top="11720" width="750" height="240">
+   <BOUNDS type="Node" left="3855" top="12140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Y Input Value">
@@ -353,9 +359,9 @@
    <NODE id="25" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Output String|">
    </PIN>
-   <BOUNDS type="Box" left="4770" top="11720" width="750" height="240">
+   <BOUNDS type="Box" left="4755" top="12140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4770" top="11720" width="750" height="240">
+   <BOUNDS type="Node" left="4755" top="12140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="25" dstpinname="Input String">
@@ -367,9 +373,9 @@
    <NODE id="26" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Former Slice|">
    </PIN>
-   <BOUNDS type="Box" left="5670" top="11720" width="750" height="240">
+   <BOUNDS type="Box" left="5655" top="12140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5670" top="11720" width="750" height="240">
+   <BOUNDS type="Node" left="5655" top="12140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Former Slice" dstnodeid="26" dstpinname="Y Input Value">
@@ -406,10 +412,4 @@
    <LINKPOINT x="5190" y="7123">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="-1" top="-1" width="7680" height="12720">
-   </BOUNDS>
-   <PACK Name="VVVV.Packs" Version="0.2.0">
-   </PACK>
-   <PACK Name="addonpack" Version="33.7.0">
-   </PACK>
    </PATCH>

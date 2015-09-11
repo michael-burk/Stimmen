@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="3960" scrolly="450">
-   <BOUNDS type="Window" left="-26085" top="375" width="25170" height="15555">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="7365" scrolly="6135">
+   <BOUNDS type="Window" left="-25980" top="1155" width="25170" height="13215">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -357,7 +357,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14880" top="12270" width="13230" height="10530">
    </BOUNDS>
-   <BOUNDS type="Window" left="-22425" top="6240" width="13230" height="12810">
+   <BOUNDS type="Window" left="-22425" top="3000" width="13230" height="16050">
    </BOUNDS>
    <PIN pinname="Input 1 - Up" visible="1" slicecount="1" values="0">
    </PIN>
@@ -695,7 +695,7 @@
    <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="269" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="28620" top="16500" width="2325" height="600">
+   <BOUNDS type="Box" left="28620" top="16500" width="3390" height="1305">
    </BOUNDS>
    <BOUNDS type="Node" left="28620" top="16500" width="0" height="0">
    </BOUNDS>
@@ -930,7 +930,7 @@
    <LINKPOINT x="16735" y="3893">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="insertCategory" filename="mySQL\insertCategory.v4p" nodename="mySQL\insertCategory.v4p" componentmode="Hidden" id="331" stayontop="0">
+   <NODE systemname="insertCategory" filename="mySQL\insertCategory.v4p" nodename="mySQL\insertCategory.v4p" componentmode="Hidden" id="331" stayontop="1">
    <BOUNDS type="Node" left="21570" top="12270" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="-28125" top="900" width="22425" height="15240">
@@ -981,7 +981,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13210" top="2460" width="5550" height="9895">
    </BOUNDS>
-   <BOUNDS type="Window" left="-24900" top="4560" width="8985" height="12090">
+   <BOUNDS type="Window" left="-21945" top="3975" width="10665" height="12630">
    </BOUNDS>
    <PIN pinname="text" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1031,7 +1031,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="19635" top="12270" width="13260" height="10315">
    </BOUNDS>
-   <BOUNDS type="Window" left="-120" top="-120" width="25440" height="15990">
+   <BOUNDS type="Window" left="-25035" top="2385" width="23955" height="13485">
    </BOUNDS>
    <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1115,7 +1115,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="21465" top="17115" width="13245" height="9160">
    </BOUNDS>
-   <BOUNDS type="Window" left="-22275" top="1845" width="17520" height="12090">
+   <BOUNDS type="Window" left="-23895" top="2235" width="19215" height="12195">
    </BOUNDS>
    <PIN pinname="Connection" visible="1">
    </PIN>
@@ -1527,7 +1527,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="19833" top="1500" width="5535" height="6805">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="5535" height="6805">
+   <BOUNDS type="Window" left="-13140" top="3105" width="7020" height="7770">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="58" srcpinname="Connection" dstnodeid="495" dstpinname="Connection" linkstyle="Bezier" hiddenwhenlocked="1">
@@ -1536,7 +1536,11 @@
    <LINKPOINT x="22115" y="4450">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="495" dstpinname="Up">
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="495" dstpinname="Up" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="26235" y="3593">
+   </LINKPOINT>
+   <LINKPOINT x="23940" y="3593">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="495" srcpinname="Output" dstnodeid="254" dstpinname="AnswerId" linkstyle="Bezier">
    <LINKPOINT x="22605" y="10778">
