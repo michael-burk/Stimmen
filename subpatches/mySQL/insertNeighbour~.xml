@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="2430">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="1275">
    <BOUNDS type="Window" left="-21195" top="2370" width="20295" height="14490">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -230,6 +230,8 @@
    <PIN pinname="Values" slicecount="1" values="||">
    </PIN>
    <PIN pinname="SendQuery" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Statement" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="37" dstpinname="Connection">

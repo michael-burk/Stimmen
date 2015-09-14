@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="7365" scrolly="6135">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="0" scrolly="2115">
    <BOUNDS type="Window" left="-25980" top="1155" width="25170" height="13215">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -427,7 +427,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="15840" top="17115" width="12240" height="10635">
    </BOUNDS>
-   <BOUNDS type="Window" left="-24375" top="2415" width="21345" height="15210">
+   <BOUNDS type="Window" left="-15990" top="3930" width="21345" height="15210">
    </BOUNDS>
    <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>
@@ -463,9 +463,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="154" srcpinname="Output" dstnodeid="254" dstpinname="Word" linkstyle="Bezier">
-   <LINKPOINT x="16890" y="11228">
+   <LINKPOINT x="16890" y="11220">
    </LINKPOINT>
-   <LINKPOINT x="17670" y="11228">
+   <LINKPOINT x="17850" y="11220">
    </LINKPOINT>
    </LINK>
    <NODE systemname="insertQuestion" filename="mySQL\insertQuestion.v4p" nodename="mySQL\insertQuestion.v4p" componentmode="Hidden" id="256">
@@ -555,7 +555,7 @@
    <LINK srcnodeid="261" srcpinname="Output String" dstnodeid="254" dstpinname="Lemma" linkstyle="Bezier">
    <LINKPOINT x="13410" y="10793">
    </LINKPOINT>
-   <LINKPOINT x="17970" y="10793">
+   <LINKPOINT x="18180" y="10793">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="262" systemname="IOBox (String)">
@@ -577,7 +577,7 @@
    <LINK srcnodeid="262" srcpinname="Output String" dstnodeid="254" dstpinname="PartOfSpeech" linkstyle="Bezier">
    <LINKPOINT x="13395" y="11100">
    </LINKPOINT>
-   <LINKPOINT x="16770" y="11100">
+   <LINKPOINT x="16860" y="11100">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="263" systemname="IOBox (String)">
@@ -1001,9 +1001,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="246" srcpinname="IDs" dstnodeid="254" dstpinname="ID" linkstyle="Bezier">
-   <LINKPOINT x="16020" y="10740">
+   <LINKPOINT x="16020" y="10725">
    </LINKPOINT>
-   <LINKPOINT x="16455" y="10740">
+   <LINKPOINT x="16515" y="10725">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="114" srcpinname="Output String" dstnodeid="246" dstpinname="text" linkstyle="Bezier">
@@ -1095,7 +1095,7 @@
    <LINK srcnodeid="353" srcpinname="Y Output Value" dstnodeid="254" dstpinname="HasEntity" linkstyle="Bezier">
    <LINKPOINT x="16155" y="16935">
    </LINKPOINT>
-   <LINKPOINT x="16155" y="16935">
+   <LINKPOINT x="16185" y="16935">
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="358">
@@ -1225,7 +1225,7 @@
    <LINK srcnodeid="475" srcpinname="Up Edge" dstnodeid="254" dstpinname="SendQuery" linkstyle="Bezier">
    <LINKPOINT x="17085" y="16710">
    </LINKPOINT>
-   <LINKPOINT x="17085" y="16710">
+   <LINKPOINT x="17190" y="16710">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="330" srcpinname="Query Done" dstnodeid="475" dstpinname="Query Done" linkstyle="Bezier">
@@ -1469,15 +1469,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="493" srcpinname="Output String" dstnodeid="254" dstpinname="EntitiyIdOut" linkstyle="Bezier">
-   <LINKPOINT x="18285" y="16935">
+   <LINKPOINT x="18315" y="16935">
    </LINKPOINT>
-   <LINKPOINT x="18285" y="16935">
+   <LINKPOINT x="18510" y="16935">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="342" srcpinname="Count" dstnodeid="254" dstpinname="Count" linkstyle="Bezier">
-   <LINKPOINT x="18600" y="16710">
+   <LINKPOINT x="18615" y="16695">
    </LINKPOINT>
-   <LINKPOINT x="18600" y="16710">
+   <LINKPOINT x="18855" y="16695">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="147" srcpinname="Status" dstnodeid="267" dstpinname="Input 1" linkstyle="VHV" hiddenwhenlocked="1">
@@ -1510,7 +1510,7 @@
    <LINKPOINT x="29280" y="13980">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="254" srcpinname="Status" dstnodeid="267" dstpinname="Input 6" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINK srcnodeid="254" srcpinname="Status" dstnodeid="267" dstpinname="Input 6" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="15900" y="16403">
    </LINKPOINT>
    <LINKPOINT x="29445" y="16403">
@@ -1545,7 +1545,7 @@
    <LINK srcnodeid="495" srcpinname="Output" dstnodeid="254" dstpinname="AnswerId" linkstyle="Bezier">
    <LINKPOINT x="22605" y="10778">
    </LINKPOINT>
-   <LINKPOINT x="17385" y="10778">
+   <LINKPOINT x="17535" y="10778">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="495" srcpinname="Output" dstnodeid="147" dstpinname="ID" linkstyle="Bezier">

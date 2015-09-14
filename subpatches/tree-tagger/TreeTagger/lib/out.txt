@@ -1,16 +1,2 @@
-NE	Angela
-NE	Merkel
-VAFIN	sein
-ADJD	<unknown>
-ART	die
 ADJA	<unknown>
-NN	Deutschland
-KON	und
-VMFIN	mögen
-APPRART	an
-ADJD	lieb
-ART	die
-ADJA	erst
-NE	FC
-NE	Bayern
-NE	München
+ADJA	<unknown>

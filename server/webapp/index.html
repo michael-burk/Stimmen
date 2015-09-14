@@ -49,14 +49,14 @@
 
 <div class="one-third column">	
 
-<!-- 		<h5>Result</h5>
-		<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
-		</div> -->
+<!-- <h5>Result</h5>
+<div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
+</div> -->
 			
-</div>
-<!-- <div id ="volume">
-</dv>
- -->
+<!-- </div>
+<div id ="volume">
+</dv> -->
+
 
 <div id = "recordButton">
 </div>
@@ -81,10 +81,11 @@ var END_EV = " ";
 var hasTouch = "ontouchstart" in window;
 
 var active = false;
-
+var lateSendTimeout;
+var recognizer;
 
 $( document ).ready(function() {
-	var recognizer = new webkitSpeechRecognition();
+	recognizer = new webkitSpeechRecognition();
 
 	START_EV = hasTouch ? "touchstart" : "mousedown";
 	END_EV = hasTouch ? "touchend" : "mouseup";
@@ -98,27 +99,38 @@ $( document ).ready(function() {
 	recognizer.continuous = true;
 	recognizer.interimResults = false;
 	recognizer.onresult = function(event) {
-	//	$("#resultHolder").append( "result");
+		
 	//speechArray = new Array();
-	    if (event.results.length > 0) {
+		    
+		    if (event.results.length > 0) {
+
 	        var result = event.results[event.results.length-1];
+	       
 	        if(result.isFinal) {
+
+	        	//$("#resultHolder").append( "result");
+
+	        	clearTimeout(lateSendTimeout);
+
 	           // console.log(result[0].transcript);
 	           //console.log(event);
 
 	        	
 				speechArray.push(result[0].transcript);
 				
-				sendMessage("result", speechArray);
-				//$("#resultHolder").append( result[0].transcript);
+				
 
-				//console.log(speechArray);
+				console.log(speechArray);
 
-				if(!active) speechArray = new Array();
+				if(!active) {
+					sendMessage("result", speechArray);
+					speechArray = new Array();
+					//$("#resultHolder").append( " sent ");
+				
+				}
 	        } 
 	    }  
 	};
-
 
 
 
@@ -126,6 +138,7 @@ $( document ).ready(function() {
 		ev1.preventDefault();
 		recognizer.start();
 		active = true;
+	
 		
 		$("#recordButton").css("background-color","red");
   		
@@ -133,8 +146,8 @@ $( document ).ready(function() {
   		var valuearray = new Array();
 		valuearray.push("start");
 		sendMessage("record", valuearray);
-		//$("#resultHolder").append( "aaa ");
-		//$("#resultHolder").append( "start");
+		
+		//$("#resultHolder").append( " start ");
 	});
 
 
@@ -149,13 +162,20 @@ $( document ).ready(function() {
 		valuearray.push("stop");
 		sendMessage("record", valuearray);
 
+	
+		lateSendTimeout = setTimeout(sendMessageLate, 5000);
 
-		
-
+		console.log("end");
 		//sendMessage("result", speechArray);
-		//$("#resultHolder").append( "end");
+		//$("#resultHolder").append( " end ");
 	});
 
+
+	function sendMessageLate(){
+		sendMessage("result", speechArray);
+		speechArray = new Array();
+		//$("#resultHolder").append( " late send ");
+	}
 
 	// $( "#recordButton" ).mousedown(function() {
 	// 	recognizer.start();
@@ -201,11 +221,11 @@ $( document ).ready(function() {
 	//    // setup a javascript node
  //    javascriptNode = context.createScriptProcessor(2048, 1, 1);
 
-//	setupAudioNodes();
+	// //setupAudioNodes();
 
-	var aCtx;
-	var analyser;
-	var microphone;
+	// var aCtx;
+	// var analyser;
+	// var microphone;
 
 
 	// if (navigator.webkitGetUserMedia) {
@@ -235,7 +255,7 @@ $( document ).ready(function() {
 
 	//       	var average = getAverageVolume(FFTData)
  			
- // 			$("#volume").css("height",""+ (average+150)*20 +"px");
+ // 			$("#volume").css("height",""+ (average+150)*2 +"px");
 	//       //console.log(average+200);
 
 	//     },10);

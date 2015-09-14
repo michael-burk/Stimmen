@@ -472,4 +472,6 @@
    </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="9" dstpinname="Input">
    </LINK>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="29" dstpinname="Input 2">
+   </LINK>
    </PATCH>

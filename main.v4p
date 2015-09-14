@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="2385" scrolly="6435">
-   <BOUNDS type="Window" left="-25815" top="300" width="19965" height="16635">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="6390" scrolly="990">
+   <BOUNDS type="Window" left="-23940" top="690" width="19965" height="16485">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="readDir" filename="subpatches\readDir.v4p" nodename="subpatches\readDir.v4p" componentmode="Hidden" id="792" stayontop="1" debug="0">
-   <BOUNDS type="Node" left="7530" top="18030" width="1710" height="270">
+   <BOUNDS type="Node" left="12915" top="18585" width="1710" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7530" top="18030" width="23223" height="12090">
+   <BOUNDS type="Box" left="12915" top="18585" width="23223" height="12090">
    </BOUNDS>
    <BOUNDS type="Window" left="-25035" top="2730" width="22155" height="13920">
    </BOUNDS>
@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="800" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10215" top="19380" width="1545" height="480">
+   <BOUNDS type="Box" left="15600" top="19935" width="1545" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10215" top="19380" width="0" height="0">
+   <BOUNDS type="Node" left="15600" top="19935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -41,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="801" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18240" top="19380" width="3825" height="1155">
+   <BOUNDS type="Box" left="23625" top="19935" width="7515" height="2580">
    </BOUNDS>
-   <BOUNDS type="Node" left="18240" top="19380" width="0" height="0">
+   <BOUNDS type="Node" left="23625" top="19935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -57,9 +57,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="802" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7515" top="16950" width="480" height="480">
+   <BOUNDS type="Box" left="12900" top="17505" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7515" top="16950" width="0" height="0">
+   <BOUNDS type="Node" left="12900" top="17505" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -81,9 +81,9 @@
    <LINK srcnodeid="802" srcpinname="Y Output Value" dstnodeid="792" dstpinname="Check" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="825" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7515" top="3510" width="480" height="480">
+   <BOUNDS type="Box" left="12885" top="4065" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7515" top="3510" width="0" height="0">
+   <BOUNDS type="Node" left="12885" top="4065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -101,9 +101,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DataOut" filename="subpatches\DataOut.v4p" nodename="subpatches\DataOut.v4p" componentmode="Hidden" id="826">
-   <BOUNDS type="Node" left="7500" top="7050" width="5985" height="270">
+   <BOUNDS type="Node" left="12885" top="7605" width="5985" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7500" top="7050" width="4837" height="3860">
+   <BOUNDS type="Box" left="12885" top="7605" width="4837" height="3860">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
    </BOUNDS>
@@ -113,9 +113,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="828" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15540" top="5655" width="480" height="480">
+   <BOUNDS type="Box" left="20925" top="6210" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15540" top="5655" width="0" height="0">
+   <BOUNDS type="Node" left="20925" top="6210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -131,9 +131,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="829" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="17820" top="3510" width="480" height="480">
+   <BOUNDS type="Box" left="23205" top="4065" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="17820" top="3510" width="0" height="0">
+   <BOUNDS type="Node" left="23205" top="4065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -151,9 +151,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="830" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="12690" top="3510" width="480" height="480">
+   <BOUNDS type="Box" left="18060" top="4065" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="12690" top="3510" width="0" height="0">
+   <BOUNDS type="Node" left="18060" top="4065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -171,9 +171,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="834" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="16695" top="5655" width="1950" height="270">
+   <BOUNDS type="Box" left="22080" top="6210" width="1950" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="16695" top="5655" width="0" height="0">
+   <BOUNDS type="Node" left="22080" top="6210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -186,26 +186,10 @@
    <PIN pinname="Input String" slicecount="2" values="|Message SessionData (07.09.2015 12:07:30 [W. Europe Standard Time;60;(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna;W. Europe Standard Time;W. Europe Summer Time;[01:01:0001;12:31:9999;60;[0;02:00:00;3;5;0;];[0;03:00:00;10;5;0;];];])&lf; socketId &tab;: 3QF0i59vEm_lXQUNQWbC &cr;&lf; result &tab;:  &cr;&lf;|,|Message SessionData (07.09.2015 12:09:28 [W. Europe Standard Time;60;(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna;W. Europe Standard Time;W. Europe Summer Time;[01:01:0001;12:31:9999;60;[0;02:00:00;3;5;0;];[0;03:00:00;10;5;0;];];])&lf; socketId &tab;: r3U4TS58YklrQIGzQWbD &cr;&lf; result &tab;:  &cr;&lf;|">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="836" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18780" top="6750" width="1185" height="750">
-   </BOUNDS>
-   <BOUNDS type="Node" left="18780" top="6750" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="|München durch das verkehrszentrum des deutschen museums wieder eine kühle Brise aus sibirien noch bis zum August 2015 wird in München eine umfangreiche Sonderausstellung zur Transsibirischen Eisenbahn|">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="837" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10155" top="11235" width="480" height="480">
+   <BOUNDS type="Box" left="15540" top="11790" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="10155" top="11235" width="0" height="0">
+   <BOUNDS type="Node" left="15540" top="11790" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -223,15 +207,15 @@
    </PIN>
    </NODE>
    <NODE systemname="LanguageProcessing" filename="subpatches\LanguageProcessing.v4p" nodename="subpatches\LanguageProcessing.v4p" componentmode="Hidden" id="827">
-   <BOUNDS type="Node" left="7500" top="11895" width="10680" height="270">
+   <BOUNDS type="Node" left="12885" top="12450" width="10680" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7500" top="11895" width="7889" height="6900">
+   <BOUNDS type="Box" left="12885" top="12450" width="7889" height="6900">
    </BOUNDS>
-   <BOUNDS type="Window" left="-22425" top="2970" width="19140" height="12630">
+   <BOUNDS type="Window" left="-23220" top="2265" width="19140" height="12630">
    </BOUNDS>
    <PIN pinname="Input 1 - Input String" visible="1" slicecount="1" values="german">
    </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|helmut kohl und gerhard schröder fliegen nach china|">
+   <PIN pinname="Input" visible="1" slicecount="1" values="|Helmut Kohl|">
    </PIN>
    <PIN pinname="Entity">
    </PIN>
@@ -267,9 +251,9 @@
    <LINK srcnodeid="837" srcpinname="Y Output Value" dstnodeid="827" dstpinname="Analyse" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="838" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15465" top="11235" width="480" height="480">
+   <BOUNDS type="Box" left="20850" top="11790" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15465" top="11235" width="0" height="0">
+   <BOUNDS type="Node" left="20850" top="11790" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -289,9 +273,9 @@
    <LINK srcnodeid="838" srcpinname="Y Output Value" dstnodeid="827" dstpinname="Tag" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="DataInput" filename="subpatches\DataInput.v4p" nodename="subpatches\DataInput.v4p" componentmode="Hidden" id="824">
-   <BOUNDS type="Node" left="7500" top="4740" width="10380" height="270">
+   <BOUNDS type="Node" left="12885" top="5295" width="10380" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7500" top="4740" width="10560" height="10275">
+   <BOUNDS type="Box" left="12885" top="5295" width="10560" height="10275">
    </BOUNDS>
    <BOUNDS type="Window" left="-21240" top="2220" width="20745" height="11400">
    </BOUNDS>
@@ -324,10 +308,10 @@
    <PIN pinname="Result" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="825" srcpinname="Y Output Value" dstnodeid="824" dstpinname="start nodejs" linkstyle="Bezier">
-   <LINKPOINT x="7560" y="4365">
+   <LINK srcnodeid="825" srcpinname="Y Output Value" dstnodeid="824" dstpinname="start nodejs" linkstyle="VHV">
+   <LINKPOINT x="12935" y="4920">
    </LINKPOINT>
-   <LINKPOINT x="7575" y="4365">
+   <LINKPOINT x="12955" y="4920">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="824" srcpinname="socketId" dstnodeid="826" dstpinname="SocketID">
@@ -341,9 +325,9 @@
    <LINK srcnodeid="824" srcpinname="Sessions" dstnodeid="834" dstpinname="Input String" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="841" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7620" top="5550" width="615" height="270">
+   <BOUNDS type="Box" left="13005" top="6105" width="615" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="7620" top="5550" width="0" height="0">
+   <BOUNDS type="Node" left="13005" top="6105" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -358,146 +342,14 @@
    </NODE>
    <LINK srcnodeid="824" srcpinname="RecordState" dstnodeid="841" dstpinname="Input String" linkstyle="PolyLine">
    </LINK>
-   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="848">
-   <BOUNDS type="Node" left="21945" top="10650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Index" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|angela merkel und vladimir putin|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="824" srcpinname="result" dstnodeid="848" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="14715" y="6653">
-   </LINKPOINT>
-   <LINKPOINT x="11145" y="6653">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="851">
-   <BOUNDS type="Node" left="19860" top="9345" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Time" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Inverse Output" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="850">
-   <BOUNDS type="Node" left="19860" top="8925" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="3" values="abc,| d e f g h i j|,|abc d e f g h i j|">
-   </PIN>
-   <PIN pinname="OnChange" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="850" srcpinname="OnChange" dstnodeid="851" dstpinname="Set" linkstyle="Bezier">
-   <LINKPOINT x="19890" y="9270">
-   </LINKPOINT>
-   <LINKPOINT x="19890" y="9270">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="852">
-   <BOUNDS type="Node" left="21000" top="9060" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Up Edge" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="851" srcpinname="Inverse Output" dstnodeid="852" dstpinname="Input">
-   </LINK>
-   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="853">
-   <BOUNDS type="Node" left="21855" top="11190" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Set" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="848" srcpinname="Output" dstnodeid="853" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="854">
-   <BOUNDS type="Node" left="19875" top="8355" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="|angela merkel und vladimir putin|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="824" srcpinname="result" dstnodeid="854" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="14730" y="6165">
-   </LINKPOINT>
-   <LINKPOINT x="13950" y="6165">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="854" srcpinname="Output" dstnodeid="850" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="19890" y="8775">
-   </LINKPOINT>
-   <LINKPOINT x="19890" y="8775">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="855" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="20925" top="1755" width="5370" height="3840">
-   </BOUNDS>
-   <BOUNDS type="Node" left="20925" top="1755" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="|der Fall der Berliner Mauer und jetzt bald 25 die Feierlichkeiten werden bewältigen sein und ständig wieder auf die Leistungen des mannes lenken der den moment der Geschichte helmut kohl november 1989 bis zur Wiedervereinigung diese Bilder bleiben für immer in erinnerung|">
-   </PIN>
-   </NODE>
-   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="858">
-   <BOUNDS type="Node" left="21015" top="9990" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="859">
-   <BOUNDS type="Node" left="21420" top="9510" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="859" srcpinname="Output" dstnodeid="858" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="852" srcpinname="Up Edge" dstnodeid="858" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="858" srcpinname="Output" dstnodeid="853" dstpinname="Set">
-   </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="860">
-   <BOUNDS type="Node" left="17025" top="6765" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="17025" top="6765" width="1680" height="1515">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|Der Fall der Berliner Mauer jährt sich bald zum 25. Mal. Die Feierlichkeiten werden überwältigend sein und den Blick wieder auf die Leistung des Mannes lenken, der den Moment der Geschichte zu nutzen wusste: Helmut Kohl.&cr;&lf;Deutschland wächst zusammen, aus Ost und West wird wieder ein Volk. Am 9. November 1989 sollte es noch knapp ein Jahr bis zur Wiedervereinigung dauern. Aber die Freude ließ schon damals erahnen, dass hier zusammen wächst, was zusammen gehört. Diese Leistung, diese Bilder bleiben von Helmut Kohl wohl für immer in Erinnerung.&cr;&lf;Natürlich war er als Bundeskanzler nicht allein verantwortlich für ein geeintes Deutschland, ein geeintes Europa. Und doch sehen viele Beobachter in ihm den entscheidenden Mann, der die Möglichkeit erkannte, die die Geschichte bot – und sie zu nutzen verstand. Inzwischen hat sich schwerkranke Kohl schon lange aus der aktiven Politik zurückgezogen, erhebt seine Stimme seltener als etwa sein Vorgänger Helmut Schmidt.&cr;&lf;Doch Anerkennung und Respekt vor dem Altkanzler bleiben – auch wenn wegen der CDU-Spendenaffäre ein Schatten auf seine Karriere fiel. Schon lange wird Kohl als Anwärter auf den Friedensnobelpreis gehandelt. Es wäre der krönende Abschluss eines Lebens, das in den Jahren 1989 und 1990 gemeinsam mit vielen Deutschen für unvergessliche Bilder sorgte.|">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="824" srcpinname="Lang" dstnodeid="827" dstpinname="LangIn" linkstyle="Bezier">
-   <LINKPOINT x="8760" y="8295">
+   <LINKPOINT x="14145" y="8850">
    </LINKPOINT>
-   <LINKPOINT x="12870" y="8595">
+   <LINKPOINT x="18255" y="9150">
    </LINKPOINT>
    </LINK>
    <NODE nodename="S (String)" id="865" systemname="S (String)">
-   <BOUNDS type="Node" left="16605" top="12660" width="0" height="0">
+   <BOUNDS type="Node" left="21990" top="13215" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="PartOfSpeech">
    </PIN>
@@ -505,7 +357,7 @@
    <LINK srcnodeid="827" srcpinname="PartOfSpeech" dstnodeid="865" dstpinname="Input Value" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="S (String)" id="866" systemname="S (String)">
-   <BOUNDS type="Node" left="18150" top="12660" width="0" height="0">
+   <BOUNDS type="Node" left="23535" top="13215" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="Lemma">
    </PIN>
@@ -513,7 +365,7 @@
    <LINK srcnodeid="827" srcpinname="Lemma" dstnodeid="866" dstpinname="Input Value" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="S (String)" id="867" systemname="S (String)">
-   <BOUNDS type="Node" left="15105" top="12660" width="0" height="0">
+   <BOUNDS type="Node" left="20490" top="13215" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="Tokens">
    </PIN>
@@ -521,25 +373,19 @@
    <LINK srcnodeid="827" srcpinname="Tokens" dstnodeid="867" dstpinname="Input Value" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="NLP-Presenter" filename="subpatches\NLP-Presenter.v4p" nodename="subpatches\NLP-Presenter.v4p" componentmode="Hidden" id="869">
-   <BOUNDS type="Node" left="19230" top="12660" width="0" height="0">
+   <BOUNDS type="Node" left="24615" top="13215" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="19230" top="12660" width="3100" height="3100">
+   <BOUNDS type="Box" left="24615" top="13215" width="3100" height="3100">
    </BOUNDS>
    <BOUNDS type="Window" left="4140" top="375" width="16290" height="12360">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="854" srcpinname="Output" dstnodeid="855" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="19905" y="5175">
-   </LINKPOINT>
-   <LINKPOINT x="20940" y="5175">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="884" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="14655" top="9825" width="4785" height="735">
+   <BOUNDS type="Box" left="7590" top="5880" width="4215" height="3930">
    </BOUNDS>
-   <BOUNDS type="Node" left="14655" top="9825" width="0" height="0">
+   <BOUNDS type="Node" left="7590" top="5880" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|angela merkel und vladimir putin|">
+   <PIN pinname="Input String" slicecount="3" visible="1" values="|sankt petersburg am vierzehnten September 1812 zu knapp ulli und familie in den alten hauptstadt Moskau ein die bewohner hat die Stadt verlassen und keiner überreichte den stolzen Bonaparte die schlüssel der stadt noch am selben tag heuer aus das passt ganz Moskau verwüstete napoleon war bald gesund Stadt zu verlassen|,| der aufgabe moskaus folgte ein langer schwerer|,| der Franzosen in der berühmten Schlacht an der sabrina im November wurden die Reste der großen Armee gefangen genommen nur wenigsten Soldaten lange sich bis Ende Dezember aus dem Land zu retten|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -549,27 +395,9 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="887" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="20880" top="6030" width="5280" height="1245">
-   </BOUNDS>
-   <BOUNDS type="Node" left="20880" top="6030" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="824" srcpinname="result" dstnodeid="887" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="14775" y="5505">
-   </LINKPOINT>
-   <LINKPOINT x="20880" y="5505">
-   </LINKPOINT>
-   </LINK>
    <NODE id="794" componentmode="Hidden" systemname="mySQL" filename="subpatches\mySQL.v4p" nodename="subpatches\mySQL.v4p" stayontop="1" debug="0">
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -577,7 +405,7 @@
    </BOUNDS>
    <PIN pinname="Write!" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Node" left="7530" top="18795" width="10770" height="270">
+   <BOUNDS type="Node" left="12915" top="19350" width="10770" height="270">
    </BOUNDS>
    <PIN pinname="Status" visible="1">
    </PIN>
@@ -587,7 +415,7 @@
    </PIN>
    <PIN pinname="SoundID" visible="1" slicecount="1" values="2015.09.11-15.44.43">
    </PIN>
-   <PIN pinname="Input_Antwort" visible="1" slicecount="1" values="|helmut kohl und gerhard schröder fliegen nach china|">
+   <PIN pinname="Input_Antwort" visible="1" slicecount="3" values="|angela merkel|,| 1 2 3 4 5 6|,| 7 8 9 10 helmut kohl|">
    </PIN>
    <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>
@@ -623,7 +451,7 @@
    </PIN>
    <PIN pinname="ALL DONE" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7530" top="18795">
+   <BOUNDS type="Box" left="12915" top="19350">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="794" srcpinname="Output" dstnodeid="801" dstpinname="Input String" linkstyle="PolyLine">
@@ -631,81 +459,81 @@
    <LINK srcnodeid="794" srcpinname="Status" dstnodeid="800" dstpinname="Input String" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="792" srcpinname="Favoriten" dstnodeid="794" dstpinname="Favs" linkstyle="VHV">
-   <LINKPOINT x="8625" y="18533">
+   <LINKPOINT x="14010" y="19088">
    </LINKPOINT>
-   <LINKPOINT x="7515" y="18533">
+   <LINKPOINT x="12900" y="19088">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="OnChange" dstnodeid="794" dstpinname="Update Favs" linkstyle="VHV">
-   <LINKPOINT x="7980" y="18548">
+   <LINKPOINT x="13365" y="19103">
    </LINKPOINT>
-   <LINKPOINT x="8085" y="18548">
+   <LINKPOINT x="13470" y="19103">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="actives" dstnodeid="794" dstpinname="Normal" linkstyle="VHV">
-   <LINKPOINT x="9285" y="18533">
+   <LINKPOINT x="14670" y="19088">
    </LINKPOINT>
-   <LINKPOINT x="8700" y="18533">
+   <LINKPOINT x="14085" y="19088">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="792" srcpinname="OnChange" dstnodeid="794" dstpinname="Update Normal" linkstyle="VHV">
-   <LINKPOINT x="8025" y="18533">
+   <LINKPOINT x="13410" y="19088">
    </LINKPOINT>
-   <LINKPOINT x="9240" y="18533">
+   <LINKPOINT x="14625" y="19088">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="Entity Out" dstnodeid="794" dstpinname="Entity" linkstyle="Bezier">
-   <LINKPOINT x="7620" y="15465">
+   <LINKPOINT x="13005" y="16020">
    </LINKPOINT>
-   <LINKPOINT x="14685" y="15465">
+   <LINKPOINT x="20070" y="16020">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="Category Out" dstnodeid="794" dstpinname="Category" linkstyle="Bezier">
-   <LINKPOINT x="9135" y="15480">
+   <LINKPOINT x="14520" y="16035">
    </LINKPOINT>
-   <LINKPOINT x="13515" y="15480">
+   <LINKPOINT x="18900" y="16035">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="Has Entity" dstnodeid="794" dstpinname="Has Entity" linkstyle="Bezier">
-   <LINKPOINT x="13680" y="15480">
+   <LINKPOINT x="19065" y="16035">
    </LINKPOINT>
-   <LINKPOINT x="16500" y="15480">
+   <LINKPOINT x="21885" y="16035">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="Tokens per Entity" dstnodeid="794" dstpinname="Tokens per Entity" linkstyle="Bezier">
-   <LINKPOINT x="12165" y="15465">
+   <LINKPOINT x="17550" y="16020">
    </LINKPOINT>
-   <LINKPOINT x="17085" y="15465">
+   <LINKPOINT x="22470" y="16020">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="Entity - Category" dstnodeid="794" dstpinname="Entity-Category" linkstyle="Bezier">
-   <LINKPOINT x="10650" y="15465">
+   <LINKPOINT x="16035" y="16020">
    </LINKPOINT>
-   <LINKPOINT x="17655" y="15465">
+   <LINKPOINT x="23040" y="16020">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="PartOfSpeech" dstnodeid="794" dstpinname="PartOfSpeech" linkstyle="Bezier">
-   <LINKPOINT x="16665" y="15480">
+   <LINKPOINT x="22050" y="16035">
    </LINKPOINT>
-   <LINKPOINT x="12960" y="15480">
+   <LINKPOINT x="18345" y="16035">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="827" srcpinname="Lemma" dstnodeid="794" dstpinname="Lemma" linkstyle="Bezier">
-   <LINKPOINT x="18165" y="15473">
+   <LINKPOINT x="23550" y="16028">
    </LINKPOINT>
-   <LINKPOINT x="12375" y="15473">
+   <LINKPOINT x="17760" y="16028">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="824" srcpinname="Lang" dstnodeid="794" dstpinname="Lang" linkstyle="Bezier">
-   <LINKPOINT x="8730" y="11895">
+   <LINKPOINT x="14115" y="12450">
    </LINKPOINT>
-   <LINKPOINT x="11145" y="11895">
+   <LINKPOINT x="16530" y="12450">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Quote" filename="subpatches\Visualizations\Quote.v4p" nodename="subpatches\Visualizations\Quote.v4p" componentmode="Hidden" id="833" stayontop="0" debug="0">
-   <BOUNDS type="Node" left="4275" top="16620" width="1650" height="270">
+   <BOUNDS type="Node" left="9660" top="17175" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4275" top="16620" width="6525" height="4150">
+   <BOUNDS type="Box" left="9660" top="17175" width="6525" height="4150">
    </BOUNDS>
    <BOUNDS type="Window" left="-19470" top="795" width="15225" height="7500">
    </BOUNDS>
@@ -717,13 +545,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="827" srcpinname="Tokens" dstnodeid="833" dstpinname="Entities" linkstyle="Bezier">
-   <LINKPOINT x="15135" y="14378">
+   <LINKPOINT x="20520" y="14933">
    </LINKPOINT>
-   <LINKPOINT x="6090" y="14378">
+   <LINKPOINT x="11475" y="14933">
    </LINKPOINT>
    </LINK>
    <NODE nodename="R (Value)" id="913" systemname="R (Value)">
-   <BOUNDS type="Node" left="18225" top="18030" width="0" height="0">
+   <BOUNDS type="Node" left="23610" top="18585" width="0" height="0">
    </BOUNDS>
    <PIN pinname="" slicecount="1" visible="1" values="0">
    </PIN>
@@ -733,9 +561,9 @@
    <LINK srcnodeid="913" srcpinname="Input Value" dstnodeid="794" dstpinname="Write!" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="914" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9900" top="16950" width="480" height="480">
+   <BOUNDS type="Box" left="15285" top="17505" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9900" top="16950" width="0" height="0">
+   <BOUNDS type="Node" left="15285" top="17505" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -754,20 +582,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="824" srcpinname="Received" dstnodeid="827" dstpinname="Process!" linkstyle="Bezier">
-   <LINKPOINT x="9915" y="8288">
-   </LINKPOINT>
-   <LINKPOINT x="18165" y="8588">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="824" srcpinname="Result" dstnodeid="884" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="12195" y="7418">
-   </LINKPOINT>
-   <LINKPOINT x="14670" y="7418">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="955">
-   <BOUNDS type="Node" left="10485" top="18030" width="100" height="100">
+   <BOUNDS type="Node" left="15870" top="18585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -777,9 +593,9 @@
    <LINK srcnodeid="955" srcpinname="Output" dstnodeid="794" dstpinname="SoundLength" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Envelope" filename="subpatches\sound\Envelope.v4p" nodename="subpatches\sound\Envelope.v4p" componentmode="Hidden" id="956">
-   <BOUNDS type="Node" left="11685" top="18030" width="0" height="0">
+   <BOUNDS type="Node" left="17070" top="18585" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="18030" width="4255" height="7135">
+   <BOUNDS type="Box" left="17070" top="18585" width="4255" height="7135">
    </BOUNDS>
    <BOUNDS type="Window" left="-19230" top="5985" width="13215" height="9225">
    </BOUNDS>
@@ -793,9 +609,9 @@
    <LINK srcnodeid="914" srcpinname="Y Output Value" dstnodeid="794" dstpinname="DELETE ALL" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="958" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="15540" top="19380" width="480" height="480">
+   <BOUNDS type="Box" left="20925" top="19935" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="15540" top="19380" width="0" height="0">
+   <BOUNDS type="Node" left="20925" top="19935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -811,9 +627,9 @@
    <LINK srcnodeid="794" srcpinname="ALL DONE" dstnodeid="958" dstpinname="Y Input Value" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Queries" filename="mySQL\Queries.v4p" nodename="mySQL\Queries.v4p" componentmode="Hidden" id="969">
-   <BOUNDS type="Node" left="7515" top="19380" width="0" height="0">
+   <BOUNDS type="Node" left="12900" top="19935" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7515" top="19380" width="12615" height="9750">
+   <BOUNDS type="Box" left="12900" top="19935" width="12615" height="9750">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="12615" height="9750">
    </BOUNDS>
@@ -823,9 +639,9 @@
    <LINK srcnodeid="794" srcpinname="Connection" dstnodeid="969" dstpinname="Connection" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="970" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="12870" top="19380" width="480" height="480">
+   <BOUNDS type="Box" left="18255" top="19935" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="12870" top="19380" width="0" height="0">
+   <BOUNDS type="Node" left="18255" top="19935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -840,22 +656,10 @@
    </NODE>
    <LINK srcnodeid="794" srcpinname="Is Connected" dstnodeid="970" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="824" srcpinname="Result" dstnodeid="827" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="12150" y="8453">
-   </LINKPOINT>
-   <LINKPOINT x="7605" y="8453">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="824" srcpinname="Result" dstnodeid="794" dstpinname="Input_Antwort" linkstyle="Bezier">
-   <LINKPOINT x="12180" y="11903">
-   </LINKPOINT>
-   <LINKPOINT x="15900" y="11903">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Sound_Main" filename="subpatches\sound\Sound_Main.v4p" nodename="subpatches\sound\Sound_Main.v4p" componentmode="Hidden" id="971">
-   <BOUNDS type="Node" left="4213" top="13836" width="0" height="0">
+   <BOUNDS type="Node" left="9598" top="14391" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="615" top="7476" width="7680" height="12720">
+   <BOUNDS type="Box" left="6000" top="8031" width="7680" height="12720">
    </BOUNDS>
    <BOUNDS type="Window" left="-22425" top="3630" width="8325" height="13305">
    </BOUNDS>
@@ -863,43 +667,37 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="971" srcpinname="Down Edge" dstnodeid="956" dstpinname="Set - Input 1" linkstyle="Bezier">
-   <LINKPOINT x="4540" y="16060">
+   <LINKPOINT x="9925" y="16615">
    </LINKPOINT>
-   <LINKPOINT x="12560" y="16070">
+   <LINKPOINT x="17945" y="16625">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="824" srcpinname="RecordState" dstnodeid="971" dstpinname="Input 1" linkstyle="Bezier">
-   <LINKPOINT x="7545" y="9420">
+   <LINKPOINT x="12930" y="9975">
    </LINKPOINT>
-   <LINKPOINT x="4260" y="9420">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="971" srcpinname="Former Slice" dstnodeid="859" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="5355" y="11790">
-   </LINKPOINT>
-   <LINKPOINT x="21420" y="11790">
+   <LINKPOINT x="9645" y="9975">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="971" srcpinname="Y Output Value" dstnodeid="833" dstpinname="Load">
    </LINK>
    <LINK srcnodeid="971" srcpinname="Output" dstnodeid="955" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="4275" y="16050">
+   <LINKPOINT x="9660" y="16605">
    </LINKPOINT>
-   <LINKPOINT x="10485" y="16050">
+   <LINKPOINT x="15870" y="16605">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="971" srcpinname="Output String" dstnodeid="794" dstpinname="SoundID" linkstyle="Bezier">
-   <LINKPOINT x="5100" y="16433">
+   <LINKPOINT x="10485" y="16988">
    </LINKPOINT>
-   <LINKPOINT x="14085" y="16433">
+   <LINKPOINT x="19470" y="16988">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="972" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5295" top="12900" width="480" height="480">
+   <BOUNDS type="Box" left="10680" top="13455" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5295" top="12900" width="0" height="0">
+   <BOUNDS type="Node" left="10680" top="13455" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -911,17 +709,77 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="972" srcpinname="Y Output Value" dstnodeid="971" dstpinname="Play">
    </LINK>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="974">
-   <BOUNDS type="Node" left="19185" top="14490" width="100" height="100">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="975" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="28965" top="9480" width="255" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="19185" top="14490" width="3345" height="1890">
+   <BOUNDS type="Box" left="28965" top="9480" width="255" height="270">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|helmut kohl und angela merkel und vladimir putin und vladimir putin und vladimir putin und gerhard schröder und gerhard schröder|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="+">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="981">
+   <BOUNDS type="Node" left="23520" top="11625" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="982">
+   <BOUNDS type="Node" left="17745" top="5805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|angela merkel und vladimir putin|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="824" srcpinname="Result" dstnodeid="982" dstpinname="Input" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="981" srcpinname="Up Edge" dstnodeid="827" dstpinname="Process!">
+   </LINK>
+   <LINK srcnodeid="982" srcpinname="Output" dstnodeid="827" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="17730" y="9255">
+   </LINKPOINT>
+   <LINKPOINT x="12945" y="9255">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="990">
+   <BOUNDS type="Node" left="23505" top="11175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="824" srcpinname="Received" dstnodeid="990" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="15240" y="8355">
+   </LINKPOINT>
+   <LINKPOINT x="23490" y="8355">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="990" srcpinname="Output" dstnodeid="981" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="982" srcpinname="Output" dstnodeid="794" dstpinname="Input_Antwort" linkstyle="Bezier">
+   <LINKPOINT x="17775" y="12698">
+   </LINKPOINT>
+   <LINKPOINT x="21255" y="12698">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="982" srcpinname="Output" dstnodeid="884" dstpinname="Input String" linkstyle="VHV">
+   <LINKPOINT x="17700" y="6130">
+   </LINKPOINT>
+   <LINKPOINT x="7695" y="5795">
+   </LINKPOINT>
+   </LINK>
    </PATCH>

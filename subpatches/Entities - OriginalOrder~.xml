@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Entities - OriginalOrder.v4p" systemname="Entities - OriginalOrder" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Entities - OriginalOrder.v4p" scrollx="0" scrolly="2400">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Entities - OriginalOrder.v4p" systemname="Entities - OriginalOrder" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\Entities - OriginalOrder.v4p" scrollx="0" scrolly="5010">
    <NODE systemname="JsonArray (JSON)" filename="%VVVV%\packs\VObject\nodes\plugins\x64\VVVV.Nodes.VObjects.dll" nodename="JsonArray (JSON)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2025" top="1500" width="100" height="100">
    </BOUNDS>
@@ -255,7 +255,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="5" values="1,2,1,1,2" visible="1">
+   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="1,2,1,1,2">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -369,7 +369,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="6" values="0,0,0,1,0,0" visible="1">
+   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0,0,0,1,0,0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
