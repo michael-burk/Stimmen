@@ -1,6 +1,1 @@
-P-1-snn	я
-P--msna	мой
-P-1-sdn	я
-P-2-pdn	вы
-P--msna	ваш
-P----dn	себя
+JJ	nice

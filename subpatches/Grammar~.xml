@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" systemname="Grammar" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" scrollx="0" scrolly="12020">
-   <BOUNDS type="Window" left="-110" top="-110" width="25740" height="16140">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" systemname="Grammar" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\Grammar.v4p" scrollx="700" scrolly="1480">
+   <BOUNDS type="Window" left="12800" top="0" width="12800" height="16000">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.3.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="69" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1560" top="2140" width="720" height="230">
@@ -85,9 +85,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="64" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="13160" top="3190" width="720" height="230">
+   <BOUNDS type="Node" left="14610" top="3200" width="720" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="13160" top="3190" width="2630" height="500">
+   <BOUNDS type="Box" left="14610" top="3200" width="2630" height="500">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|part of speech|">
    </PIN>
@@ -101,9 +101,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="17650" top="3190" width="720" height="230">
+   <BOUNDS type="Node" left="13140" top="3200" width="720" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="17650" top="3190" width="1250" height="480">
+   <BOUNDS type="Box" left="13140" top="3200" width="1250" height="480">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="short">
    </PIN>
@@ -117,9 +117,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="62" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="19100" top="3190" width="720" height="230">
+   <BOUNDS type="Node" left="19100" top="3200" width="720" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="19100" top="3190" width="2630" height="500">
+   <BOUNDS type="Box" left="19100" top="3200" width="2630" height="500">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="description">
    </PIN>
@@ -133,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="61" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="17650" top="3660" width="1350" height="14240">
+   <BOUNDS type="Box" left="13140" top="3660" width="1350" height="14240">
    </BOUNDS>
-   <BOUNDS type="Node" left="17650" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="13140" top="3660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -163,7 +163,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1560" top="3660" width="920" height="12760">
+   <BOUNDS type="Box" left="1560" top="3660" width="990" height="13180">
    </BOUNDS>
    <BOUNDS type="Node" left="1560" top="3660" width="0" height="0">
    </BOUNDS>
@@ -199,9 +199,9 @@
    <NODE id="59" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input String" slicecount="55" visible="1" pintype="Input" values="|Noun, singular or mass|,|Noun, plural|,|Proper noun, singular|,|Proper noun, plural|,,Adjective,|Adjective, comparative |,|Adjective, superlative|,Adverb,|Adverb, comparative|,|Adverb, superlative|,,|Verb, &quot;be&quot;, base form|,|Verb, &quot;be&quot;, present tense, 3rd person singular present|,|Verb, &quot;be&quot;, gerund or present participle|,|Verb, &quot;be&quot;, present tense, non-3rd person singular present|,|Verb, &quot;be&quot;, past participle|,|Verb, &quot;be&quot;, past tense|,|Verb, &quot;have&quot;, base form|,|Verb, &quot;have&quot;, present tense, 3rd person singular present|,|Verb, &quot;have&quot;, gerund or present participle|,|Verb, &quot;have&quot;, present tense, non-3rd person singular present|,|Verb, &quot;have&quot;, past participle|,|Verb, &quot;have&quot;, past tense|,|Verb, base form|,|Verb, present tense, 3rd person singular present|,|Verb, gerund or present participle|,|Verb, present tense, non-3rd person singular present|,|Verb, past participle|,|Verb, past tense|,|Modal verb|,,|Article, Determiner|,|Personal pronoun|,|Possessive ending|,|Possessive pronoun|,|Wh-pronoun, possessive|,Wh-adverb,Wh-determiner,Wh-pronoun,Predeterminer,,|Cardinal number|,,|Coordinating conjunction|,|Preposition, Subordinating conjunction |,|Preposition to|,,Particle,|Existential there|,|List item marker|,Symbol,|Interjection, Exclamation|,|Foreign word|,">
    </PIN>
-   <BOUNDS type="Box" left="2570" top="3660" width="4800" height="12820">
+   <BOUNDS type="Box" left="2740" top="3660" width="4780" height="12750">
    </BOUNDS>
-   <BOUNDS type="Node" left="2570" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="2740" top="3660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -247,9 +247,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="58" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7460" top="3660" width="2990" height="12760">
+   <BOUNDS type="Box" left="7660" top="3660" width="4800" height="13110">
    </BOUNDS>
-   <BOUNDS type="Node" left="7460" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="7660" top="3660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -277,11 +277,11 @@
    </PIN>
    </NODE>
    <NODE id="57" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input String" slicecount="61" visible="1" pintype="Input" values="|normales Nomen|,Eigennamen,,|attributives Adjektiv|,|adverbiales Adjektiv|,Pronominaladverb,Negationspartikel,,|bestimmter oder unbestimmter Artikel|,|substituierendes Demonstrativpronomen|,|attribuierendes Demonstrativpronomen|,|Personalpronomen, irreflexiv|,|substituierendes Possessivpronomen|,|attribuierendes Possessivpronomen|,|substituierendes Indefinitpronomen|,|attribuierendes Indefinitpronomen ohne Determiner|,|attribuierendes Indefinitpronomen mit Determiner|,|Relativpronomen, substituierend|,|Relativpronomen, attribuierend|,|Personalpronomen, reflexiv|,|Interrogativpronomen, substituierend|,|Interrogativpronomen, attribuierend|,|Interrogativ- / Relativpronomen, adverbial|,,Kardinalzahl,,|unterordnende Konjunktion mit &quot;zu&quot; und Infinitiv|,|unterordnende Konjunktion|,|nebenordnende Konjunktion|,Vergleichspartikel,|Präposition, links|,|Präposition mit Artikel|,Postposition,|Zirkumposition rechts|,,Interjektion,|Fremdsprachliches Material|,Adverb,|&quot;zu&quot; vor Infinitiv|,|abgetrennter Verbzusatz|,Antwortpartikel,|Partikel bei Adjektiv oder Adverb|,Kompositions-Erstglied,,|Verb, finite|,|Verb, Imperativ|,|Verb, Infinitiv|,|Verb, Infinitiv mit &quot;zu&quot;|,|Verb, Patrizip Perfekt|,|Verb, finit, aux|,|Verb, Imperativ, aux|,|Verb, Infinitiv, aux|,|Verb, Partizip Perfekt, aux|,|Verb, finit, modal|,|Verb, Infinitiv, modal|,|Verb, Partizip Perfekt, modal|,,|Nichtwort, Sonerzeichen|,Komma,|Satzbeende Interpunktion|,|sonstige Satzzeichen|">
+   <PIN pinname="Input String" slicecount="61" visible="1" pintype="Input" values="|normales Nomen|,Eigennamen,,|attributives Adjektiv|,|adverbiales Adjektiv|,Pronominaladverb,Negationspartikel,,|bestimmter oder unbestimmter Artikel|,|substituierendes Demonstrativpronomen|,|attribuierendes Demonstrativpronomen|,|Personalpronomen, irreflexiv|,|substituierendes Possessivpronomen|,|attribuierendes Possessivpronomen|,|substituierendes Indefinitpronomen|,|attribuierendes Indefinitpronomen ohne Determiner|,|attribuierendes Indefinitpronomen mit Determiner|,|Relativpronomen, substituierend|,|Relativpronomen, attribuierend|,|Personalpronomen, reflexiv|,|Interrogativpronomen, substituierend|,|Interrogativpronomen, attribuierend|,|Interrogativ- / Relativpronomen, adverbial|,,Kardinalzahl,,|unterordnende Konjunktion mit &quot;zu&quot; und Infinitiv|,|unterordnende Konjunktion|,|nebenordnende Konjunktion|,Vergleichspartikel,|Präposition, links|,|Präposition mit Artikel|,Postposition,|Zirkumposition rechts|,,Interjektion,|Fremdsprachliches Material|,Adverb,|&quot;zu&quot; vor Infinitiv|,|abgetrennter Verbzusatz|,Antwortpartikel,|Partikel bei Adjektiv oder Adverb|,Kompositions-Erstglied,,|Verb, finit|,|Verb, Imperativ|,|Verb, Infinitiv|,|Verb, Infinitiv mit &quot;zu&quot;|,|Verb, Patrizip Perfekt|,|Verb, finit, aux|,|Verb, Imperativ, aux|,|Verb, Infinitiv, aux|,|Verb, Partizip Perfekt, aux|,|Verb, finit, modal|,|Verb, Infinitiv, modal|,|Verb, Partizip Perfekt, modal|,,|Nichtwort, Sonerzeichen|,Komma,|Satzbeendende Interpunktion|,|sonstige Satzzeichen|">
    </PIN>
-   <BOUNDS type="Box" left="13160" top="3660" width="4390" height="14240">
+   <BOUNDS type="Box" left="14610" top="3660" width="4390" height="14240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13160" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="14610" top="3660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -783,7 +783,7 @@
    </PIN>
    <BOUNDS type="Node" left="19100" top="3660" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="19100" top="3660" width="2810" height="14240">
+   <BOUNDS type="Box" left="19100" top="3660" width="3760" height="14210">
    </BOUNDS>
    <PIN pinname="Size" slicecount="1" values="6">
    </PIN>
@@ -1027,9 +1027,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="10600" top="13330" width="4320" height="230">
+   <BOUNDS type="Node" left="10880" top="17010" width="4320" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="10600" top="13330" width="1700" height="1390">
+   <BOUNDS type="Box" left="10880" top="17010" width="1700" height="1390">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|in English numbers are cardinals and their lemma is @card@!|">
    </PIN>
