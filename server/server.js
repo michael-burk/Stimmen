@@ -120,8 +120,6 @@ io.sockets.on('connection', function (socket) {
 
 
 		
-
-
 		for(var key in receivedJsonObject) {
 	      	jsonObject.MessageData[key] = receivedJsonObject[key];
 	      

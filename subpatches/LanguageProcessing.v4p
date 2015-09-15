@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="30">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" systemname="LanguageProcessing" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\LanguageProcessing.v4p" scrollx="0" scrolly="1245">
    <BOUNDS type="Window" left="-23220" top="2265" width="19140" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3814" top="5220" width="14215" height="16110">
    </BOUNDS>
-   <BOUNDS type="Window" left="-26415" top="5040" width="23640" height="11760">
+   <BOUNDS type="Window" left="-23925" top="2025" width="23640" height="11760">
    </BOUNDS>
    <PIN pinname="Execute" slicecount="1" visible="1" values="0">
    </PIN>
@@ -153,13 +153,11 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
-   <PIN pinname="Input String" visible="1">
+   <PIN pinname="Input String" visible="1" slicecount="7" values="NE,VVFIN,PPER,ADJD,APPR,ART,NN">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="PartOfSpeech">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="PartOfSpeech" dstnodeid="16" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
    <BOUNDS type="Box" left="5865" top="6480" width="1185" height="3060">
    </BOUNDS>
@@ -482,30 +480,6 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Entity Out" dstnodeid="20" dstpinname="Input String">
    </LINK>
-   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="10260" top="9630" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="51" srcpinname="Up Edge" dstnodeid="54" dstpinname="Set">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="10305" top="10155" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10305" top="10155" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="55" dstpinname="Y Input Value">
+   <LINK srcnodeid="3" srcpinname="PartOfSpeech" dstnodeid="16" dstpinname="Input String">
    </LINK>
    </PATCH>

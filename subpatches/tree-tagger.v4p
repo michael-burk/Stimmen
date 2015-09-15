@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" scrollx="130" scrolly="6440" bgcolor="14935011" locked="0">
-   <BOUNDS type="Window" left="1200" top="840" width="21770" height="14650">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\tree-tagger.v4p" systemname="tree-tagger" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\tree-tagger.v4p" scrollx="2400" scrolly="10650" bgcolor="14935011" locked="0">
+   <BOUNDS type="Window" left="-24945" top="750" width="23400" height="14910">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
-   <PACK Name="addonpack" Version="33.3.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="12380" top="7110" width="0" height="0">
@@ -770,12 +770,12 @@
    <BOUNDS type="Window" left="3990" top="-16310" width="29020" height="16420">
    </BOUNDS>
    </NODE>
-   <NODE systemname="POS Parser" filename="POS Parser.v4p" nodename="POS Parser.v4p" componentmode="Hidden" id="1229" stayontop="0">
+   <NODE systemname="POS Parser" filename="POS Parser.v4p" nodename="POS Parser.v4p" componentmode="Hidden" id="1229" stayontop="1">
    <BOUNDS type="Node" left="11016" top="16308" width="2670" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5635" top="4753" width="10763" height="23110">
    </BOUNDS>
-   <BOUNDS type="Window" left="4270" top="-15150" width="29020" height="16420">
+   <BOUNDS type="Window" left="-22170" top="2820" width="21225" height="11745">
    </BOUNDS>
    <PIN pinname="Execute" visible="1" slicecount="1" values="0">
    </PIN>
@@ -829,7 +829,7 @@
    </PIN>
    <PIN pinname="Input String" visible="1" slicecount="11" values="Pronoun,NIL,Pronoun,Adverb,Pronoun,NIL,Adjective,|Noun, common, singular|,Pronoun,NIL,|Noun, proper, singular|">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="PartOfSpeech">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|PartOfSpeech Short|">
    </PIN>
    <PIN pinname="Show SliceIndex" slicecount="1" values="1">
    </PIN>

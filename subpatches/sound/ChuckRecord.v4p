@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="1395" scrolly="2700">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="0" scrolly="510">
    <BOUNDS height="15150" left="-25980" top="3135" type="Window" width="25050">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">

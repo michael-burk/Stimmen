@@ -1,3 +1,60 @@
+@font-face {
+  font-family: "star";
+  src: url("../assets/TStarProLight.ttf");
+ }
+
+
+body{
+	font-family: "star";
+	max-width: 1920px;
+	max-height: 1080px;
+	overflow: hidden;
+	-webkit-perspective: 0;
+}
+
+/** {cursor: none;}*/
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#center{
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	 -webkit-perspective: 2000px;
+}
+
+#wordHolder{
+	position: relative;
+	left: -50%;
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+	background: rgba(1,1,1,.1);
+}
+
+.word{
+	padding: 8px 10px;
+    background: rgba(100,0,100,.3);
+    margin: 10px;
+    float: left;
+    color: white;
+    font-size: 16pt;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+
+  	-webkit-transition: transform .3s ease-in, opacity .3s ease-in;
+  	-webkit-transform-style: preserve-3d;
+}
+
+
 #volume {
 	background: black;
 	position: absolute;
@@ -19,7 +76,7 @@
 #recordButton {
     background-color: black;
     margin: auto;
-    margin-top: 220px;
+    margin-top: 800px;
     position: relative;
     width: 200px;
 	height: 200px;

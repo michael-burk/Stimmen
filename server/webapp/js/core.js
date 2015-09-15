@@ -143,17 +143,19 @@ function initServerMessageHandler(){
 
 	var started = true;
 
+
 	socket.on('vvvv', function (msg) {
-		
+		//console.log("yo");
 		var vname = msg.MessageData.VariableName.Spread[0];
 		var valuearray = msg.MessageData.Value.Spread;
 		
 		//console.log("hi");
 		//console.log(msg.MessageData.VariableName.Spread[0]);
+		//console.log(msg.MessageData.Value.Spread[0]);
 
 		if(vname == "Record"){
 			if(valuearray[0] == 1 && !started){
-				console.log(vname);
+				//console.log(vname);
 				//recognizer.start();
 				//started = true;
 
@@ -168,7 +170,53 @@ function initServerMessageHandler(){
 		}
 
 		if(vname == "Lang"){
-			recognizer.lang= valuearray[0];
+			console.log("Lang");
+		}
+
+		if(vname == "recordable"){
+			if(valuearray[0] == 1){
+
+				recordable = true;
+				$("#recordButton").css("background-color","Black");
+
+
+
+
+					if(!active) recognizer.start();
+					active = true;
+
+
+					
+					$("#recordButton").css("background-color","red");
+			  		
+			  		
+			  		var valuearray = new Array();
+					valuesendmess.push("start");
+					sendMessage("record", valuearray);
+
+
+
+					setTimeout(function(){ 
+
+						if(active) recognizer.stop();
+						active = false;
+						recordable = false;
+
+						$("#recordButton").css("background-color","LightGrey");
+
+				  		var valuearray = new Array();
+						valuearray.push("stop");
+						sendMessage("record", valuearray);
+
+					
+						lateSendTimeout = setTimeout(sendMessageLate, 5000);
+
+						console.log("end");
+
+					}, 30000);
+				
+
+			}
 		}
 
 		// get element by variable name

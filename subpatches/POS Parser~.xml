@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" systemname="POS Parser" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" systemname="POS Parser" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" scrollx="0" scrolly="950">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)" hiddenwhenlocked="1">
    <BOUNDS type="Box" left="5590" top="1240" width="1330" height="13550">
    </BOUNDS>
@@ -33,9 +33,9 @@
    <NODE id="2" systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" hiddenwhenlocked="1" managers="">
    <PIN pinname="Input String" slicecount="79" pintype="Input" visible="1" values="Adjective,|Adjective, comparative|,|Adjective, superlative|,Adverb,Adverb,Adverb,|Adverb, comparative|,|Adverb, superlative|,|Noun, common, singular|,|Noun, common, plural|,|Noun, proper, singular|,|Noun, proper, plural|,|Numeral, cardinal|,Adjective,Adjective,Conjunction,Conjunction,Conjunction,Conjunction,Adposition,Adposition,Adposition,Adposition,Adposition,Adposition,Adposition,Interjection,Particle,Particle,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Pronoun,Interjection,|Foreign word|,Adposition,Pronoun,|Verb, infinitive|,|Verb, infinitive|,|Verb, infinitive, aux|,|Verb, infinitive|,|Verb, infinitive, modal|,|Verb, modal|,|Verb, past, participle, modal|,|Verb, present, indicative, third, singular|,|Verb, present, indicative|,|Verb, present, indicative, aux|,|Verb, present, indicative|,|Verb, present, gerund|,|Verb, present, gerund|,|Verb, present, gerund|,|Verb, present, indicative, third, singular|,|Verb, present, indicative, third, singular|,|Verb, imperative|,|Verb, imperative, aux|,|Verb, past, participle|,|Verb, past, participle, aux|,|Verb, past, participle|,|Verb, past, participle|,Verb,|Verb, past|,|Verb, past|,|Verb, past|,|Verb, aux|,Mark,Mark,Mark,Mark">
    </PIN>
-   <BOUNDS type="Node" left="8390" top="1240" width="100" height="100">
+   <BOUNDS type="Node" left="8430" top="1240" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8390" top="1240" width="2370" height="13510">
+   <BOUNDS type="Box" left="8430" top="1240" width="2370" height="13510">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="79">
    </PIN>
@@ -539,9 +539,9 @@
    <LINK srcnodeid="12" srcpinname="Former Slice" dstnodeid="36" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="37" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11160" top="2710" width="1210" height="230">
+   <BOUNDS type="Node" left="11140" top="2710" width="1210" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="11160" top="2710" width="1560" height="680">
+   <BOUNDS type="Box" left="11140" top="2710" width="1560" height="680">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|NN, NE - dt. keine Erkennung von Singular oder Plural|">
    </PIN>
@@ -553,9 +553,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="38" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11520" top="9100" width="1540" height="230">
+   <BOUNDS type="Node" left="11070" top="9100" width="1540" height="230">
    </BOUNDS>
-   <BOUNDS type="Box" left="11520" top="9100" width="1540" height="230">
+   <BOUNDS type="Box" left="11070" top="9100" width="1540" height="230">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|aux - Form von sein|">
    </PIN>

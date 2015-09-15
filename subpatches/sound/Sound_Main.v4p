@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" scrollx="975" scrolly="630">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" scrollx="0" scrolly="4215">
    <BOUNDS type="Window" left="-22425" top="3630" width="8385" height="13305">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">

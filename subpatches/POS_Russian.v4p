@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS_Russian.v4p" systemname="POS_Russian" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS_Russian.v4p" scrollx="0" scrolly="5160">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\POS_Russian.v4p" systemname="POS_Russian" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS_Russian.v4p" scrollx="0" scrolly="7320">
    <NODE id="0" componentmode="Hidden" systemname="RussianVerbs" filename="RussianVerbs.v4p" nodename="RussianVerbs.v4p" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Window" left="4720" top="-14380" width="29020" height="16420">
    </BOUNDS>
@@ -358,7 +358,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="RussianAdverbs" filename="RussianAdverbs.v4p" nodename="RussianAdverbs.v4p" componentmode="Hidden" id="31">
+   <NODE systemname="RussianAdverbs" filename="RussianAdverbs.v4p" nodename="RussianAdverbs.v4p" componentmode="Hidden" id="31" stayontop="1">
    <BOUNDS type="Node" left="9820" top="14390" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="9820" top="14390" width="13520" height="20910">
@@ -940,9 +940,9 @@
    <LINKPOINT x="15720" y="9730">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="3990" top="-16310" width="29020" height="16420">
+   <BOUNDS type="Window" left="915" top="555" width="26265" height="13605">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.3.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="RussianPronouns" filename="RussianPronouns.v4p" nodename="RussianPronouns.v4p" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="4520" top="14390" width="100" height="100">
@@ -1182,4 +1182,6 @@
    </NODE>
    <LINK srcnodeid="56" srcpinname="Output String" dstnodeid="81" dstpinname="Input String">
    </LINK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
    </PATCH>

@@ -1,31 +1,33 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataOut.v4p" systemname="DataOut" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataOut.v4p">
-   <BOUNDS type="Window" left="-1" top="-1" width="4837" height="3860">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataOut.v4p" systemname="DataOut" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\DataOut.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-20385" top="9750" width="9150" height="5925">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE id="0" systemname="send" filename="send.v4p" nodename="subpatches\send.v4p" componentmode="Hidden">
-   <BOUNDS type="Node" left="1507" top="2090" width="1830" height="270">
+   <NODE id="0" systemname="send" filename="send.v4p" nodename="subpatches\send.v4p" componentmode="Hidden" stayontop="1">
+   <BOUNDS type="Node" left="1987" top="3065" width="1830" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="-1273" top="-3120" width="5560" height="10420">
+   <BOUNDS type="Box" left="0" top="0" width="5560" height="10420">
    </BOUNDS>
-   <PIN pinname="SocketID">
+   <PIN pinname="SocketID" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="-20925" top="4905" width="7215" height="10410">
+   <BOUNDS type="Window" left="-24945" top="4740" width="10155" height="11640">
    </BOUNDS>
    <PIN pinname="Lang" visible="1">
    </PIN>
    <PIN pinname="Message Interval" slicecount="1" values="0.2">
    </PIN>
+   <PIN pinname="Recordable" visible="1">
+   </PIN>
    </NODE>
    <NODE id="1" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2820" top="1575" width="405" height="315">
+   <BOUNDS type="Box" left="3765" top="2040" width="405" height="315">
    </BOUNDS>
-   <BOUNDS type="Node" left="2820" top="1575" width="0" height="0">
+   <BOUNDS type="Node" left="3765" top="2040" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="de">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="en">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -35,9 +37,9 @@
    </PIN>
    </NODE>
    <NODE id="2" systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox">
-   <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="1980" top="2475" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="1500" width="795" height="240">
+   <BOUNDS type="Box" left="1980" top="2475" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="5001">
    </PIN>
@@ -49,35 +51,51 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Remote Port" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="1530" y="1913">
+   <LINKPOINT x="2010" y="2888">
    </LINKPOINT>
-   <LINKPOINT x="1530" y="1913">
+   <LINKPOINT x="2010" y="2888">
    </LINKPOINT>
    </LINK>
-   <NODE id="3" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="SocketID">
-   </PIN>
-   <BOUNDS type="Box" left="1507" top="500" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1507" top="500" width="750" height="240">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="0" dstpinname="SocketID">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="Lang" linkstyle="Bezier">
-   <LINKPOINT x="2850" y="1980">
-   </LINKPOINT>
-   <LINKPOINT x="2850" y="1980">
-   </LINKPOINT>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="Lang" linkstyle="PolyLine">
    </LINK>
    <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Start/Stop">
    </PIN>
-   <BOUNDS type="Box" left="2407" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="2887" top="1475" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2407" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="2887" top="1475" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Start/Stop">
+   </LINK>
+   <NODE id="5" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <BOUNDS type="Box" left="1987" top="1475" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1987" top="1475" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SocketID">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="0" dstpinname="SocketID">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4695" top="1065" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4695" top="1065" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Recordable">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Recordable">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="12825" scrolly="14985">
-   <BOUNDS type="Window" left="-25650" top="2370" width="25170" height="13215">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="13575" scrolly="14415">
+   <BOUNDS type="Window" left="-31110" top="3375" width="25170" height="13215">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1537,9 +1537,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="501" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="26235" top="675" width="480" height="480">
+   <BOUNDS type="Box" left="25590" top="705" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="26235" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="25590" top="705" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1603,17 +1603,11 @@
    </BOUNDS>
    <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Reset" visible="1">
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="506" dstpinname="Reset" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="27085" y="12763">
-   </LINKPOINT>
-   <LINKPOINT x="26645" y="12933">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="508">
    <BOUNDS type="Node" left="26850" top="22110" width="1305" height="270">
    </BOUNDS>
@@ -1655,5 +1649,63 @@
    <LINK srcnodeid="508" srcpinname="Output" dstnodeid="506" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="506" srcpinname="Output" dstnodeid="488" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="501" srcpinname="Y Output Value" dstnodeid="506" dstpinname="Reset" hiddenwhenlocked="0" linkstyle="Bezier">
+   <LINKPOINT x="25840" y="11915">
+   </LINKPOINT>
+   <LINKPOINT x="27245" y="11935">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="512">
+   <BOUNDS type="Node" left="24585" top="21660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="501" srcpinname="Y Output Value" dstnodeid="512" dstpinname="Set">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="513" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="24570" top="22200" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="24570" top="22200" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="512" srcpinname="Output" dstnodeid="513" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="515">
+   <BOUNDS type="Node" left="25560" top="21210" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="514" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="25590" top="21840" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="25590" top="21840" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="515" srcpinname="Output" dstnodeid="514" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="509" srcpinname="Output" dstnodeid="515" dstpinname="Set">
    </LINK>
    </PATCH>

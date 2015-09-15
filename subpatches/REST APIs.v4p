@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="5835" scrolly="29970" locked="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" systemname="REST APIs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\REST APIs.v4p" scrollx="5055" scrolly="26295" locked="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5190" top="13950" width="0" height="0">
    </BOUNDS>
@@ -232,7 +232,7 @@
    </LINK>
    <LINK srcnodeid="16" srcpinname="Down Edge" dstnodeid="18" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="-26415" top="5040" width="23640" height="11760">
+   <BOUNDS type="Window" left="-23925" top="2025" width="23640" height="11760">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1097,6 +1097,96 @@
    <LINK srcnodeid="198" srcpinname="Output" dstnodeid="233" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="199" srcpinname="Output" dstnodeid="198" dstpinname="Index">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="239">
+   <BOUNDS type="Node" left="17835" top="12540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="11">
+   </PIN>
+   </NODE>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="238">
+   <BOUNDS type="Node" left="17850" top="11970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="237" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="17835" top="13140" width="1170" height="450">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17835" top="13140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="239" srcpinname="Output" dstnodeid="237" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="238" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="238" srcpinname="Output" dstnodeid="239" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Split (String)" nodename="Split (String)" componentmode="Hidden" id="240">
+   <BOUNDS type="Node" left="19665" top="12330" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="240" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="242" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="20565" top="15495" width="4290" height="1695">
+   </BOUNDS>
+   <BOUNDS type="Node" left="20565" top="15495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="85" visible="1" values="G,e,s,e,l,l,s,c,h,a,f,t,| |,m,o,m,e,n,t,a,n,| |,z,u,| |,t,u,n,| |,d,a,s,| |,i,s,t,| |,e,t,w,a,s,| |,w,a,s,| |,w,i,r,| |,h,i,e,r,| |,i,n,| |,d,e,r,| |,g,a,n,z,e,n,| |,T,a,g,| |,h,e,u,t,e,| |,Ã,¼,b,e,r">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="241">
+   <BOUNDS type="Node" left="20580" top="14490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="84">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Offset" slicecount="1" values="63">
+   </PIN>
+   <PIN pinname="Count" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="240" srcpinname="Output" dstnodeid="241" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="243">
+   <BOUNDS type="Node" left="20715" top="15045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="241" srcpinname="Output" dstnodeid="243" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="243" srcpinname="Output" dstnodeid="242" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Execute">
    </LINK>

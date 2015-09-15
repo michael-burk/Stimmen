@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\connection\dataInputHandler.v4p" systemname="dataInputHandler" filename="D:\workspace\_research\nodejsPrototype\subpatches\dataInputHandler.v4p" scrollx="2250" scrolly="3210">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\connection\dataInputHandler.v4p" systemname="dataInputHandler" filename="D:\workspace\_research\nodejsPrototype\subpatches\dataInputHandler.v4p" scrollx="10455" scrolly="6330">
    <BOUNDS type="Window" left="-26970" top="585" width="22080" height="13440">
    </BOUNDS>
    <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="24">
@@ -565,7 +565,7 @@
    </PIN>
    <PIN pinname="Username">
    </PIN>
-   <PIN pinname="clientName" slicecount="1" values="Guest">
+   <PIN pinname="clientName" slicecount="1" values="||">
    </PIN>
    <PIN pinname="2dpointer" slicecount="2" values="0,0">
    </PIN>
@@ -585,11 +585,11 @@
    </PIN>
    <PIN pinname="socketId" visible="1">
    </PIN>
-   <PIN pinname="userColor" visible="1" slicecount="1" values="|1.00000,0.00000,0.00000,1.00000|">
+   <PIN pinname="userColor" visible="1" slicecount="1" values="|0.00000,1.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="edgeCount" slicecount="1" values="5">
+   <PIN pinname="edgeCount" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="xy" slicecount="2" values="0,0">
+   <PIN pinname="xy" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Store (Message)" filename="..\..\plugins\message\Message.csproj" nodename="Store (Message)" componentmode="Hidden" id="37">
@@ -2075,5 +2075,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="303" srcpinname="Output" dstnodeid="304" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="305" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13410" top="10560" width="2445" height="600">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13410" top="10560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SocketId">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="149" srcpinname="SocketId" dstnodeid="305" dstpinname="Input String">
    </LINK>
    </PATCH>
