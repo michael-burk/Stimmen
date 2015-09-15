@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" systemname="POS Parser" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" scrollx="0" scrolly="950">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" systemname="POS Parser" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\POS Parser.v4p" scrollx="0" scrolly="14160">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)" hiddenwhenlocked="1">
    <BOUNDS type="Box" left="5590" top="1240" width="1330" height="13550">
    </BOUNDS>
@@ -222,7 +222,7 @@
    <PIN pinname="Inverse Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="POS_Russian" filename="POS_Russian.v4p" nodename="POS_Russian.v4p" componentmode="Hidden" id="18">
+   <NODE systemname="POS_Russian" filename="POS_Russian.v4p" nodename="POS_Russian.v4p" componentmode="InAWindow" id="18">
    <BOUNDS type="Node" left="2950" top="24698" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="15750" width="17838" height="17896">
@@ -382,9 +382,9 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="3" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="3990" top="-16310" width="29020" height="16420">
+   <BOUNDS type="Window" left="2230" top="160" width="25740" height="16140">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.3.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="3040" top="23130" width="100" height="100">
