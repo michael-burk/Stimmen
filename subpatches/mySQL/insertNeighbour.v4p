@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="2775">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" systemname="insertNeighbour" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertNeighbour.v4p" scrollx="0" scrolly="7275">
    <BOUNDS type="Window" left="-21195" top="2370" width="20295" height="14490">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -153,9 +153,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4140" top="16135" width="2370" height="660">
+   <BOUNDS type="Box" left="4140" top="17935" width="2370" height="660">
    </BOUNDS>
-   <BOUNDS type="Node" left="4140" top="16135" width="0" height="0">
+   <BOUNDS type="Node" left="4140" top="17935" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -225,7 +225,7 @@
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="36" dstpinname="Input 3">
    </LINK>
    <NODE systemname="Insert (MySQL Network)" filename="%VVVV%\addonpack\lib\nodes\plugins\MySQLNodes.dll" nodename="Insert (MySQL Network)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="1470" top="15445" width="2715" height="270">
+   <BOUNDS type="Node" left="1470" top="17245" width="2715" height="270">
    </BOUNDS>
    <PIN pinname="Values" slicecount="1" values="||">
    </PIN>
@@ -456,6 +456,58 @@
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="4" dstpinname="Input 1" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="37" dstpinname="SendQuery">
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="67">
+   <BOUNDS type="Node" left="4125" top="16665" width="1215" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="68">
+   <BOUNDS type="Node" left="5295" top="16125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="5280" top="15060" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="NIL">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="69" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="3540" y="12188">
+   </LINKPOINT>
+   <LINKPOINT x="5295" y="12188">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="5280" top="15570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="NIL">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="70" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="68" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="67" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="67" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="37" dstpinname="SendQuery">
    </LINK>
    </PATCH>

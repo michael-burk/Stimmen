@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" scrollx="1350" scrolly="3480">
    <BOUNDS type="Window" left="-22425" top="3630" width="8325" height="13305">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -211,7 +211,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="-21285" top="5595" width="14040" height="8325">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015.09.11-10.46.16.wav">
+   <PIN pinname="Input" visible="1" slicecount="1" values="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Recordings\2015.09.14-15.28.21.wav">
    </PIN>
    <PIN pinname="Play" visible="1">
    </PIN>
@@ -232,6 +232,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="18">
@@ -359,9 +361,9 @@
    <NODE id="25" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Output String|">
    </PIN>
-   <BOUNDS type="Box" left="4755" top="12140" width="750" height="240">
+   <BOUNDS type="Box" left="5205" top="12290" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4755" top="12140" width="750" height="240">
+   <BOUNDS type="Node" left="5205" top="12290" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="20" srcpinname="Output String" dstnodeid="25" dstpinname="Input String">
@@ -373,9 +375,9 @@
    <NODE id="26" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Former Slice|">
    </PIN>
-   <BOUNDS type="Box" left="5655" top="12140" width="750" height="240">
+   <BOUNDS type="Box" left="6405" top="12140" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5655" top="12140" width="750" height="240">
+   <BOUNDS type="Node" left="6405" top="12140" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Former Slice" dstnodeid="26" dstpinname="Y Input Value">
@@ -396,8 +398,6 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="4" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="16" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Play">
    </LINK>
    <LINK srcnodeid="20" srcpinname="path" dstnodeid="21" dstpinname="Input" linkstyle="Bezier">
@@ -411,5 +411,7 @@
    </LINKPOINT>
    <LINKPOINT x="5190" y="7123">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="16" dstpinname="Input">
    </LINK>
    </PATCH>

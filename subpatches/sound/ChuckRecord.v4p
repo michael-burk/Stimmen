@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="690" scrolly="3000">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\ChuckRecord.v4p" scrollx="1395" scrolly="2700">
    <BOUNDS height="15150" left="-25980" top="3135" type="Window" width="25050">
    </BOUNDS>
    <NODE id="15" nodename="OSCEncoder (Network String Legacy)">
@@ -999,7 +999,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="148">
-   <BOUNDS type="Node" left="8190" top="10935" width="100" height="100">
+   <BOUNDS type="Node" left="7290" top="10245" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1557,7 +1557,7 @@
    <LINK srcnodeid="169" srcpinname="Output" dstnodeid="166" dstpinname="Input String">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="187">
-   <BOUNDS type="Node" left="8685" top="10200" width="100" height="100">
+   <BOUNDS type="Node" left="8580" top="9750" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
