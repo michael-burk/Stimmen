@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianVerbs.v4p" systemname="RussianVerbs" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianVerbs.v4p" scrollx="370" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.3.dtd" >
+   <PATCH nodename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianVerbs.v4p" systemname="RussianVerbs" filename="C:\Users\Ann-Katrin\Desktop\myVVVV\Stimmen\subpatches\RussianVerbs.v4p" scrollx="160" scrolly="1810">
    <NODE systemname="Split (String)" nodename="Split (String)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5130" top="5230" width="100" height="100">
    </BOUNDS>
@@ -485,7 +485,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13500" top="8320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="4" visible="1" values="active,passive,medial,">
+   <PIN pinname="Input String" slicecount="4" visible="1" values="active,passive,modal,">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -867,9 +867,9 @@
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="main">
+   <PIN pinname="Input 2" visible="1" slicecount="2" values="main">
    </PIN>
-   <PIN pinname="Input 3" visible="1" slicecount="1" values="indicative">
+   <PIN pinname="Input 3" visible="1" slicecount="2" values="indicative">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -927,7 +927,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="10" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="10">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1278,18 +1278,6 @@
    <LINKPOINT x="7390" y="13530">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="52" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="4310" y="13765">
-   </LINKPOINT>
-   <LINKPOINT x="7550" y="13765">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="52" dstpinname="Input 3" linkstyle="Bezier">
-   <LINKPOINT x="6220" y="13770">
-   </LINKPOINT>
-   <LINKPOINT x="7710" y="13770">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="52" dstpinname="Input 4" linkstyle="Bezier">
    <LINKPOINT x="8020" y="13760">
    </LINKPOINT>
@@ -1390,9 +1378,9 @@
    </LINK>
    <LINK srcnodeid="37" srcpinname="Output String" dstnodeid="39" dstpinname="Input 2">
    </LINK>
-   <BOUNDS type="Window" left="0" top="0" width="12800" height="15440">
+   <BOUNDS type="Window" left="4720" top="-14380" width="29020" height="16420">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.3.0">
    </PACK>
    <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="81">
    <BOUNDS type="Node" left="14530" top="15660" width="100" height="100">
@@ -1565,7 +1553,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11300" top="4020" width="6180" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" values="|8. VOICE: a - active, p - passive, m - medial (medial verbs? or did they mean modal verbs?)|">
+   <PIN pinname="Input String" slicecount="1" values="|8. VOICE: a - active, p - passive, m - modal|">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="83">
@@ -1966,4 +1954,30 @@
    </LINK>
    <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="57" dstpinname="Input 2">
    </LINK>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="52" dstpinname="Input 3" linkstyle="Bezier">
+   <LINKPOINT x="4310" y="13765">
+   </LINKPOINT>
+   <LINKPOINT x="7710" y="13765">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="52" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="6210" y="13770">
+   </LINKPOINT>
+   <LINKPOINT x="7560" y="13770">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="115" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="0" top="0" width="1990" height="230">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="1990" height="230">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|aux - auxiliray verbs (sein)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
