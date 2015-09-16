@@ -14,19 +14,15 @@ body{
 
 /** {cursor: none;}*/
 .noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
 }
 
 #center{
 	position: absolute;
 	left: 50%;
 	top: 150px;
-	 -webkit-perspective: 2000px;
+	-webkit-perspective: 2000px;
+    -webkit-perspective-origin: 0px 400px;
 }
 
 #wordHolder{
@@ -50,7 +46,7 @@ body{
     left: 0px;
     opacity: 0;
 
-  	-webkit-transition: transform .3s ease-in, opacity .3s ease-in;
+  	-webkit-transition: transform .3s ease-out, opacity .3s ease-out;
   	-webkit-transform-style: preserve-3d;
 }
 
@@ -81,12 +77,33 @@ body{
     width: 200px;
 	height: 200px;
 	border-radius: 100px;
+	cursor: pointer;
 }
 
 #recordButton:active {
 
 	background-color: red;
 }
+
+#sendButton {
+    background-color: lightGrey;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 860px;
+    left: 400px;
+    text-align: center;
+    color: white;
+    line-height: 110px;
+    font-size: 70px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-out;
+    visibility: hidden;
+}
+
+
+
 
 #deButton {
 	background-color: rgba(200,0,0,1);

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="7950" scrolly="16860">
-   <BOUNDS type="Window" left="-27195" top="2145" width="20325" height="12135">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="3435" scrolly="11430">
+   <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18060">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -692,48 +692,6 @@
    </NODE>
    <LINK srcnodeid="991" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Start/Stop">
    </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1005">
-   <BOUNDS type="Node" left="25725" top="22665" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="25725" top="22665" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="1006">
-   <BOUNDS type="Node" left="25710" top="23430" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1005" srcpinname="Y Output Value" dstnodeid="1006" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1007" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="25710" top="24105" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="25710" top="24105" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1006" srcpinname="Output" dstnodeid="1007" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="DataInput" filename="subpatches\DataInput.v4p" nodename="subpatches\DataInput.v4p" componentmode="Hidden" id="1008">
    <BOUNDS type="Node" left="12885" top="5295" width="10380" height="270">
    </BOUNDS>
@@ -813,9 +771,9 @@
    <LINK srcnodeid="982" srcpinname="Output" dstnodeid="1009" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1010" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="22890" top="22485" width="480" height="480">
+   <BOUNDS type="Box" left="22890" top="22140" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="22890" top="22485" width="0" height="0">
+   <BOUNDS type="Node" left="22890" top="22140" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -827,13 +785,17 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="1010" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Recordable">
    </LINK>
-   <LINK srcnodeid="958" srcpinname="Y Output Value" dstnodeid="1010" dstpinname="Y Input Value">
+   <LINK srcnodeid="958" srcpinname="Y Output Value" dstnodeid="1010" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="20985" y="21255">
+   </LINKPOINT>
+   <LINKPOINT x="22875" y="21255">
+   </LINKPOINT>
    </LINK>
    </PATCH>

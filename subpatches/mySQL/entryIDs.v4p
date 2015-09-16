@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\entryIDs.v4p" systemname="entryIDs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\entryIDs.v4p" scrollx="0" scrolly="1965">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\entryIDs.v4p" systemname="entryIDs" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\entryIDs.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="-21945" top="3975" width="10665" height="12630">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -9,7 +9,7 @@
    <NODE systemname="WordCount (String)" nodename="WordCount (String)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="915" top="5250" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|neben gesellschaftlichen Konflikt|">
    </PIN>
    <PIN pinname="Add Words" visible="1">
    </PIN>
@@ -194,8 +194,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="0" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
    <BOUNDS type="Box" left="2385" top="11235" width="795" height="240">
    </BOUNDS>
@@ -473,5 +471,7 @@
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="9" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="29" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="0" dstpinname="Input String">
    </LINK>
    </PATCH>

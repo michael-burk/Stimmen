@@ -62,6 +62,10 @@
 <div id = "recordButton">
 </div>
 
+<div id = "sendButton">
+  ✓
+</div>
+
 <div id = "deButton" class="langButton" type="de">
 	DE
 </div>
@@ -100,6 +104,7 @@ function sendMessageLate(){
 		speechArray = new Array();
 }
 
+
 var speechArray = new Array();
 
 $( document ).ready(function() {
@@ -123,24 +128,22 @@ $( document ).ready(function() {
 
 	        	clearTimeout(lateSendTimeout);
 
-	        	
 				speechArray.push(result[0].transcript);
-				
-				
-
-				console.log(speechArray);
 
 				if(!active) {
-					//sendMessage("result", speechArray);
+					
 					var splitted = speechArray[0].split(" ");
 
 					splitted.forEach(function(entry) {
     					$("#wordHolder").append("<div class = 'word noselect'>"+ entry +"</div>");
 					});
 
+					// Reset Speech Array
+					speechArray = new Array();
+
 
 					$(".word").bind(START_EV, function(ev1){
-						disappear($(ev1.currentTarget));
+						removeWord($(ev1.currentTarget));
 					});
 
 					var offsetArray = new Array();
@@ -150,7 +153,7 @@ $( document ).ready(function() {
 					});
 
 					$(".word").each(function(index, value){
-						//console.log($(value).offset());
+			
 						var newOffset = offsetArray[index];
 						$(value).css("position","absolute");
 						$(value).offset(newOffset);
@@ -162,16 +165,42 @@ $( document ).ready(function() {
 
 						}, map(index,0,$(".word").length,0,$(".word").length*100));
 
-
-						//$(value).css("top",""+newOffset.top+"px");
-						//$(value).css("left",""+newOffset.left+"px");
-					//	$(value).css("-webkit-transform", "translate(0px,0px)");
-					//	console.log(index);
-					//	$(value).css("-webkit-transition","transform " +  + "s cubic-bezier(.91,.8,.54,1.39)");
 					});
 
-					console.log(splitted);
-					speechArray = new Array();
+
+					$("#sendButton").css("opacity","1");
+					$("#sendButton").css("visibility","visible");
+				
+
+					$("#sendButton").bind(START_EV, function(ev){
+						ev.preventDefault();
+
+					$("#sendButton").css("background-color","red");
+						console.log("send");
+						sendWords();
+						
+						$( this ).unbind( ev );
+
+					});
+
+					$("#sendButton").bind(END_EV, function(ev){
+						ev.preventDefault();
+
+						$("#sendButton").css("background-color","lightGrey");
+						
+						setTimeout(function(){
+							$("#sendButton").css("opacity","0");
+						}, 300);
+
+						setTimeout(function(){
+							$("#sendButton").css("visibility","hidden");
+						}, 600);
+
+						$( this ).unbind( ev );
+
+					});
+
+					
 				
 				}
 	        } 
@@ -212,35 +241,11 @@ $( document ).ready(function() {
 		sendMessage("record", valuearray);
 
 	
-		lateSendTimeout = setTimeout(sendMessageLate, 5000);
+		//lateSendTimeout = setTimeout(sendMessageLate, 5000);
 
 		console.log("end");
 	});
 
-
-
-
-	
-
-	// $( "#recordButton" ).mousedown(function() {
-	// 	recognizer.start();
-
-	// 	var valuearray = new Array();
-	// 	valuearray.push("start");
-	// 	sendMessage("record", valuearray);
-		
-	// });
-
-	// $( "#recordButton" ).mouseup(function() {
-	// 	sendMessage("result", speechArray);
-	// 	recognizer.stop();	
-
-	// 	var valuearray = new Array();
-	// 	valuearray.push("stop");
-	// 	sendMessage("record", valuearray);
-
-	// 	speechArray = new Array();
-	// });
 
 
 	$( ".langButton" ).click(function(ev) {
@@ -329,16 +334,51 @@ function map(value, oldMin, oldMax, newMin, newMax){
 	return (value - oldMin) / (oldMax - oldMin) * (newMax - newMin) + newMin;	
 }
 
+var randomAddition;
 
-function disappear(object){
-	
-	object.css("opacity","0");
-	
-	object.css("transform", "translate3d(0px,10px,-300px) rotateY(80deg) rotateZ(30deg)");
+function removeWord(object){
+	$(object).each(function(index, value){
+		// console.log($(object).length);
+		// console.log(map(index,0,$(object).length,0,$(object).length*1000));
+		// console.log(value);
+		setTimeout(function(){
+			
+			if($(object).length > 1){
+				randomAddition = Math.random() * 300;
+			} else {
+				randomAddition = 0;
+			}
+			
+			$(value).css("opacity","0");
+		
+			$(value).css("transform", "translate3d(0px,10px,-300px) rotateY(80deg) rotateZ(30deg)");
 
-	setTimeout(function(){
-		object.remove();
-	},750);
+			setTimeout(function(){
+				$(value).remove();
+			},750);
+
+		}, map(index,0,$(object).length,0,$(object).length*10+(randomAddition)));
+
+	});
+}
+
+function sendWords(){
+
+	var valuearray = new Array();
+	$(".word").each(function(index, value){
+		if(index < $(".word").length-1){
+			valuearray.push($(value)[0].innerHTML+" ");
+		} else {
+			valuearray.push($(value)[0].innerHTML);
+		}
+		
+	});
+	
+	console.log(valuearray);
+	sendMessage("result", valuearray);
+
+
+	
 }
 
 

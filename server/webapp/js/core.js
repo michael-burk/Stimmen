@@ -191,7 +191,7 @@ function initServerMessageHandler(){
 			  		
 			  		
 			  		var valuearray = new Array();
-					valuesendmess.push("start");
+					valuearray.push("start");
 					sendMessage("record", valuearray);
 
 
