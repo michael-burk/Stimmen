@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" scrollx="0" scrolly="120">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" systemname="Sound_Main" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Sound_Main.v4p" scrollx="0" scrolly="15">
    <BOUNDS type="Window" left="-22425" top="3630" width="8385" height="13305">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -413,5 +413,23 @@
    <LINK srcnodeid="5" srcpinname="Former Slice" dstnodeid="28" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="0" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5130" top="4215" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5130" top="4215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="29" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

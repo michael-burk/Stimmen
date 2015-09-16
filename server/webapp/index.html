@@ -41,6 +41,7 @@
 	<script language="javascript" type="text/javascript" src="js/vendor/socket.io.js"></script>
 	<script language="javascript" type="text/javascript" src="js/core.js"></script>
 	<script language="javascript" type="text/javascript" src="js/easing.js"></script>
+	<script language="javascript" type="text/javascript" src="js/stopwatch.js"></script>
 
 </head>
 
@@ -54,9 +55,9 @@
 <div id="resultHolder" class='text synchronizable' type="text" value="" data-vname="result">
 </div> -->
 			
-<!-- </div>
+</div>
 <div id ="volume">
-</dv> -->
+</div>
 
 
 <div id = "recordButton">
@@ -65,6 +66,12 @@
 <div id = "sendButton">
   ✓
 </div>
+
+<div id = "deleteButton">
+  ✘
+</div>
+
+
 
 <div id = "deButton" class="langButton" type="de">
 	DE
@@ -83,6 +90,10 @@
 	</div>
 </div>
 
+<div id = "progressBar">
+	<div id = "progress">
+	</div>
+</div>
 
 
 
@@ -98,6 +109,11 @@ var lateSendTimeout;
 var recognizer;
 
 var recordable = true;
+var automatic = false;
+var myStopwatch = new Stopwatch();
+var stopwatchInterval;
+var timelimit = 50;
+var finalResultFound = false;
 
 function sendMessageLate(){
 		sendMessage("result", speechArray);
@@ -119,13 +135,12 @@ $( document ).ready(function() {
 	recognizer.interimResults = false;
 	recognizer.onresult = function(event) {
 	
-		    
 		    if (event.results.length > 0) {
 
 	        var result = event.results[event.results.length-1];
 	       
 	        if(result.isFinal) {
-
+	        	finalResultFound = true;
 	        	clearTimeout(lateSendTimeout);
 
 				speechArray.push(result[0].transcript);
@@ -164,55 +179,153 @@ $( document ).ready(function() {
 							$(value).animate({ top: '-=100px' }, 3000, 'easeOutElastic');
 
 						}, map(index,0,$(".word").length,0,$(".word").length*100));
-
-					});
-
-
-					$("#sendButton").css("opacity","1");
-					$("#sendButton").css("visibility","visible");
-				
-
-					$("#sendButton").bind(START_EV, function(ev){
-						ev.preventDefault();
-
-					$("#sendButton").css("background-color","red");
-						console.log("send");
-						sendWords();
-						
-						$( this ).unbind( ev );
-
-					});
-
-					$("#sendButton").bind(END_EV, function(ev){
-						ev.preventDefault();
-
-						$("#sendButton").css("background-color","lightGrey");
-						
-						setTimeout(function(){
-							$("#sendButton").css("opacity","0");
-						}, 300);
-
-						setTimeout(function(){
-							$("#sendButton").css("visibility","hidden");
-						}, 600);
-
-						$( this ).unbind( ev );
-
 					});
 
 					
-				
+					$("#sendButton").css("opacity","1");
+					$("#sendButton").css("visibility","visible");
+
+					$("#deleteButton").css("opacity","1");
+					$("#deleteButton").css("visibility","visible");
+					
+					if(automatic){
+
+						setTimeout(function(){
+							sendWords();
+							speechArray = new Array();
+
+							$(".word").each(function(index, value){	
+								setTimeout(function(){
+									
+									$(value).animate({ top: '-=1000px' }, 500, 'easeInBack');
+									// setTimeout(function(){
+									// 	$(value).css("opacity","0");
+									// },800);
+									setTimeout(function(){
+										$(value).remove();
+									},1000);
+
+
+								}, map(index,0,$(".word").length,0,($(".word").length*10 + Math.random() * 500))); 
+
+								hideButtons();9
+							});
+
+						}, 10000);
+					}
 				}
 	        } 
 	    }  
 	};
 
+						
+			//Buttons
+
+	$("#sendButton").bind(START_EV, function(ev){
+		ev.preventDefault();
+
+		
+
+		$("#sendButton").css("background-color","red");
+		console.log("send");
+		sendWords();
+		speechArray = new Array();
+
+		$(".word").each(function(index, value){	
+			setTimeout(function(){
+				
+				$(value).animate({ top: '-=1000px' }, 500, 'easeInBack');
+				
+				setTimeout(function(){
+					$(value).remove();
+				},1000);
+
+
+			//}, map(index,0,$(".word").length,0,$(".word").length*10));
+
+			}, map(index,0,$(".word").length,0,($(".word").length*10 + Math.random() * 500))); 
+		});
+
+	});
+
+	$("#sendButton").bind(END_EV, function(ev){
+		ev.preventDefault();
+
+		$("#sendButton").css("background-color","lightGrey");
+		
+		hideButtons();
+
+
+	});
+
+
+
+	$("#deleteButton").bind(START_EV, function(ev){
+		ev.preventDefault();
+
+
+		$("#deleteButton").css("background-color","red");
+		console.log("delete");
+		
+		// Remove all Words
+		removeWord($(".word"));
+		speechArray = new Array();
+		
+		recordable = true;
+		$("#recordButton").css("background-color","Black");
+
+
+	});
+
+	$("#deleteButton").bind(END_EV, function(ev){
+		ev.preventDefault();
+
+		$("#deleteButton").css("background-color","lightGrey");
+		
+		hideButtons();
+
+	});
+
+	function hideButtons(){
+		setTimeout(function(){
+			$("#deleteButton").css("opacity","0");
+		}, 300);
+
+		setTimeout(function(){
+			$("#deleteButton").css("visibility","hidden");
+		}, 600);
+
+		setTimeout(function(){
+			$("#sendButton").css("opacity","0");
+		}, 300);
+
+		setTimeout(function(){
+			$("#sendButton").css("visibility","hidden");
+		}, 600);
+
+		$("#progress").css("-webkit-transition","width 1s ease-in-out");
+		$("#progress").css("width","0%");
+		myStopwatch.reset();
+	}
 
 
 	$("#recordButton").bind(START_EV, function(ev1){
-		
 		ev1.preventDefault();
-		if(!recordable) return;		
+		if(!recordable) return;	
+
+		$("#recordButton").css("transition","background-color 0s ease");
+
+		finalResultFound = false;
+
+		myStopwatch.start();
+
+		stopwatchInterval = setInterval(function(){
+			$("#progress").css("-webkit-transition","width 0s ease-in-out");
+			$("#progress").css("width",""+ (myStopwatch.getTime()/timelimit)*100 +"%");
+		}, 10);
+
+		
+			
 
 		recognizer.start();
 		active = true;
@@ -227,8 +340,32 @@ $( document ).ready(function() {
 
 
 	$("#recordButton").bind(END_EV, function(ev2){
+
 		ev2.preventDefault();
 		if(!recordable || !active) return;
+
+		$("#recordButton").css("transition","background-color .3s ease");
+
+		clearInterval(stopwatchInterval);
+		myStopwatch.stop();
+		
+		setTimeout(function(){
+			if(!finalResultFound){
+				alert("NO RESULT")
+
+				// Remove all Words
+				removeWord($(".word"));
+				speechArray = new Array();
+				
+				recordable = true;
+
+				$("#recordButton").css("background-color","Black");
+				hideButtons();
+			}
+
+		}, 5000);
+
+		
 
 		recognizer.stop();
 		active = false;
@@ -264,67 +401,62 @@ $( document ).ready(function() {
 
 
 
-	// var context = new AudioContext();
+	var context = new AudioContext();
 
            
 
-			//    // setup a javascript node
-		 //    javascriptNode = context.createScriptProcessor(2048, 1, 1);
+			   // setup a javascript node
+		    javascriptNode = context.createScriptProcessor(2048, 1, 1);
 
-			// //setupAudioNodes();
+			//setupAudioNodes();
 
-			// var aCtx;
-			// var analyser;
-			// var microphone;
-
-
-			// if (navigator.webkitGetUserMedia) {
-			//    navigator.webkitGetUserMedia({ audio: true},
-			//       function(stream) {
-			// 		aCtx = new AudioContext();
-			// 		analyser = aCtx.createAnalyser();
-			// 		microphone = aCtx.createMediaStreamSource(stream);
-			// 		microphone.connect(analyser);
-			// 		// analyser.connect(aCtx.destination);
-			// 		process();
-			//       },
-			//       function(err) {
-			//          console.log("The following error occured: " + err.name);
-			//       }
-			//    );
-			// } else {
-			//    console.log("getUserMedia not supported");
-			// }
+			var aCtx;
+			var analyser;
+			var microphone;
 
 
-			// function process(){
-			//     setInterval(function(){
-			//         FFTData = new Float32Array(analyser.frequencyBinCount);
-			//         analyser.getFloatFrequencyData(FFTData);
-			//       //  console.log("       " + FFTData[0]);
+			if (navigator.webkitGetUserMedia) {
+			   navigator.webkitGetUserMedia({ audio: true},
+			      function(stream) {
+					aCtx = new AudioContext();
+					analyser = aCtx.createAnalyser();
+					microphone = aCtx.createMediaStreamSource(stream);
+					microphone.connect(analyser);
+					// analyser.connect(aCtx.destination);
+					process();
+			      },
+			      function(err) {
+			         console.log("The following error occured: " + err.name);
+			      }
+			   );
+			} else {
+			   console.log("getUserMedia not supported");
+			}
 
-			//       	var average = getAverageVolume(FFTData)
-		 			
-		 // 			$("#volume").css("height",""+ (average+150)*2 +"px");
-			//       //console.log(average+200);
 
-			//     },10);
-			// }
+			function process(){
+			    setInterval(function(){
+			        FFTData = new Float32Array(analyser.frequencyBinCount);
+			        analyser.getFloatFrequencyData(FFTData);
+			      	var average = getAverageVolume(FFTData)
+		 			$("#volume").css("height",""+ (average+150)*2 +"px");
+			    },10);
+			}
 
-		 //    function getAverageVolume(array) {
-		 //        var values = 0;
-		 //        var average;
+		    function getAverageVolume(array) {
+		        var values = 0;
+		        var average;
 		 
-		 //        var length = array.length;
+		        var length = array.length;
 		 
-		 //        // get all the frequency amplitudes
-		 //        for (var i = 0; i < length; i++) {
-		 //            values += array[i];
-		 //        }
+		        // get all the frequency amplitudes
+		        for (var i = 0; i < length; i++) {
+		            values += array[i];
+		        }
 		 
-		 //        average = values / length;
-		 //        return average;
-		 //    }
+		        average = values / length;
+		        return average;
+		    }
 
 
 });
@@ -334,30 +466,34 @@ function map(value, oldMin, oldMax, newMin, newMax){
 	return (value - oldMin) / (oldMax - oldMin) * (newMax - newMin) + newMin;	
 }
 
-var randomAddition;
+var randomAddition = 0;
 
 function removeWord(object){
 	$(object).each(function(index, value){
-		// console.log($(object).length);
-		// console.log(map(index,0,$(object).length,0,$(object).length*1000));
-		// console.log(value);
+		 console.log($(object).length);
+		 console.log(map(index,0,$(object).length,0,$(object).length*10));
+		 console.log(value);
+
+	 	if($(object).length > 1){
+			randomAddition = Math.random() * $(object).length * 50;
+		} else {
+			randomAddition = 0;
+		}
+
 		setTimeout(function(){
 			
-			if($(object).length > 1){
-				randomAddition = Math.random() * 300;
-			} else {
-				randomAddition = 0;
-			}
+
 			
 			$(value).css("opacity","0");
-		
-			$(value).css("transform", "translate3d(0px,10px,-300px) rotateY(80deg) rotateZ(30deg)");
+			$(value).css("-webkit-animation","disappear 1s 1");
+			//$(value).css("transform", "translate3d(0px,0px,-300px) rotateY(20deg) rotateZ(20deg)");
 
 			setTimeout(function(){
 				$(value).remove();
-			},750);
+			},1000);
 
-		}, map(index,0,$(object).length,0,$(object).length*10+(randomAddition)));
+		//}, map(index,0,$(object).length,0,$(object).length*10+(randomAddition)) );
+		}, randomAddition );
 
 	});
 }

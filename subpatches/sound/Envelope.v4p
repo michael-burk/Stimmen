@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Envelope.v4p" systemname="Envelope" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Envelope.v4p">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Envelope.v4p" systemname="Envelope" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\sound\Envelope.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="-19230" top="5985" width="13215" height="9225">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -13,7 +13,7 @@
    </PIN>
    <PIN pinname="Sample Rate" slicecount="1" values="44100">
    </PIN>
-   <PIN pinname="Driver" slicecount="1" values="|Line 1/2 (2- M-Audio Fast Track Pro)|">
+   <PIN pinname="Driver" slicecount="1" values="|Microphone (Cirrus Logic CS4206B (AB 29))|">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>

@@ -20,7 +20,7 @@ body{
 #center{
 	position: absolute;
 	left: 50%;
-	top: 150px;
+	top: 200px;
 	-webkit-perspective: 2000px;
     -webkit-perspective-origin: 0px 400px;
 }
@@ -28,39 +28,72 @@ body{
 #wordHolder{
 	position: relative;
 	left: -50%;
-	width: 1000px;
+	width: 1200px;
 	height: 500px;
 	margin: auto;
 	background: rgba(1,1,1,.1);
+	text-align: center;
+	vertical-align: middle;
 }
 
 .word{
-	padding: 8px 10px;
-    background: rgba(100,0,100,.3);
+	padding: 8px 10px 7px 10px;
+    background: rgba(180,0,180,1);
     margin: 10px;
-    float: left;
+  /*  float: left;*/
     color: white;
     font-size: 16pt;
     cursor: pointer;
     top: 0px;
     left: 0px;
     opacity: 0;
+    display: inline-block;
+    vertical-align: bottom;
 
-  	-webkit-transition: transform .3s ease-out, opacity .3s ease-out;
+  	-webkit-transition: opacity .75s ease-out;
   	-webkit-transform-style: preserve-3d;
+  	
+  	-webkit-animation-timing-function: linear;
 }
 
+
+@-webkit-keyframes disappear {
+  0%   { -webkit-transform: translate3d(0px,0px,0px)}
+  10%   { -webkit-transform: translate3d(0px,0px,-100px)}
+  100%   { -webkit-transform: translate3d(0px,50px,-500px) rotateY(40deg) rotateZ(40deg) }
+
+ 
+}
 
 #volume {
 	background: black;
 	position: absolute;
 	left: 5px;
-	top: 50px;
+	top: 5px;
 	height: 5px;
-	width: 500px;
+	width: 5px;
+	z-index: 1000;
 }
 
 
+#progressBar{
+	position: absolute;
+	top: 750px;
+	left: 460px;
+	width: 1000px;
+	height: 20px;
+
+	background-color: lightGrey;
+}
+
+#progress{
+	position: relative;
+	width: 0%;
+	height: 100%;
+
+	-webkit-transition: width 0s ease-in-out;
+	background-color: red;
+}
 
 .langButton{
 	position: absolute;
@@ -70,14 +103,16 @@ body{
 }
 
 #recordButton {
+	position: absolute;
+	left: 860px;
+	top: 800px;
     background-color: black;
-    margin: auto;
-    margin-top: 800px;
     position: relative;
     width: 200px;
 	height: 200px;
 	border-radius: 100px;
 	cursor: pointer;
+	transition: background-color 0s ease;
 }
 
 #recordButton:active {
@@ -90,8 +125,25 @@ body{
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 860px;
-    left: 400px;
+    top: 850px;
+    left: 700px;
+    text-align: center;
+    color: white;
+    line-height: 110px;
+    font-size: 70px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-out;
+    visibility: hidden;
+}
+
+#deleteButton {
+    background-color: lightGrey;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 850px;
+    left: 1120px;
     text-align: center;
     color: white;
     line-height: 110px;

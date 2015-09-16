@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="0" scrolly="21285">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="1350" scrolly="2400">
    <BOUNDS type="Window" left="-28125" top="900" width="22425" height="15240">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -1418,20 +1418,6 @@
    </NODE>
    <LINK srcnodeid="181" srcpinname="IDs" dstnodeid="230" dstpinname="Input String">
    </LINK>
-   <NODE systemname="Select (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (Value)" componentmode="Hidden" id="236">
-   <BOUNDS type="Node" left="11280" top="19110" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Select" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="197" srcpinname="Count per Word" dstnodeid="236" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="236" dstpinname="Select">
-   </LINK>
    <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="237">
    <BOUNDS type="Node" left="1335" top="29985" width="100" height="100">
    </BOUNDS>
@@ -1445,7 +1431,7 @@
    <LINK srcnodeid="184" srcpinname="Output String" dstnodeid="237" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="238" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1290" top="30795" width="795" height="240">
+   <BOUNDS type="Box" left="1290" top="30795" width="1230" height="255">
    </BOUNDS>
    <BOUNDS type="Node" left="1290" top="30795" width="0" height="0">
    </BOUNDS>

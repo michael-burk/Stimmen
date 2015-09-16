@@ -179,13 +179,19 @@ function initServerMessageHandler(){
 				recordable = true;
 				$("#recordButton").css("background-color","Black");
 
+				// Automatic
 
 
+					//automatic = true;
 
-					if(!active) recognizer.start();
+					try {
+						if(!active) recognizer.start();
+					} catch(e) {
+					
+					}
+
+					
 					active = true;
-
-
 					
 					$("#recordButton").css("background-color","red");
 			  		
@@ -193,8 +199,6 @@ function initServerMessageHandler(){
 			  		var valuearray = new Array();
 					valuearray.push("start");
 					sendMessage("record", valuearray);
-
-
 
 					setTimeout(function(){ 
 
@@ -213,7 +217,9 @@ function initServerMessageHandler(){
 
 						console.log("end");
 
-					}, 30000);
+					}, timelimit*1000);
+
+					
 				
 
 			}

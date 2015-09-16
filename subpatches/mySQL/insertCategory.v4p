@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="1365" scrolly="12405">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" systemname="insertCategory" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertCategory.v4p" scrollx="0" scrolly="15960">
    <BOUNDS type="Window" left="-28125" top="900" width="22425" height="15240">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -1431,7 +1431,7 @@
    <LINK srcnodeid="184" srcpinname="Output String" dstnodeid="237" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="238" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1290" top="30795" width="795" height="240">
+   <BOUNDS type="Box" left="1290" top="30795" width="1230" height="255">
    </BOUNDS>
    <BOUNDS type="Node" left="1290" top="30795" width="0" height="0">
    </BOUNDS>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="540" scrolly="0">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="6720" scrolly="8790">
    <BOUNDS type="Window" left="-31110" top="3375" width="25170" height="13215">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -427,7 +427,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="15840" top="17115" width="12240" height="10635">
    </BOUNDS>
-   <BOUNDS type="Window" left="-15990" top="3930" width="21345" height="15210">
+   <BOUNDS type="Window" left="-17355" top="2835" width="21345" height="10965">
    </BOUNDS>
    <PIN pinname="SendQuery" visible="1" slicecount="1" values="0">
    </PIN>

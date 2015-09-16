@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="3435" scrolly="11430">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="3795" scrolly="9000">
    <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18060">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -41,7 +41,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="801" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="23610" top="19935" width="2970" height="1305">
+   <BOUNDS type="Box" left="23610" top="19935" width="6225" height="1860">
    </BOUNDS>
    <BOUNDS type="Node" left="23610" top="19935" width="0" height="0">
    </BOUNDS>
@@ -453,9 +453,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Quote" filename="subpatches\Visualizations\Quote.v4p" nodename="subpatches\Visualizations\Quote.v4p" componentmode="Hidden" id="833" stayontop="0" debug="0">
-   <BOUNDS type="Node" left="9840" top="16710" width="1650" height="270">
+   <BOUNDS type="Node" left="9645" top="16650" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="9840" top="16710" width="6525" height="4150">
+   <BOUNDS type="Box" left="9645" top="16650" width="6525" height="4150">
    </BOUNDS>
    <BOUNDS type="Window" left="-19470" top="795" width="15225" height="7500">
    </BOUNDS>
@@ -467,9 +467,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="827" srcpinname="Tokens" dstnodeid="833" dstpinname="Entities" linkstyle="Bezier">
-   <LINKPOINT x="20535" y="14778">
+   <LINKPOINT x="20475" y="14670">
    </LINKPOINT>
-   <LINKPOINT x="11580" y="14623">
+   <LINKPOINT x="11445" y="14670">
    </LINKPOINT>
    </LINK>
    <NODE nodename="R (Value)" id="913" systemname="R (Value)">
@@ -521,7 +521,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="-19230" top="5985" width="13215" height="9225">
    </BOUNDS>
-   <PIN pinname="Insert" slicecount="1" values="0">
+   <PIN pinname="Insert" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Set - Input 1" slicecount="1" values="0">
    </PIN>
@@ -591,14 +591,20 @@
    </PIN>
    <PIN pinname="Input 1" slicecount="1" visible="1" values="stop">
    </PIN>
+   <PIN pinname="DoRecord" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="971" srcpinname="Down Edge" dstnodeid="956" dstpinname="Set - Input 1" linkstyle="Bezier">
-   <LINKPOINT x="10020" y="16365">
+   <LINKPOINT x="9930" y="16365">
    </LINKPOINT>
    <LINKPOINT x="18525" y="16365">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="971" srcpinname="Y Output Value" dstnodeid="833" dstpinname="Load" linkstyle="PolyLine">
+   <LINK srcnodeid="971" srcpinname="Y Output Value" dstnodeid="833" dstpinname="Load" linkstyle="Bezier">
+   <LINKPOINT x="10155" y="15645">
+   </LINKPOINT>
+   <LINKPOINT x="10155" y="15645">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="971" srcpinname="Output" dstnodeid="955" dstpinname="Input" linkstyle="Bezier">
    <LINKPOINT x="9660" y="16650">
@@ -739,9 +745,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1008" srcpinname="SocketId" dstnodeid="826" dstpinname="SocketID" linkstyle="Bezier">
-   <LINKPOINT x="12895" y="14423">
+   <LINKPOINT x="12900" y="14475">
    </LINKPOINT>
-   <LINKPOINT x="12605" y="14543">
+   <LINKPOINT x="12600" y="14475">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="982" srcpinname="Output" dstnodeid="827" dstpinname="Input" linkstyle="Bezier">
@@ -792,10 +798,12 @@
    </NODE>
    <LINK srcnodeid="1010" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Recordable">
    </LINK>
-   <LINK srcnodeid="958" srcpinname="Y Output Value" dstnodeid="1010" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="20985" y="21255">
+   <LINK srcnodeid="958" srcpinname="Y Output Value" dstnodeid="1010" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="971" srcpinname="DoRecord" dstnodeid="956" dstpinname="Insert" linkstyle="Bezier">
+   <LINKPOINT x="10470" y="16365">
    </LINKPOINT>
-   <LINKPOINT x="22875" y="21255">
+   <LINKPOINT x="17655" y="16365">
    </LINKPOINT>
    </LINK>
    </PATCH>

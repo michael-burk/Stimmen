@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="4215" scrolly="1500">
-   <BOUNDS type="Window" left="-15990" top="3930" width="21345" height="15210">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" systemname="insertDictionaryEntry" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL\insertDictionaryEntry.v4p" scrollx="0" scrolly="19560">
+   <BOUNDS type="Window" left="-17355" top="2835" width="21345" height="10965">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
