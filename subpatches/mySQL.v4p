@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="6720" scrolly="8790">
-   <BOUNDS type="Window" left="-31110" top="3375" width="25170" height="13215">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" systemname="mySQL" filename="C:\Users\Michael\Documents\GitHub\Stimmen\subpatches\mySQL.v4p" scrollx="7290" scrolly="8550">
+   <BOUNDS type="Window" left="-27990" top="3075" width="25170" height="12615">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
    </PACK>
@@ -1373,9 +1373,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="493" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="18255" top="16515" width="795" height="240">
+   <BOUNDS type="Box" left="18495" top="15510" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="18255" top="16515" width="0" height="0">
+   <BOUNDS type="Node" left="18495" top="15510" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1391,9 +1391,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="330" srcpinname="EntitiyIdOut" dstnodeid="493" dstpinname="Input String" linkstyle="Bezier">
-   <LINKPOINT x="20415" y="14528">
+   <LINKPOINT x="20495" y="14193">
    </LINKPOINT>
-   <LINKPOINT x="18300" y="14528">
+   <LINKPOINT x="18460" y="13858">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="358" srcpinname="Y Output Value" dstnodeid="254" dstpinname="Tokens per Entity" linkstyle="Bezier">
@@ -1402,11 +1402,7 @@
    <LINKPOINT x="19200" y="16935">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="493" srcpinname="Output String" dstnodeid="254" dstpinname="EntitiyIdOut" linkstyle="Bezier">
-   <LINKPOINT x="18315" y="16935">
-   </LINKPOINT>
-   <LINKPOINT x="18510" y="16935">
-   </LINKPOINT>
+   <LINK srcnodeid="493" srcpinname="Output String" dstnodeid="254" dstpinname="EntitiyIdOut" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="342" srcpinname="Count" dstnodeid="254" dstpinname="Count" linkstyle="Bezier">
    <LINKPOINT x="18615" y="16695">

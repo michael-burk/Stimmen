@@ -99,7 +99,7 @@
 
 <script type="text/javascript">
 	
-
+// Global Variables
 var START_EV = " ";
 var END_EV = " ";
 var hasTouch = "ontouchstart" in window;
@@ -115,38 +115,36 @@ var stopwatchInterval;
 var timelimit = 50;
 var finalResultFound = false;
 
-function sendMessageLate(){
-		sendMessage("result", speechArray);
-		speechArray = new Array();
-}
-
-
 var speechArray = new Array();
 
+
 $( document ).ready(function() {
-	recognizer = new webkitSpeechRecognition();
+
+	// Get Platform Events
 
 	START_EV = hasTouch ? "touchstart" : "mousedown";
 	END_EV = hasTouch ? "touchend" : "mouseup";
-	
 
+
+	// Create new Speech Recognizer
+
+	recognizer = new webkitSpeechRecognition();
 	recognizer.lang = "de";
 	recognizer.continuous = true;
 	recognizer.interimResults = false;
 	recognizer.onresult = function(event) {
 	
 		    if (event.results.length > 0) {
-
 	        var result = event.results[event.results.length-1];
-	       
 	        if(result.isFinal) {
+
 	        	finalResultFound = true;
 	        	clearTimeout(lateSendTimeout);
-
 				speechArray.push(result[0].transcript);
 
 				if(!active) {
 					
+					//Split Words for on-screen display
 					var splitted = speechArray[0].split(" ");
 
 					splitted.forEach(function(entry) {
@@ -156,17 +154,19 @@ $( document ).ready(function() {
 					// Reset Speech Array
 					speechArray = new Array();
 
-
+					// Add Eventlistener for removing unwanted words
 					$(".word").bind(START_EV, function(ev1){
 						removeWord($(ev1.currentTarget));
 					});
 
+					// Fill Positions of words into array
 					var offsetArray = new Array();
 
 					$(".word").each(function(index, value){
 						offsetArray.push($(value).offset());
 					});
 
+					// Set absolute position according to offsetArray (Necessary for animation, which needs absolute positions)
 					$(".word").each(function(index, value){
 			
 						var newOffset = offsetArray[index];
@@ -181,13 +181,14 @@ $( document ).ready(function() {
 						}, map(index,0,$(".word").length,0,$(".word").length*100));
 					});
 
-					
+					// Show send & delete button
 					$("#sendButton").css("opacity","1");
 					$("#sendButton").css("visibility","visible");
 
 					$("#deleteButton").css("opacity","1");
 					$("#deleteButton").css("visibility","visible");
 					
+					// If automatic restart without user interaction
 					if(automatic){
 
 						setTimeout(function(){
@@ -198,9 +199,6 @@ $( document ).ready(function() {
 								setTimeout(function(){
 									
 									$(value).animate({ top: '-=1000px' }, 500, 'easeInBack');
-									// setTimeout(function(){
-									// 	$(value).css("opacity","0");
-									// },800);
 									setTimeout(function(){
 										$(value).remove();
 									},1000);
@@ -208,7 +206,8 @@ $( document ).ready(function() {
 
 								}, map(index,0,$(".word").length,0,($(".word").length*10 + Math.random() * 500))); 
 
-								hideButtons();9
+								hideButtons();
+								resetProgressBar();
 							});
 
 						}, 10000);
@@ -218,13 +217,16 @@ $( document ).ready(function() {
 	    }  
 	};
 
-						
-			//Buttons
 
+
+	//////////////////////////////////////////////////////////
+	// Button Functionality
+	//////////////////////////////////////////////////////////
+						
+
+	// Send words to vvvv; Reset Speech Array; Animate words out;
 	$("#sendButton").bind(START_EV, function(ev){
 		ev.preventDefault();
-
-		
 
 		$("#sendButton").css("background-color","red");
 		console.log("send");
@@ -240,26 +242,25 @@ $( document ).ready(function() {
 					$(value).remove();
 				},1000);
 
-
-			//}, map(index,0,$(".word").length,0,$(".word").length*10));
-
 			}, map(index,0,$(".word").length,0,($(".word").length*10 + Math.random() * 500))); 
 		});
 
 	});
 
+	
 	$("#sendButton").bind(END_EV, function(ev){
 		ev.preventDefault();
 
 		$("#sendButton").css("background-color","lightGrey");
 		
 		hideButtons();
+		resetProgressBar();
 
 
 	});
 
 
-
+	// Delete all words; Reset recording process;
 	$("#deleteButton").bind(START_EV, function(ev){
 		ev.preventDefault();
 
@@ -283,9 +284,68 @@ $( document ).ready(function() {
 		$("#deleteButton").css("background-color","lightGrey");
 		
 		hideButtons();
+		resetProgressBar();
 
 	});
 
+
+	// Start recognizer; Start stopwatch / progress bar; Send recording state to vvvv;
+
+	$("#recordButton").bind(START_EV, function(ev1){
+		ev1.preventDefault();
+		if(!recordable) return;	
+
+		$("#recordButton").css("transition","background-color 0s ease");
+
+		finalResultFound = false;
+
+		recognizer.start();
+		myStopwatch.start();
+		active = true;
+
+		stopwatchInterval = setInterval(function(){
+			$("#progress").css("-webkit-transition","width 0s ease-in-out");
+			$("#progress").css("width",""+ (myStopwatch.getTime()/timelimit)*100 +"%");
+
+			if((myStopwatch.getTime()/timelimit)*100 >= 100){
+				stopRecording();
+			}
+		}, 10);
+
+		
+		
+		$("#recordButton").css("background-color","red");
+  			
+  		var valuearray = new Array();
+		valuearray.push("start");
+		sendMessage("record", valuearray);
+		
+	});
+
+	// Stop the recording
+	$("#recordButton").bind(END_EV, function(ev2){
+
+		ev2.preventDefault();
+		if(!recordable || !active) return;
+
+		stopRecording();
+	});
+
+	// Switch language and send to vvvv
+	$( ".langButton" ).click(function(ev) {
+
+		$( ".langButton" ).css("background-color","rgba(200,200,200,1)");
+		$(ev.currentTarget).css("background-color","rgba(200,0,0,1)");
+
+		var valuearray = new Array();
+		valuearray.push(ev.currentTarget.getAttribute("TYPE"));
+		sendMessage("lang", valuearray);
+
+		recognizer.lang = ev.currentTarget.getAttribute("TYPE");
+
+	});
+
+	// Hide Buttons
 	function hideButtons(){
 		setTimeout(function(){
 			$("#deleteButton").css("opacity","0");
@@ -303,46 +363,20 @@ $( document ).ready(function() {
 			$("#sendButton").css("visibility","hidden");
 		}, 600);
 
+		
+	}
+
+	function resetProgressBar(){
 		$("#progress").css("-webkit-transition","width 1s ease-in-out");
 		$("#progress").css("width","0%");
 		myStopwatch.reset();
-	}
+	}	
 
-
-	$("#recordButton").bind(START_EV, function(ev1){
-		ev1.preventDefault();
-		if(!recordable) return;	
-
-		$("#recordButton").css("transition","background-color 0s ease");
-
-		finalResultFound = false;
-
-		myStopwatch.start();
-
-		stopwatchInterval = setInterval(function(){
-			$("#progress").css("-webkit-transition","width 0s ease-in-out");
-			$("#progress").css("width",""+ (myStopwatch.getTime()/timelimit)*100 +"%");
-		}, 10);
-
-		
-			
-
-		recognizer.start();
-		active = true;
-		
-		$("#recordButton").css("background-color","red");
-  			
-  		var valuearray = new Array();
-		valuearray.push("start");
-		sendMessage("record", valuearray);
-		
-	});
-
-
-	$("#recordButton").bind(END_EV, function(ev2){
-
-		ev2.preventDefault();
-		if(!recordable || !active) return;
+	// Stop recognizer; Stop stopwatch; If no results appear stop process; Send stop record state to vvvv;
+	function stopRecording(){
+		active = false;
+		recognizer.stop();
+		recordable = false;
 
 		$("#recordButton").css("transition","background-color .3s ease");
 
@@ -361,15 +395,10 @@ $( document ).ready(function() {
 
 				$("#recordButton").css("background-color","Black");
 				hideButtons();
+				resetProgressBar();
 			}
 
 		}, 5000);
-
-		
-
-		recognizer.stop();
-		active = false;
-		recordable = false;
 
 		$("#recordButton").css("background-color","LightGrey");
 
@@ -377,88 +406,76 @@ $( document ).ready(function() {
 		valuearray.push("stop");
 		sendMessage("record", valuearray);
 
-	
 		//lateSendTimeout = setTimeout(sendMessageLate, 5000);
 
 		console.log("end");
-	});
+	}
 
 
-
-	$( ".langButton" ).click(function(ev) {
-
-		$( ".langButton" ).css("background-color","rgba(200,200,200,1)");
-		$(ev.currentTarget).css("background-color","rgba(200,0,0,1)");
-
-		var valuearray = new Array();
-		valuearray.push(ev.currentTarget.getAttribute("TYPE"));
-		sendMessage("lang", valuearray);
-
-		recognizer.lang = ev.currentTarget.getAttribute("TYPE");
-
-	});
-
-
+	//////////////////////////////////////////////////////////
+	// Audio Analysis
+	//////////////////////////////////////////////////////////
 
 
 	var context = new AudioContext();
 
-           
+	// setup a javascript node
+    javascriptNode = context.createScriptProcessor(2048, 1, 1);
 
-			   // setup a javascript node
-		    javascriptNode = context.createScriptProcessor(2048, 1, 1);
+	//setupAudioNodes();
 
-			//setupAudioNodes();
-
-			var aCtx;
-			var analyser;
-			var microphone;
+	var aCtx;
+	var analyser;
+	var microphone;
 
 
-			if (navigator.webkitGetUserMedia) {
-			   navigator.webkitGetUserMedia({ audio: true},
-			      function(stream) {
-					aCtx = new AudioContext();
-					analyser = aCtx.createAnalyser();
-					microphone = aCtx.createMediaStreamSource(stream);
-					microphone.connect(analyser);
-					// analyser.connect(aCtx.destination);
-					process();
-			      },
-			      function(err) {
-			         console.log("The following error occured: " + err.name);
-			      }
-			   );
-			} else {
-			   console.log("getUserMedia not supported");
-			}
+	if (navigator.webkitGetUserMedia) {
+	   navigator.webkitGetUserMedia({ audio: true},
+	      function(stream) {
+			aCtx = new AudioContext();
+			analyser = aCtx.createAnalyser();
+			microphone = aCtx.createMediaStreamSource(stream);
+			microphone.connect(analyser);
+			// analyser.connect(aCtx.destination);
+			process();
+	      },
+	      function(err) {
+	         console.log("The following error occured: " + err.name);
+	      }
+	   );
+	} else {
+	   console.log("getUserMedia not supported");
+	}
 
 
-			function process(){
-			    setInterval(function(){
-			        FFTData = new Float32Array(analyser.frequencyBinCount);
-			        analyser.getFloatFrequencyData(FFTData);
-			      	var average = getAverageVolume(FFTData)
-		 			$("#volume").css("height",""+ (average+150)*2 +"px");
-			    },10);
-			}
+	function process(){
+	    setInterval(function(){
+	        FFTData = new Float32Array(analyser.frequencyBinCount);
+	        analyser.getFloatFrequencyData(FFTData);
+	      	var average = getAverageVolume(FFTData)
+ 			$("#volume").css("height",""+ (average+150)*2 +"px");
+	    },10);
+	}
 
-		    function getAverageVolume(array) {
-		        var values = 0;
-		        var average;
-		 
-		        var length = array.length;
-		 
-		        // get all the frequency amplitudes
-		        for (var i = 0; i < length; i++) {
-		            values += array[i];
-		        }
-		 
-		        average = values / length;
-		        return average;
-		    }
+    function getAverageVolume(array) {
+        var values = 0;
+        var average;
+ 
+        var length = array.length;
+ 
+        // get all the frequency amplitudes
+        for (var i = 0; i < length; i++) {
+            values += array[i];
+        }
+ 
+        average = values / length;
+        return average;
+    }
 
-
+	function sendMessageLate(){
+			sendMessage("result", speechArray);
+			speechArray = new Array();
+	}
 });
 
 function map(value, oldMin, oldMax, newMin, newMax){
@@ -470,9 +487,6 @@ var randomAddition = 0;
 
 function removeWord(object){
 	$(object).each(function(index, value){
-		 console.log($(object).length);
-		 console.log(map(index,0,$(object).length,0,$(object).length*10));
-		 console.log(value);
 
 	 	if($(object).length > 1){
 			randomAddition = Math.random() * $(object).length * 50;
@@ -481,8 +495,6 @@ function removeWord(object){
 		}
 
 		setTimeout(function(){
-			
-
 			
 			$(value).css("opacity","0");
 			$(value).css("-webkit-animation","disappear 1s 1");

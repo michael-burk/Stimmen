@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="3795" scrolly="9000">
+   <PATCH nodename="C:\Users\Michael\Documents\GitHub\Stimmen\main.v4p" systemname="callmenames" filename="C:\Users\sanch\NServer\callmenames.v4p" scrollx="4335" scrolly="7890">
    <BOUNDS type="Window" left="-28920" top="-120" width="29040" height="18060">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.2.0">
@@ -797,8 +797,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1010" srcpinname="Y Output Value" dstnodeid="826" dstpinname="Recordable">
-   </LINK>
-   <LINK srcnodeid="958" srcpinname="Y Output Value" dstnodeid="1010" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="971" srcpinname="DoRecord" dstnodeid="956" dstpinname="Insert" linkstyle="Bezier">
    <LINKPOINT x="10470" y="16365">
