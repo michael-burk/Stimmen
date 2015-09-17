@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 KOUS	wie
 VVFIN	verändern
 ADV	auch
 ART	die
 ART	die
 ADJA	vergangen
+=======
+NN	hallo
+NN	<unknown>
+>>>>>>> remotes/origin/dev_nlp

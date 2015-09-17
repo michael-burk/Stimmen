@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 wie
 verändert
 auch
 den
 der
 vergangenen
+=======
+Hallo
+test1
+>>>>>>> remotes/origin/dev_nlp
