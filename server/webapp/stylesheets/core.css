@@ -95,13 +95,6 @@ body{
 	background-color: red;
 }
 
-.langButton{
-	position: absolute;
-	background-color: black;
-	width: 100px;
-	height: 100px;
-}
-
 #recordButton {
 	position: absolute;
 	left: 860px;
@@ -161,29 +154,27 @@ body{
 	background-color: rgba(200,0,0,1);
 	right: 10px;
 	top: 10px;
-	text-align: center;
-    color: white;
-    line-height: 100px;
-    font-size: 30px;
-
 }
 
 #enButton {
 	background-color: rgba(200,200,200,1);
-	right: 120px;
+	right: 90px;
 	top: 10px;
-	text-align: center;
-    color: white;
-    line-height: 100px;
-    font-size: 30px;
 }
 
 #ruButton {
 	background-color: rgba(200,200,200,1);
-    right: 230px;
+    right: 170px;
     top: 10px;
+}
+
+.langButton{
+	cursor: pointer;
+    position: absolute;
+    width: 70px;
+    height: 70px;
     text-align: center;
     color: white;
-    line-height: 100px;
+    line-height: 77px;
     font-size: 30px;
 }
